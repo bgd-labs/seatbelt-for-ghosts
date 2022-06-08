@@ -21,7 +21,7 @@ export function targetsArc(simulation: TenderlySimulation) {
   )
 }
 
-function getArcPayload(simulation: TenderlySimulation) {
+export function getArcPayload(simulation: TenderlySimulation) {
   const arc = simulation.transaction.transaction_info.state_diff.find(
     (diff) => diff.raw[0].address.toLowerCase() === ARC_ADDRESS.toLowerCase() && diff.soltype?.name === '_actionsSets'
   )
@@ -36,7 +36,6 @@ function getArcPayload(simulation: TenderlySimulation) {
 export async function simulateArc(simulation: TenderlySimulation) {
   const { proposalId, timestamp } = getArcPayload(simulation)
   const arcContract = new Contract(ARC_ADDRESS, ARC_TIMELOCK_ABI, provider)
-
   const actionSetExecutedLogs = await arcContract.queryFilter(arcContract.filters.ActionsSetExecuted())
   const actionSetExecutedEvent = actionSetExecutedLogs.find((log) => log.args?.id.eq(proposalId))
   if (actionSetExecutedEvent) {
@@ -56,6 +55,13 @@ export async function simulateArc(simulation: TenderlySimulation) {
     return await sendSimulation(simulationPayload)
   } else {
     const arcContract = new Contract(ARC_ADDRESS, ARC_TIMELOCK_ABI, provider)
+    const state = simulation.transaction.transaction_info.state_diff.reduce((acc, diff) => {
+      diff.raw.forEach((raw) => {
+        if (!acc[raw.address]) acc[raw.address] = { storage: {} }
+        acc[raw.address].storage[raw.key] = raw.dirty
+      })
+      return acc
+    }, {} as { [key: string]: { storage: { [key: string]: string } } })
     const simulationPayload: TenderlyPayload = {
       network_id: '1',
       block_number: simulation.simulation.block_number + 1,
@@ -71,6 +77,7 @@ export async function simulateArc(simulation: TenderlySimulation) {
         timestamp: hexStripZeros(BigNumber.from(timestamp).toHexString()),
       },
       root: simulation.simulation.id,
+      state_objects: state,
     }
 
     return await sendSimulation(simulationPayload)

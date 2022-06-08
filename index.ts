@@ -8,21 +8,24 @@ import { DAO_NAME, PROPOSAL_FILTER, OMIT_CACHE, AAVE_GOV_V2_ADDRESS } from './ut
 import { provider } from './utils/clients/ethers'
 import { AllCheckResults, ProposalData, SimulationResult } from './types'
 import ALL_CHECKS from './checks'
-import { toProposalReport } from './presentation/markdown'
+import { toArcReport, toProposalReport } from './presentation/markdown'
 import { aaveGovernanceContract, isProposalStateImmutable, PROPOSAL_STATES } from './utils/contracts/aave-governance-v2'
 import { executor } from './utils/contracts/executor'
 import { PromisePool } from '@supercharge/promise-pool'
 import { simulateProposal } from './utils/simulations/proposal'
+import { getArcPayload, simulateArc, targetsArc } from './utils/simulations/arc'
 
 // load cache
 const proposalStateCachePath = './proposal-states.json'
 let cache: { [key: string]: string } = {}
 if (fs.existsSync(proposalStateCachePath)) cache = require(proposalStateCachePath)
 
-function getProposalFileName(proposalId: number) {
+function getProposalFileName(proposalId: number, simulationFileSuffix?: string) {
   const basePath = `${DAO_NAME}/${AAVE_GOV_V2_ADDRESS}`
   // zero padding so the alphabetic file sorting on github works
-  const filename = `${proposalId.toString().padStart(3, '0')}.md`
+  const filename = `${proposalId.toString().padStart(3, '0')}${
+    simulationFileSuffix ? `_${simulationFileSuffix}` : ''
+  }.md`
   const dir = `./reports/${basePath}/`
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
   return `${dir}/${filename}`
@@ -60,9 +63,9 @@ async function runSimulation() {
         console.log(`Skipped simulation for ${proposalId}`)
       } else {
         const { sim, latestBlock, proposal } = await simulateProposal(proposalId)
-        // if (targetsArc(sim)) {
-        //   return [{ sim, proposal, latestBlock, config }, await simulateArc(sim)]
-        // }
+        if (targetsArc(sim)) {
+          return { sim, proposal, latestBlock, arc: await simulateArc(sim) }
+        }
         return { sim, proposal, latestBlock }
       }
     })
@@ -77,18 +80,19 @@ async function generateReports(simOutputs: SimulationResult[]) {
     .withConcurrency(2)
     .handleError(async (error, simOutput) => {
       errors.push(error)
+      console.log(error)
       console.log(`error generating report for proposal ${simOutput.proposal.id}`)
       throw error
     })
     .process(async (simOutput) => {
       // Run checks
-      const { sim, proposal, latestBlock } = simOutput
+      const { sim, proposal, latestBlock, arc } = simOutput
       const proposalData: ProposalData = {
         governance: aaveGovernanceContract,
         provider,
         executor: executor(proposal.executor),
       }
-      console.log(`  Running for proposal ${proposal.id}...`)
+      console.log(`  Running for proposal ${proposal.id} ...`)
       const checkResults: AllCheckResults = Object.fromEntries(
         await Promise.all(
           Object.keys(ALL_CHECKS).map(async (checkId) => [
@@ -106,11 +110,41 @@ async function generateReports(simOutputs: SimulationResult[]) {
         proposal.startBlock.toNumber() <= latestBlock.number ? provider.getBlock(proposal.startBlock.toNumber()) : null,
         proposal.endBlock.toNumber() <= latestBlock.number ? provider.getBlock(proposal.endBlock.toNumber()) : null,
       ])
+
+      const subReports: { name: string; link: string }[] = []
+      if (arc) {
+        console.log(`  Running for proposal ${proposal.id} arc ...`)
+        const arcCheckResults: AllCheckResults = Object.fromEntries(
+          await Promise.all(
+            Object.keys(ALL_CHECKS).map(async (checkId) => [
+              checkId,
+              {
+                name: ALL_CHECKS[checkId].name,
+                result: await ALL_CHECKS[checkId].checkProposal(proposal, arc, proposalData),
+              },
+            ])
+          )
+        )
+
+        const { proposalId } = getArcPayload(sim)
+        const arcReport = await toArcReport(
+          { start: startBlock, end: endBlock, current: latestBlock },
+          arcCheckResults,
+          arc,
+          `${proposalId} arc proposal`
+        )
+        const filename = getProposalFileName(proposal.id.toNumber(), 'arc')
+        fs.writeFileSync(filename, arcReport)
+        cache[proposal.id.toString()] = proposal.state
+        subReports.push({ link: filename, name: 'arc' })
+      }
+
       const report = await toProposalReport(
         { start: startBlock, end: endBlock, current: latestBlock },
         proposal,
         checkResults,
-        sim
+        sim,
+        subReports
       )
 
       // save report

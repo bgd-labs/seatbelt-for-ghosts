@@ -23,6 +23,7 @@ export interface SimulationResult {
   sim: TenderlySimulation
   proposal: ProposalStruct & { state: '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' }
   latestBlock: Block
+  arc?: TenderlySimulation
 }
 
 export interface ProposalStruct {

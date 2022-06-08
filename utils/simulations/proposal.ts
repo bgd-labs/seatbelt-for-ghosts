@@ -35,7 +35,7 @@ export async function simulateProposal(proposalId: BigNumberish): Promise<Simula
       gas: tx.gasLimit.toNumber(),
       gas_price: tx.gasPrice?.toString(),
       value: tx.value.toString(),
-      save: false,
+      save: true,
       generate_access_list: true,
     }
     return {
