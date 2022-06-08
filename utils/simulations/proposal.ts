@@ -214,7 +214,7 @@ export function getAaveGovernanceV2Slots(proposalId: BigNumberish) {
  * @param key Mapping key to find slot for
  * @returns Storage slot
  */
-function getSolidityStorageSlotBytes(mappingSlot: string, key: BigNumberish) {
+export function getSolidityStorageSlotBytes(mappingSlot: string, key: BigNumberish) {
   const slot = hexZeroPad(mappingSlot, 32)
   return hexStripZeros(keccak256(defaultAbiCoder.encode(['bytes32', 'uint256'], [key, slot])))
 }
@@ -226,7 +226,7 @@ function getSolidityStorageSlotBytes(mappingSlot: string, key: BigNumberish) {
  * @param key Mapping key to find slot for
  * @returns Storage slot
  */
-function getSolidityStorageSlotUint(mappingSlot: string, key: BigNumberish) {
+export function getSolidityStorageSlotUint(mappingSlot: string, key: BigNumberish) {
   // this will also work for address types, since address and uints are encoded the same way
   const slot = hexZeroPad(mappingSlot, 32)
   return hexStripZeros(keccak256(defaultAbiCoder.encode(['uint256', 'uint256'], [key, slot])))
