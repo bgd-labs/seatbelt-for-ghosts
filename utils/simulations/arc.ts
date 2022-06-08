@@ -61,7 +61,7 @@ export async function simulateArc(simulation: TenderlySimulation) {
       block_number: simulation.simulation.block_number + 1,
       from: FROM,
       to: ARC_ADDRESS,
-      input: arcContract.interface.encodeFunctionData('execute', [Number(proposalId.replace(/"/g, ''))]),
+      input: arcContract.interface.encodeFunctionData('execute', [Number(proposalId)]),
       save: true,
       gas: BLOCK_GAS_LIMIT,
       gas_price: '0',

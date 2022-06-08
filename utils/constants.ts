@@ -20,3 +20,9 @@ export const DAOs = {
 } as const
 
 export const FROM = '0xD73a92Be73EfbFcF3854433A5FcbAbF9c1316073' // arbitrary EOA not used on-chain
+
+// make sure env variables are set
+if (!DAOs[DAO_NAME as keyof typeof DAOs]) {
+  throw new Error(`DAO_NAME:${DAO_NAME} unknown. Must be one of ${Object.keys(DAOs).join(',')}`)
+}
+export const AAVE_GOV_V2_ADDRESS = DAOs[DAO_NAME as keyof typeof DAOs]
