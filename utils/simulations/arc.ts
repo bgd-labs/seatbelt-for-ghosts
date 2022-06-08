@@ -17,7 +17,8 @@ const ARC_ADDRESS = '0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218'
 
 export function targetsArc(simulation: TenderlySimulation) {
   return simulation.transaction.transaction_info.state_diff.some(
-    (diff) => diff.raw[0].address.toLowerCase() === ARC_ADDRESS.toLowerCase() && diff.soltype?.name === '_actionsSets'
+    (diff) =>
+      diff.raw?.[0]?.address.toLowerCase() === ARC_ADDRESS.toLowerCase() && diff.soltype?.name === '_actionsSets'
   )
 }
 
