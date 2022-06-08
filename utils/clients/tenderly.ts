@@ -274,7 +274,7 @@ async function getLatestBlock(chainId: BigNumberish): Promise<number> {
  * @param payload Transaction simulation parameters
  * @param delay How long to wait until next simulation request after failure, in milliseconds
  */
-async function sendSimulation(payload: TenderlyPayload, delay = 1000): Promise<TenderlySimulation> {
+export async function sendSimulation(payload: TenderlyPayload, delay = 1000): Promise<TenderlySimulation> {
   try {
     // Send simulation request
     const fetchOptions = <Partial<FETCH_OPT>>{ method: 'POST', data: payload, ...TENDERLY_FETCH_OPTIONS }

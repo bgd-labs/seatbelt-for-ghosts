@@ -18,3 +18,5 @@ export const PROPOSAL_FILTER: number[] | null = process.env.PROPOSAL_FILTER
 export const DAOs = {
   Aave: '0xEC568fffba86c094cf06b22134B23074DFE2252c',
 } as const
+
+export const FROM = '0xD73a92Be73EfbFcF3854433A5FcbAbF9c1316073' // arbitrary EOA not used on-chain

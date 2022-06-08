@@ -135,6 +135,7 @@ export type TenderlyPayload = {
     timestamp?: string
   }
   generate_access_list?: boolean
+  root?: string
 }
 
 // --- Tenderly types, Response ---
