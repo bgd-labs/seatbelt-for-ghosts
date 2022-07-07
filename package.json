@@ -10,7 +10,9 @@
     "start": "ts-node index.ts",
     "number": "ts-node utils/proposalNumber.ts",
     "lint:fix": "prettier --write .",
-    "test": "jest ."
+    "test": "jest .",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -45,7 +47,13 @@
     "@types/bn.js": "^5.1.0",
     "@types/jest": "^28.1.4",
     "@types/node": "^18.0.3",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "ts-jest": "^28.0.5"
+  },
+  "lint-staged": {
+    "*.ts": "prettier --write",
+    "*.md": "prettier --write"
   }
 }
