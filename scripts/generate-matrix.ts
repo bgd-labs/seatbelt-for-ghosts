@@ -33,18 +33,20 @@ async function generateMatrix() {
      * If we already know all proposals of a chunk are cached, we can omit the whole chunk.
      */
     if (!OMIT_CACHE) {
-      await restoreCache(['proposal-states.json'], `${DAO_NAME}-${cacheKey}`)
-      const cache = require('proposal-states.json')
-      let tempChunk = []
-      for (const proposalId of chunk) {
-        const proposalState = (await aaveGovernanceContract.getProposalState(
-          proposalId
-        )) as keyof typeof PROPOSAL_STATES
-        const skip = isProposalStateImmutable(proposalState) && cache[proposalId] === proposalState
-        if (!skip) tempChunk.push(proposalId)
+      const key = await restoreCache(['proposal-states.json'], `${DAO_NAME}-${cacheKey}`)
+      if (key) {
+        const cache = require('proposal-states.json')
+        let tempChunk = []
+        for (const proposalId of chunk) {
+          const proposalState = (await aaveGovernanceContract.getProposalState(
+            proposalId
+          )) as keyof typeof PROPOSAL_STATES
+          const skip = isProposalStateImmutable(proposalState) && cache[proposalId] === proposalState
+          if (!skip) tempChunk.push(proposalId)
+        }
+        chunk = tempChunk
+        fs.unlinkSync('proposal-states.json')
       }
-      chunk = tempChunk
-      fs.unlinkSync('proposal-states.json')
     }
     // we need to use _ instead of, so we can use it as a cache identifier
     if (chunk.length != 0) {
