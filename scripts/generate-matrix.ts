@@ -1,8 +1,8 @@
 require('dotenv').config()
-import { DAO_NAME } from './constants'
-import { aaveGovernanceContract } from './contracts/aave-governance-v2'
+import { DAO_NAME } from '../utils/constants'
+import { aaveGovernanceContract } from '../utils/contracts/aave-governance-v2'
 
-async function proposalNumber() {
+async function generateMatrix() {
   const proposalsCount = await aaveGovernanceContract.getProposalsCount()
   const proposals = [...Array(Number(proposalsCount)).keys()]
   const json = { include: [] as { DAO_NAME: string; proposals: string; cacheKey: string }[] }
@@ -22,4 +22,4 @@ async function proposalNumber() {
   console.log(`::set-output name=matrix::${JSON.stringify(json)}`)
 }
 
-proposalNumber()
+generateMatrix()
