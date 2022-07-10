@@ -35,7 +35,7 @@ async function generateMatrix() {
     if (!OMIT_CACHE) {
       const key = await restoreCache(['proposal-states.json'], `${DAO_NAME}-${cacheKey}`)
       if (key) {
-        const cache = require('proposal-states.json')
+        const cache = require('../proposal-states.json')
         let tempChunk = []
         for (const proposalId of chunk) {
           const proposalState = (await aaveGovernanceContract.getProposalState(
