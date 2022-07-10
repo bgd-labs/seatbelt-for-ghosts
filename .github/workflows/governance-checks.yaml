@@ -51,7 +51,7 @@ jobs:
         env:
           RPC_URL: ${{ secrets.RPC_URL }}
           DAO_NAME: ${{ matrix.DAO_NAME }}
-          ACTIONS_CACHE_URL: ${{ $ACTIONS_CACHE_URL }}
+          ACTIONS_CACHE_URL: $ACTIONS_CACHE_URL
 
   generate-reports:
     strategy:
