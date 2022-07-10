@@ -5,6 +5,7 @@ import {
   isProposalStateImmutable,
   PROPOSAL_STATES,
 } from '../utils/contracts/aave-governance-v2'
+import * as core from '@actions/core'
 import * as cache from '@actions/cache'
 import fs from 'node:fs'
 
