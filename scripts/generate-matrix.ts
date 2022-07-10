@@ -5,7 +5,7 @@ import {
   isProposalStateImmutable,
   PROPOSAL_STATES,
 } from '../utils/contracts/aave-governance-v2'
-import { restoreCache } from '@actions/cache'
+import * as cache from '@actions/cache'
 import fs from 'node:fs'
 
 /**
@@ -33,7 +33,7 @@ async function generateMatrix() {
      * If we already know all proposals of a chunk are cached, we can omit the whole chunk.
      */
     if (!OMIT_CACHE) {
-      const key = await restoreCache(['proposal-states.json'], `${DAO_NAME}-${cacheKey}`)
+      const key = await cache.restoreCache(['proposal-states.json'], `${DAO_NAME}-${cacheKey}`)
       if (key) {
         const cache = require('../proposal-states.json')
         let tempChunk = []
