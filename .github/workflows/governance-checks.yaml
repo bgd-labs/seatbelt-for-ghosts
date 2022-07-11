@@ -51,6 +51,7 @@ jobs:
         env:
           RPC_URL: ${{ secrets.RPC_URL }}
           DAO_NAME: ${{ matrix.DAO_NAME }}
+          OMIT_CACHE: ${{ github.event_name == 'push' && 'true' || github.event.inputs.omitCache}}
 
   generate-reports:
     strategy:
@@ -111,6 +112,7 @@ jobs:
           else
             git config --global user.name 'Cache bot'
             git config --global user.email 'cache-bot@bgdlabs.com'
+            git config --global pull.rebase true
             git add reports
             git commit -am "fix(cache): ${{ matrix.proposals }} :robot:"
             git pull origin main
@@ -144,6 +146,7 @@ jobs:
           else
             git config --global user.name 'Cache bot'
             git config --global user.email 'cache-bot@bgdlabs.com'
+            git config --global pull.rebase true
             git add reports
             git commit -am "fix(cache): update readme :robot:"
             git pull origin main
