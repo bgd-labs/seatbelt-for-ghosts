@@ -1,13 +1,11 @@
-require('dotenv').config()
 import { DAO_NAME, OMIT_CACHE } from '../utils/constants'
 import {
   aaveGovernanceContract,
   isProposalStateImmutable,
   PROPOSAL_STATES,
 } from '../utils/contracts/aave-governance-v2'
-import * as core from '@actions/core'
-import * as cache from '@actions/cache'
-import fs from 'node:fs'
+import { restoreCache } from '@actions/cache'
+import { unlinkSync } from 'node:fs'
 
 /**
  * We only want to re-simulate proposals that:
@@ -38,7 +36,7 @@ async function generateMatrix() {
      * If we already know all proposals of a chunk are cached, we can omit the whole chunk.
      */
     if (!OMIT_CACHE) {
-      const key = await cache.restoreCache(['proposal-states.json'], `${DAO_NAME}-${cacheKey}`)
+      const key = await restoreCache(['proposal-states.json'], `${DAO_NAME}-${cacheKey}`)
       if (key) {
         const cache = require('../proposal-states.json')
         let tempChunk = []
@@ -50,7 +48,7 @@ async function generateMatrix() {
           if (!skip) tempChunk.push(proposalId)
         }
         chunk = tempChunk
-        fs.unlinkSync('proposal-states.json')
+        unlinkSync('proposal-states.json')
       }
     }
     // we need to use _ instead of, so we can use it as a cache identifier
