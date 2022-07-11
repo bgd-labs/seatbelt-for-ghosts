@@ -17,10 +17,6 @@ import { unlinkSync } from 'node:fs'
  * The reasoning behind that is that we can reuse a deterministic cache-key per chunk.
  */
 async function generateMatrix() {
-  console.log('ACTIONS_CACHE_URL: ', process.env.ACTIONS_CACHE_URL)
-  console.log('ACTIONS_RUNTIME_URL: ', process.env.ACTIONS_RUNTIME_URL)
-  console.log('ACTIONS_RUNTIME_TOKEN: ', process.env.ACTIONS_RUNTIME_TOKEN)
-
   const proposalsCount = await aaveGovernanceContract.getProposalsCount()
   const proposals = [...Array(Number(proposalsCount)).keys()]
   const json = { include: [] as { DAO_NAME: string; proposals: string; cacheKey: string }[] }
