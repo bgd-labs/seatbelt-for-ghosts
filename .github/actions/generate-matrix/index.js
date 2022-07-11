@@ -98237,9 +98237,6 @@ var import_cache = __toESM(require_cache());
 var import_node_fs = require("fs");
 function generateMatrix() {
   return __async(this, null, function* () {
-    console.log("ACTIONS_CACHE_URL: ", process.env.ACTIONS_CACHE_URL);
-    console.log("ACTIONS_RUNTIME_URL: ", process.env.ACTIONS_RUNTIME_URL);
-    console.log("ACTIONS_RUNTIME_TOKEN: ", process.env.ACTIONS_RUNTIME_TOKEN);
     const proposalsCount = yield aaveGovernanceContract.getProposalsCount();
     const proposals = [...Array(Number(proposalsCount)).keys()];
     const json = { include: [] };
