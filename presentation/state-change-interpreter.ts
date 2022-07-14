@@ -89,7 +89,6 @@ export function decodeReserveData(data: string) {
 }
 
 async function reserveConfigurationChanged(original: Record<string, any>, dirty: Record<string, any>, key: string) {
-  console.log(original)
   const configurationBefore = original.configuration.data ? decodeReserveData(original.configuration.data) : {}
   const configurationAfter = dirty.configuration.data ? decodeReserveData(dirty.configuration.data) : {}
   let symbol = 'unknown'
@@ -97,7 +96,6 @@ async function reserveConfigurationChanged(original: Record<string, any>, dirty:
     symbol = await erc20Contract(key).symbol()
   } catch (e) {}
   // const symbol =
-  return `# decoded configuration.data for \`${key}\` (symbol: ${symbol})
-# ${toAddressLink(key)}
+  return `# decoded configuration.data for key \`${key}\` (symbol: ${symbol})
 ${deepDiff(configurationBefore, configurationAfter, 'configuration.data')}`
 }
