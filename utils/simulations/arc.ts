@@ -1,7 +1,7 @@
 import { BigNumber, Contract } from 'ethers'
 import { hexStripZeros } from 'ethers/lib/utils'
 import { TenderlyPayload, TenderlySimulation } from '../../types'
-import { provider } from '../clients/ethers'
+import { getPastLogs, provider } from '../clients/ethers'
 import { sendSimulation } from '../clients/tenderly'
 import { BLOCK_GAS_LIMIT, FROM } from '../constants'
 import { abi as ARC_TIMELOCK_ABI } from '../contracts/arc-timelock'
@@ -37,8 +37,17 @@ export function getArcPayload(simulation: TenderlySimulation) {
 export async function simulateArc(simulation: TenderlySimulation) {
   const { proposalId, timestamp } = getArcPayload(simulation)
   const arcContract = new Contract(ARC_ADDRESS, ARC_TIMELOCK_ABI, provider)
-  const actionSetExecutedLogs = await arcContract.queryFilter(arcContract.filters.ActionsSetExecuted())
-  const actionSetExecutedEvent = actionSetExecutedLogs.find((log) => log.args?.id.eq(proposalId))
+  const gracePeriod = await arcContract.getGracePeriod()
+  const actionSetExecutedLogs = await getPastLogs(
+    simulation.transaction.block_number,
+    simulation.transaction.block_number + Math.floor(gracePeriod / 11),
+    arcContract.filters.ActionsSetExecuted(),
+    arcContract
+  )
+  const actionSetExecutedEvent = actionSetExecutedLogs.find(
+    // lte check necessary to work around a bug in tenderly TODO: remove once resolved
+    (log) => log.args?.id.lte(1000) && log.args?.id.eq(proposalId)
+  )
   if (actionSetExecutedEvent) {
     const tx = await provider.getTransaction(actionSetExecutedEvent.transactionHash)
     const simulationPayload: TenderlyPayload = {
