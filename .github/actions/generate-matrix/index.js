@@ -98461,6 +98461,7 @@ if (!DAOs[DAO_NAME]) {
   throw new Error(`DAO_NAME:${DAO_NAME} unknown. Must be one of ${Object.keys(DAOs).join(",")}`);
 }
 var AAVE_GOV_V2_ADDRESS = DAOs[DAO_NAME];
+var TENDERLY_ROOT = process.env.TENDERLY_ROOT;
 
 // utils/contracts/aave-governance-v2.ts
 var import_ethers2 = __toESM(require_lib31());
