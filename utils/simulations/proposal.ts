@@ -158,7 +158,10 @@ export async function simulateProposal(proposalId: BigNumberish): Promise<Simula
     }
   }
 
-  if (TENDERLY_ROOT) simulationPayload.root = TENDERLY_ROOT
+  if (TENDERLY_ROOT) {
+    simulationPayload.root = TENDERLY_ROOT
+  }
+
   return {
     sim: await sendSimulation(simulationPayload),
     latestBlock,
