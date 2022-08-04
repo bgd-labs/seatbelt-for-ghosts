@@ -26,3 +26,6 @@ if (!DAOs[DAO_NAME as keyof typeof DAOs]) {
   throw new Error(`DAO_NAME:${DAO_NAME} unknown. Must be one of ${Object.keys(DAOs).join(',')}`)
 }
 export const AAVE_GOV_V2_ADDRESS = DAOs[DAO_NAME as keyof typeof DAOs]
+
+// fork setup
+export const TENDERLY_ROOT = process.env.TENDERLY_ROOT

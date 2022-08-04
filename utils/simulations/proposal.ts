@@ -1,25 +1,49 @@
 import { ProposalState } from '@aave/contract-helpers'
-import { BigNumber, BigNumberish } from 'ethers'
+import { BigNumber, BigNumberish, Contract, Event, EventFilter } from 'ethers'
 import { defaultAbiCoder, getAddress, hexStripZeros, hexZeroPad, keccak256, parseEther } from 'ethers/lib/utils'
 import { ProposalStruct, SimulationResult, TenderlyPayload } from '../../types'
 import { provider } from '../clients/ethers'
 import { sendSimulation } from '../clients/tenderly'
-import { AAVE_GOV_V2_ADDRESS, BLOCK_GAS_LIMIT, FROM } from '../constants'
+import { AAVE_GOV_V2_ADDRESS, BLOCK_GAS_LIMIT, FROM, TENDERLY_ROOT } from '../constants'
 import { aaveGovernanceContract, PROPOSAL_STATES } from '../contracts/aave-governance-v2'
 import { executor } from '../contracts/executor'
 import { votingStrategy } from '../contracts/voting-strategy'
+
+async function getPastLogs(
+  fromBlock: number,
+  toBlock: number,
+  event: EventFilter,
+  contract: Contract
+): Promise<Event[]> {
+  if (fromBlock <= toBlock) {
+    try {
+      return await await contract.queryFilter(event, fromBlock, toBlock)
+    } catch (error) {
+      const midBlock = (fromBlock + toBlock) >> 1
+      const arr1 = await getPastLogs(fromBlock, midBlock, event, contract)
+      const arr2 = await getPastLogs(midBlock + 1, toBlock, event, contract)
+      return [...arr1, ...arr2]
+    }
+  }
+  return []
+}
 
 export async function simulateProposal(proposalId: BigNumberish): Promise<SimulationResult> {
   const proposalState = (await aaveGovernanceContract.getProposalState(proposalId)) as keyof typeof PROPOSAL_STATES
   const proposal = (await aaveGovernanceContract.getProposalById(proposalId)) as ProposalStruct
   const latestBlock = await provider.getBlock('latest')
+  const executorContract = executor(proposal.executor)
   if (PROPOSAL_STATES[proposalState] === ProposalState.Executed) {
+    const gracePeriod = await executorContract.GRACE_PERIOD()
     // --- Get details about the proposal we're analyzing ---
-    const blockRange = [0, latestBlock.number]
-    const proposalExecutedLogs = await aaveGovernanceContract.queryFilter(
+    const proposalExecutedLogs = await getPastLogs(
+      proposal.endBlock.toNumber(),
+      proposal.endBlock.toNumber() + Math.floor(gracePeriod / 10),
       aaveGovernanceContract.filters.ProposalExecuted(),
-      ...blockRange
+      aaveGovernanceContract
     )
+
+    console.log(proposalExecutedLogs)
 
     const proposalExecutedEvent = proposalExecutedLogs.filter((log) => log.args?.id.toNumber() === proposalId)[0]
     if (!proposalExecutedEvent)
@@ -74,11 +98,9 @@ export async function simulateProposal(proposalId: BigNumberish): Promise<Simula
     )
     const FAKE_IPFS_HASH = `0000`
     const value = (values as BigNumber[]).reduce((sum, cur) => sum.add(cur), BigNumber.from(0)).toString()
-
-    const executorContract = executor(executorAddress)
+    const quorum = await executorContract.MINIMUM_QUORUM()
     const delay = await executorContract.getDelay()
     const duration = await executorContract.VOTING_DURATION()
-    const quorum = await executorContract.MINIMUM_QUORUM()
 
     const CREATION_BLOCK_NUMBER = proposal.startBlock.add(1).toNumber()
     const VOTING_DURATION = duration.toNumber() + 1 // block number voting duration
@@ -155,6 +177,8 @@ export async function simulateProposal(proposalId: BigNumberish): Promise<Simula
         },
       },
     }
+    if (TENDERLY_ROOT) simulationPayload.root = TENDERLY_ROOT
+    console.log(JSON.stringify(simulationPayload))
     return {
       sim: await sendSimulation(simulationPayload),
       latestBlock,
