@@ -98453,6 +98453,7 @@ var FORK_ID = process.env.FORK_ID;
 var TENDERLY_SIM_URL = FORK_ID ? `${TENDERLY_BASE_URL}/account/${process.env.TENDERLY_ACCOUNT}/project/${process.env.TENDERLY_PROJECT_SLUG}/fork/${FORK_ID}/simulate` : `${TENDERLY_BASE_URL}/account/${process.env.TENDERLY_ACCOUNT}/project/${process.env.TENDERLY_PROJECT_SLUG}/simulate`;
 var IPFS_GATEWAY = process.env.IPFS_GATEWAY;
 var OMIT_CACHE = process.env.OMIT_CACHE === "true";
+var FORCE_SIMULATION = process.env.FORCE_SIMULATION === "true";
 var ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 var DAO_NAME = process.env.DAO_NAME;
 var PROPOSAL_FILTER = process.env.PROPOSAL_FILTER ? JSON.parse(`[${process.env.PROPOSAL_FILTER.replace(/_/g, ",")}]`) : null;
