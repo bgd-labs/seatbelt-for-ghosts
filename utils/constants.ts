@@ -13,6 +13,7 @@ export const TENDERLY_SIM_URL = FORK_ID
   : `${TENDERLY_BASE_URL}/account/${process.env.TENDERLY_ACCOUNT}/project/${process.env.TENDERLY_PROJECT_SLUG}/simulate`
 export const IPFS_GATEWAY = process.env.IPFS_GATEWAY
 export const OMIT_CACHE = process.env.OMIT_CACHE === 'true'
+export const FORCE_SIMULATION = process.env.FORCE_SIMULATION === 'true'
 export const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
 
 // Only required to scan for new proposals and simulate with GitHub Actions

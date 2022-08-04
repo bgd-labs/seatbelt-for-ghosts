@@ -4,7 +4,7 @@ import { defaultAbiCoder, getAddress, hexStripZeros, hexZeroPad, keccak256, pars
 import { ProposalStruct, SimulationResult, TenderlyPayload } from '../../types'
 import { getPastLogs, provider } from '../clients/ethers'
 import { sendSimulation } from '../clients/tenderly'
-import { AAVE_GOV_V2_ADDRESS, BLOCK_GAS_LIMIT, FROM, TENDERLY_ROOT } from '../constants'
+import { AAVE_GOV_V2_ADDRESS, BLOCK_GAS_LIMIT, FORCE_SIMULATION, FROM, TENDERLY_ROOT } from '../constants'
 import { aaveGovernanceContract, PROPOSAL_STATES } from '../contracts/aave-governance-v2'
 import { executor } from '../contracts/executor'
 import { votingStrategy } from '../contracts/voting-strategy'
@@ -15,7 +15,7 @@ export async function simulateProposal(proposalId: BigNumberish): Promise<Simula
   const latestBlock = await provider.getBlock('latest')
   const executorContract = executor(proposal.executor)
   let simulationPayload: TenderlyPayload
-  if (PROPOSAL_STATES[proposalState] === ProposalState.Executed) {
+  if (!FORCE_SIMULATION && PROPOSAL_STATES[proposalState] === ProposalState.Executed) {
     const gracePeriod = await executorContract.GRACE_PERIOD()
     // --- Get details about the proposal we're analyzing ---
     const proposalExecutedLogs = await getPastLogs(

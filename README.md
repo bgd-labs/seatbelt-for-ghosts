@@ -48,18 +48,29 @@ TENDERLY_ACCESS_TOKEN=yourAccessToken
 # Project slug can be found in the URL of your project: https://dashboard.tenderly.co/<account>/<project_slug>/transactions
 TENDERLY_PROJECT_SLUG=projectName
 
+# Define the DAO name
+DAO_NAME=Aave
+
 # Tenderly account
 # Project slug can be found in the URL of your project: https://dashboard.tenderly.co/<account>/<project_slug>/transactions
 TENDERLY_ACCOUNT=accountName
 
-# Set omit cache to true if you want to force rerun all proposals
+# (Optional) Set omit cache to true if you want to force rerun all proposals
 OMIT_CACHE=true
 
-# Define the DAO name
-DAO_NAME=Aave
+# (Optional) Seatbelt does not simulate executed proposals, instead it just analyzes the actual onchain transaction
+# While this usually is the desired behavior in development it sometimes makes sense to check the simulation flow
+FORCE_SIMULATION=true
 
 # (Optional) Only needed when you want to run specific proposals of the selected DAO
 PROPOSAL_FILTER=1_2_3
+
+# (Optional) If you want to run seatbelt against a fork (e.g. to test against non-created proposals) you can run against a fork
+# For this to work you have to set the RPC_URL, FORK_ID and TENDERLY_ROOT accordingly
+FORK_ID=forkId
+
+# (Optional) The root is optional for fork testing, but allows you to move the root in case there's a simulation you want to point to
+TENDERLY_ROOT=tenderlyRoot
 ```
 
 There are now two modes of operation:

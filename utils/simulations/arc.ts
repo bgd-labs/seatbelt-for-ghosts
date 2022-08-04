@@ -3,7 +3,7 @@ import { hexStripZeros } from 'ethers/lib/utils'
 import { TenderlyPayload, TenderlySimulation } from '../../types'
 import { getPastLogs, provider } from '../clients/ethers'
 import { sendSimulation } from '../clients/tenderly'
-import { BLOCK_GAS_LIMIT, FROM } from '../constants'
+import { BLOCK_GAS_LIMIT, FORCE_SIMULATION, FROM } from '../constants'
 import { abi as ARC_TIMELOCK_ABI } from '../contracts/arc-timelock'
 
 const STATES = {
@@ -48,7 +48,7 @@ export async function simulateArc(simulation: TenderlySimulation) {
     // lte check necessary to work around a bug in tenderly TODO: remove once resolved
     (log) => log.args?.id.lte(1000) && log.args?.id.eq(proposalId)
   )
-  if (actionSetExecutedEvent) {
+  if (!FORCE_SIMULATION && actionSetExecutedEvent) {
     const tx = await provider.getTransaction(actionSetExecutedEvent.transactionHash)
     const simulationPayload: TenderlyPayload = {
       network_id: String(tx.chainId) as TenderlyPayload['network_id'],
