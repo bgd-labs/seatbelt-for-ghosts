@@ -98446,11 +98446,11 @@ var require_cache = __commonJS({
 
 // utils/constants.ts
 var RPC_URL = process.env.RPC_URL;
+var RPC_URL_POLYGON = process.env.RPC_URL_POLYGON;
 var TENDERLY_ACCESS_TOKEN = process.env.TENDERLY_ACCESS_TOKEN;
 var TENDERLY_BASE_URL = `https://api.tenderly.co/api/v1`;
 var TENDERLY_ROOT = process.env.TENDERLY_ROOT;
-var FORK_ID = process.env.FORK_ID;
-var TENDERLY_SIM_URL = FORK_ID ? `${TENDERLY_BASE_URL}/account/${process.env.TENDERLY_ACCOUNT}/project/${process.env.TENDERLY_PROJECT_SLUG}/fork/${FORK_ID}/simulate` : `${TENDERLY_BASE_URL}/account/${process.env.TENDERLY_ACCOUNT}/project/${process.env.TENDERLY_PROJECT_SLUG}/simulate`;
+var TENDERLY_SIM_URL = `${TENDERLY_BASE_URL}/account/${process.env.TENDERLY_ACCOUNT}/project/${process.env.TENDERLY_PROJECT_SLUG}/simulate`;
 var IPFS_GATEWAY = process.env.IPFS_GATEWAY;
 var OMIT_CACHE = process.env.OMIT_CACHE === "true";
 var FORCE_SIMULATION = process.env.FORCE_SIMULATION === "true";
@@ -98470,7 +98470,8 @@ var import_ethers2 = __toESM(require_lib31());
 
 // utils/clients/ethers.ts
 var import_ethers = __toESM(require_lib31());
-var provider = new import_ethers.providers.JsonRpcProvider(RPC_URL);
+var provider = new import_ethers.providers.StaticJsonRpcProvider(RPC_URL);
+var polygonProvider = new import_ethers.providers.StaticJsonRpcProvider(RPC_URL_POLYGON);
 
 // utils/contracts/aave-governance-v2.ts
 var AAVE_GOVERNANCE_V2_ABI = [
