@@ -4,7 +4,7 @@ import { defaultAbiCoder, getAddress, hexStripZeros, hexZeroPad, keccak256, pars
 import { ProposalStruct, SimulationResult, TenderlyPayload } from '../../types'
 import { getPastLogs, provider } from '../clients/ethers'
 import { sendSimulation } from '../clients/tenderly'
-import { AAVE_GOV_V2_ADDRESS, BLOCK_GAS_LIMIT, FORCE_SIMULATION, FROM, TENDERLY_ROOT } from '../constants'
+import { AAVE_GOV_V2_ADDRESS, BLOCK_GAS_LIMIT, FORCE_SIMULATION, FROM, RPC_URL, TENDERLY_ROOT } from '../constants'
 import { aaveGovernanceContract, PROPOSAL_STATES } from '../contracts/aave-governance-v2'
 import { executor } from '../contracts/executor'
 import { votingStrategy } from '../contracts/voting-strategy'
@@ -163,9 +163,10 @@ export async function simulateProposal(proposalId: BigNumberish): Promise<Simula
   }
 
   return {
-    sim: await sendSimulation(simulationPayload),
+    sim: await sendSimulation(simulationPayload, 1000, RPC_URL),
     latestBlock,
     proposal: { ...proposal, state: proposalState },
+    subSimulations: [],
   }
 }
 

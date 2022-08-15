@@ -39,6 +39,7 @@ First, create a file called `.env` with the following environment variables:
 ```sh
 # URL to your node, e.g. Infura or Alchemy endpoint
 RPC_URL=yourNodeUrl
+RPC_URL_POLYGON=yourNodeUrl
 
 # Tenderly access token
 # Access token is obtained from the Tenderly UI via Account > Authorization > Generate Access Token
@@ -64,10 +65,6 @@ FORCE_SIMULATION=true
 
 # (Optional) Only needed when you want to run specific proposals of the selected DAO
 PROPOSAL_FILTER=1_2_3
-
-# (Optional) If you want to run seatbelt against a fork (e.g. to test against non-created proposals) you can run against a fork
-# For this to work you have to set the RPC_URL, FORK_ID and TENDERLY_ROOT accordingly
-FORK_ID=forkId
 
 # (Optional) The root is optional for fork testing, but allows you to move the root in case there's a simulation you want to point to
 TENDERLY_ROOT=tenderlyRoot
