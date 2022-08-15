@@ -15,27 +15,20 @@ const STATES = {
 
 const ARC_ADDRESS = '0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218'
 
-export function targetsArc(simulation: TenderlySimulation) {
-  return simulation.transaction.transaction_info.state_diff?.some(
+export function getArcPayloads(simulation: TenderlySimulation) {
+  const arc = simulation.transaction.transaction_info.state_diff?.find(
     (diff) =>
       diff.raw?.[0]?.address.toLowerCase() === ARC_ADDRESS.toLowerCase() && diff.soltype?.name === '_actionsSets'
   )
+  if (!arc) return []
+  const newActionSets = Object.entries(arc?.dirty as { [key: string]: string }).map(([key, value]) => ({
+    actionSet: key.replace(/"/g, ''),
+    timestamp: value,
+  }))
+  return newActionSets
 }
 
-export function getArcPayload(simulation: TenderlySimulation) {
-  const arc = simulation.transaction.transaction_info.state_diff.find(
-    (diff) => diff.raw[0].address.toLowerCase() === ARC_ADDRESS.toLowerCase() && diff.soltype?.name === '_actionsSets'
-  )
-  const proposalId = Object.keys(arc?.dirty as any)[0]
-  const timestamp = (arc as any).dirty?.[proposalId].executionTime
-  return {
-    proposalId: proposalId.replace(/"/g, ''),
-    timestamp,
-  }
-}
-
-export async function simulateArc(simulation: TenderlySimulation) {
-  const { proposalId, timestamp } = getArcPayload(simulation)
+export async function simulateArc(simulation: TenderlySimulation, actionSet: string, timestamp: string) {
   const arcContract = new Contract(ARC_ADDRESS, ARC_TIMELOCK_ABI, provider)
   const gracePeriod = await arcContract.getGracePeriod()
   const actionSetExecutedLogs = await getPastLogs(
@@ -46,7 +39,7 @@ export async function simulateArc(simulation: TenderlySimulation) {
   )
   const actionSetExecutedEvent = actionSetExecutedLogs.find(
     // lte check necessary to work around a bug in tenderly TODO: remove once resolved
-    (log) => log.args?.id.lte(1000) && log.args?.id.eq(proposalId)
+    (log) => log.args?.id.lte(1000) && log.args?.id.eq(actionSet)
   )
   if (!FORCE_SIMULATION && actionSetExecutedEvent) {
     const tx = await provider.getTransaction(actionSetExecutedEvent.transactionHash)
@@ -77,7 +70,7 @@ export async function simulateArc(simulation: TenderlySimulation) {
       block_number: simulation.simulation.block_number + 1,
       from: FROM,
       to: ARC_ADDRESS,
-      input: arcContract.interface.encodeFunctionData('execute', [Number(proposalId)]),
+      input: arcContract.interface.encodeFunctionData('execute', [Number(actionSet)]),
       save: true,
       gas: BLOCK_GAS_LIMIT,
       gas_price: '0',
