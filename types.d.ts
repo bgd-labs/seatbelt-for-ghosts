@@ -34,7 +34,7 @@ export interface ProposalStruct {
   values: BigNumber[]
   signatures: string[]
   calldatas: string[]
-  withDelegatecalls: boolean[]
+  withDelegateCalls: boolean[]
   startBlock: BigNumber
   endBlock: BigNumber
   executionTime: BigNumber
@@ -54,7 +54,7 @@ export interface ProposalCreatedEvent {
   values: BigNumber[]
   signatures: string[]
   calldatas: string[]
-  withDelegatecalls: boolean[]
+  withDelegateCalls: boolean[]
   startBlock: BigNumber
   endBlock: BigNumber
   strategy: string
@@ -83,6 +83,8 @@ export interface ProposalCheck {
 export interface AllCheckResults {
   [checkId: string]: { name: string; result: CheckResult }
 }
+
+export type TraceCall = CallTraceCall | PurpleCall | FluffyCall | TentacledCall
 
 // --- Tenderly types, Request ---
 type StateObject = {
