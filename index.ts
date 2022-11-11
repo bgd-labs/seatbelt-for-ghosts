@@ -15,7 +15,11 @@ import { PromisePool } from '@supercharge/promise-pool'
 import { simulateProposal } from './utils/simulations/proposal'
 import { getArcPayloads, simulateArc } from './utils/simulations/arc'
 import { getActionSetsChanged, getFxChildPayloads, simulateFxPortal } from './utils/simulations/fxPortal'
-import { getOptimismPayloads, simulateOptimismProposal } from './utils/simulations/opCDMProposals'
+import {
+  getOptimismActionSetsChanged,
+  getOptimismPayloads,
+  simulateOptimismProposal,
+} from './utils/simulations/opCDMProposals'
 
 Error.stackTraceLimit = Infinity
 
@@ -103,7 +107,7 @@ async function runSimulation() {
           for (let i = 0; i < optimismPayloads.length; i++) {
             const optimismPayload = optimismPayloads[i]
             const simulationResult = await simulateOptimismProposal(sim, optimismPayload)
-            const actionSet = getActionSetsChanged(simulationResult)
+            const actionSet = getOptimismActionSetsChanged(simulationResult)
             subSimulations.push({
               id: `${actionSet[0].actionSet.replace(/\"/g, '')}_${i}`,
               type: 'optimism',

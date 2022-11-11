@@ -25,7 +25,7 @@ export function getOptimismPayloads(simulation: TenderlySimulation) {
   )
 }
 
-export function getActionSetsChanged(simulation: TenderlySimulation) {
+export function getOptimismActionSetsChanged(simulation: TenderlySimulation) {
   const actionSetsChange = simulation.transaction.transaction_info.state_diff?.find(
     (diff) =>
       diff.raw?.[0]?.address.toLowerCase() === OPTIMISM_BRIDGE_EXECUTOR.toLowerCase() &&
@@ -150,6 +150,7 @@ export async function simulateOptimismProposal(simulation: TenderlySimulation, t
 
     simulationPayload.state_objects = state
     simulationPayload.block_number = bridgeSim.simulation.block_number
+    ;(simulationPayload as any).l1_timestamp = Number(executionTime)
     simulationPayload.block_header = {
       number: hexStripZeros(BigNumber.from(bridgeSim.simulation.block_number).toHexString()),
       timestamp: hexStripZeros(BigNumber.from(executionTime).add(1).toHexString()),
