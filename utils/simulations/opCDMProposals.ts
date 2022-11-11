@@ -11,13 +11,12 @@ import { getCloseBlock, getPastLogs, optimismProvider } from '../clients/ethers'
 import { sendSimulation } from '../clients/tenderly'
 import { BLOCK_GAS_LIMIT, FROM, RPC_OPTIMISM } from '../constants'
 import { abi as BRIDGE_EXECUTOR_ABI } from '../contracts/bridge-executor'
-import { fxChildContract, FX_CHILD } from '../contracts/fxChild'
-import { opChildContract, OVM_L2 } from '../contracts/ovmL2'
+import { opChildContract } from '../contracts/ovmL2'
 
 const BRIDGE_ADMIN = '0x4200000000000000000000000000000000000007'
 const L1_CROSS_DOMAIN_MESSENGER = '0x25ace71c97B33Cc4729CF772ae268934F7ab5fA1'
 const OPTIMISM_BRIDGE_EXECUTOR = '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611'
-const POLYGON_BRIDGE_CREATION_BLOCK = 18825397
+const OPTIMISM_BRIDGE_CREATION_BLOCK = 18825397
 
 export function getOptimismPayloads(simulation: TenderlySimulation) {
   return simulation.transaction.call_trace.filter(
@@ -51,7 +50,7 @@ export async function simulateOptimismProposal(simulation: TenderlySimulation, t
   // find close block to mainnet execution
   const latestBlock = await optimismProvider.getBlock('latest')
   const closeBlock = await getCloseBlock(
-    POLYGON_BRIDGE_CREATION_BLOCK,
+    OPTIMISM_BRIDGE_CREATION_BLOCK,
     latestBlock.number,
     BigNumber.from(simulation.simulation.block_header.timestamp).toNumber(),
     optimismProvider
@@ -150,6 +149,7 @@ export async function simulateOptimismProposal(simulation: TenderlySimulation, t
 
     simulationPayload.state_objects = state
     simulationPayload.block_number = bridgeSim.simulation.block_number
+    // patch as currently tenderly doesn't respect blockheader timestamp on rollups
     ;(simulationPayload as any).l1_timestamp = Number(executionTime)
     simulationPayload.block_header = {
       number: hexStripZeros(BigNumber.from(bridgeSim.simulation.block_number).toHexString()),
@@ -157,7 +157,6 @@ export async function simulateOptimismProposal(simulation: TenderlySimulation, t
     }
     simulationPayload.input = bridgeExecutor.interface.encodeFunctionData('execute', [Number(id)])
   }
-  console.log(JSON.stringify(simulationPayload))
 
   return await sendSimulation(simulationPayload, 1000, RPC_OPTIMISM)
 }
