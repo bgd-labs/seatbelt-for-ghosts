@@ -16,3 +16,4 @@ tenderly*.json
 
 # ci cache
 # proposal-states.json
+dist
