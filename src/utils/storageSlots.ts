@@ -1,4 +1,4 @@
-import { Hex, pad } from 'viem'
+import { Hex, pad, keccak256, encodeAbiParameters, parseAbiParameters, trim } from 'viem'
 /**
  * @notice Returns the storage slot for a Solidity mapping with bytes32 keys, given the slot of the mapping itself
  * @dev Read more at https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html#mappings-and-dynamic-arrays
@@ -6,9 +6,9 @@ import { Hex, pad } from 'viem'
  * @param key Mapping key to find slot for
  * @returns Storage slot
  */
-export function getSolidityStorageSlotBytes(mappingSlot: Hex, key: BigNumberish) {
-  const slot = pad(mappingSlot, 32)
-  return hexStripZeros(keccak256(defaultAbiCoder.encode(['bytes32', 'uint256'], [key, slot])))
+export function getSolidityStorageSlotBytes(mappingSlot: Hex, key: Hex) {
+  const slot = pad(mappingSlot, { size: 32 })
+  return trim(keccak256(encodeAbiParameters(parseAbiParameters('bytes32, uint256'), [key, BigInt(slot)])))
 }
 
 /**
@@ -18,8 +18,8 @@ export function getSolidityStorageSlotBytes(mappingSlot: Hex, key: BigNumberish)
  * @param key Mapping key to find slot for
  * @returns Storage slot
  */
-export function getSolidityStorageSlotUint(mappingSlot: string, key: BigNumberish) {
+export function getSolidityStorageSlotUint(mappingSlot: Hex, key: Hex) {
   // this will also work for address types, since address and uints are encoded the same way
-  const slot = pad(mappingSlot, 32)
-  return hexStripZeros(keccak256(defaultAbiCoder.encode(['uint256', 'uint256'], [key, slot])))
+  const slot = pad(mappingSlot, { size: 32 })
+  return trim(keccak256(encodeAbiParameters(parseAbiParameters('uint256, uint256'), [BigInt(key), BigInt(slot)])))
 }

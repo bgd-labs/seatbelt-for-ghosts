@@ -163,6 +163,7 @@ export async function simulateProposal(proposalId: BigNumberish): Promise<Simula
         },
       },
     }
+    console.log(JSON.stringify(simulationPayload, null, 2))
   }
 
   if (TENDERLY_ROOT) {

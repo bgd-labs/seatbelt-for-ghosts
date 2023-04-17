@@ -1,10 +1,22 @@
-import { encodeFunctionData, getContract, parseEther, pad } from 'viem'
+import {
+  encodeFunctionData,
+  getContract,
+  parseEther,
+  pad,
+  toHex,
+  keccak256,
+  encodeAbiParameters,
+  parseAbiParameters,
+  fromHex,
+  concat,
+} from 'viem'
 import { AaveGovernanceV2 } from '@bgd-labs/aave-address-book'
-import { AAVE_GOVERNANCE_V2_ABI, PROPOSAL_STATES } from './abis/AaveGovernanceV2'
+import { AAVE_GOVERNANCE_V2_ABI, PROPOSAL_STATES, getAaveGovernanceV2Slots } from './abis/AaveGovernanceV2'
 import { TenderlyRequest, mainnetClient, tenderly } from './clients'
 import { ERRORS } from './errors'
 import { mainnet } from 'viem/chains'
 import { EXECUTOR_ABI } from './abis/Executor'
+import { getSolidityStorageSlotBytes } from './utils/storageSlots'
 
 const aaveGovernanceV2Contract = getContract({
   address: AaveGovernanceV2.GOV,
@@ -39,6 +51,7 @@ export async function simulateMainnetProposal(proposalId: bigint) {
      */
     const log = await getMainnetExecutedLog(proposalId)
     const trace = await tenderly.trace(mainnet.id, log?.transactionHash!)
+    return trace
   } else if (
     [PROPOSAL_STATES.ACTIVE, PROPOSAL_STATES.PENDING, PROPOSAL_STATES.SUCCEEDED, PROPOSAL_STATES.QUEUED].includes(state)
   ) {
@@ -58,6 +71,7 @@ export async function simulateMainnetProposal(proposalId: bigint) {
      * to pass the proposal
      */
     const proposal = await aaveGovernanceV2Contract.read.getProposalById([proposalId])
+    const slots = getAaveGovernanceV2Slots(proposalId)
     const executorContract = getContract({
       address: proposal.executor,
       abi: EXECUTOR_ABI,
@@ -69,16 +83,17 @@ export async function simulateMainnetProposal(proposalId: bigint) {
 
     // construct earliest possible header for execution
     const blockHeader = {
-      timestamp: startBlock.timestamp + duration * 12n + delay,
-      number: proposal.startBlock + duration,
+      timestamp: toHex(startBlock.timestamp + duration * 12n + delay),
+      number: toHex(proposal.startBlock + duration),
     }
 
-    return tenderly.simulate({
+    return {
       network_id: String(mainnet.id) as TenderlyRequest['network_id'],
       block_number: Number(proposal.startBlock),
       from: FROM,
       to: AaveGovernanceV2.GOV,
       save: true,
+      generate_access_list: true,
       gas_price: '0',
       value: proposal.values.reduce((sum, cur) => sum + cur).toString(),
       gas: 30_000_000,
@@ -88,8 +103,32 @@ export async function simulateMainnetProposal(proposalId: bigint) {
         // Give `from` address 10 ETH to send transaction
         [FROM]: { balance: parseEther('10').toString() },
         // Ensure transactions are queued in the executor
-        [proposal.executor]: { storage: executorStorageObj },
+        [proposal.executor]: {
+          storage: proposal.targets.reduce((acc, target, i) => {
+            const hash = keccak256(
+              encodeAbiParameters(parseAbiParameters('address, uint256, string, bytes, uint256, bool'), [
+                target,
+                proposal.values[i],
+                proposal.signatures[i],
+                proposal.calldatas[i],
+                fromHex(blockHeader.timestamp, 'bigint'),
+                proposal.withDelegatecalls[i],
+              ])
+            )
+            const slot = getSolidityStorageSlotBytes(slots.queuedTxsSlot, hash)
+            acc[slot] = pad('0x1', { size: 32 })
+            return acc
+          }, {}),
+        },
+        [AaveGovernanceV2.GOV]: {
+          storage: {
+            [slots.eta]: pad(blockHeader.timestamp, { size: 32 }),
+            [slots.forVotes]: pad(toHex(parseEther('3000000')), { size: 32 }),
+            [slots.againstVotes]: pad('0x0', { size: 32 }),
+            [slots.canceled]: pad(concat([AaveGovernanceV2.GOV_STRATEGY, '0x0000']), { size: 32 }),
+          },
+        },
       },
-    })
+    }
   }
 }
