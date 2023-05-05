@@ -18,7 +18,7 @@ import { aaveGovernanceContract, PROPOSAL_STATES } from '../contracts/aave-gover
 import { executor } from '../contracts/executor'
 import { votingStrategy } from '../contracts/voting-strategy'
 
-const BLOCK_TIME = 12
+const BLOCK_TIME = 13.1
 
 export async function simulateProposal(proposalId: BigNumberish): Promise<SimulationResult> {
   const proposalState = (await aaveGovernanceContract.getProposalState(proposalId)) as keyof typeof PROPOSAL_STATES
@@ -126,7 +126,7 @@ export async function simulateProposal(proposalId: BigNumberish): Promise<Simula
       return keccak256(
         defaultAbiCoder.encode(
           ['address', 'uint256', 'string', 'bytes', 'uint256', 'bool'],
-          [target, val, sig, calldata, FORCED_EXECUTION_TIME, withDelegatecall]
+          [target, val, sig, calldata, Math.floor(FORCED_EXECUTION_TIME), withDelegatecall]
         )
       )
     })
@@ -157,7 +157,7 @@ export async function simulateProposal(proposalId: BigNumberish): Promise<Simula
       block_header: {
         // this data represents what block.number and block.timestamp should return in the EVM during the simulation
         number: hexStripZeros(BigNumber.from(EVM_BLOCK_NUMBER).toHexString()),
-        timestamp: hexStripZeros(BigNumber.from(FORCED_EXECUTION_TIME).toHexString()),
+        timestamp: hexStripZeros(BigNumber.from(Math.floor(FORCED_EXECUTION_TIME)).toHexString()),
       },
       state_objects: {
         // Give `from` address 10 ETH to send transaction
@@ -168,7 +168,7 @@ export async function simulateProposal(proposalId: BigNumberish): Promise<Simula
         [AAVE_GOV_V2_ADDRESS]: {
           storage: {
             // Set the proposal ETA to a random future timestamp
-            [govSlots.eta]: hexZeroPad(BigNumber.from(FORCED_EXECUTION_TIME).toHexString(), 32),
+            [govSlots.eta]: hexZeroPad(BigNumber.from(Math.floor(FORCED_EXECUTION_TIME)).toHexString(), 32),
             // Set for votes to 2% of total votingPower so quorum is valid
             [govSlots.forVotes]: hexZeroPad(totalVotingSupply.mul(quorum).div(10000).mul(2).toHexString(), 32),
             // Set against votes to 0 so the diff is valid
