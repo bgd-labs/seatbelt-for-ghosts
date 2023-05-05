@@ -77,6 +77,7 @@ async function runSimulation() {
           const { sim, latestBlock, proposal } = await simulateProposal(proposalId)
           const subSimulations: SubSimulation[] = []
           const arcPayloads = getArcPayloads(sim)
+          const date = Math.floor(Date.now() / 1000)
           if (arcPayloads.length) {
             for (const arcPayload of arcPayloads) {
               subSimulations.push({
@@ -95,11 +96,9 @@ async function runSimulation() {
               const simulationResult = await simulateFxPortal(sim, fxPayload.event)
               const actionSet = getActionSetsChanged(simulationResult)
               subSimulations.push({
-                id: `${actionSet[0].actionSet.replace(/\"/g, '')}_${i}`,
+                id: `${date}_${i}`,
                 type: 'fxPortal',
-                name: `PolygonBridgeExecutor actionSet(${actionSet
-                  .map((set) => `${set.actionSet}: ${JSON.stringify(set.value)}`)
-                  .join(',')})`,
+                name: `PolygonBridgeExecutor payload ${i} at date ${date}`,
                 simulation: simulationResult,
                 provider: polygonProvider,
               })
@@ -112,11 +111,9 @@ async function runSimulation() {
               const simulationResult = await simulateOptimismProposal(sim, optimismPayload)
               const actionSet = getOptimismActionSetsChanged(simulationResult)
               subSimulations.push({
-                id: `${actionSet[0].actionSet.replace(/\"/g, '')}_${i}`,
+                id: `${date}_${i}`,
                 type: 'optimism',
-                name: `OptimismBridgeExecutor actionSet(${actionSet
-                  .map((set) => `${set.actionSet}: ${JSON.stringify(set.value)}`)
-                  .join(',')})`,
+                name: `OptimismBridgeExecutor payload ${i} at ${date}`,
                 simulation: simulationResult,
                 provider: optimismProvider,
               })

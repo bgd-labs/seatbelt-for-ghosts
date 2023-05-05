@@ -36,10 +36,11 @@ export function getActionSetsChanged(simulation: TenderlySimulation) {
       diff.soltype?.name === '_actionsSets'
   )
   if (!actionSetsChange) return []
-  const newActionSets = Object.entries(actionSetsChange?.dirty as { [key: string]: string }).map(([key, value]) => ({
-    actionSet: key,
-    value: value,
-  }))
+  const newActionSets = {} // TODO: we are returning empty object, as currently tenderly does not return action sets
+  // const newActionSets = Object.entries(actionSetsChange?.dirty as { [key: string]: string }).map(([key, value]) => ({
+  //   actionSet: key,
+  //   value: value,
+  // }))
   return newActionSets
 }
 
