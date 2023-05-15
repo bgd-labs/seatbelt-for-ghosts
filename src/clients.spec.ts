@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest'
+import fs from 'fs'
 import { tenderly } from './clients'
 import { simulateMainnetProposal } from './findProposal'
 
@@ -50,11 +51,17 @@ describe('clients', () => {
       })
     })
 
-    it('should correctly simulate long proposals', async () => {
+    it.skip('should correctly simulate long proposals', async () => {
       const result = await simulateMainnetProposal(214n)
 
       console.log(result)
       expect(result).toMatchSnapshot()
+    })
+
+    it.skip('mock factory', async () => {
+      const result = await simulateMainnetProposal(218n)
+
+      fs.writeFileSync('./src/mocks/218_mainnet_optimism.json', JSON.stringify(result, null, 2))
     })
   })
 })

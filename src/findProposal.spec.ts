@@ -9,6 +9,7 @@ describe('findProposal', () => {
       expect(state).toBe(7)
     })
   })
+
   describe('getMainnetExecutedLog', () => {
     it('should return correct log', async () => {
       const log = await getMainnetExecutedLog(1n)
@@ -33,6 +34,7 @@ describe('findProposal', () => {
       })
     })
   })
+
   it('should revert when proposal was not executed', async () => {
     await expect(() => getMainnetExecutedLog(6n)).rejects.toThrowError(ERRORS.NOT_EXECUTED)
   })

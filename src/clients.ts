@@ -55,6 +55,21 @@ export type TenderlyRequest = {
   root?: string
 }
 
+export interface Trace {
+  from: string
+  to?: string
+  function_name?: string
+  input: string
+  output: string
+  calls?: Trace[]
+}
+
+export type TenderlyResponse = {
+  call_trace: {
+    calls: Trace[]
+  }
+}
+
 class Tenderly {
   TENDERLY_BASE: string = `https://api.tenderly.co/api/v1`
 
