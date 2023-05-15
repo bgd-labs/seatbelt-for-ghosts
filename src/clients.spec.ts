@@ -59,9 +59,9 @@ describe('clients', () => {
     })
 
     it.skip('mock factory', async () => {
-      const result = await simulateMainnetProposal(218n)
+      const result = await simulateMainnetProposal(210n)
 
-      fs.writeFileSync('./src/mocks/218_mainnet_optimism.json', JSON.stringify(result, null, 2))
+      fs.writeFileSync('./src/mocks/210_mainnet_polygon.json', JSON.stringify(result, null, 2))
     })
   })
 })
