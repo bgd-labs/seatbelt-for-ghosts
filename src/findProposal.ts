@@ -79,17 +79,26 @@ export async function simulateMainnetProposal(proposalId: bigint) {
     })
     const duration = await executorContract.read.VOTING_DURATION()
     const delay = await executorContract.read.getDelay()
-    const startBlock = await mainnetClient.getBlock({ blockNumber: proposal.startBlock })
+
+    /**
+     * For proposals that are still pending it might happen that the startBlock is not mined yet.
+     * Therefore in this case we need to estimate the startTimestamp.
+     */
+    const latestBlock = await mainnetClient.getBlock()
+    const startTimestamp =
+      latestBlock.number! < proposal.startBlock
+        ? latestBlock.timestamp + (proposal.startBlock - latestBlock.number!) * 12n
+        : (await mainnetClient.getBlock({ blockNumber: proposal.startBlock })).timestamp
 
     // construct earliest possible header for execution
     const blockHeader = {
-      timestamp: toHex(startBlock.timestamp + duration * 12n + delay),
-      number: toHex(proposal.startBlock + duration),
+      timestamp: toHex(startTimestamp + (duration + 1n) * 12n + delay + 1n),
+      number: toHex(proposal.startBlock + duration + 2n),
     }
 
-    return {
+    return tenderly.simulate({
       network_id: String(mainnet.id) as TenderlyRequest['network_id'],
-      block_number: Number(proposal.startBlock),
+      block_number: Number(proposal.startBlock + duration),
       from: FROM,
       to: AaveGovernanceV2.GOV,
       save: true,
@@ -129,6 +138,6 @@ export async function simulateMainnetProposal(proposalId: bigint) {
           },
         },
       },
-    }
+    })
   }
 }
