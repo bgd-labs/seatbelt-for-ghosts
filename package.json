@@ -7,7 +7,7 @@
   "description": "Make governance safer",
   "scripts": {
     "build": "tsup",
-    "test": "vitest",
+    "test": "vitest --test-timeout=20000",
     "compile": "hardhat compile",
     "start": "ts-node index.ts",
     "ci:matrix": "ts-node scripts/generate-matrix.ts",

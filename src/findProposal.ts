@@ -44,100 +44,87 @@ const FROM = '0xD73a92Be73EfbFcF3854433A5FcbAbF9c1316073'
 export async function simulateMainnetProposal(proposalId: bigint) {
   const state = await getMainnetProposalState(proposalId)
 
+  /**
+   * When the proposal was already executed:
+   * we can use trace api to just fetch the actual state changes
+   */
   if (state === PROPOSAL_STATES.EXECUTED) {
-    /**
-     * When the proposal was already executed:
-     * we can use trace api to just fetch the actual state changes
-     */
     const log = await getMainnetExecutedLog(proposalId)
     const trace = await tenderly.trace(mainnet.id, log?.transactionHash!)
     return trace
-  } else if (
-    [PROPOSAL_STATES.ACTIVE, PROPOSAL_STATES.PENDING, PROPOSAL_STATES.SUCCEEDED, PROPOSAL_STATES.QUEUED].includes(state)
-  ) {
-    /**
-     * If the proposal is still ongoing:
-     * we can fork off the **current block** & alter
-     * - votes
-     * - block timestamp
-     * to pass the proposal
-     */
-  } else {
-    /**
-     * If the proposal has failed:
-     * we can fork off the proposal startBlock & alter
-     * - votes
-     * - block timestamp
-     * to pass the proposal
-     */
-    const proposal = await aaveGovernanceV2Contract.read.getProposalById([proposalId])
-    const slots = getAaveGovernanceV2Slots(proposalId)
-    const executorContract = getContract({
-      address: proposal.executor,
-      abi: EXECUTOR_ABI,
-      publicClient: mainnetClient,
-    })
-    const duration = await executorContract.read.VOTING_DURATION()
-    const delay = await executorContract.read.getDelay()
+  }
 
-    /**
-     * For proposals that are still pending it might happen that the startBlock is not mined yet.
-     * Therefore in this case we need to estimate the startTimestamp.
-     */
-    const latestBlock = await mainnetClient.getBlock()
-    const startTimestamp =
-      latestBlock.number! < proposal.startBlock
-        ? latestBlock.timestamp + (proposal.startBlock - latestBlock.number!) * 12n
-        : (await mainnetClient.getBlock({ blockNumber: proposal.startBlock })).timestamp
+  const proposal = await aaveGovernanceV2Contract.read.getProposalById([proposalId])
+  const slots = getAaveGovernanceV2Slots(proposalId, proposal.executor)
+  const executorContract = getContract({
+    address: proposal.executor,
+    abi: EXECUTOR_ABI,
+    publicClient: mainnetClient,
+  })
+  const duration = await executorContract.read.VOTING_DURATION()
+  const delay = await executorContract.read.getDelay()
 
-    // construct earliest possible header for execution
-    const blockHeader = {
-      timestamp: toHex(startTimestamp + (duration + 1n) * 12n + delay + 1n),
-      number: toHex(proposal.startBlock + duration + 2n),
-    }
+  /**
+   * For proposals that are still pending it might happen that the startBlock is not mined yet.
+   * Therefore in this case we need to estimate the startTimestamp.
+   */
+  const latestBlock = await mainnetClient.getBlock()
+  const isStartBlockMinted = latestBlock.number! < proposal.startBlock
+  const startTimestamp = isStartBlockMinted
+    ? latestBlock.timestamp + (proposal.startBlock - latestBlock.number!) * 12n
+    : (await mainnetClient.getBlock({ blockNumber: proposal.startBlock })).timestamp
 
-    return tenderly.simulate({
-      network_id: String(mainnet.id) as TenderlyRequest['network_id'],
-      block_number: Number(proposal.startBlock + duration),
-      from: FROM,
-      to: AaveGovernanceV2.GOV,
-      save: true,
-      generate_access_list: true,
-      gas_price: '0',
-      value: proposal.values.reduce((sum, cur) => sum + cur).toString(),
-      gas: 30_000_000,
-      input: encodeFunctionData({ abi: AAVE_GOVERNANCE_V2_ABI, functionName: 'execute', args: [proposalId] }),
-      block_header: blockHeader,
-      state_objects: {
-        // Give `from` address 10 ETH to send transaction
-        [FROM]: { balance: parseEther('10').toString() },
-        // Ensure transactions are queued in the executor
-        [proposal.executor]: {
-          storage: proposal.targets.reduce((acc, target, i) => {
-            const hash = keccak256(
-              encodeAbiParameters(parseAbiParameters('address, uint256, string, bytes, uint256, bool'), [
-                target,
-                proposal.values[i],
-                proposal.signatures[i],
-                proposal.calldatas[i],
-                fromHex(blockHeader.timestamp, 'bigint'),
-                proposal.withDelegatecalls[i],
-              ])
-            )
-            const slot = getSolidityStorageSlotBytes(slots.queuedTxsSlot, hash)
-            acc[slot] = pad('0x1', { size: 32 })
-            return acc
-          }, {}),
-        },
-        [AaveGovernanceV2.GOV]: {
-          storage: {
-            [slots.eta]: pad(blockHeader.timestamp, { size: 32 }),
-            [slots.forVotes]: pad(toHex(parseEther('3000000')), { size: 32 }),
-            [slots.againstVotes]: pad('0x0', { size: 32 }),
-            [slots.canceled]: pad(concat([AaveGovernanceV2.GOV_STRATEGY, '0x0000']), { size: 32 }),
-          },
+  const endBlockNumber = proposal.startBlock + duration + 2n
+  const isEndBlockMinted = latestBlock.number! > endBlockNumber
+
+  // construct earliest possible header for execution
+  const blockHeader = {
+    timestamp: toHex(startTimestamp + (duration + 1n) * 12n + delay + 1n),
+    number: toHex(endBlockNumber),
+  }
+
+  const simulationPayload = {
+    network_id: String(mainnet.id) as TenderlyRequest['network_id'],
+    block_number: isEndBlockMinted ? endBlockNumber : latestBlock.number,
+    from: FROM,
+    to: AaveGovernanceV2.GOV,
+    save: true,
+    generate_access_list: true,
+    gas_price: '0',
+    value: proposal.values.reduce((sum, cur) => sum + cur).toString(),
+    gas: 30_000_000,
+    input: encodeFunctionData({ abi: AAVE_GOVERNANCE_V2_ABI, functionName: 'execute', args: [proposalId] }),
+    block_header: blockHeader,
+    state_objects: {
+      // Give `from` address 10 ETH to send transaction
+      [FROM]: { balance: parseEther('10').toString() },
+      // Ensure transactions are queued in the executor
+      [proposal.executor]: {
+        storage: proposal.targets.reduce((acc, target, i) => {
+          const hash = keccak256(
+            encodeAbiParameters(parseAbiParameters('address, uint256, string, bytes, uint256, bool'), [
+              target,
+              proposal.values[i],
+              proposal.signatures[i],
+              proposal.calldatas[i],
+              fromHex(blockHeader.timestamp, 'bigint'),
+              proposal.withDelegatecalls[i],
+            ])
+          )
+          const slot = getSolidityStorageSlotBytes(slots.queuedTxsSlot, hash)
+          acc[slot] = pad('0x1', { size: 32 })
+          return acc
+        }, {}),
+      },
+      [AaveGovernanceV2.GOV]: {
+        storage: {
+          [slots.eta]: pad(blockHeader.timestamp, { size: 32 }),
+          [slots.forVotes]: pad(toHex(parseEther('3000000')), { size: 32 }),
+          [slots.againstVotes]: pad('0x0', { size: 32 }),
+          [slots.canceled]: pad(concat([AaveGovernanceV2.GOV_STRATEGY, '0x0000']), { size: 32 }),
         },
       },
-    })
+    },
   }
+  return tenderly.simulate({ ...simulationPayload, block_number: Number(latestBlock.number) })
 }

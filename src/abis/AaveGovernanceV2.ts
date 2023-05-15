@@ -1,4 +1,5 @@
-import { Hex, fromHex, pad, toHex } from 'viem'
+import { Address, Hex, fromHex, pad, toHex } from 'viem'
+import { AaveGovernanceV2 } from '@bgd-labs/aave-address-book'
 import { getSolidityStorageSlotUint } from '../utils/storageSlots'
 
 export const AAVE_GOVERNANCE_V2_ABI = [
@@ -341,7 +342,7 @@ export enum PROPOSAL_STATES {
  * @notice Returns an object containing various AaveGovernanceV2 slots
  * @param id Proposal ID
  */
-export function getAaveGovernanceV2Slots(proposalId: bigint) {
+export function getAaveGovernanceV2Slots(proposalId: bigint, executor: Address) {
   // TODO generalize this for other storage layouts
 
   // struct Proposal {
@@ -372,7 +373,14 @@ export function getAaveGovernanceV2Slots(proposalId: bigint) {
 
   // Compute and return slot numbers
   const votingStrategySlot: Hex = '0x1'
-  const queuedTxsSlot: Hex = '0x3'
+  let queuedTxsSlot: Hex
+  if (executor === AaveGovernanceV2.SHORT_EXECUTOR) {
+    queuedTxsSlot = '0x3'
+  }
+  if (executor === AaveGovernanceV2.LONG_EXECUTOR) {
+    queuedTxsSlot = '0x07'
+  }
+  if (!queuedTxsSlot!) throw new Error('unknown executor')
   const proposalsMapSlot: Hex = '0x4' // proposals ID to proposal struct mapping
   const proposalSlot = fromHex(getSolidityStorageSlotUint(proposalsMapSlot, toHex(proposalId)), 'bigint')
   return {
