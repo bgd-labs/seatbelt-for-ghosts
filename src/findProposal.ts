@@ -11,7 +11,7 @@ import {
   concat,
 } from 'viem'
 import { AaveGovernanceV2 } from '@bgd-labs/aave-address-book'
-import { AAVE_GOVERNANCE_V2_ABI, PROPOSAL_STATES, getAaveGovernanceV2Slots } from './abis/AaveGovernanceV2'
+import { AAVE_GOVERNANCE_V2_ABI, AAVE_GOVERNANCE_V2_START_BLOCK, PROPOSAL_STATES, getAaveGovernanceV2Slots } from './abis/AaveGovernanceV2'
 import { TenderlyRequest, mainnetClient, tenderly } from './clients'
 import { ERRORS } from './errors'
 import { mainnet } from 'viem/chains'

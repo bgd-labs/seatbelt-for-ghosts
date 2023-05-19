@@ -4,6 +4,7 @@ import arcProposal from './mocks/48_mainnet_arc.json'
 import arbitrumProposal from './mocks/219_mainnet_arbitrum.json'
 import optimismProposal from './mocks/218_mainnet_optimism.json'
 import polygonProposal from './mocks/210_mainnet_polygon.json'
+import { cacheArbitrumLogs } from './arbitrum'
 
 describe('findSubProposals', () => {
   it('should find arc proposals', () => {
@@ -31,5 +32,9 @@ describe('findSubProposals', () => {
     const subProposals = findCrossDomainMessages(polygonProposal)
     expect(subProposals.length).toBe(1)
     expect(subProposals).toMatchSnapshot()
+  })
+
+  it('should cache logs', async () => {
+    await cacheArbitrumLogs()
   })
 })

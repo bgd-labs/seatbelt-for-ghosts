@@ -338,6 +338,7 @@ export enum PROPOSAL_STATES {
   EXECUTED,
 }
 
+export const AAVE_GOVERNANCE_V2_START_BLOCK = 11427398n
 /**
  * @notice Returns an object containing various AaveGovernanceV2 slots
  * @param id Proposal ID

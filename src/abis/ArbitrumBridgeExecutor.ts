@@ -282,3 +282,6 @@ export const ARBITRUM_BRIDGE_EXECUTOR_ABI = [
     type: 'function',
   },
 ] as const
+
+// block when the bridge executor was deployed
+export const ARBITRUM_BRIDGE_EXECUTOR_START_BLOCK = 20057725n

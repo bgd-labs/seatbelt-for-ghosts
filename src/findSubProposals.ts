@@ -5,6 +5,9 @@ const OPTIMISM_L1_CROSS_COMAIN_MESSENGER = '0x25ace71c97B33Cc4729CF772ae268934F7
 const POLYGON_FX_ROOT = '0xfe5e5D361b2ad62c541bAb87C45a0B9B018389a2'
 const MAINNET_ARC_TIMELOCK = '0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218'
 
+/**
+ * searches the call trace for calls to the ARC_TIMELOCK on mainnet
+ */
 export function findArcMessages(calls: TenderlyResponse['call_trace']['calls']): Array<Trace> {
   return calls.reduce((acc, call) => {
     if (call.to?.toLowerCase() === MAINNET_ARC_TIMELOCK.toLowerCase()) {
