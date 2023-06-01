@@ -1,3 +1,4 @@
+import { Trace } from '@bgd-labs/aave-cli'
 import { ProposalCheck, TraceCall } from '../types'
 
 const SELFDESTRUCT_OP = 'SELFDESTRUCT'
@@ -7,15 +8,17 @@ const SELFDESTRUCT_OP = 'SELFDESTRUCT'
  */
 
 // Checking recursivly stack trace if there is self destruct opcode
-function checkSelfDestructOpcode(stackCalls: TraceCall[]): boolean {
-  for (const stackCall of stackCalls) {
-    if (stackCall.caller_op == SELFDESTRUCT_OP) {
-      return true
-    }
-
-    if (stackCall.calls != null) {
-      if (checkSelfDestructOpcode(stackCall.calls)) {
+function checkSelfDestructOpcode(stackCalls: Trace['calls']): boolean {
+  if (stackCalls?.length) {
+    for (const stackCall of stackCalls) {
+      if (stackCall.caller_op == SELFDESTRUCT_OP) {
         return true
+      }
+
+      if (stackCall.calls != null) {
+        if (checkSelfDestructOpcode(stackCall.calls)) {
+          return true
+        }
       }
     }
   }
@@ -30,7 +33,7 @@ export const checkTrace: ProposalCheck = {
     let selfdestructFound = false
 
     // Checking if there is self destruct opcode in payload called with delegate call
-    for (let [i, delegateCall] of proposal.withDelegateCalls.entries()) {
+    for (let [i, delegateCall] of proposal.withDelegatecalls.entries()) {
       if (delegateCall) {
         // i+1 should be index of the i-th payload, as on index 0 there is `getProposalState` call
         if (

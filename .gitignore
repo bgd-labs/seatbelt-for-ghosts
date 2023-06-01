@@ -5,7 +5,6 @@ node_modules
 
 # hardhat
 artifacts/
-cache/
 
 # slither
 crytic-export/
@@ -16,3 +15,6 @@ tenderly*.json
 
 # ci cache
 # proposal-states.json
+
+# tmp is not ignored on purpose as it's quite useful to continue on latest action cache
+# .tmp

@@ -28,7 +28,7 @@ export const checkSlither: ProposalCheck = {
     // touched contracts that get's analyzed.
     // NOTE: This requires an archive node since we need to query for the governance implementation
     // at the simulation block number, since the implementation may have changed since.
-    const addressesToSkip = new Set([deps.executor.address, deps.governance.address])
+    const addressesToSkip = new Set([deps.executor, deps.governance.address])
 
     // Return early if the only contracts touched are the executor and governance.
     const contracts = sim.contracts.filter((contract) => !addressesToSkip.has(getAddress(contract.address)))
