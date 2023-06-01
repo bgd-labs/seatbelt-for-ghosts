@@ -5,7 +5,6 @@ node_modules
 
 # hardhat
 artifacts/
-cache/
 
 # slither
 crytic-export/

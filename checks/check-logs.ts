@@ -21,7 +21,7 @@ export const checkLogs: ProposalCheck = {
       const addr = getAddress(log.raw.address)
       // Check if this is a log that should be filtered out
       const isGovernance = getAddress(addr) == deps.governance.address
-      const isExecutor = getAddress(addr) == deps.executor.address
+      const isExecutor = getAddress(addr) == getAddress(deps.executor)
       const shouldSkipLog =
         (isGovernance && log.name === 'ProposalExecuted') || (isExecutor && log.name === 'ExecutedAction')
       // Skip logs as required and add the rest to our logs object

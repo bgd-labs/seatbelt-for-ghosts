@@ -29,8 +29,8 @@ export const checkStateChanges: ProposalCheck = {
       if (!diff.raw?.[0]) return diffs
       const addr = getAddress(diff.raw[0].address)
       // Check if this is a diff that should be filtered out
-      const isGovernance = getAddress(addr) == deps.governance.address
-      const isExecutor = getAddress(addr) == deps.executor.address
+      const isGovernance = getAddress(addr) == getAddress(deps.governance.address)
+      const isExecutor = getAddress(addr) == getAddress(deps.executor)
       const isGovernanceExecutedSlot =
         proposal.id && diff.raw[0].key === getAaveGovernanceV2Slots(Number(proposal.id)).canceled // canceled and executed are in same slot
       const isProposalSlot = proposal.id && diff.raw[0].key === getAaveGovernanceV2Slots(Number(proposal.id)).proposal

@@ -10,7 +10,6 @@ import { AllCheckResults, ProposalData } from './types'
 import ALL_CHECKS from './checks'
 import { toSubReport, toProposalReport } from './presentation/markdown'
 import { aaveGovernanceContract, isProposalStateImmutable, PROPOSAL_STATES } from './utils/contracts/aave-governance-v2'
-import { executor } from './utils/contracts/executor'
 import { PromisePool } from '@supercharge/promise-pool'
 
 import { simulateProposal } from '@bgd-labs/aave-cli'
@@ -101,7 +100,7 @@ async function generateReports(simOutputs: Awaited<ReturnType<typeof runSimulati
       const proposalData: ProposalData = {
         governance: aaveGovernanceContract,
         provider,
-        executor: executor(proposal.executor),
+        executor: proposal.executor,
       }
       console.log(`  Running for proposal ${proposal.id} ...`)
       const checkResults: AllCheckResults = Object.fromEntries(
@@ -110,7 +109,7 @@ async function generateReports(simOutputs: Awaited<ReturnType<typeof runSimulati
             checkId,
             {
               name: ALL_CHECKS[checkId].name,
-              result: await ALL_CHECKS[checkId].checkProposal(proposal, simulation as any, proposalData),
+              result: await ALL_CHECKS[checkId].checkProposal(proposal, simulation, proposalData),
             },
           ])
         )
@@ -127,7 +126,7 @@ async function generateReports(simOutputs: Awaited<ReturnType<typeof runSimulati
                 checkId,
                 {
                   name: ALL_CHECKS[checkId].name,
-                  result: await ALL_CHECKS[checkId].checkProposal({ ...args, id: args.proposalId }, simulation as any, {
+                  result: await ALL_CHECKS[checkId].checkProposal({ ...args, id: args.proposalId }, simulation, {
                     ...proposalData,
                     provider:
                       name === 'Arbitrum'

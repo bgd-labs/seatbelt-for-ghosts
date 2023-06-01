@@ -1,5 +1,6 @@
 import { JsonRpcProvider } from '@ethersproject/providers'
-import { ProposalCheck, TenderlySimulation } from '../types'
+import { ProposalCheck } from '../types'
+import { TenderlySimulationResponse } from '@bgd-labs/aave-cli'
 
 /**
  * Check all targets with code are verified on Etherscan
@@ -28,7 +29,7 @@ export const checkTouchedContractsVerifiedEtherscan: ProposalCheck = {
  * For a given simulation response, check verification status of a set of addresses
  */
 async function checkVerificationStatuses(
-  sim: TenderlySimulation,
+  sim: TenderlySimulationResponse,
   addresses: string[],
   provider: JsonRpcProvider
 ): Promise<string> {
@@ -51,7 +52,7 @@ async function checkVerificationStatuses(
  * For a given address, check if it's an EOA, a verified contract, or an unverified contract
  */
 async function checkVerificationStatus(
-  sim: TenderlySimulation,
+  sim: TenderlySimulationResponse,
   addr: string,
   provider: JsonRpcProvider
 ): Promise<'verified' | 'eoa' | 'unverified'> {
@@ -65,11 +66,11 @@ async function checkVerificationStatus(
   return code === '0x' ? 'eoa' : 'unverified'
 }
 
-function getContract(sim: TenderlySimulation, addr: string) {
+function getContract(sim: TenderlySimulationResponse, addr: string) {
   return sim.contracts.find((item) => item.address === addr)
 }
 
-function getStateDiff(sim: TenderlySimulation, addr: string) {
+function getStateDiff(sim: TenderlySimulationResponse, addr: string) {
   return sim.transaction.transaction_info.state_diff?.find(
     (diff) => diff.raw?.[0]?.address.toLowerCase() === addr.toLowerCase()
   )

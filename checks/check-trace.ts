@@ -1,3 +1,4 @@
+import { Trace } from '@bgd-labs/aave-cli'
 import { ProposalCheck, TraceCall } from '../types'
 
 const SELFDESTRUCT_OP = 'SELFDESTRUCT'
@@ -7,15 +8,17 @@ const SELFDESTRUCT_OP = 'SELFDESTRUCT'
  */
 
 // Checking recursivly stack trace if there is self destruct opcode
-function checkSelfDestructOpcode(stackCalls: TraceCall[]): boolean {
-  for (const stackCall of stackCalls) {
-    if (stackCall.caller_op == SELFDESTRUCT_OP) {
-      return true
-    }
-
-    if (stackCall.calls != null) {
-      if (checkSelfDestructOpcode(stackCall.calls)) {
+function checkSelfDestructOpcode(stackCalls: Trace['calls']): boolean {
+  if (stackCalls?.length) {
+    for (const stackCall of stackCalls) {
+      if (stackCall.caller_op == SELFDESTRUCT_OP) {
         return true
+      }
+
+      if (stackCall.calls != null) {
+        if (checkSelfDestructOpcode(stackCall.calls)) {
+          return true
+        }
       }
     }
   }

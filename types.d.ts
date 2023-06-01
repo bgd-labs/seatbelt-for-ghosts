@@ -1,5 +1,6 @@
 import { BigNumberish, Block, Contract, providers } from 'ethers'
 import { PROPOSAL_STATES } from './utils/contracts/aave-governance-v2'
+import { TenderlySimulationResponse } from '@bgd-labs/aave-cli'
 
 // --- Simulation configurations ---
 interface SimulationConfigBase {
@@ -78,7 +79,7 @@ export type CheckResult = {
 
 export type ProposalData = {
   governance: Contract
-  executor: Contract
+  executor: string
   provider: providers.StaticJsonRpcProvider
 }
 
@@ -86,7 +87,7 @@ export interface ProposalCheck {
   name: string
   checkProposal(
     proposal: { id?: bigint; targets: readonly string[]; withDelegatecalls: readonly boolean[] },
-    tx: TenderlySimulation,
+    tx: TenderlySimulationResponse,
     deps: ProposalData
   ): Promise<CheckResult>
 }
