@@ -475,6 +475,7 @@ Some notes on the outputs of reports:
 | Arbitrum                                                                                                                                                                                 | [236_Arbitrum_pending_0.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/236_Arbitrum_pending_0.md) | [app](https://app.aave.com/governance/proposal/?proposalId=236) |
 | Optimism                                                                                                                                                                                 | [236_Optimism_pending_2.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/236_Optimism_pending_2.md) | [app](https://app.aave.com/governance/proposal/?proposalId=236) |
 | Polygon                                                                                                                                                                                  | [236_Polygon_pending_1.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/236_Polygon_pending_1.md)   | [app](https://app.aave.com/governance/proposal/?proposalId=236) |
+| BUSD Offboarding Plan Part II                                                                                                                                                            | [237.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/237.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=237) |
 
 <!-- ### Reports table end ### -->
 
