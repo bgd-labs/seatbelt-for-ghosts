@@ -1,7 +1,16 @@
-import { ProposalMetadata } from '@aave/contract-helpers'
 import matter from 'gray-matter'
 import { base58 } from 'ethers/lib/utils'
 import fetchUrl from 'micro-ftch'
+
+export type ProposalMetadata = {
+  title: string
+  description: string
+  shortDescription: string
+  ipfsHash: string
+  aip: number
+  discussions: string
+  author: string
+}
 
 export function getLink(hash: string, gateway: string): string {
   return `${gateway}/${hash}`
