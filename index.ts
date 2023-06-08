@@ -4,6 +4,7 @@
 
 require('dotenv').config()
 import fs from 'fs'
+import path from 'path'
 import { DAO_NAME, PROPOSAL_FILTER, OMIT_CACHE, AAVE_GOV_V2_ADDRESS } from './utils/constants'
 import { provider, polygonProvider, optimismProvider, arbitrumProvider } from './utils/clients/ethers'
 import { AllCheckResults, ProposalData } from './types'
@@ -21,15 +22,15 @@ const proposalStateCachePath = './proposal-states.json'
 let cache: { [key: string]: number } = {}
 if (fs.existsSync(proposalStateCachePath)) cache = require(proposalStateCachePath)
 
+const storagePath = `./reports/${DAO_NAME}/${AAVE_GOV_V2_ADDRESS}`
+
 function getProposalFileName(proposalId: number, simulationFileSuffix?: string) {
-  const basePath = `${DAO_NAME}/${AAVE_GOV_V2_ADDRESS}`
   // zero padding so the alphabetic file sorting on github works
   const filename = `${proposalId.toString().padStart(3, '0')}${
     simulationFileSuffix ? `_${simulationFileSuffix}` : ''
   }.md`
-  const dir = `./reports/${basePath}`
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
-  return `${dir}/${filename}`
+  if (!fs.existsSync(storagePath)) fs.mkdirSync(storagePath, { recursive: true })
+  return path.join(storagePath, filename)
 }
 
 async function runSimulation() {
@@ -95,8 +96,13 @@ async function generateReports(simOutputs: Awaited<ReturnType<typeof runSimulati
       throw error
     })
     .process(async (simOutput) => {
-      // Run checks
       const { simulation, proposal, subSimulations } = simOutput
+      // cleanup previous reports
+      const previousReports = fs
+        .readdirSync(storagePath)
+        .filter((path: string) => RegExp(`^${String(proposal.id)}(_.*)?.md`).test(path))
+      previousReports.map((fileName) => fs.unlinkSync(path.join(storagePath, fileName)))
+      // Run checks
       const proposalData: ProposalData = {
         governance: aaveGovernanceContract,
         provider,
