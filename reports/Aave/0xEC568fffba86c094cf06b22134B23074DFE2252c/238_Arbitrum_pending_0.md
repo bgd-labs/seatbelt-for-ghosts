@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/6299f9f7-3ace-41d4-a6ee-4c7ceaf0954d](https://dashboard.tenderly.co/me/simulator/6299f9f7-3ace-41d4-a6ee-4c7ceaf0954d)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/d52941de-5e8e-47ef-856a-16e823993813](https://dashboard.tenderly.co/me/simulator/d52941de-5e8e-47ef-856a-16e823993813)
 
 ### Checks
 
@@ -43,7 +43,7 @@ Info:
 - false
 + true
 
-@@ `_queuedActions` key `0xf6d9a13b4237a773ddea9a841e70a2d29335edf1f2e93082bdce0567acb5c43e` @@
+@@ `_queuedActions` key `0x3f1d7a2d0cf6f41a8e00d4ef0d53a2a0523b4fdf615c647362def43043559c0c` @@
 - true
 + false
 
@@ -52,11 +52,11 @@ Info:
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x00000000000000000000000000000000000000000000000000000000100a4ad2"
-+ "0x00000000000000000000000000000000000000000000000000000000100a560e"
+- "0x0000000000000000000000000000000000000000000000000000000001812d1a"
++ "0x0000000000000000000000000000000000000000000000000000000001813856"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x0000000000000000000000000000000000000000000000004f02319674e18366"
-+ "0x0000000000000000000000000000000000000000000000004f0252866b176966"
+- "0x000000000000000000000000000000000000000000000000253b99da09a71eb6"
++ "0x000000000000000000000000000000000000000000000000253bba8dac4cc5b6"
 ```
 
 ```diff
@@ -84,11 +84,11 @@ Info:
     - `Upgraded(implementation: 0x1be1798b70aee431c2986f7ff48d9d1fa350786a)`
     - `Initialized(underlyingAsset: 0x3f56e0c36d275367b8c502090edf38289b3dea0d, pool: 0x794a61358d6845594f94dc1db02a252b5b4814ad, treasury: 0x053d55f9b5af8694c503eb288a1b7e552f590710, incentivesController: 0x929ec64c34a17401f460460d4b9390518e5b473e, aTokenDecimals: 18, aTokenName: Aave Arbitrum MAI, aTokenSymbol: aArbMAI, params: 0x)`
   - InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E`
-    - Undecoded log: `{"name":"","anonymous":false,"inputs":null,"raw":{"address":"0x8145edddf43f50276641b55bd3ad95944510021e","topics":["0xa76f65411ec66a7fb6bc467432eb14767900449ae4469fa295e4441fe5e1cb73","0x0000000000000000000000003f56e0c36d275367b8c502090edf38289b3dea0d","0x000000000000000000000000c45a479877e1e9dfe9fcd4056c699575a1045daa","0x0000000000000000000000001be1798b70aee431c2986f7ff48d9d1fa350786a"],"data":"0x"},"trace_index":null}`
-    - Undecoded log: `{"name":"","anonymous":false,"inputs":null,"raw":{"address":"0x8145edddf43f50276641b55bd3ad95944510021e","topics":["0x7a943a5b6c214bf7726c069a878b1e2a8e7371981d516048b84e03743e67bc28","0x0000000000000000000000003f56e0c36d275367b8c502090edf38289b3dea0d","0x00000000000000000000000078246294a4c6fbf614ed73ccc9f8b875ca8ee841","0x0000000000000000000000000c2c95b24529664fe55d4437d7a31175cfe6c4f7"],"data":"0x"},"trace_index":null}`
-    - Undecoded log: `{"name":"","anonymous":false,"inputs":null,"raw":{"address":"0x8145edddf43f50276641b55bd3ad95944510021e","topics":["0x9439658a562a5c46b1173589df89cf001483d685bad28aedaff4a88656292d81","0x0000000000000000000000003f56e0c36d275367b8c502090edf38289b3dea0d","0x00000000000000000000000034e2ed44ef7466d5f9e0b782b5c08b57475e7907","0x0000000000000000000000005e76e98e0963ecdc6a065d1435f84065b7523f39"],"data":"0x"},"trace_index":null}`
-    - Undecoded log: `{"name":"","anonymous":false,"inputs":null,"raw":{"address":"0x8145edddf43f50276641b55bd3ad95944510021e","topics":["0xe188d542a5f11925d3a3af33703cdd30a43cb3e8066a3cf68b1b57f61a5a94b5","0x0000000000000000000000003f56e0c36d275367b8c502090edf38289b3dea0d"],"data":"0x0000000000000000000000000000000000000000000000000000000000000000"},"trace_index":null}`
-    - Undecoded log: `{"name":"","anonymous":false,"inputs":null,"raw":{"address":"0x8145edddf43f50276641b55bd3ad95944510021e","topics":["0xc8ff3cc5b0fddaa3e6ebbbd7438f43393e4ea30e88b80ad016c1bc094655034d","0x0000000000000000000000003f56e0c36d275367b8c502090edf38289b3dea0d"],"data":"0x0000000000000000000000000000000000000000000000000000000000000001"},"trace_index":null}`
+    - `ATokenUpgraded(asset: 0x3f56e0c36d275367b8c502090edf38289b3dea0d, proxy: 0xc45a479877e1e9dfe9fcd4056c699575a1045daa, implementation: 0x1be1798b70aee431c2986f7ff48d9d1fa350786a)`
+    - `StableDebtTokenUpgraded(asset: 0x3f56e0c36d275367b8c502090edf38289b3dea0d, proxy: 0x78246294a4c6fbf614ed73ccc9f8b875ca8ee841, implementation: 0x0c2c95b24529664fe55d4437d7a31175cfe6c4f7)`
+    - `VariableDebtTokenUpgraded(asset: 0x3f56e0c36d275367b8c502090edf38289b3dea0d, proxy: 0x34e2ed44ef7466d5f9e0b782b5c08b57475e7907, implementation: 0x5e76e98e0963ecdc6a065d1435f84065b7523f39)`
+    - `ReservePaused(asset: 0x3f56e0c36d275367b8c502090edf38289b3dea0d, paused: false)`
+    - `ReserveFlashLoaning(asset: 0x3f56e0c36d275367b8c502090edf38289b3dea0d, enabled: true)`
   - unknown contract name at `0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841`
     - `Upgraded(implementation: 0x0c2c95b24529664fe55d4437d7a31175cfe6c4f7)`
     - `Initialized(underlyingAsset: 0x3f56e0c36d275367b8c502090edf38289b3dea0d, pool: 0x794a61358d6845594f94dc1db02a252b5b4814ad, incentivesController: 0x929ec64c34a17401f460460d4b9390518e5b473e, debtTokenDecimals: 18, debtTokenName: Aave Arbitrum Stable Debt MAI, debtTokenSymbol: stableDebtArbMAI, params: 0x)`
@@ -112,7 +112,7 @@ Info:
 - Touched address:
   - 0xd73a92be73efbfcf3854433a5fcbabf9c1316073: EOA (verification not applicable)
   - 0x7d9103572be58ffe99dc390e8246f02dcae6f611: Contract (verified) (ArbitrumBridgeExecutor)
-  - 0x9441b65ee553f70df9c77d45d3283b6bc24f222d: Contract (not verified)
+  - 0x9441b65ee553f70df9c77d45d3283b6bc24f222d: Contract (verified) (AaveV3ARBMAIFixes_20230606)
   - 0x8145edddf43f50276641b55bd3ad95944510021e: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
   - 0x04a8d477ee202adce1682f5902e1160455205b12: Contract (not verified)
   - 0xa97684ead0e402dc232d5a977953df7ecbab3cdb: Contract (verified) (PoolAddressesProvider)
@@ -173,6 +173,15 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 <details>
 <summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E`</summary>
+
+```
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
+<summary>View warnings for AaveV3ARBMAIFixes_20230606 at `0x9441B65EE553F70df9C77d45d3283B6BC24F222d`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -385,6 +394,41 @@ Traceback (most recent call last):
     if data_loaded[self.get_key()] == "root":
 KeyError: 'name'
 ERROR:root:Error in 0x8145edddf43f50276641b55bd3ad95944510021e
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
+```
+
+</details>
+
+<details>
+<summary>Slither report for AaveV3ARBMAIFixes_20230606 at `0x9441B65EE553F70df9C77d45d3283B6BC24F222d`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0x9441b65ee553f70df9c77d45d3283b6bc24f222d
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)

@@ -483,6 +483,7 @@ Some notes on the outputs of reports:
 | Update Mai Token implementations, unpause & enable flashloanable                                                                                                                         | [238.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/238.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=238) |
 | Arbitrum                                                                                                                                                                                 | [238_Arbitrum_pending_0.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/238_Arbitrum_pending_0.md) | [app](https://app.aave.com/governance/proposal/?proposalId=238) |
 | Optimism                                                                                                                                                                                 | [238_Optimism_pending_1.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/238_Optimism_pending_1.md) | [app](https://app.aave.com/governance/proposal/?proposalId=238) |
+| Deprecate Aave V2 AMM Market                                                                                                                                                             | [239.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/239.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=239) |
 
 <!-- ### Reports table end ### -->
 
