@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/d4837d0a-92e9-417d-ada5-731073949cd0](https://dashboard.tenderly.co/me/simulator/d4837d0a-92e9-417d-ada5-731073949cd0)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/3e358c91-649c-4f80-82a8-99ca986f22a8](https://dashboard.tenderly.co/me/simulator/3e358c91-649c-4f80-82a8-99ca986f22a8)
 
 ### Checks
 
@@ -19,7 +19,7 @@ Info:
 
 ```diff
 # OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x448d56afb33968b23c1d152523110971f360b84248e01afd93b85392ac7e00a7` @@
+@@ `_queuedActions` key `0x07909d3990602136edf267c41d84de1d158fcea28835e6170f8a95d6e11f61ad` @@
 - true
 + false
 
@@ -401,174 +401,94 @@ KeyError: 'name'
 <summary>Slither report for ConfiguratorLogic at `0x7406aba1Aa5fE5cd71d958CE10fc28c416a33aA0`</summary>
 
 ```
-Warning: Warning: This declaration has the same name as another declaration.
-  --> lib/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol:23:15:
-   |
-23 |   constructor(address admin) {
-   |               ^^^^^^^^^^^^^
-Note: The other declaration is here:
-  --> lib/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol:39:3:
-   |
-39 |   function admin() external ifAdmin returns (address) {
-   |   ^ (Relevant source part starts here and spans across multiple lines).
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 163, in run_solc_standard_json
+    solc_json_output = json.loads(stdout)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
+    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
+    targets_json = run_solc_standard_json(
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 193, in run_solc_standard_json
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation Traceback (most recent call last):
+  File "/home/runner/.local/bin/solc", line 8, in <module>
+    sys.exit(solc())
+  File "/home/runner/.local/lib/python3.10/site-packages/solc_select/__main__.py", line 86, in solc
+    subprocess.run(
+  File "/usr/lib/python3.10/subprocess.py", line 501, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: '/home/runner/.solc-select/artifacts/solc-0.8.10/solc-0.8.10'
+
+ERROR:root:Error in 0x7406aba1aa5fe5cd71d958ce10fc28c416a33aa0
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 163, in run_solc_standard_json
+    solc_json_output = json.loads(stdout)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
+    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
+    targets_json = run_solc_standard_json(
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 193, in run_solc_standard_json
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation Traceback (most recent call last):
+  File "/home/runner/.local/bin/solc", line 8, in <module>
+    sys.exit(solc())
+  File "/home/runner/.local/lib/python3.10/site-packages/solc_select/__main__.py", line 86, in solc
+    subprocess.run(
+  File "/usr/lib/python3.10/subprocess.py", line 501, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: '/home/runner/.solc-select/artifacts/solc-0.8.10/solc-0.8.10'
 
 
-Warning: Warning: This contract has a payable fallback function, but no receive ether function. Consider adding a receive ether function.
-  --> lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/InitializableUpgradeabilityProxy.sol:11:1:
-   |
-11 | contract InitializableUpgradeabilityProxy is BaseUpgradeabilityProxy {
-   | ^ (Relevant source part starts here and spans across multiple lines).
-Note: The payable fallback function is defined here.
-  --> lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/Proxy.sol:17:3:
-   |
-17 |   fallback() external payable {
-   |   ^ (Relevant source part starts here and spans across multiple lines).
-
-
-Warning: Warning: This contract has a payable fallback function, but no receive ether function. Consider adding a receive ether function.
-  --> lib/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol:16:1:
-   |
-16 | contract BaseImmutableAdminUpgradeabilityProxy is BaseUpgradeabilityProxy {
-   | ^ (Relevant source part starts here and spans across multiple lines).
-Note: The payable fallback function is defined here.
-  --> lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/Proxy.sol:17:3:
-   |
-17 |   fallback() external payable {
-   |   ^ (Relevant source part starts here and spans across multiple lines).
-
-
-Warning: Warning: This contract has a payable fallback function, but no receive ether function. Consider adding a receive ether function.
-  --> lib/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/InitializableImmutableAdminUpgradeabilityProxy.sol:13:1:
-   |
-13 | contract InitializableImmutableAdminUpgradeabilityProxy is
-   | ^ (Relevant source part starts here and spans across multiple lines).
-Note: The payable fallback function is defined here.
-  --> lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/Proxy.sol:17:3:
-   |
-17 |   fallback() external payable {
-   |   ^ (Relevant source part starts here and spans across multiple lines).
-
-
-
-INFO:Detectors:
-InitializableUpgradeabilityProxy.initialize(address,bytes) (lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/InitializableUpgradeabilityProxy.sol#20-28) uses delegatecall to a input-controlled function id
-	- (success) = _logic.delegatecall(_data) (lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/InitializableUpgradeabilityProxy.sol#25)
-Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#controlled-delegatecall
-INFO:Detectors:
-BaseImmutableAdminUpgradeabilityProxy.constructor(address).admin (lib/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol#23) shadows:
-	- BaseImmutableAdminUpgradeabilityProxy.admin() (lib/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol#39-41) (function)
-InitializableImmutableAdminUpgradeabilityProxy.constructor(address).admin (lib/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/InitializableImmutableAdminUpgradeabilityProxy.sol#21) shadows:
-	- BaseImmutableAdminUpgradeabilityProxy.admin() (lib/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol#39-41) (function)
-Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#local-variable-shadowing
-INFO:Detectors:
-InitializableUpgradeabilityProxy.initialize(address,bytes)._logic (lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/InitializableUpgradeabilityProxy.sol#20) lacks a zero-check on :
-		- (success) = _logic.delegatecall(_data) (lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/InitializableUpgradeabilityProxy.sol#25)
-BaseImmutableAdminUpgradeabilityProxy.upgradeToAndCall(address,bytes).newImplementation (lib/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol#70) lacks a zero-check on :
-		- (success) = newImplementation.delegatecall(data) (lib/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol#74)
-Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
-INFO:Detectors:
-Modifier BaseImmutableAdminUpgradeabilityProxy.ifAdmin() (lib/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol#27-33) does not always execute _; or revertReference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-modifier
-INFO:Detectors:
-Reentrancy in ConfiguratorLogic.executeInitReserve(IPool,ConfiguratorInputTypes.InitReserveInput) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#50-122):
-	External calls:
-	- aTokenProxyAddress = _initTokenWithProxy(input.aTokenImpl,abi.encodeWithSelector(IInitializableAToken.initialize.selector,pool,input.treasury,input.underlyingAsset,input.incentivesController,input.underlyingAssetDecimals,input.aTokenName,input.aTokenSymbol,input.params)) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#54-67)
-		- proxy.initialize(implementation,initParams) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#245)
-	- stableDebtTokenProxyAddress = _initTokenWithProxy(input.stableDebtTokenImpl,abi.encodeWithSelector(IInitializableDebtToken.initialize.selector,pool,input.underlyingAsset,input.incentivesController,input.underlyingAssetDecimals,input.stableDebtTokenName,input.stableDebtTokenSymbol,input.params)) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#69-81)
-		- proxy.initialize(implementation,initParams) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#245)
-	- variableDebtTokenProxyAddress = _initTokenWithProxy(input.variableDebtTokenImpl,abi.encodeWithSelector(IInitializableDebtToken.initialize.selector,pool,input.underlyingAsset,input.incentivesController,input.underlyingAssetDecimals,input.variableDebtTokenName,input.variableDebtTokenSymbol,input.params)) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#83-95)
-		- proxy.initialize(implementation,initParams) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#245)
-	- pool.initReserve(input.underlyingAsset,aTokenProxyAddress,stableDebtTokenProxyAddress,variableDebtTokenProxyAddress,input.interestRateStrategyAddress) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#97-103)
-	- pool.setConfiguration(input.underlyingAsset,currentConfig) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#113)
-	Event emitted after the call(s):
-	- ReserveInitialized(input.underlyingAsset,aTokenProxyAddress,stableDebtTokenProxyAddress,variableDebtTokenProxyAddress,input.interestRateStrategyAddress) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#115-121)
-Reentrancy in ConfiguratorLogic.executeUpdateAToken(IPool,ConfiguratorInputTypes.UpdateATokenInput) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#130-153):
-	External calls:
-	- _upgradeTokenImplementation(reserveData.aTokenAddress,input.implementation,encodedCall) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#150)
-		- proxy.upgradeToAndCall(implementation,initParams) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#266)
-	Event emitted after the call(s):
-	- ATokenUpgraded(input.asset,reserveData.aTokenAddress,input.implementation) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#152)
-Reentrancy in ConfiguratorLogic.executeUpdateStableDebtToken(IPool,ConfiguratorInputTypes.UpdateDebtTokenInput) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#161-191):
-	External calls:
-	- _upgradeTokenImplementation(reserveData.stableDebtTokenAddress,input.implementation,encodedCall) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#180-184)
-		- proxy.upgradeToAndCall(implementation,initParams) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#266)
-	Event emitted after the call(s):
-	- StableDebtTokenUpgraded(input.asset,reserveData.stableDebtTokenAddress,input.implementation) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#186-190)
-Reentrancy in ConfiguratorLogic.executeUpdateVariableDebtToken(IPool,ConfiguratorInputTypes.UpdateDebtTokenInput) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#199-229):
-	External calls:
-	- _upgradeTokenImplementation(reserveData.variableDebtTokenAddress,input.implementation,encodedCall) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#218-222)
-		- proxy.upgradeToAndCall(implementation,initParams) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#266)
-	Event emitted after the call(s):
-	- VariableDebtTokenUpgraded(input.asset,reserveData.variableDebtTokenAddress,input.implementation) (lib/aave-v3-core/contracts/protocol/libraries/logic/ConfiguratorLogic.sol#224-228)
-Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3
-INFO:Detectors:
-Address.isContract(address) (lib/aave-v3-core/contracts/dependencies/openzeppelin/contracts/Address.sol#25-36) uses assembly
-	- INLINE ASM (lib/aave-v3-core/contracts/dependencies/openzeppelin/contracts/Address.sol#32-34)
-BaseUpgradeabilityProxy._implementation() (lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/BaseUpgradeabilityProxy.sol#32-38) uses assembly
-	- INLINE ASM (lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/BaseUpgradeabilityProxy.sol#35-37)
-BaseUpgradeabilityProxy._setImplementation(address) (lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/BaseUpgradeabilityProxy.sol#53-65) uses assembly
-	- INLINE ASM (lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/BaseUpgradeabilityProxy.sol#62-64)
-Proxy._delegate(address) (lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/Proxy.sol#32-56) uses assembly
-	- INLINE ASM (lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/Proxy.sol#34-55)
-Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage
-INFO:Detectors:
-Address.sendValue(address,uint256) (lib/aave-v3-core/contracts/dependencies/openzeppelin/contracts/Address.sol#54-60) is never used and should be removed
-ReserveConfiguration.getActive(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#183-185) is never used and should be removed
-ReserveConfiguration.getBorrowCap(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#383-387) is never used and should be removed
-ReserveConfiguration.getBorrowableInIsolation(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#254-258) is never used and should be removed
-ReserveConfiguration.getBorrowingEnabled(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#306-310) is never used and should be removed
-ReserveConfiguration.getCaps(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#601-610) is never used and should be removed
-ReserveConfiguration.getDebtCeiling(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#433-437) is never used and should be removed
-ReserveConfiguration.getDecimals(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#161-165) is never used and should be removed
-ReserveConfiguration.getEModeCategory(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#516-520) is never used and should be removed
-ReserveConfiguration.getFlags(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#556-568) is never used and should be removed
-ReserveConfiguration.getFlashLoanEnabled(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#541-545) is never used and should be removed
-ReserveConfiguration.getFrozen(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#203-205) is never used and should be removed
-ReserveConfiguration.getLiquidationBonus(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#136-140) is never used and should be removed
-ReserveConfiguration.getLiquidationProtocolFee(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#463-468) is never used and should be removed
-ReserveConfiguration.getLiquidationThreshold(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#109-113) is never used and should be removed
-ReserveConfiguration.getLtv(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#84-86) is never used and should be removed
-ReserveConfiguration.getPaused(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#223-225) is never used and should be removed
-ReserveConfiguration.getReserveFactor(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#358-362) is never used and should be removed
-ReserveConfiguration.getSiloedBorrowing(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#281-285) is never used and should be removed
-ReserveConfiguration.getStableRateBorrowingEnabled(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#331-335) is never used and should be removed
-ReserveConfiguration.getSupplyCap(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#408-412) is never used and should be removed
-ReserveConfiguration.getUnbackedMintCap(DataTypes.ReserveConfigurationMap) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#491-495) is never used and should be removed
-ReserveConfiguration.setBorrowCap(DataTypes.ReserveConfigurationMap,uint256) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#369-376) is never used and should be removed
-ReserveConfiguration.setBorrowableInIsolation(DataTypes.ReserveConfigurationMap,bool) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#236-243) is never used and should be removed
-ReserveConfiguration.setBorrowingEnabled(DataTypes.ReserveConfigurationMap,bool) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#292-299) is never used and should be removed
-ReserveConfiguration.setDebtCeiling(DataTypes.ReserveConfigurationMap,uint256) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#419-426) is never used and should be removed
-ReserveConfiguration.setEModeCategory(DataTypes.ReserveConfigurationMap,uint256) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#502-509) is never used and should be removed
-ReserveConfiguration.setFlashLoanEnabled(DataTypes.ReserveConfigurationMap,bool) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#527-534) is never used and should be removed
-ReserveConfiguration.setLiquidationBonus(DataTypes.ReserveConfigurationMap,uint256) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#120-129) is never used and should be removed
-ReserveConfiguration.setLiquidationProtocolFee(DataTypes.ReserveConfigurationMap,uint256) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#444-456) is never used and should be removed
-ReserveConfiguration.setLiquidationThreshold(DataTypes.ReserveConfigurationMap,uint256) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#93-102) is never used and should be removed
-ReserveConfiguration.setLtv(DataTypes.ReserveConfigurationMap,uint256) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#73-77) is never used and should be removed
-ReserveConfiguration.setReserveFactor(DataTypes.ReserveConfigurationMap,uint256) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#342-351) is never used and should be removed
-ReserveConfiguration.setSiloedBorrowing(DataTypes.ReserveConfigurationMap,bool) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#266-273) is never used and should be removed
-ReserveConfiguration.setStableRateBorrowingEnabled(DataTypes.ReserveConfigurationMap,bool) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#317-324) is never used and should be removed
-ReserveConfiguration.setSupplyCap(DataTypes.ReserveConfigurationMap,uint256) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#394-401) is never used and should be removed
-ReserveConfiguration.setUnbackedMintCap(DataTypes.ReserveConfigurationMap,uint256) (lib/aave-v3-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol#475-484) is never used and should be removed
-Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
-INFO:Detectors:
-Low level call in Address.sendValue(address,uint256) (lib/aave-v3-core/contracts/dependencies/openzeppelin/contracts/Address.sol#54-60):
-	- (success) = recipient.call{value: amount}() (lib/aave-v3-core/contracts/dependencies/openzeppelin/contracts/Address.sol#58)
-Low level call in InitializableUpgradeabilityProxy.initialize(address,bytes) (lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/InitializableUpgradeabilityProxy.sol#20-28):
-	- (success) = _logic.delegatecall(_data) (lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/InitializableUpgradeabilityProxy.sol#25)
-Low level call in BaseImmutableAdminUpgradeabilityProxy.upgradeToAndCall(address,bytes) (lib/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol#69-76):
-	- (success) = newImplementation.delegatecall(data) (lib/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol#74)
-Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
-INFO:Detectors:
-Parameter InitializableUpgradeabilityProxy.initialize(address,bytes)._logic (lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/InitializableUpgradeabilityProxy.sol#20) is not in mixedCase
-Parameter InitializableUpgradeabilityProxy.initialize(address,bytes)._data (lib/aave-v3-core/contracts/dependencies/openzeppelin/upgradeability/InitializableUpgradeabilityProxy.sol#20) is not in mixedCase
-Function IPool.ADDRESSES_PROVIDER() (lib/aave-v3-core/contracts/interfaces/IPool.sol#621) is not in mixedCase
-Function IPool.MAX_STABLE_RATE_BORROW_SIZE_PERCENT() (lib/aave-v3-core/contracts/interfaces/IPool.sol#684) is not in mixedCase
-Function IPool.FLASHLOAN_PREMIUM_TOTAL() (lib/aave-v3-core/contracts/interfaces/IPool.sol#690) is not in mixedCase
-Function IPool.BRIDGE_PROTOCOL_FEE() (lib/aave-v3-core/contracts/interfaces/IPool.sol#696) is not in mixedCase
-Function IPool.FLASHLOAN_PREMIUM_TO_PROTOCOL() (lib/aave-v3-core/contracts/interfaces/IPool.sol#702) is not in mixedCase
-Function IPool.MAX_NUMBER_RESERVES() (lib/aave-v3-core/contracts/interfaces/IPool.sol#708) is not in mixedCase
-Variable BaseImmutableAdminUpgradeabilityProxy._admin (lib/aave-v3-core/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol#17) is not in mixedCase
-Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
-INFO:Slither:0x7406aba1aa5fe5cd71d958ce10fc28c416a33aa0 analyzed (16 contracts with 79 detectors), 63 result(s) found
 ```
 
 </details>
