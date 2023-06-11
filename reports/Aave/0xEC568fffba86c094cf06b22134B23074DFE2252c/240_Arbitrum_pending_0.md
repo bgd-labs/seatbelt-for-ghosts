@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/57069311-e5c1-4c41-9dfc-4885f8db1de0](https://dashboard.tenderly.co/me/simulator/57069311-e5c1-4c41-9dfc-4885f8db1de0)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/134635b7-0f0c-48ee-a58e-d1d40def2478](https://dashboard.tenderly.co/me/simulator/134635b7-0f0c-48ee-a58e-d1d40def2478)
 
 ### Checks
 
@@ -37,12 +37,12 @@ Info:
 
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`
-@@ _maxStableRateBorrowSizePercent @@
-- 2500
-+ 2500
 @@ _reservesCount @@
 - 10
 + 11
+@@ _maxStableRateBorrowSizePercent @@
+- 2500
++ 2500
 @@ `_reserves` key `0x93b346b6bc2548da6a1e7d98e9a421b42541425b`.configuration.data @@
 - 0
 + 74769074763989551106948646198271117623296
@@ -116,13 +116,13 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_actionsSets` key `"24"`.executed @@
-- false
-+ true
-
-@@ `_queuedActions` key `0x5ecc13639d29cc1a4c7a650cdec7e07eb7fe227734c2e6878705a7fefea0003e` @@
+@@ `_queuedActions` key `0xcf519fa01359b675b1520502916fa14555119ab572818a2033c33d48d0ffae0c` @@
 - true
 + false
+
+@@ `_actionsSets` key `"25"`.executed @@
+- false
++ true
 
 ```
 
@@ -157,11 +157,11 @@ Info:
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x0000000000000000000000000000000000000000000000000000000000d2a533"
-+ "0x0000000000000000000000000000000000000000000000000000000000d2b06f"
+- "0x0000000000000000000000000000000000000000000000000000000001267d55"
++ "0x0000000000000000000000000000000000000000000000000000000001268891"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x00000000000000000000000000000000000000000000000025d2c850f0caed72"
-+ "0x00000000000000000000000000000000000000000000000025d2e51c38155f72"
+- "0x00000000000000000000000000000000000000000000000026a9fe7e17ed698c"
++ "0x00000000000000000000000000000000000000000000000026aa1af62884a58c"
 ```
 
 ```diff
@@ -246,7 +246,7 @@ Info:
     - `ReserveFlashLoaning(asset: 0x93b346b6bc2548da6a1e7d98e9a421b42541425b, enabled: true)`
     - `EModeAssetCategoryChanged(asset: 0x93b346b6bc2548da6a1e7d98e9a421b42541425b, oldCategoryId: 0, newCategoryId: 0)`
   - ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-    - `ActionsSetExecuted(id: 24, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
+    - `ActionsSetExecuted(id: 25, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
 
 #### Check all targets are verified on Etherscan ✅ Passed
 
