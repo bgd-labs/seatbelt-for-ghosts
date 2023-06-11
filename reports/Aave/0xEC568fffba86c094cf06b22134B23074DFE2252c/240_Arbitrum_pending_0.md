@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/1f8c21a2-192a-44c6-8fa3-cbfe3959575f](https://dashboard.tenderly.co/me/simulator/1f8c21a2-192a-44c6-8fa3-cbfe3959575f)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/4cbaf69c-625c-4bfe-a398-426725356c73](https://dashboard.tenderly.co/me/simulator/4cbaf69c-625c-4bfe-a398-426725356c73)
 
 ### Checks
 
@@ -37,12 +37,12 @@ Info:
 
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`
-@@ _maxStableRateBorrowSizePercent @@
-- 2500
-+ 2500
 @@ _reservesCount @@
 - 10
 + 11
+@@ _maxStableRateBorrowSizePercent @@
+- 2500
++ 2500
 @@ `_reserves` key `0x93b346b6bc2548da6a1e7d98e9a421b42541425b`.configuration.data @@
 - 0
 + 74769074763989551106948646198271117623296
@@ -116,13 +116,13 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
+@@ `_queuedActions` key `0x87aea784a325d3d394c14aa1c4298b1eb45da66b7b256729c9eac2966b9c27c4` @@
+- true
++ false
+
 @@ `_actionsSets` key `"24"`.executed @@
 - false
 + true
-
-@@ `_queuedActions` key `0x1ac9fad0306a64a2a56eee23503efeb1383495b71b2ad8b4f0309223c4563950` @@
-- true
-+ false
 
 ```
 
@@ -157,11 +157,11 @@ Info:
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x0000000000000000000000000000000000000000000000000000000001691a6f"
-+ "0x00000000000000000000000000000000000000000000000000000000016925ab"
+- "0x000000000000000000000000000000000000000000000000000000000127b6a5"
++ "0x000000000000000000000000000000000000000000000000000000000127c1e1"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x000000000000000000000000000000000000000000000000273a1aaf11c41a36"
-+ "0x000000000000000000000000000000000000000000000000273a381cd12d8e36"
+- "0x00000000000000000000000000000000000000000000000026d73fca16b17fe8"
++ "0x00000000000000000000000000000000000000000000000026d75b64204b7be8"
 ```
 
 ```diff
