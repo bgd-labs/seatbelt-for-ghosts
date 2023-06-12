@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/a8214022-c0b2-4a98-a778-79d0ba8331f8](https://dashboard.tenderly.co/me/simulator/a8214022-c0b2-4a98-a778-79d0ba8331f8)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/eeebcc10-edf4-49aa-bc49-1341d079aea7](https://dashboard.tenderly.co/me/simulator/eeebcc10-edf4-49aa-bc49-1341d079aea7)
 
 ### Checks
 
@@ -37,12 +37,12 @@ Info:
 
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`
-@@ _maxStableRateBorrowSizePercent @@
-- 2500
-+ 2500
 @@ _reservesCount @@
 - 10
 + 11
+@@ _maxStableRateBorrowSizePercent @@
+- 2500
++ 2500
 @@ `_reserves` key `0x93b346b6bc2548da6a1e7d98e9a421b42541425b`.configuration.data @@
 - 0
 + 74769074763989551106948646198271117623296
@@ -116,7 +116,7 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0xe53e899fcb5ff3302eb38a2bb072fb195525960221e79e1fb32a3d9b3a0172c3` @@
+@@ `_queuedActions` key `0xfcfc21eb232bea8ef90bf4630fc953c84975d277f7f355d45c9c59ebf5e3ebbc` @@
 - true
 + false
 
@@ -157,11 +157,11 @@ Info:
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x000000000000000000000000000000000000000000000000000000000190088b"
-+ "0x00000000000000000000000000000000000000000000000000000000019013c7"
+- "0x000000000000000000000000000000000000000000000000000000000100449c"
++ "0x0000000000000000000000000000000000000000000000000000000001004fd8"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x000000000000000000000000000000000000000000000000280d0d4edea2f6b4"
-+ "0x000000000000000000000000000000000000000000000000280d27be0bb74eb4"
+- "0x00000000000000000000000000000000000000000000000025ca22aae908cb24"
++ "0x00000000000000000000000000000000000000000000000025ca3fcbfca30224"
 ```
 
 ```diff
