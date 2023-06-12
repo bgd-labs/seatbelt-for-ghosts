@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/e2c75aea-1dfa-4fc2-92aa-8cfd72a945d7](https://dashboard.tenderly.co/me/simulator/e2c75aea-1dfa-4fc2-92aa-8cfd72a945d7)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/5f27720a-3a5b-4667-83a6-99de70d47eef](https://dashboard.tenderly.co/me/simulator/5f27720a-3a5b-4667-83a6-99de70d47eef)
 
 ### Checks
 
@@ -37,12 +37,12 @@ Info:
 
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`
-@@ _maxStableRateBorrowSizePercent @@
-- 2500
-+ 2500
 @@ _reservesCount @@
 - 10
 + 11
+@@ _maxStableRateBorrowSizePercent @@
+- 2500
++ 2500
 @@ `_reserves` key `0x93b346b6bc2548da6a1e7d98e9a421b42541425b`.configuration.data @@
 - 0
 + 74769074763989551106948646198271117623296
@@ -116,7 +116,7 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x2f53d09c08e5c92a9d4e4967d25892220d576bc4367c0059ebff2597e934f1e0` @@
+@@ `_queuedActions` key `0x5d7cc562c92e4116564e2ec49454f106eda80e7248134f4151e91afc92601b34` @@
 - true
 + false
 
@@ -157,11 +157,11 @@ Info:
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x00000000000000000000000000000000000000000000000000000000026d2a01"
-+ "0x00000000000000000000000000000000000000000000000000000000026d353d"
+- "0x00000000000000000000000000000000000000000000000000000000028059b9"
++ "0x00000000000000000000000000000000000000000000000000000000028064f5"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x00000000000000000000000000000000000000000000000027f4886ffb00ee14"
-+ "0x00000000000000000000000000000000000000000000000027f4a37b0f5a6e14"
+- "0x00000000000000000000000000000000000000000000000027fec38c4d3d6fa8"
++ "0x00000000000000000000000000000000000000000000000027fedf1e783459a8"
 ```
 
 ```diff
@@ -319,6 +319,32 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
+    sys.exit(main())
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
+    compilations = compile_all(**vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 306, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 524:
 ```
 
 </details>
