@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/4326df4c-7347-4178-aa16-baff83045fe9](https://dashboard.tenderly.co/me/simulator/4326df4c-7347-4178-aa16-baff83045fe9)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/f476701c-fadf-4245-bbdc-673237125f3f](https://dashboard.tenderly.co/me/simulator/f476701c-fadf-4245-bbdc-673237125f3f)
 
 ### Checks
 
@@ -116,7 +116,7 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0xf572e1bdc4298d909f8a57647ebae55be227bc92d71bd6d5ab3868d6a1c1509e` @@
+@@ `_queuedActions` key `0x265bc742d9294d01fb6d16031c9fb6619043552416df9a0cad3bae1af7ea6bc8` @@
 - true
 + false
 
@@ -157,11 +157,11 @@ Info:
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x00000000000000000000000000000000000000000000000000000000012f6cbe"
-+ "0x00000000000000000000000000000000000000000000000000000000012f77fa"
+- "0x000000000000000000000000000000000000000000000000000000000144aa63"
++ "0x000000000000000000000000000000000000000000000000000000000144b59f"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x0000000000000000000000000000000000000000000000002793a6a8f9361ac6"
-+ "0x0000000000000000000000000000000000000000000000002793bebdb93ba0c6"
+- "0x0000000000000000000000000000000000000000000000002758f5c07c5652ae"
++ "0x00000000000000000000000000000000000000000000000027591165dcaf55ae"
 ```
 
 ```diff
@@ -464,94 +464,55 @@ Info:
 <summary>Slither report for CLSynchronicityPriceAdapterPegToBase at `0x04c28D6fE897859153eA753f986cc249Bf064f71`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 163, in run_solc_standard_json
-    solc_json_output = json.loads(stdout)
-  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 193, in run_solc_standard_json
-    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
-crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation Traceback (most recent call last):
-  File "/home/runner/.local/bin/solc", line 8, in <module>
-    sys.exit(solc())
-  File "/home/runner/.local/lib/python3.10/site-packages/solc_select/__main__.py", line 86, in solc
-    subprocess.run(
-  File "/usr/lib/python3.10/subprocess.py", line 501, in run
-    with Popen(*popenargs, **kwargs) as process:
-  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
-    self._execute_child(args, executable, preexec_fn, close_fds,
-  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
-    raise child_exception_type(errno_num, err_msg, err_filename)
-PermissionError: [Errno 13] Permission denied: '/home/runner/.solc-select/artifacts/solc-0.6.12/solc-0.6.12'
-
-ERROR:root:Error in 0x04c28d6fe897859153ea753f986cc249bf064f71
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 163, in run_solc_standard_json
-    solc_json_output = json.loads(stdout)
-  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 193, in run_solc_standard_json
-    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
-crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation Traceback (most recent call last):
-  File "/home/runner/.local/bin/solc", line 8, in <module>
-    sys.exit(solc())
-  File "/home/runner/.local/lib/python3.10/site-packages/solc_select/__main__.py", line 86, in solc
-    subprocess.run(
-  File "/usr/lib/python3.10/subprocess.py", line 501, in run
-    with Popen(*popenargs, **kwargs) as process:
-  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
-    self._execute_child(args, executable, preexec_fn, close_fds,
-  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
-    raise child_exception_type(errno_num, err_msg, err_filename)
-PermissionError: [Errno 13] Permission denied: '/home/runner/.solc-select/artifacts/solc-0.6.12/solc-0.6.12'
-
-
+INFO:Detectors:
+DefaultReserveInterestRateStrategy.calculateInterestRates(address,uint256,uint256,uint256,uint256,uint256).vars (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#182) is a local variable never initialized
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
+INFO:Detectors:
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).baseVariableBorrowRate (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#60) shadows:
+	- DefaultReserveInterestRateStrategy.baseVariableBorrowRate() (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#92-94) (function)
+	- IReserveInterestRateStrategy.baseVariableBorrowRate() (lib/protocol-v2/contracts/interfaces/IReserveInterestRateStrategy.sol#10) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#61) shadows:
+	- DefaultReserveInterestRateStrategy.variableRateSlope1() (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#76-78) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#62) shadows:
+	- DefaultReserveInterestRateStrategy.variableRateSlope2() (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#80-82) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#63) shadows:
+	- DefaultReserveInterestRateStrategy.stableRateSlope1() (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#84-86) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#64) shadows:
+	- DefaultReserveInterestRateStrategy.stableRateSlope2() (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#88-90) (function)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#local-variable-shadowing
+INFO:Detectors:
+PercentageMath.percentDiv(uint256,uint256) (lib/protocol-v2/contracts/protocol/libraries/math/PercentageMath.sol#43-53) is never used and should be removed
+SafeMath.div(uint256,uint256) (lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol#101-103) is never used and should be removed
+SafeMath.div(uint256,uint256,string) (lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol#116-127) is never used and should be removed
+SafeMath.mod(uint256,uint256) (lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol#140-142) is never used and should be removed
+SafeMath.mod(uint256,uint256,string) (lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol#155-162) is never used and should be removed
+SafeMath.mul(uint256,uint256) (lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol#76-88) is never used and should be removed
+WadRayMath.halfRay() (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#39-41) is never used and should be removed
+WadRayMath.halfWad() (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#46-48) is never used and should be removed
+WadRayMath.rayToWad(uint256) (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#117-123) is never used and should be removed
+WadRayMath.wad() (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#32-34) is never used and should be removed
+WadRayMath.wadDiv(uint256,uint256) (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#72-79) is never used and should be removed
+WadRayMath.wadMul(uint256,uint256) (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#56-64) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+INFO:Detectors:
+Variable DefaultReserveInterestRateStrategy.OPTIMAL_UTILIZATION_RATE (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#30) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy.EXCESS_UTILIZATION_RATE (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#38) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._baseVariableBorrowRate (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#43) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._variableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#46) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._variableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#49) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._stableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#52) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._stableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#55) is not in mixedCase
+Constant WadRayMath.halfWAD (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#14) is not in UPPER_CASE_WITH_UNDERSCORES
+Constant WadRayMath.halfRAY (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#17) is not in UPPER_CASE_WITH_UNDERSCORES
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Detectors:
+Variable DefaultReserveInterestRateStrategy._stableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#52) is too similar to DefaultReserveInterestRateStrategy._stableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#55)
+Variable DefaultReserveInterestRateStrategy._variableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#46) is too similar to DefaultReserveInterestRateStrategy._variableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#49)
+Variable DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#63) is too similar to DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#64)
+Variable DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#61) is too similar to DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#62)
+Variable Errors.LP_INCONSISTENT_FLASHLOAN_PARAMS (lib/protocol-v2/contracts/protocol/libraries/helpers/Errors.sol#55) is too similar to Errors.VL_INCONSISTENT_FLASHLOAN_PARAMS (lib/protocol-v2/contracts/protocol/libraries/helpers/Errors.sol#100)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#variable-names-too-similar
+INFO:Slither:0x04c28d6fe897859153ea753f986cc249bf064f71 analyzed (9 contracts with 79 detectors), 32 result(s) found
 ```
 
 </details>
