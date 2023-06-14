@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/27e039d7-ef4a-4b5f-8174-3f9940aa8b85](https://dashboard.tenderly.co/me/simulator/27e039d7-ef4a-4b5f-8174-3f9940aa8b85)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/b290e5f3-87e6-4c5c-a76e-77170b25e056](https://dashboard.tenderly.co/me/simulator/b290e5f3-87e6-4c5c-a76e-77170b25e056)
 
 ### Checks
 
@@ -11,6 +11,21 @@ Info:
 - State changes:
 
 ```diff
+# KeeperRegistry1_3 at `0x75c0530885F385721fddA23C539AF3701d6183D4`
+@@ `s_upkeep` key `"2644198306353233154445573060213895807978508598208963942704092322563145107595"`.balance @@
+- 16726350870600878897
++ 16708211051525347165
+@@ `s_upkeep` key `"2644198306353233154445573060213895807978508598208963942704092322563145107595"`.lastKeeper @@
+- 0xa6101ebd36c861f9da6b3b8f1974882a2faa0830
++ 0xa7f0ccf1d96626baa7e96d8a14a7dc9951412a8d
+
+@@ `s_keeperInfo` key `0xa7f0ccf1d96626baa7e96d8a14a7dc9951412a8d`.balance @@
+- 46209360793204695709
++ 46227500612280227441
+
+```
+
+```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`
 @@ Slot `0x1d70cb806c8648a5cff3f5c8e2359f0ed5c6c17466a16848db13e82a035534b2` @@
 - "0x0000b532b800000000000003e800073f7800002625a007d0151229041f401d4c"
@@ -19,7 +34,7 @@ Info:
 
 ```diff
 # OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0xa2fc2a593974cf559979dfb111fcd3af809c075ad57043a4c8c0903e324cfc82` @@
+@@ `_queuedActions` key `0xf816017d8eaf3301ae3b79413324583871123d6217bd936603360fd4f3fe36b0` @@
 - true
 + false
 
@@ -30,10 +45,10 @@ Info:
 ```
 
 ```diff
-# InitializableImmutableAdminUpgradeabilityProxy at `0x8ffDf2DE812095b1D19CB146E4c004587C0A0692` with implementation unknown contract name at `0xa5ba6E5EC19a1Bf23C857991c857dB62b2Aa187B`
-@@ Slot `0x0000000000000000000000000000000000000000000000000000000000000000` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000001"
-+ "0x0000000000000000000000000000000000000000000000000000000000000002"
+# InitializableImmutableAdminUpgradeabilityProxy at `0x8ffDf2DE812095b1D19CB146E4c004587C0A0692` with implementation AToken (ATOKEN_IMPL) at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`
+@@ lastInitializedRevision @@
+- 1
++ 2
 @@ Slot `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc` @@
 - "0x000000000000000000000000a5ba6e5ec19a1bf23c857991c857db62b2aa187b"
 + "0x000000000000000000000000bcb167bdcf14a8f791d6f4a6edd964aed2f8813b"
@@ -70,7 +85,7 @@ Info:
 Info:
 
 - Events Emitted:
-  - InitializableImmutableAdminUpgradeabilityProxy at `0x8ffDf2DE812095b1D19CB146E4c004587C0A0692` with implementation unknown contract name at `0xa5ba6E5EC19a1Bf23C857991c857dB62b2Aa187B`
+  - InitializableImmutableAdminUpgradeabilityProxy at `0x8ffDf2DE812095b1D19CB146E4c004587C0A0692` with implementation AToken (ATOKEN_IMPL) at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`
     - `Upgraded(implementation: 0xbcb167bdcf14a8f791d6f4a6edd964aed2f8813b)`
     - `Initialized(underlyingAsset: 0xdfa46478f9e5ea86d57387849598dbfb2e964b02, pool: 0x794a61358d6845594f94dc1db02a252b5b4814ad, treasury: 0xb2289e329d2f85f1ed31adbb30ea345278f21bcf, incentivesController: 0x929ec64c34a17401f460460d4b9390518e5b473e, aTokenDecimals: 18, aTokenName: Aave Optimism MAI, aTokenSymbol: aOptMAI, params: 0x)`
   - InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E` with implementation PoolConfigurator at `0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B`
@@ -86,7 +101,9 @@ Info:
     - `Upgraded(implementation: 0x04a8d477ee202adce1682f5902e1160455205b12)`
     - `Initialized(underlyingAsset: 0xdfa46478f9e5ea86d57387849598dbfb2e964b02, pool: 0x794a61358d6845594f94dc1db02a252b5b4814ad, incentivesController: 0x929ec64c34a17401f460460d4b9390518e5b473e, debtTokenDecimals: 18, debtTokenName: Aave Optimism Variable Debt MAI, debtTokenSymbol: variableDebtOptMAI, params: 0x)`
   - OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-    - `ActionsSetExecuted(id: 22, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
+    - `ActionsSetExecuted(id: 22, initiatorExecution: 0x943acd0c93d7a8bee7da5fd0dc3d0028237074d6, returnedData: 0x)`
+  - KeeperRegistry1_3 at `0x75c0530885F385721fddA23C539AF3701d6183D4`
+    - `UpkeepPerformed(id: 2644198306353233154445573060213895807978508598208963942704092322563145107595, success: true, from: 0xa7f0ccf1d96626baa7e96d8a14a7dc9951412a8d, payment: 18139819075531732, performData: 0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000016)`
 
 #### Check all targets are verified on Etherscan ✅ Passed
 
@@ -100,7 +117,17 @@ Info:
 Info:
 
 - Touched address:
-  - 0xd73a92be73efbfcf3854433a5fcbabf9c1316073: EOA (verification not applicable)
+  - 0xa7f0ccf1d96626baa7e96d8a14a7dc9951412a8d: EOA (verification not applicable)
+  - 0x75c0530885f385721fdda23c539af3701d6183d4: Contract (verified) (KeeperRegistry1_3)
+  - 0xe9b80c60a2333dca98c483a8a1efafaf17c5d4ac: Contract (not verified)
+  - 0x1c9213dcc6762efdff500a2d3f8df4508b37636a: Contract (verified) (AccessControlledOffchainAggregator)
+  - 0x464a1515adc20de946f8d0deb99cead8ceae310d: Contract (not verified)
+  - 0xe67a10da53fcd59fae7e47f155c290cb5defb4b0: Contract (verified) (AccessControlledOffchainAggregator)
+  - 0x420000000000000000000000000000000000000f: Contract (verified) (OVM_GasPriceOracle)
+  - 0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3000f: Contract (not verified)
+  - 0x4200000000000000000000000000000000000015: Contract (not verified)
+  - 0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30015: Contract (not verified)
+  - 0x943acd0c93d7a8bee7da5fd0dc3d0028237074d6: Contract (verified) (L2RobotKeeper)
   - 0x7d9103572be58ffe99dc390e8246f02dcae6f611: Contract (verified) (OptimismBridgeExecutor)
   - 0x0c2c95b24529664fe55d4437d7a31175cfe6c4f7: Contract (verified) (AaveV3OPMAIFixes_20230606)
   - 0x8145edddf43f50276641b55bd3ad95944510021e: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
@@ -135,7 +162,25 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
+<summary>View warnings for AccessControlledOffchainAggregator at `0x1C9213DCC6762EfdFf500a2d3f8Df4508B37636a`</summary>
+
+```
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
 <summary>View warnings for PoolConfigurator at `0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B`</summary>
+
+```
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
+<summary>View warnings for OVM_GasPriceOracle at `0x420000000000000000000000000000000000000F`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -210,6 +255,15 @@ Note: The payable fallback function is defined here.
 </details>
 
 <details>
+<summary>View warnings for KeeperRegistry1_3 at `0x75c0530885F385721fddA23C539AF3701d6183D4`</summary>
+
+```
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
 <summary>View warnings for L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`</summary>
 
 ```
@@ -246,10 +300,47 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x8ffDf2DE812095b1D19CB146E4c004587C0A0692` with implementation unknown contract name at `0xa5ba6E5EC19a1Bf23C857991c857dB62b2Aa187B`</summary>
+<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x8ffDf2DE812095b1D19CB146E4c004587C0A0692` with implementation AToken (ATOKEN_IMPL) at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
+<summary>View warnings for L2RobotKeeper at `0x943AcD0c93d7a8Bee7dA5Fd0DC3d0028237074d6`</summary>
+
+```
+ERROR:CryticCompile:ParserError: ParserError: Source "aave-address-book/AaveGovernanceV2.sol" not found: File not found. Searched the following locations: "".
+ --> src/contracts/EthRobotKeeper.sol:4:1:
+  |
+4 | import {IAaveGovernanceV2} from 'aave-address-book/AaveGovernanceV2.sol';
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ParserError: ParserError: Source "solidity-utils/contracts/oz-common/Ownable.sol" not found: File not found. Searched the following locations: "".
+ --> src/contracts/EthRobotKeeper.sol:7:1:
+  |
+7 | import {Ownable} from 'solidity-utils/contracts/oz-common/Ownable.sol';
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ParserError: ParserError: Source "chainlink-brownie-contracts/interfaces/AutomationCompatibleInterface.sol" not found: File not found. Searched the following locations: "".
+ --> src/interfaces/IGovernanceRobotKeeper.sol:4:1:
+  |
+4 | import {AutomationCompatibleInterface} from 'chainlink-brownie-contracts/interfaces/AutomationCompatibleInterface.sol';
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ParserError: ParserError: Source "aave-address-book/AaveGovernanceV2.sol" not found: File not found. Searched the following locations: "".
+ --> src/interfaces/IProposalValidator.sol:5:1:
+  |
+5 | import {IAaveGovernanceV2} from 'aave-address-book/AaveGovernanceV2.sol';
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
 ```
 
 </details>
@@ -274,6 +365,15 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 <details>
 <summary>View warnings for AToken (ATOKEN_IMPL) at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
+
+```
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
+<summary>View warnings for AccessControlledOffchainAggregator at `0xE67a10DA53Fcd59fae7e47F155c290cb5Defb4B0`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -328,6 +428,41 @@ KeyError: 'name'
 </details>
 
 <details>
+<summary>Slither report for AccessControlledOffchainAggregator at `0x1C9213DCC6762EfdFf500a2d3f8Df4508B37636a`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0x1c9213dcc6762efdff500a2d3f8df4508b37636a
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
+```
+
+</details>
+
+<details>
 <summary>Slither report for PoolConfigurator at `0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B`</summary>
 
 ```
@@ -345,6 +480,41 @@ Traceback (most recent call last):
     if data_loaded[self.get_key()] == "root":
 KeyError: 'name'
 ERROR:root:Error in 0x29081f7ab5a644716efcdc10d5c926c5fee9f72b
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
+```
+
+</details>
+
+<details>
+<summary>Slither report for OVM_GasPriceOracle at `0x420000000000000000000000000000000000000F`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0x420000000000000000000000000000000000000f
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -574,6 +744,41 @@ INFO:Slither:0x7406aba1aa5fe5cd71d958ce10fc28c416a33aa0 analyzed (16 contracts w
 </details>
 
 <details>
+<summary>Slither report for KeeperRegistry1_3 at `0x75c0530885F385721fddA23C539AF3701d6183D4`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0x75c0530885f385721fdda23c539af3701d6183d4
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
+```
+
+</details>
+
+<details>
 <summary>Slither report for L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`</summary>
 
 ```
@@ -714,7 +919,7 @@ KeyError: 'name'
 </details>
 
 <details>
-<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x8ffDf2DE812095b1D19CB146E4c004587C0A0692` with implementation unknown contract name at `0xa5ba6E5EC19a1Bf23C857991c857dB62b2Aa187B`</summary>
+<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x8ffDf2DE812095b1D19CB146E4c004587C0A0692` with implementation AToken (ATOKEN_IMPL) at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -743,6 +948,108 @@ ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
     if data_loaded[self.get_key()] == "root":
 KeyError: 'name'
+
+```
+
+</details>
+
+<details>
+<summary>Slither report for L2RobotKeeper at `0x943AcD0c93d7a8Bee7dA5Fd0DC3d0028237074d6`</summary>
+
+```
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
+    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
+    targets_json = run_solc_standard_json(
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
+    raise InvalidCompilation(solc_exception_str)
+crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "aave-address-book/AaveGovernanceV2.sol" not found: File not found. Searched the following locations: "".
+ --> src/contracts/EthRobotKeeper.sol:4:1:
+  |
+4 | import {IAaveGovernanceV2} from 'aave-address-book/AaveGovernanceV2.sol';
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ParserError: ParserError: Source "solidity-utils/contracts/oz-common/Ownable.sol" not found: File not found. Searched the following locations: "".
+ --> src/contracts/EthRobotKeeper.sol:7:1:
+  |
+7 | import {Ownable} from 'solidity-utils/contracts/oz-common/Ownable.sol';
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ParserError: ParserError: Source "chainlink-brownie-contracts/interfaces/AutomationCompatibleInterface.sol" not found: File not found. Searched the following locations: "".
+ --> src/interfaces/IGovernanceRobotKeeper.sol:4:1:
+  |
+4 | import {AutomationCompatibleInterface} from 'chainlink-brownie-contracts/interfaces/AutomationCompatibleInterface.sol';
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ParserError: ParserError: Source "aave-address-book/AaveGovernanceV2.sol" not found: File not found. Searched the following locations: "".
+ --> src/interfaces/IProposalValidator.sol:5:1:
+  |
+5 | import {IAaveGovernanceV2} from 'aave-address-book/AaveGovernanceV2.sol';
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+ERROR:root:Error in 0x943acd0c93d7a8bee7da5fd0dc3d0028237074d6
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
+    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
+    targets_json = run_solc_standard_json(
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
+    raise InvalidCompilation(solc_exception_str)
+crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "aave-address-book/AaveGovernanceV2.sol" not found: File not found. Searched the following locations: "".
+ --> src/contracts/EthRobotKeeper.sol:4:1:
+  |
+4 | import {IAaveGovernanceV2} from 'aave-address-book/AaveGovernanceV2.sol';
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ParserError: ParserError: Source "solidity-utils/contracts/oz-common/Ownable.sol" not found: File not found. Searched the following locations: "".
+ --> src/contracts/EthRobotKeeper.sol:7:1:
+  |
+7 | import {Ownable} from 'solidity-utils/contracts/oz-common/Ownable.sol';
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ParserError: ParserError: Source "chainlink-brownie-contracts/interfaces/AutomationCompatibleInterface.sol" not found: File not found. Searched the following locations: "".
+ --> src/interfaces/IGovernanceRobotKeeper.sol:4:1:
+  |
+4 | import {AutomationCompatibleInterface} from 'chainlink-brownie-contracts/interfaces/AutomationCompatibleInterface.sol';
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ParserError: ParserError: Source "aave-address-book/AaveGovernanceV2.sol" not found: File not found. Searched the following locations: "".
+ --> src/interfaces/IProposalValidator.sol:5:1:
+  |
+5 | import {IAaveGovernanceV2} from 'aave-address-book/AaveGovernanceV2.sol';
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
 
 ```
 
@@ -836,6 +1143,41 @@ Traceback (most recent call last):
     if data_loaded[self.get_key()] == "root":
 KeyError: 'name'
 ERROR:root:Error in 0xbcb167bdcf14a8f791d6f4a6edd964aed2f8813b
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
+```
+
+</details>
+
+<details>
+<summary>Slither report for AccessControlledOffchainAggregator at `0xE67a10DA53Fcd59fae7e47F155c290cb5Defb4B0`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0xe67a10da53fcd59fae7e47f155c290cb5defb4b0
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
