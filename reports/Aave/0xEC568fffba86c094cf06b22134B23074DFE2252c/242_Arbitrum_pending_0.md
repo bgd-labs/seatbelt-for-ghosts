@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/fb8aa71d-73c9-4023-97c0-431795c6cd88](https://dashboard.tenderly.co/me/simulator/fb8aa71d-73c9-4023-97c0-431795c6cd88)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/e5ba1995-0bf3-4553-8e69-df68f0702fdf](https://dashboard.tenderly.co/me/simulator/e5ba1995-0bf3-4553-8e69-df68f0702fdf)
 
 ### Checks
 
@@ -37,12 +37,12 @@ Info:
 
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`
-@@ _maxStableRateBorrowSizePercent @@
-- 2500
-+ 2500
 @@ _reservesCount @@
 - 10
 + 11
+@@ _maxStableRateBorrowSizePercent @@
+- 2500
++ 2500
 @@ `_reserves` key `0xec70dcb4a1efa46b8f2d97c310c9c4790ba5ffa8`.configuration.data @@
 - 0
 + 5708990770850839467897627767840711253215117056556
@@ -116,7 +116,7 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x8f45b07ecb9eabee5153de0b29f87136df31239d735a37281e8ab818e3698387` @@
+@@ `_queuedActions` key `0x9250f6e9b8791f16514295e3f69765c7520fd5e5f705d350c50160b591481915` @@
 - true
 + false
 
@@ -157,11 +157,11 @@ Info:
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x000000000000000000000000000000000000000000000000000000000195cf72"
-+ "0x000000000000000000000000000000000000000000000000000000000195daae"
+- "0x00000000000000000000000000000000000000000000000000000000023664f4"
++ "0x0000000000000000000000000000000000000000000000000000000002367030"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x000000000000000000000000000000000000000000000000276b253fea830ba0"
-+ "0x000000000000000000000000000000000000000000000000276b40fc6f8fb0a0"
+- "0x00000000000000000000000000000000000000000000000027e53dfcb2993640"
++ "0x00000000000000000000000000000000000000000000000027e5571f7c164a40"
 ```
 
 ```diff
@@ -592,8 +592,8 @@ KeyError: 'name'
 
 ```
 INFO:Detectors:
-Variable TokenAddresses.BUSD_ORACLE (src/TokenAddresses.sol#50) is too similar to TokenAddresses.TUSD_ORACLE (src/TokenAddresses.sol#48)
 Variable TokenAddresses.BUSD_ORACLE (src/TokenAddresses.sol#50) is too similar to TokenAddresses.SUSD_ORACLE (src/TokenAddresses.sol#46)
+Variable TokenAddresses.BUSD_ORACLE (src/TokenAddresses.sol#50) is too similar to TokenAddresses.TUSD_ORACLE (src/TokenAddresses.sol#48)
 Variable TokenAddresses.SUSD_ORACLE (src/TokenAddresses.sol#46) is too similar to TokenAddresses.TUSD_ORACLE (src/TokenAddresses.sol#48)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#variable-names-too-similar
 INFO:Slither:0x15066c53340cd87480e3a33046a77edd4063984f analyzed (1 contracts with 79 detectors), 3 result(s) found
