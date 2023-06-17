@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/4b23410d-5013-46ce-b56f-2aff42d5f17f](https://dashboard.tenderly.co/me/simulator/4b23410d-5013-46ce-b56f-2aff42d5f17f)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/fb8aa71d-73c9-4023-97c0-431795c6cd88](https://dashboard.tenderly.co/me/simulator/fb8aa71d-73c9-4023-97c0-431795c6cd88)
 
 ### Checks
 
@@ -116,7 +116,7 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x48353074e230183e51136235ea2f884dde3c13a5c6a869d3709a69ba10db5bde` @@
+@@ `_queuedActions` key `0x8f45b07ecb9eabee5153de0b29f87136df31239d735a37281e8ab818e3698387` @@
 - true
 + false
 
@@ -157,11 +157,11 @@ Info:
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x0000000000000000000000000000000000000000000000000000000000c05828"
-+ "0x0000000000000000000000000000000000000000000000000000000000c06364"
+- "0x000000000000000000000000000000000000000000000000000000000195cf72"
++ "0x000000000000000000000000000000000000000000000000000000000195daae"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x00000000000000000000000000000000000000000000000026eac75584d46718"
-+ "0x00000000000000000000000000000000000000000000000026eae11db5753b18"
+- "0x000000000000000000000000000000000000000000000000276b253fea830ba0"
++ "0x000000000000000000000000000000000000000000000000276b40fc6f8fb0a0"
 ```
 
 ```diff
@@ -592,8 +592,8 @@ KeyError: 'name'
 
 ```
 INFO:Detectors:
-Variable TokenAddresses.BUSD_ORACLE (src/TokenAddresses.sol#50) is too similar to TokenAddresses.SUSD_ORACLE (src/TokenAddresses.sol#46)
 Variable TokenAddresses.BUSD_ORACLE (src/TokenAddresses.sol#50) is too similar to TokenAddresses.TUSD_ORACLE (src/TokenAddresses.sol#48)
+Variable TokenAddresses.BUSD_ORACLE (src/TokenAddresses.sol#50) is too similar to TokenAddresses.SUSD_ORACLE (src/TokenAddresses.sol#46)
 Variable TokenAddresses.SUSD_ORACLE (src/TokenAddresses.sol#46) is too similar to TokenAddresses.TUSD_ORACLE (src/TokenAddresses.sol#48)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#variable-names-too-similar
 INFO:Slither:0x15066c53340cd87480e3a33046a77edd4063984f analyzed (1 contracts with 79 detectors), 3 result(s) found
