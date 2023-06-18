@@ -131,6 +131,8 @@ export function decodeReserveDataV3(data: string) {
   const stableRateBorrowingEnabled = BigNumber.from(getBits(data, 59, 60)).toNumber()
   const paused = BigNumber.from(getBits(data, 60, 61)).toNumber()
   const borrowingInIsolation = BigNumber.from(getBits(data, 61, 62)).toNumber()
+  const siloedBorrowingEnabled = BigNumber.from(getBits(data, 62, 63)).toNumber()
+  const flashloaningEnabled = BigNumber.from(getBits(data, 63, 64)).toNumber()
   const reserveFactor = getBits(data, 64, 80)
   const borrowCap = getBits(data, 80, 116)
   const supplyCap = getBits(data, 116, 152)
@@ -157,5 +159,7 @@ export function decodeReserveDataV3(data: string) {
     eModeCategory,
     unbackedMintCap,
     debtCeiling,
+    siloedBorrowingEnabled: !!siloedBorrowingEnabled,
+    flashloaningEnabled: !!flashloaningEnabled,
   }
 }
