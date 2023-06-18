@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/cffcee93-14d9-496e-8c64-e53b627a08a5](https://dashboard.tenderly.co/me/simulator/cffcee93-14d9-496e-8c64-e53b627a08a5)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/bc6ad6ee-27a9-4ce5-93de-2a88effa7e19](https://dashboard.tenderly.co/me/simulator/bc6ad6ee-27a9-4ce5-93de-2a88effa7e19)
 
 ### Checks
 
@@ -15,6 +15,9 @@ Info:
 @@ `s_upkeep` key `"2644198306353233154445573060213895807978508598208963942704092322563145107595"`.balance @@
 - 17211681797854522737
 + 17109167639572625123
+@@ `s_upkeep` key `"2644198306353233154445573060213895807978508598208963942704092322563145107595"`.lastKeeper @@
+- 0xa6101ebd36c861f9da6b3b8f1974882a2faa0830
++ 0xe6ef45a2ef96791685cdee512f36f16ee85d891d
 
 @@ `s_keeperInfo` key `0xe6ef45a2ef96791685cdee512f36f16ee85d891d`.balance @@
 - 45142793947126998654

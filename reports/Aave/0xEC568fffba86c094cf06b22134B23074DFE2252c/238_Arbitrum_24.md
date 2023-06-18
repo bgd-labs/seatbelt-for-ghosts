@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/33401832-cadc-403c-87a4-1bd90087da1f](https://dashboard.tenderly.co/me/simulator/33401832-cadc-403c-87a4-1bd90087da1f)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/91cb2430-057a-4a15-9c0e-e73275fc9e94](https://dashboard.tenderly.co/me/simulator/91cb2430-057a-4a15-9c0e-e73275fc9e94)
 
 ### Checks
 
@@ -22,9 +22,12 @@ Info:
 
 ```diff
 # KeeperRegistry1_3 at `0x75c0530885F385721fddA23C539AF3701d6183D4`
-@@ `s_upkeep` key `"111517909269514636348543717696303188955558448015882347765009177537012203412379"`.balance @@
-- 11220849446385582483
-+ 11167581721240750822
+@@ `s_upkeep` key `"111517909269514636348543717696303188955558448015882347765009177537012203412379"`.amountSpent @@
+- null
++ 1572381848750710678
+@@ `s_upkeep` key `"111517909269514636348543717696303188955558448015882347765009177537012203412379"`.admin @@
+- 0x0000000000000000000000000000000000000000
++ 0xe3fd707583932a99513a5c65c8463de769f5dadf
 
 @@ `s_keeperInfo` key `0x976f07a571f9ab358c1e5f9bff5b4950dbeca327`.balance @@
 - 432436577236067189595
@@ -160,7 +163,10 @@ Info:
 <summary>View warnings for AToken at `0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -169,7 +175,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for AccessControlledOffchainAggregator at `0x4972F152c975CB4962F79643e938151750E85B2f`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -178,7 +187,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for VariableDebtToken at `0x5E76E98E0963EcDC6A065d1435F84065b7523f39`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -187,7 +199,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for KeeperRegistry1_3 at `0x75c0530885F385721fddA23C539AF3701d6183D4`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -196,7 +211,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -205,7 +223,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -214,7 +235,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -223,35 +247,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for L2RobotKeeper at `0x943AcD0c93d7a8Bee7dA5Fd0DC3d0028237074d6`</summary>
 
 ```
-ERROR:CryticCompile:ParserError: ParserError: Source "aave-address-book/AaveGovernanceV2.sol" not found: File not found. Searched the following locations: "".
- --> src/contracts/EthRobotKeeper.sol:4:1:
-  |
-4 | import {IAaveGovernanceV2} from 'aave-address-book/AaveGovernanceV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "solidity-utils/contracts/oz-common/Ownable.sol" not found: File not found. Searched the following locations: "".
- --> src/contracts/EthRobotKeeper.sol:7:1:
-  |
-7 | import {Ownable} from 'solidity-utils/contracts/oz-common/Ownable.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "chainlink-brownie-contracts/interfaces/AutomationCompatibleInterface.sol" not found: File not found. Searched the following locations: "".
- --> src/interfaces/IGovernanceRobotKeeper.sol:4:1:
-  |
-4 | import {AutomationCompatibleInterface} from 'chainlink-brownie-contracts/interfaces/AutomationCompatibleInterface.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveGovernanceV2.sol" not found: File not found. Searched the following locations: "".
- --> src/interfaces/IProposalValidator.sol:5:1:
-  |
-5 | import {IAaveGovernanceV2} from 'aave-address-book/AaveGovernanceV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -260,7 +259,10 @@ ParserError: ParserError: Source "aave-address-book/AaveGovernanceV2.sol" not fo
 <summary>View warnings for AaveV3ARBMAIFixes_20230606 at `0x9441B65EE553F70df9C77d45d3283B6BC24F222d`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -269,7 +271,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for AccessControlledOffchainAggregator at `0xa136978a2c8a92ec5EacC5179642AA2E1c1Eae18`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -278,7 +283,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for ACLManager at `0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -287,7 +295,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for PoolAddressesProvider at `0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -296,7 +307,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for L2Pool at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -305,7 +319,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA` with implementation AToken at `0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -325,33 +342,10 @@ Info:
 <summary>Slither report for AToken at `0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-ERROR:root:Error in 0x1be1798b70aee431c2986f7ff48d9d1fa350786a
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -360,33 +354,10 @@ KeyError: 'name'
 <summary>Slither report for AccessControlledOffchainAggregator at `0x4972F152c975CB4962F79643e938151750E85B2f`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-ERROR:root:Error in 0x4972f152c975cb4962f79643e938151750e85b2f
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -395,33 +366,10 @@ KeyError: 'name'
 <summary>Slither report for VariableDebtToken at `0x5E76E98E0963EcDC6A065d1435F84065b7523f39`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-ERROR:root:Error in 0x5e76e98e0963ecdc6a065d1435f84065b7523f39
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -430,33 +378,10 @@ KeyError: 'name'
 <summary>Slither report for KeeperRegistry1_3 at `0x75c0530885F385721fddA23C539AF3701d6183D4`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-ERROR:root:Error in 0x75c0530885f385721fdda23c539af3701d6183d4
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -465,33 +390,10 @@ KeyError: 'name'
 <summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-ERROR:root:Error in 0x794a61358d6845594f94dc1db02a252b5b4814ad
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -500,33 +402,10 @@ KeyError: 'name'
 <summary>Slither report for ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-ERROR:root:Error in 0x7d9103572be58ffe99dc390e8246f02dcae6f611
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -535,33 +414,10 @@ KeyError: 'name'
 <summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-ERROR:root:Error in 0x8145edddf43f50276641b55bd3ad95944510021e
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -571,99 +427,9 @@ KeyError: 'name'
 
 ```
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
-    raise InvalidCompilation(solc_exception_str)
-crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "aave-address-book/AaveGovernanceV2.sol" not found: File not found. Searched the following locations: "".
- --> src/contracts/EthRobotKeeper.sol:4:1:
-  |
-4 | import {IAaveGovernanceV2} from 'aave-address-book/AaveGovernanceV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "solidity-utils/contracts/oz-common/Ownable.sol" not found: File not found. Searched the following locations: "".
- --> src/contracts/EthRobotKeeper.sol:7:1:
-  |
-7 | import {Ownable} from 'solidity-utils/contracts/oz-common/Ownable.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "chainlink-brownie-contracts/interfaces/AutomationCompatibleInterface.sol" not found: File not found. Searched the following locations: "".
- --> src/interfaces/IGovernanceRobotKeeper.sol:4:1:
-  |
-4 | import {AutomationCompatibleInterface} from 'chainlink-brownie-contracts/interfaces/AutomationCompatibleInterface.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveGovernanceV2.sol" not found: File not found. Searched the following locations: "".
- --> src/interfaces/IProposalValidator.sol:5:1:
-  |
-5 | import {IAaveGovernanceV2} from 'aave-address-book/AaveGovernanceV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-ERROR:root:Error in 0x943acd0c93d7a8bee7da5fd0dc3d0028237074d6
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
-    raise InvalidCompilation(solc_exception_str)
-crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "aave-address-book/AaveGovernanceV2.sol" not found: File not found. Searched the following locations: "".
- --> src/contracts/EthRobotKeeper.sol:4:1:
-  |
-4 | import {IAaveGovernanceV2} from 'aave-address-book/AaveGovernanceV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "solidity-utils/contracts/oz-common/Ownable.sol" not found: File not found. Searched the following locations: "".
- --> src/contracts/EthRobotKeeper.sol:7:1:
-  |
-7 | import {Ownable} from 'solidity-utils/contracts/oz-common/Ownable.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "chainlink-brownie-contracts/interfaces/AutomationCompatibleInterface.sol" not found: File not found. Searched the following locations: "".
- --> src/interfaces/IGovernanceRobotKeeper.sol:4:1:
-  |
-4 | import {AutomationCompatibleInterface} from 'chainlink-brownie-contracts/interfaces/AutomationCompatibleInterface.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveGovernanceV2.sol" not found: File not found. Searched the following locations: "".
- --> src/interfaces/IProposalValidator.sol:5:1:
-  |
-5 | import {IAaveGovernanceV2} from 'aave-address-book/AaveGovernanceV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -672,33 +438,10 @@ ParserError: ParserError: Source "aave-address-book/AaveGovernanceV2.sol" not fo
 <summary>Slither report for AaveV3ARBMAIFixes_20230606 at `0x9441B65EE553F70df9C77d45d3283B6BC24F222d`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-ERROR:root:Error in 0x9441b65ee553f70df9c77d45d3283b6bc24f222d
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -707,33 +450,10 @@ KeyError: 'name'
 <summary>Slither report for AccessControlledOffchainAggregator at `0xa136978a2c8a92ec5EacC5179642AA2E1c1Eae18`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-ERROR:root:Error in 0xa136978a2c8a92ec5eacc5179642aa2e1c1eae18
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -742,33 +462,10 @@ KeyError: 'name'
 <summary>Slither report for ACLManager at `0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-ERROR:root:Error in 0xa72636cbcaa8f5ff95b2cc47f3cdee83f3294a0b
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -777,33 +474,10 @@ KeyError: 'name'
 <summary>Slither report for PoolAddressesProvider at `0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-ERROR:root:Error in 0xa97684ead0e402dc232d5a977953df7ecbab3cdb
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -812,33 +486,10 @@ KeyError: 'name'
 <summary>Slither report for L2Pool at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-ERROR:root:Error in 0xbcb167bdcf14a8f791d6f4a6edd964aed2f8813b
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -847,33 +498,10 @@ KeyError: 'name'
 <summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA` with implementation AToken at `0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-ERROR:root:Error in 0xc45a479877e1e9dfe9fcd4056c699575a1045daa
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
-    parser.parse_top_level_from_loaded_json(ast, path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
-    if data_loaded[self.get_key()] == "root":
-KeyError: 'name'
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>

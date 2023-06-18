@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/8db5dd92-98f4-4301-985c-472790bfd270](https://dashboard.tenderly.co/me/simulator/8db5dd92-98f4-4301-985c-472790bfd270)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/efa462b1-0696-4fe6-b9a5-47d8869e6bee](https://dashboard.tenderly.co/me/simulator/efa462b1-0696-4fe6-b9a5-47d8869e6bee)
 
 ### Checks
 
