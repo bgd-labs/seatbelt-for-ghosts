@@ -479,6 +479,7 @@ Some notes on the outputs of reports:
 | Add 1INCH to Aave V3 Ethereum                                                                                                                                                            | [245.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/245.md)                             | [app](https://app.aave.com/governance/proposal/?proposalId=245) |
 | Risk Parameter Updates for AAVE V2 Ethereum                                                                                                                                              | [246.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/246.md)                             | [app](https://app.aave.com/governance/proposal/?proposalId=246) |
 | Risk Parameter Updates Aave V3 Ethereum                                                                                                                                                  | [247.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/247.md)                             | [app](https://app.aave.com/governance/proposal/?proposalId=247) |
+| Treasury Management - Acquire B-80BAL-20WETH                                                                                                                                             | [249.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/249.md)                             | [app](https://app.aave.com/governance/proposal/?proposalId=249) |
 
 <!-- ### Reports table end ### -->
 
