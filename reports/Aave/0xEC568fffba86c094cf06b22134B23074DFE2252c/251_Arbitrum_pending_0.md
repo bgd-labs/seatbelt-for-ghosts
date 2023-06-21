@@ -1,6 +1,6 @@
-## Polygon
+## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/065ef83b-29d2-4752-81f5-b618abcbd3b6](https://dashboard.tenderly.co/me/simulator/065ef83b-29d2-4752-81f5-b618abcbd3b6)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/f195cdf9-dadd-4cfc-a11b-aa2d35983e31](https://dashboard.tenderly.co/me/simulator/f195cdf9-dadd-4cfc-a11b-aa2d35983e31)
 
 ### Checks
 
@@ -11,206 +11,215 @@ Info:
 - State changes:
 
 ```diff
-# InitializableImmutableAdminUpgradeabilityProxy at `0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf` with implementation LendingPool at `0x6A8730F54b8C69ab096c43ff217CA0a350726ac7`
-@@ `_reserves` key `0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270`.configuration.data @@
-- 36893853549183972677988
-+ 75632016103974031071588
-@@ `_reserves` key `0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270`.interestRateStrategyAddress @@
-- 0x893411580e590d62ddbca8a703d61cc4a8c7b2b9
-+ 0x8772dfbf52d03f11b43e31cf04bbcc64ae0a8cb9
-
-# decoded configuration.data for key `0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270` (symbol: WMATIC)
-@@ configuration.data.reserveFactor @@
-- 2000
-+ 4100
-
-@@ `_reserves` key `0x172370d5cd63279efa6d502dab29171933a610af`.configuration.data @@
-- 36893997664371884689360
-+ 70098136997049077598160
-@@ `_reserves` key `0x172370d5cd63279efa6d502dab29171933a610af`.interestRateStrategyAddress @@
-- 0xe4621dfd503a533f42bb5a45162ea3e5233acd5f
-+ 0x3a1ea739797fcf684c0934f07a3d84c489e24022
-
-# decoded configuration.data for key `0x172370d5cd63279efa6d502dab29171933a610af` (symbol: CRV)
-@@ configuration.data.reserveFactor @@
-- 2000
-+ 3800
-
-@@ `_reserves` key `0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6`.configuration.data @@
-- 36893850734434238339928
-+ 101457454992417668995928
-@@ `_reserves` key `0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6`.interestRateStrategyAddress @@
-- 0x1d41b83e5bdbb21c4dd924507cbde66cd865d029
-+ 0xcc906fc61a896bad00f3f4ef736b22716cbd8878
-
-# decoded configuration.data for key `0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6` (symbol: WBTC)
-@@ configuration.data.reserveFactor @@
-- 2000
-+ 5500
-
-@@ `_reserves` key `0x2791bca1f2de4661ed88a30c99a7a9449aa84174`.configuration.data @@
-- 18447106095627315191616
-+ 42427873391449732292416
-@@ `_reserves` key `0x2791bca1f2de4661ed88a30c99a7a9449aa84174`.interestRateStrategyAddress @@
-- 0xe7a516f340a3f794a3b2fd0f74a7242b326b9f33
-+ 0xce5870016d3cfa4e1c71fb7c7ee8cef67712a7a3
-
-# decoded configuration.data for key `0x2791bca1f2de4661ed88a30c99a7a9449aa84174` (symbol: USDC)
-@@ configuration.data.reserveFactor @@
-- 1000
-+ 2300
-
-@@ `_reserves` key `0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7`.configuration.data @@
-- 36893709435069442034116
-+ 110680685729907648498116
-@@ `_reserves` key `0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7`.interestRateStrategyAddress @@
-- 0xbb480ae4e2cf28fbe80c9b61ab075f6e7c4db468
-+ 0xccdb78f82ef5feccc6864aa00f2d7df3fe00474c
-
-# decoded configuration.data for key `0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7` (symbol: GHST)
-@@ configuration.data.reserveFactor @@
-- 2000
-+ 6000
-
-@@ `_reserves` key `0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39`.configuration.data @@
-- 18447253589588722324360
-+ 92234229884426928788360
-@@ `_reserves` key `0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39`.interestRateStrategyAddress @@
-- 0x5641bb58f4a92188a6f16ee79c8886cf42c561d3
-+ 0x124e69de782f966fbfbb6f09f92dcdd705418cc8
-
-# decoded configuration.data for key `0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39` (symbol: LINK)
-@@ configuration.data.reserveFactor @@
-- 1000
-+ 5000
-
-@@ `_reserves` key `0x7ceb23fd6bc0add59e62ac25578270cff1b9f619`.configuration.data @@
-- 18447109473327019335488
-+ 83010713731310449991488
-@@ `_reserves` key `0x7ceb23fd6bc0add59e62ac25578270cff1b9f619`.interestRateStrategyAddress @@
-- 0xd792a3779d3c80baee8cf3304d6aeac74bc432be
-+ 0xea2e7947658944674893d71ce5da52d528a43388
-
-# decoded configuration.data for key `0x7ceb23fd6bc0add59e62ac25578270cff1b9f619` (symbol: WETH)
-@@ configuration.data.reserveFactor @@
-- 1000
-+ 4500
-
-@@ `_reserves` key `0x8f3cf7ad23cd3cadbd9735aff958023239c6a063`.configuration.data @@
-- 18447109473327002950988
-+ 38738527954407509728588
-@@ `_reserves` key `0x8f3cf7ad23cd3cadbd9735aff958023239c6a063`.interestRateStrategyAddress @@
-- 0xbe889f70c89f36eb34680b26162fd84ffd6fe355
-+ 0x499e74993ffa39dd314782c4262a7443c31f8422
-
-# decoded configuration.data for key `0x8f3cf7ad23cd3cadbd9735aff958023239c6a063` (symbol: DAI)
-@@ configuration.data.reserveFactor @@
-- 1000
-+ 2100
-
-@@ `_reserves` key `0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3`.configuration.data @@
-- 36893997664371884689360
-+ 59030090552823346628560
-@@ `_reserves` key `0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3`.interestRateStrategyAddress @@
-- 0x54da5057cda764909f4c79ba9fbb2d4a214eeae5
-+ 0x8a4ac83162258e04786355163de913abe3247cdd
-
-# decoded configuration.data for key `0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3` (symbol: BAL)
-@@ configuration.data.reserveFactor @@
-- 2000
-+ 3200
-
-@@ `_reserves` key `0xc2132d05d31c914a87c6611c10748aeb04b58e8f`.configuration.data @@
-- 18447106050529601519616
-+ 40583198938981063458816
-@@ `_reserves` key `0xc2132d05d31c914a87c6611c10748aeb04b58e8f`.interestRateStrategyAddress @@
-- 0xd2c92b5a793e196ab11dbefbe3af6bdded6c3dd5
-+ 0xacbbd7e2e8c14dbdbb974b1be2fb29f34c1e5048
-
-# decoded configuration.data for key `0xc2132d05d31c914a87c6611c10748aeb04b58e8f` (symbol: USDT)
-@@ configuration.data.reserveFactor @@
-- 1000
-+ 2200
-
+# unknown contract name at `0x724dc807b04555b71ed48a6896b6F41593b8C637`
+@@ Slot `0x0000000000000000000000000000000000000000000000000000000000000000` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x0000000000000000000000000000000000000000000000000000000000000002"
+@@ Slot `0x0000000000000000000000000000000000000000000000000000000000000037` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x4161766520417262697472756d20555344436e00000000000000000000000026"
+@@ Slot `0x0000000000000000000000000000000000000000000000000000000000000038` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x61417262555344436e0000000000000000000000000000000000000000000012"
+@@ Slot `0x0000000000000000000000000000000000000000000000000000000000000039` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x0000000000000000000000929ec64c34a17401f460460d4b9390518e5b473e06"
+@@ Slot `0x000000000000000000000000000000000000000000000000000000000000003b` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0xae537d6c62b5bbd425525d20f700e9d38cc9b7a724bf11c9b4e790878252e84b"
+@@ Slot `0x000000000000000000000000000000000000000000000000000000000000003c` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x000000000000000000000000053d55f9b5af8694c503eb288a1b7e552f590710"
+@@ Slot `0x000000000000000000000000000000000000000000000000000000000000003d` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e5831"
+@@ Slot `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x0000000000000000000000001be1798b70aee431c2986f7ff48d9d1fa350786a"
 ```
 
 ```diff
-# unknown contract name at `0xD05003a24A17d9117B11eC04cF9743b050779c08`
-@@ Slot `0x0000000000000000000000000000000000000000000000000000000000000002` @@
+# InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`
+@@ _reservesCount @@
+- 12
++ 13
+@@ _maxStableRateBorrowSizePercent @@
+- 2500
++ 2500
+@@ Slot `0x92d84fededc02335b4a53878577884cac3dba8d31e2d3d7ceaf95b0eca339acf` @@
 - "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000000000000000000000000000000000000000000a"
-@@ Slot `0x019fa97a97b7932cd742397bf500a9772a43cb5f89501bd65033e0959a9b4d47` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000ccdb78f82ef5feccc6864aa00f2d7df3fe00474c"
-@@ Slot `0x073686454b828b56768ded48151edfcad71342634daee03d31342df3140a0946` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x0000000000000000000000008772dfbf52d03f11b43e31cf04bbcc64ae0a8cb9"
-@@ Slot `0x15372ba38b375a6befa786a99f80fdcd96222cba41068a16b95843c01f70b3dd` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x0000000000000000000000008a4ac83162258e04786355163de913abe3247cdd"
-@@ Slot `0x405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000499e74993ffa39dd314782c4262a7443c31f8422"
-@@ Slot `0x405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5acf` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000ce5870016d3cfa4e1c71fb7c7ee8cef67712a7a3"
-@@ Slot `0x405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad0` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000acbbd7e2e8c14dbdbb974b1be2fb29f34c1e5048"
-@@ Slot `0x405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad1` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000cc906fc61a896bad00f3f4ef736b22716cbd8878"
-@@ Slot `0x405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad2` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000ea2e7947658944674893d71ce5da52d528a43388"
-@@ Slot `0x405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad3` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x0000000000000000000000008772dfbf52d03f11b43e31cf04bbcc64ae0a8cb9"
-@@ Slot `0x405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad4` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x0000000000000000000000008a4ac83162258e04786355163de913abe3247cdd"
-@@ Slot `0x405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad5` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x0000000000000000000000003a1ea739797fcf684c0934f07a3d84c489e24022"
-@@ Slot `0x405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad6` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000ccdb78f82ef5feccc6864aa00f2d7df3fe00474c"
-@@ Slot `0x405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad7` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000124e69de782f966fbfbb6f09f92dcdd705418cc8"
-@@ Slot `0x797457a7503624e1f152f46f44cb7d09a605c60ee83d71888313499c444451f5` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000cc906fc61a896bad00f3f4ef736b22716cbd8878"
-@@ Slot `0x857e83af2a2f82aec2f10a97de0b4776181f74f49709fab06c51249ba883d030` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x0000000000000000000000003a1ea739797fcf684c0934f07a3d84c489e24022"
-@@ Slot `0xa1baeba3152ef17cb81ebd361f6cc045529ca2f158a7ba2fa3bd79ba42600443` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000124e69de782f966fbfbb6f09f92dcdd705418cc8"
-@@ Slot `0xde84568218a5910d0337184f397a1c18cdc62b542b2e964fa8fd009de60a8ebd` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000ea2e7947658944674893d71ce5da52d528a43388"
-@@ Slot `0xec9e8116c6634dd548162d65c880aadf1b54a2923a524410e1916e74df448d26` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000499e74993ffa39dd314782c4262a7443c31f8422"
-@@ Slot `0xf44eadf52875ab073fb5b4e5079739855cd76f4b00a8d9f639073568ddb6673f` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000acbbd7e2e8c14dbdbb974b1be2fb29f34c1e5048"
-@@ Slot `0xf4ac95f05200355be65761afc6ec5c06a62fcc503b7e62406596bd1c82d90d56` @@
-- "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x000000000000000000000000ce5870016d3cfa4e1c71fb7c7ee8cef67712a7a3"
-```
++ "0x000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e5831"
+@@ `_reserves` key `0xaf88d065e77c8cc2239327c5edb3a432268e5831`.configuration.data @@
+- 0
++ 379853413333681725832789343991830457019459299712932
 
-```diff
-# PolygonBridgeExecutor at `0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772`
-@@ `_queuedActions` key `0x3697ec5ec4af7bd2dbc06e5ed6d589a3d5739d75c90ee151270b62a9258564de` @@
-- true
-+ false
-
-@@ `_actionsSets` key `"47"`.executed @@
+# decoded configuration.data for key `0xaf88d065e77c8cc2239327c5edb3a432268e5831` (symbol: USDC)
+@@ configuration.data.ltv @@
+- 0
++ 8100
+@@ configuration.data.liquidationThreshold @@
+- 0
++ 8600
+@@ configuration.data.liquidationBonus @@
+- 0
++ 10500
+@@ configuration.data.decimals @@
+- 0
++ 6
+@@ configuration.data.active @@
+- false
++ true
+@@ configuration.data.borrowingEnabled @@
+- false
++ true
+@@ configuration.data.borrowingInIsolation @@
+- 0
++ 1
+@@ configuration.data.reserveFactor @@
+- 0
++ 1000
+@@ configuration.data.borrowCap @@
+- 0
++ 41000000
+@@ configuration.data.supplyCap @@
+- 0
++ 41000000
+@@ configuration.data.liquidationProtocolFee @@
+- 0
++ 1000
+@@ configuration.data.eModeCategory @@
+- 0
++ 1
+@@ configuration.data.unbackedMintCap @@
+- 0
++ 0
+@@ configuration.data.debtCeiling @@
+- 0
++ 0
+@@ configuration.data.flashloaningEnabled @@
 - false
 + true
 
+@@ Slot `0xeca9b25e580a9539f66a1e310f07d98e6be14b94407490b048d1fe024e73af50` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000"
+@@ Slot `0xeca9b25e580a9539f66a1e310f07d98e6be14b94407490b048d1fe024e73af51` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000"
+@@ Slot `0xeca9b25e580a9539f66a1e310f07d98e6be14b94407490b048d1fe024e73af52` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x000000000000000000000c000000000000000000000000000000000000000000"
+@@ Slot `0xeca9b25e580a9539f66a1e310f07d98e6be14b94407490b048d1fe024e73af53` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x000000000000000000000000724dc807b04555b71ed48a6896b6f41593b8c637"
+@@ Slot `0xeca9b25e580a9539f66a1e310f07d98e6be14b94407490b048d1fe024e73af54` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x000000000000000000000000dc1fad70953bb3918592b6fcc374fe05f5811b6a"
+@@ Slot `0xeca9b25e580a9539f66a1e310f07d98e6be14b94407490b048d1fe024e73af55` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x000000000000000000000000f611aeb5013fd2c0511c9cd55c7dc5c1140741a6"
+@@ Slot `0xeca9b25e580a9539f66a1e310f07d98e6be14b94407490b048d1fe024e73af56` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x000000000000000000000000f6733b9842883bfe0e0a940ea2f572676af31bde"
+```
+
+```diff
+# ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
+@@ `_actionsSets` key `"27"`.executed @@
+- false
++ true
+
+@@ `_queuedActions` key `0xb27a013b1b36f459d09838fba802609b804a2d8ea69a405115c5c1a4e2da6e21` @@
+- true
++ false
+
+```
+
+```diff
+# unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
+@@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
+- "0x0000000000000000000000000000000000000000000000000000000000c209db"
++ "0x0000000000000000000000000000000000000000000000000000000000c21517"
+@@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
+- "0x0000000000000000000000000000000000000000000000002676f792622b9564"
++ "0x000000000000000000000000000000000000000000000000267723f09b7a2d64"
+```
+
+```diff
+# AaveOracle at `0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7`
+@@ `assetsSources` key `0xaf88d065e77c8cc2239327c5edb3a432268e5831` @@
+- 0x0000000000000000000000000000000000000000
++ 0x50834f3163758fcc1df9973b6e91f0f0f0434ad3
+
+```
+
+```diff
+# unknown contract name at `0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896`
+@@ Slot `0x0000000000000000000000000000000000000000000000000000000000000002` @@
+- "0x000000000000000000000000000000000000000000000000000000000000000b"
++ "0x000000000000000000000000000000000000000000000000000000000000000c"
+@@ Slot `0x405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ad9` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x000000000000000000000000f6733b9842883bfe0e0a940ea2f572676af31bde"
+@@ Slot `0xcf4349e98be34f998cf5eb974da97d06061b23f8cae5e52793125e9c7efc6885` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x000000000000000000000000f6733b9842883bfe0e0a940ea2f572676af31bde"
+```
+
+```diff
+# unknown contract name at `0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a`
+@@ Slot `0x0000000000000000000000000000000000000000000000000000000000000000` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x0000000000000000000000000000000000000000000000000000000000000002"
+@@ Slot `0x0000000000000000000000000000000000000000000000000000000000000035` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x9a1068d326c51a14d7b0db0c7c61cc67ba003636c19a9323fd51fdb22baf585c"
+@@ Slot `0x0000000000000000000000000000000000000000000000000000000000000037` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e5831"
+@@ Slot `0x000000000000000000000000000000000000000000000000000000000000003b` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x4161766520417262697472756d20537461626c65204465627420555344436e3e"
+@@ Slot `0x000000000000000000000000000000000000000000000000000000000000003c` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x737461626c6544656274417262555344436e0000000000000000000000000024"
+@@ Slot `0x000000000000000000000000000000000000000000000000000000000000003d` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x0000000000000000000000929ec64c34a17401f460460d4b9390518e5b473e06"
+@@ Slot `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x0000000000000000000000000c2c95b24529664fe55d4437d7a31175cfe6c4f7"
+```
+
+```diff
+# unknown contract name at `0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6`
+@@ Slot `0x0000000000000000000000000000000000000000000000000000000000000000` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x0000000000000000000000000000000000000000000000000000000000000002"
+@@ Slot `0x0000000000000000000000000000000000000000000000000000000000000035` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x73689410d27f9b6ed01b26720f95e308383c59a8bd9b1be957b1c4e7c3f48319"
+@@ Slot `0x0000000000000000000000000000000000000000000000000000000000000037` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e5831"
+@@ Slot `0x000000000000000000000000000000000000000000000000000000000000003b` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x0000000000000000000000000000000000000000000000000000000000000043"
+@@ Slot `0x000000000000000000000000000000000000000000000000000000000000003c` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x7661726961626c6544656274417262555344436e000000000000000000000028"
+@@ Slot `0x000000000000000000000000000000000000000000000000000000000000003d` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x0000000000000000000000929ec64c34a17401f460460d4b9390518e5b473e06"
+@@ Slot `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x0000000000000000000000005e76e98e0963ecdc6a065d1435f84065b7523f39"
+@@ Slot `0xbbe3212124853f8b0084a66a2d057c2966e251e132af3691db153ab65f0d1a4d` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x4161766520417262697472756d205661726961626c6520446562742055534443"
+@@ Slot `0xbbe3212124853f8b0084a66a2d057c2966e251e132af3691db153ab65f0d1a4e` @@
+- "0x0000000000000000000000000000000000000000000000000000000000000000"
++ "0x6e00000000000000000000000000000000000000000000000000000000000000"
 ```
 
 #### Check stack trace of the proposal ✅ Passed
@@ -224,47 +233,41 @@ Info:
 Info:
 
 - Events Emitted:
-  - unknown contract name at `0xD05003a24A17d9117B11eC04cF9743b050779c08`
-    - `RateStrategyCreated(strategy: 0x499e74993ffa39dd314782c4262a7443c31f8422, hashedParam: 0xc08fd31777781e61f402e50b82b249d989fed8ae63db7c66304d86acc08e419b, params: [object Object])`
-    - `RateStrategyCreated(strategy: 0xce5870016d3cfa4e1c71fb7c7ee8cef67712a7a3, hashedParam: 0xde2ce977331396bfe907324cd056bbb27cd5b7d23aea4790b25f27a4d68854e5, params: [object Object])`
-    - `RateStrategyCreated(strategy: 0xacbbd7e2e8c14dbdbb974b1be2fb29f34c1e5048, hashedParam: 0xf8314615115e689c5dcb428c60d40bb986d39142fe93c940df69ea386e687a61, params: [object Object])`
-    - `RateStrategyCreated(strategy: 0xcc906fc61a896bad00f3f4ef736b22716cbd8878, hashedParam: 0x583a464e14bd36fdedb92800bfbb246248f4828dd3698297deab89b0a41e5ec5, params: [object Object])`
-    - `RateStrategyCreated(strategy: 0xea2e7947658944674893d71ce5da52d528a43388, hashedParam: 0xe970354ab3757ae42adf26212fbbed8c189bf7284b94cab9ed3f5304c16f448a, params: [object Object])`
-    - `RateStrategyCreated(strategy: 0x8772dfbf52d03f11b43e31cf04bbcc64ae0a8cb9, hashedParam: 0xa91100b6d90cecdeae5f60b18986fbebcfa10b267e138cf8e73e8680f2254b68, params: [object Object])`
-    - `RateStrategyCreated(strategy: 0x8a4ac83162258e04786355163de913abe3247cdd, hashedParam: 0x9a047b9bb8bc314854a2bddf7f516b41b88585772a23cb0ae90fc4eba0be5a1e, params: [object Object])`
-    - `RateStrategyCreated(strategy: 0x3a1ea739797fcf684c0934f07a3d84c489e24022, hashedParam: 0xc2deef6422cd34d7bab44f2b940fb6dadbbfaa263f1d806365c742269b2be9d0, params: [object Object])`
-    - `RateStrategyCreated(strategy: 0xccdb78f82ef5feccc6864aa00f2d7df3fe00474c, hashedParam: 0xcb65a2ddb0f328aa79f20fb4d19ed8fce8888732243efa64c0fbe7bfe6d7f0be, params: [object Object])`
-    - `RateStrategyCreated(strategy: 0x124e69de782f966fbfbb6f09f92dcdd705418cc8, hashedParam: 0xac182f6c464a8f05c3a3bef9204e017284c347b9f9be3b431fd557c188d6317f, params: [object Object])`
-  - InitializableImmutableAdminUpgradeabilityProxy at `0x26db2B833021583566323E3b8985999981b9F1F3` with implementation LendingPoolConfigurator at `0xf70A4d422E772926852BA9044026F169e6AD9492`
-    - `ReserveInterestRateStrategyChanged(asset: 0x8f3cf7ad23cd3cadbd9735aff958023239c6a063, strategy: 0x499e74993ffa39dd314782c4262a7443c31f8422)`
-    - `ReserveInterestRateStrategyChanged(asset: 0x2791bca1f2de4661ed88a30c99a7a9449aa84174, strategy: 0xce5870016d3cfa4e1c71fb7c7ee8cef67712a7a3)`
-    - `ReserveInterestRateStrategyChanged(asset: 0xc2132d05d31c914a87c6611c10748aeb04b58e8f, strategy: 0xacbbd7e2e8c14dbdbb974b1be2fb29f34c1e5048)`
-    - `ReserveInterestRateStrategyChanged(asset: 0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6, strategy: 0xcc906fc61a896bad00f3f4ef736b22716cbd8878)`
-    - `ReserveInterestRateStrategyChanged(asset: 0x7ceb23fd6bc0add59e62ac25578270cff1b9f619, strategy: 0xea2e7947658944674893d71ce5da52d528a43388)`
-    - `ReserveInterestRateStrategyChanged(asset: 0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270, strategy: 0x8772dfbf52d03f11b43e31cf04bbcc64ae0a8cb9)`
-    - `ReserveInterestRateStrategyChanged(asset: 0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3, strategy: 0x8a4ac83162258e04786355163de913abe3247cdd)`
-    - `ReserveInterestRateStrategyChanged(asset: 0x172370d5cd63279efa6d502dab29171933a610af, strategy: 0x3a1ea739797fcf684c0934f07a3d84c489e24022)`
-    - `ReserveInterestRateStrategyChanged(asset: 0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7, strategy: 0xccdb78f82ef5feccc6864aa00f2d7df3fe00474c)`
-    - `ReserveInterestRateStrategyChanged(asset: 0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39, strategy: 0x124e69de782f966fbfbb6f09f92dcdd705418cc8)`
-    - `ReserveFactorChanged(asset: 0x8f3cf7ad23cd3cadbd9735aff958023239c6a063, factor: 2100)`
-    - `ReserveFactorChanged(asset: 0x2791bca1f2de4661ed88a30c99a7a9449aa84174, factor: 2300)`
-    - `ReserveFactorChanged(asset: 0xc2132d05d31c914a87c6611c10748aeb04b58e8f, factor: 2200)`
-    - `ReserveFactorChanged(asset: 0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6, factor: 5500)`
-    - `ReserveFactorChanged(asset: 0x7ceb23fd6bc0add59e62ac25578270cff1b9f619, factor: 4500)`
-    - `ReserveFactorChanged(asset: 0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270, factor: 4100)`
-    - `ReserveFactorChanged(asset: 0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3, factor: 3200)`
-    - `ReserveFactorChanged(asset: 0x172370d5cd63279efa6d502dab29171933a610af, factor: 3800)`
-    - `ReserveFactorChanged(asset: 0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7, factor: 6000)`
-    - `ReserveFactorChanged(asset: 0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39, factor: 5000)`
-  - PolygonBridgeExecutor at `0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772`
-    - `ActionsSetExecuted(id: 47, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
+  - AaveOracle at `0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7`
+    - `AssetSourceUpdated(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, source: 0x50834f3163758fcc1df9973b6e91f0f0f0434ad3)`
+  - unknown contract name at `0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896`
+    - `RateStrategyCreated(strategy: 0xf6733b9842883bfe0e0a940ea2f572676af31bde, hashedParam: 0xd623ec411083e8a4be206762f009109e2418d346bc2d2e405cfcb3a6a2dbe6b9, params: [object Object])`
+  - unknown contract name at `0x724dc807b04555b71ed48a6896b6F41593b8C637`
+    - `Initialized(underlyingAsset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, pool: 0x794a61358d6845594f94dc1db02a252b5b4814ad, treasury: 0x053d55f9b5af8694c503eb288a1b7e552f590710, incentivesController: 0x929ec64c34a17401f460460d4b9390518e5b473e, aTokenDecimals: 6, aTokenName: Aave Arbitrum USDCn, aTokenSymbol: aArbUSDCn, params: 0x)`
+  - unknown contract name at `0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a`
+    - `Initialized(underlyingAsset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, pool: 0x794a61358d6845594f94dc1db02a252b5b4814ad, incentivesController: 0x929ec64c34a17401f460460d4b9390518e5b473e, debtTokenDecimals: 6, debtTokenName: Aave Arbitrum Stable Debt USDCn, debtTokenSymbol: stableDebtArbUSDCn, params: 0x)`
+  - unknown contract name at `0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6`
+    - `Initialized(underlyingAsset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, pool: 0x794a61358d6845594f94dc1db02a252b5b4814ad, incentivesController: 0x929ec64c34a17401f460460d4b9390518e5b473e, debtTokenDecimals: 6, debtTokenName: Aave Arbitrum Variable Debt USDCn, debtTokenSymbol: variableDebtArbUSDCn, params: 0x)`
+  - InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E`
+    - `ReserveInitialized(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, aToken: 0x724dc807b04555b71ed48a6896b6f41593b8c637, stableDebtToken: 0xdc1fad70953bb3918592b6fcc374fe05f5811b6a, variableDebtToken: 0xf611aeb5013fd2c0511c9cd55c7dc5c1140741a6, interestRateStrategyAddress: 0xf6733b9842883bfe0e0a940ea2f572676af31bde)`
+    - `SupplyCapChanged(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, oldSupplyCap: 0, newSupplyCap: 41000000)`
+    - `BorrowCapChanged(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, oldBorrowCap: 0, newBorrowCap: 41000000)`
+    - `ReserveBorrowing(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, enabled: true)`
+    - `ReserveStableRateBorrowing(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, enabled: false)`
+    - `BorrowableInIsolationChanged(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, borrowable: true)`
+    - `SiloedBorrowingChanged(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, oldState: false, newState: false)`
+    - `ReserveFactorChanged(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, oldReserveFactor: 0, newReserveFactor: 1000)`
+    - `ReserveFlashLoaning(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, enabled: true)`
+    - `CollateralConfigurationChanged(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, ltv: 8100, liquidationThreshold: 8600, liquidationBonus: 10500)`
+    - `LiquidationProtocolFeeChanged(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, oldFee: 0, newFee: 1000)`
+    - `DebtCeilingChanged(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, oldDebtCeiling: 0, newDebtCeiling: 0)`
+    - `EModeAssetCategoryChanged(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, oldCategoryId: 0, newCategoryId: 1)`
+  - InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`
+    - `IsolationModeTotalDebtUpdated(asset: 0xaf88d065e77c8cc2239327c5edb3a432268e5831, totalDebt: 0)`
+  - ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
+    - `ActionsSetExecuted(id: 27, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
 
 #### Check all targets are verified on Etherscan ✅ Passed
 
 Info:
 
 - Targets:
-  - 0xBBD2B7418395d1782f0016095C6A26487d184873: Contract (not verified)
+  - 0x7B20e2008c714f209131C7EC90294526e8f493cc: Contract (not verified)
 
 #### Check all touched contracts are verified on Etherscan ✅ Passed
 
@@ -272,36 +275,32 @@ Info:
 
 - Touched address:
   - 0xd73a92be73efbfcf3854433a5fcbabf9c1316073: EOA (verification not applicable)
-  - 0xdc9a35b16db4e126cfedc41322b3a36454b1f772: Contract (verified) (PolygonBridgeExecutor)
-  - 0xbbd2b7418395d1782f0016095c6a26487d184873: Contract (verified) (AaveV2PolygonRatesUpdates_20230614)
-  - 0x9eced0293e7b73cff4a2b4f9c82aac8346158bd9: Contract (verified) (AaveV2ConfigEngine)
-  - 0xd05003a24a17d9117b11ec04cf9743b050779c08: Contract (not verified)
-  - 0x4e99b8dc5c5b24b8904b640ea9342dcea233818a: Contract (verified) (V2RateStrategyFactory)
-  - 0xd05e3e715d945b59290df0ae8ef85c1bdb684744: Contract (verified) (LendingPoolAddressesProvider)
-  - 0x8dff5e27ea6b7ac08ebfdf9eb090f32ee9a30fcf: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
-  - 0x6a8730f54b8c69ab096c43ff217ca0a350726ac7: Contract (verified) (LendingPool)
-  - 0xbe889f70c89f36eb34680b26162fd84ffd6fe355: Contract (not verified)
-  - 0xe7a516f340a3f794a3b2fd0f74a7242b326b9f33: Contract (verified) (DefaultReserveInterestRateStrategy)
-  - 0xd2c92b5a793e196ab11dbefbe3af6bdded6c3dd5: Contract (verified) (DefaultReserveInterestRateStrategy)
-  - 0x1d41b83e5bdbb21c4dd924507cbde66cd865d029: Contract (verified) (DefaultReserveInterestRateStrategy)
-  - 0xd792a3779d3c80baee8cf3304d6aeac74bc432be: Contract (verified) (DefaultReserveInterestRateStrategy)
-  - 0x893411580e590d62ddbca8a703d61cc4a8c7b2b9: Contract (verified) (DefaultReserveInterestRateStrategy)
-  - 0x54da5057cda764909f4c79ba9fbb2d4a214eeae5: Contract (verified) (DefaultReserveInterestRateStrategy)
-  - 0xe4621dfd503a533f42bb5a45162ea3e5233acd5f: Contract (verified) (DefaultReserveInterestRateStrategy)
-  - 0xbb480ae4e2cf28fbe80c9b61ab075f6e7c4db468: Contract (not verified)
-  - 0x5641bb58f4a92188a6f16ee79c8886cf42c561d3: Contract (not verified)
-  - 0x499e74993ffa39dd314782c4262a7443c31f8422: EOA (verification not applicable)
-  - 0xce5870016d3cfa4e1c71fb7c7ee8cef67712a7a3: EOA (verification not applicable)
-  - 0xacbbd7e2e8c14dbdbb974b1be2fb29f34c1e5048: EOA (verification not applicable)
-  - 0xcc906fc61a896bad00f3f4ef736b22716cbd8878: EOA (verification not applicable)
-  - 0xea2e7947658944674893d71ce5da52d528a43388: EOA (verification not applicable)
-  - 0x8772dfbf52d03f11b43e31cf04bbcc64ae0a8cb9: EOA (verification not applicable)
-  - 0x8a4ac83162258e04786355163de913abe3247cdd: EOA (verification not applicable)
-  - 0x3a1ea739797fcf684c0934f07a3d84c489e24022: EOA (verification not applicable)
-  - 0xccdb78f82ef5feccc6864aa00f2d7df3fe00474c: EOA (verification not applicable)
-  - 0x124e69de782f966fbfbb6f09f92dcdd705418cc8: EOA (verification not applicable)
-  - 0x26db2b833021583566323e3b8985999981b9f1f3: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
-  - 0xf70a4d422e772926852ba9044026f169e6ad9492: Contract (verified) (LendingPoolConfigurator)
+  - 0x7d9103572be58ffe99dc390e8246f02dcae6f611: Contract (verified) (ArbitrumBridgeExecutor)
+  - 0x7b20e2008c714f209131c7ec90294526e8f493cc: Contract (not verified)
+  - 0x0efdfc1a940de4e7e6acc9bb801481f81b17fd20: Contract (verified) (AaveV3ConfigEngine)
+  - 0x50834f3163758fcc1df9973b6e91f0f0f0434ad3: Contract (verified) (EACAggregatorProxy)
+  - 0x2946220288dbbf77df0030fcecc2a8348cbbe32c: Contract (verified) (AccessControlledOffchainAggregator)
+  - 0xb56c2f0b653b2e0b10c9b928c8580ac5df02c7c7: Contract (verified) (AaveOracle)
+  - 0xa97684ead0e402dc232d5a977953df7ecbab3cdb: Contract (verified) (PoolAddressesProvider)
+  - 0xa72636cbcaa8f5ff95b2cc47f3cdee83f3294a0b: Contract (verified) (ACLManager)
+  - 0xcc47c4fe1f7f29ff31a8b62197023ac8553c7896: Contract (not verified)
+  - 0x2feb46e48494356955159b9ed8e795add1e1ad7b: Contract (not verified)
+  - 0xf6733b9842883bfe0e0a940ea2f572676af31bde: EOA (verification not applicable)
+  - 0xaf88d065e77c8cc2239327c5edb3a432268e5831: Contract (verified) (FiatTokenProxy)
+  - 0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a: Contract (verified) (FiatTokenV2_1)
+  - 0x8145edddf43f50276641b55bd3ad95944510021e: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
+  - 0x04a8d477ee202adce1682f5902e1160455205b12: Contract (not verified)
+  - 0x7406aba1aa5fe5cd71d958ce10fc28c416a33aa0: Contract (not verified)
+  - 0x724dc807b04555b71ed48a6896b6f41593b8c637: Contract (not verified)
+  - 0x1be1798b70aee431c2986f7ff48d9d1fa350786a: Contract (verified) (AToken)
+  - 0xdc1fad70953bb3918592b6fcc374fe05f5811b6a: Contract (not verified)
+  - 0x0c2c95b24529664fe55d4437d7a31175cfe6c4f7: Contract (not verified)
+  - 0xf611aeb5013fd2c0511c9cd55c7dc5c1140741a6: Contract (not verified)
+  - 0x5e76e98e0963ecdc6a065d1435f84065b7523f39: Contract (verified) (VariableDebtToken)
+  - 0x794a61358d6845594f94dc1db02a252b5b4814ad: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
+  - 0xbcb167bdcf14a8f791d6f4a6edd964aed2f8813b: Contract (verified) (L2Pool)
+  - 0xd5256981e08492afc543af2a779af989e9f9f7e7: Contract (not verified)
+  - 0x6b4e260b765b3ca1514e618c0215a6b7839ff93e: Contract (not verified)
 
 #### Runs solc against the verified contracts ✅ Passed
 
@@ -312,7 +311,7 @@ Info:
 <details>
 <summary>View Details</summary>
 <details>
-<summary>View warnings for DefaultReserveInterestRateStrategy at `0x1d41b83e5bdbB21c4dD924507cBde66CD865d029`</summary>
+<summary>View warnings for AaveV3ConfigEngine at `0x0EfdfC1A940DE4E7E6acC9Bb801481f81B17fd20`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -347,7 +346,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x26db2B833021583566323E3b8985999981b9F1F3` with implementation LendingPoolConfigurator at `0xf70A4d422E772926852BA9044026F169e6AD9492`</summary>
+<summary>View warnings for FiatTokenV2_1 at `0x0f4fb9474303d10905AB86aA8d5A65FE44b6E04A`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -382,58 +381,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>View warnings for V2RateStrategyFactory at `0x4E99b8dC5c5b24b8904b640Ea9342dcEa233818A`</summary>
-
-```
-ERROR:CryticCompile:ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/dependencies/DefaultReserveInterestRateStrategy.sol:9:1:
-  |
-9 | import {ILendingPoolAddressesProvider, ILendingRateOracle} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "solidity-utils/contracts/oz-common/interfaces/IERC20.sol" not found: File not found. Searched the following locations: "".
-  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:10:1:
-   |
-10 | import {IERC20} from 'solidity-utils/contracts/oz-common/interfaces/IERC20.sol';
-   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IV2RateStrategyFactory.sol:4:1:
-  |
-4 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:4:1:
-  |
-4 | import {ILendingPool} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "solidity-utils/contracts/transparent-proxy/Initializable.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:5:1:
-  |
-5 | import {Initializable} from 'solidity-utils/contracts/transparent-proxy/Initializable.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:8:1:
-  |
-8 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-```
-
-</details>
-
-<details>
-<summary>View warnings for DefaultReserveInterestRateStrategy at `0x54DA5057cdA764909f4c79bA9fbb2d4A214EeAe5`</summary>
+<summary>View warnings for AToken at `0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -468,7 +416,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>View warnings for LendingPool at `0x6A8730F54b8C69ab096c43ff217CA0a350726ac7`</summary>
+<summary>View warnings for AccessControlledOffchainAggregator at `0x2946220288DbBF77dF0030fCecc2a8348CbBE32C`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -503,7 +451,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>View warnings for DefaultReserveInterestRateStrategy at `0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9`</summary>
+<summary>View warnings for EACAggregatorProxy at `0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -538,7 +486,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf` with implementation LendingPool at `0x6A8730F54b8C69ab096c43ff217CA0a350726ac7`</summary>
+<summary>View warnings for VariableDebtToken at `0x5E76E98E0963EcDC6A065d1435F84065b7523f39`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -573,30 +521,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>View warnings for AaveV2ConfigEngine at `0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9`</summary>
-
-```
-ERROR:CryticCompile:ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IAaveV2ConfigEngine.sol:4:1:
-  |
-4 | import {ILendingPoolConfigurator} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IV2RateStrategyFactory.sol:4:1:
-  |
-4 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-```
-
-</details>
-
-<details>
-<summary>View warnings for AaveV2PolygonRatesUpdates_20230614 at `0xBBD2B7418395d1782f0016095C6A26487d184873`</summary>
+<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -631,7 +556,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>View warnings for LendingPoolAddressesProvider at `0xd05e3E715d945B59290df0ae8eF85c1BdB684744`</summary>
+<summary>View warnings for ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -666,7 +591,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>View warnings for DefaultReserveInterestRateStrategy at `0xD2C92b5A793e196aB11dBefBe3Af6BddeD6c3DD5`</summary>
+<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -701,7 +626,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>View warnings for DefaultReserveInterestRateStrategy at `0xD792a3779D3C80bAEe8CF3304D6aEAc74bC432BE`</summary>
+<summary>View warnings for ACLManager at `0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -736,7 +661,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>View warnings for PolygonBridgeExecutor at `0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772`</summary>
+<summary>View warnings for PoolAddressesProvider at `0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -771,30 +696,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>View warnings for DefaultReserveInterestRateStrategy at `0xE4621DfD503A533f42bB5a45162eA3e5233Acd5F`</summary>
-
-```
-ERROR:CryticCompile:ParserError: ParserError: Source "@aave-address-book/AaveMisc.sol" not found: File not found. Searched the following locations: "".
- --> src/proposals/aave-grants-dao-renewal/ProposalPayload.sol:4:1:
-  |
-4 | import {AaveMisc} from "@aave-address-book/AaveMisc.sol";
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "@aave-address-book/AaveV2Ethereum.sol" not found: File not found. Searched the following locations: "".
- --> src/proposals/aave-grants-dao-renewal/ProposalPayload.sol:5:1:
-  |
-5 | import {AaveV2Ethereum} from "@aave-address-book/AaveV2Ethereum.sol";
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-```
-
-</details>
-
-<details>
-<summary>View warnings for DefaultReserveInterestRateStrategy at `0xe7a516f340a3f794a3B2fd0f74A7242b326b9f33`</summary>
+<summary>View warnings for FiatTokenProxy at `0xaf88d065e77c8cC2239327C5EDb3A432268e5831` with implementation FiatTokenV2_1 at `0x0f4fb9474303d10905AB86aA8d5A65FE44b6E04A`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -829,7 +731,42 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>View warnings for LendingPoolConfigurator at `0xf70A4d422E772926852BA9044026F169e6AD9492`</summary>
+<summary>View warnings for AaveOracle at `0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7`</summary>
+
+```
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
+    sys.exit(main())
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
+    compilations = compile_all(**vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 306, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+```
+
+</details>
+
+<details>
+<summary>View warnings for L2Pool at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -875,7 +812,7 @@ Info:
 <summary>View Details</summary>
 
 <details>
-<summary>Slither report for DefaultReserveInterestRateStrategy at `0x1d41b83e5bdbB21c4dD924507cBde66CD865d029`</summary>
+<summary>Slither report for AaveV3ConfigEngine at `0x0EfdfC1A940DE4E7E6acC9Bb801481f81B17fd20`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -905,7 +842,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 403: Forbidden
-ERROR:root:Error in 0x1d41b83e5bdbb21c4dd924507cbde66cd865d029
+ERROR:root:Error in 0x0efdfc1a940de4e7e6acc9bb801481f81b17fd20
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -938,7 +875,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x26db2B833021583566323E3b8985999981b9F1F3` with implementation LendingPoolConfigurator at `0xf70A4d422E772926852BA9044026F169e6AD9492`</summary>
+<summary>Slither report for FiatTokenV2_1 at `0x0f4fb9474303d10905AB86aA8d5A65FE44b6E04A`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -968,7 +905,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 403: Forbidden
-ERROR:root:Error in 0x26db2b833021583566323e3b8985999981b9f1f3
+ERROR:root:Error in 0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -1001,137 +938,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>Slither report for V2RateStrategyFactory at `0x4E99b8dC5c5b24b8904b640Ea9342dcEa233818A`</summary>
-
-```
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
-    raise InvalidCompilation(solc_exception_str)
-crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/dependencies/DefaultReserveInterestRateStrategy.sol:9:1:
-  |
-9 | import {ILendingPoolAddressesProvider, ILendingRateOracle} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "solidity-utils/contracts/oz-common/interfaces/IERC20.sol" not found: File not found. Searched the following locations: "".
-  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:10:1:
-   |
-10 | import {IERC20} from 'solidity-utils/contracts/oz-common/interfaces/IERC20.sol';
-   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IV2RateStrategyFactory.sol:4:1:
-  |
-4 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:4:1:
-  |
-4 | import {ILendingPool} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "solidity-utils/contracts/transparent-proxy/Initializable.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:5:1:
-  |
-5 | import {Initializable} from 'solidity-utils/contracts/transparent-proxy/Initializable.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:8:1:
-  |
-8 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-ERROR:root:Error in 0x4e99b8dc5c5b24b8904b640ea9342dcea233818a
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
-    raise InvalidCompilation(solc_exception_str)
-crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/dependencies/DefaultReserveInterestRateStrategy.sol:9:1:
-  |
-9 | import {ILendingPoolAddressesProvider, ILendingRateOracle} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "solidity-utils/contracts/oz-common/interfaces/IERC20.sol" not found: File not found. Searched the following locations: "".
-  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:10:1:
-   |
-10 | import {IERC20} from 'solidity-utils/contracts/oz-common/interfaces/IERC20.sol';
-   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IV2RateStrategyFactory.sol:4:1:
-  |
-4 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:4:1:
-  |
-4 | import {ILendingPool} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "solidity-utils/contracts/transparent-proxy/Initializable.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:5:1:
-  |
-5 | import {Initializable} from 'solidity-utils/contracts/transparent-proxy/Initializable.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:8:1:
-  |
-8 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-
-```
-
-</details>
-
-<details>
-<summary>Slither report for DefaultReserveInterestRateStrategy at `0x54DA5057cdA764909f4c79bA9fbb2d4A214EeAe5`</summary>
+<summary>Slither report for AToken at `0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1161,7 +968,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 403: Forbidden
-ERROR:root:Error in 0x54da5057cda764909f4c79ba9fbb2d4a214eeae5
+ERROR:root:Error in 0x1be1798b70aee431c2986f7ff48d9d1fa350786a
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -1194,7 +1001,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>Slither report for LendingPool at `0x6A8730F54b8C69ab096c43ff217CA0a350726ac7`</summary>
+<summary>Slither report for AccessControlledOffchainAggregator at `0x2946220288DbBF77dF0030fCecc2a8348CbBE32C`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1224,7 +1031,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 403: Forbidden
-ERROR:root:Error in 0x6a8730f54b8c69ab096c43ff217ca0a350726ac7
+ERROR:root:Error in 0x2946220288dbbf77df0030fcecc2a8348cbbe32c
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -1257,7 +1064,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>Slither report for DefaultReserveInterestRateStrategy at `0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9`</summary>
+<summary>Slither report for EACAggregatorProxy at `0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1287,7 +1094,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 403: Forbidden
-ERROR:root:Error in 0x893411580e590d62ddbca8a703d61cc4a8c7b2b9
+ERROR:root:Error in 0x50834f3163758fcc1df9973b6e91f0f0f0434ad3
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -1320,7 +1127,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf` with implementation LendingPool at `0x6A8730F54b8C69ab096c43ff217CA0a350726ac7`</summary>
+<summary>Slither report for VariableDebtToken at `0x5E76E98E0963EcDC6A065d1435F84065b7523f39`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1350,7 +1157,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 403: Forbidden
-ERROR:root:Error in 0x8dff5e27ea6b7ac08ebfdf9eb090f32ee9a30fcf
+ERROR:root:Error in 0x5e76e98e0963ecdc6a065d1435f84065b7523f39
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -1383,81 +1190,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>Slither report for AaveV2ConfigEngine at `0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9`</summary>
-
-```
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
-    raise InvalidCompilation(solc_exception_str)
-crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IAaveV2ConfigEngine.sol:4:1:
-  |
-4 | import {ILendingPoolConfigurator} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IV2RateStrategyFactory.sol:4:1:
-  |
-4 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-ERROR:root:Error in 0x9eced0293e7b73cff4a2b4f9c82aac8346158bd9
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
-    raise InvalidCompilation(solc_exception_str)
-crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IAaveV2ConfigEngine.sol:4:1:
-  |
-4 | import {ILendingPoolConfigurator} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IV2RateStrategyFactory.sol:4:1:
-  |
-4 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-
-```
-
-</details>
-
-<details>
-<summary>Slither report for AaveV2PolygonRatesUpdates_20230614 at `0xBBD2B7418395d1782f0016095C6A26487d184873`</summary>
+<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1487,7 +1220,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 403: Forbidden
-ERROR:root:Error in 0xbbd2b7418395d1782f0016095c6a26487d184873
+ERROR:root:Error in 0x794a61358d6845594f94dc1db02a252b5b4814ad
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -1520,7 +1253,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>Slither report for LendingPoolAddressesProvider at `0xd05e3E715d945B59290df0ae8eF85c1BdB684744`</summary>
+<summary>Slither report for ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1550,7 +1283,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 403: Forbidden
-ERROR:root:Error in 0xd05e3e715d945b59290df0ae8ef85c1bdb684744
+ERROR:root:Error in 0x7d9103572be58ffe99dc390e8246f02dcae6f611
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -1583,7 +1316,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>Slither report for DefaultReserveInterestRateStrategy at `0xD2C92b5A793e196aB11dBefBe3Af6BddeD6c3DD5`</summary>
+<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1613,7 +1346,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 403: Forbidden
-ERROR:root:Error in 0xd2c92b5a793e196ab11dbefbe3af6bdded6c3dd5
+ERROR:root:Error in 0x8145edddf43f50276641b55bd3ad95944510021e
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -1646,7 +1379,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>Slither report for DefaultReserveInterestRateStrategy at `0xD792a3779D3C80bAEe8CF3304D6aEAc74bC432BE`</summary>
+<summary>Slither report for ACLManager at `0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1676,7 +1409,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 403: Forbidden
-ERROR:root:Error in 0xd792a3779d3c80baee8cf3304d6aeac74bc432be
+ERROR:root:Error in 0xa72636cbcaa8f5ff95b2cc47f3cdee83f3294a0b
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -1709,7 +1442,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>Slither report for PolygonBridgeExecutor at `0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772`</summary>
+<summary>Slither report for PoolAddressesProvider at `0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1739,7 +1472,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 403: Forbidden
-ERROR:root:Error in 0xdc9a35b16db4e126cfedc41322b3a36454b1f772
+ERROR:root:Error in 0xa97684ead0e402dc232d5a977953df7ecbab3cdb
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -1772,81 +1505,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>Slither report for DefaultReserveInterestRateStrategy at `0xE4621DfD503A533f42bB5a45162eA3e5233Acd5F`</summary>
-
-```
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
-    raise InvalidCompilation(solc_exception_str)
-crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "@aave-address-book/AaveMisc.sol" not found: File not found. Searched the following locations: "".
- --> src/proposals/aave-grants-dao-renewal/ProposalPayload.sol:4:1:
-  |
-4 | import {AaveMisc} from "@aave-address-book/AaveMisc.sol";
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "@aave-address-book/AaveV2Ethereum.sol" not found: File not found. Searched the following locations: "".
- --> src/proposals/aave-grants-dao-renewal/ProposalPayload.sol:5:1:
-  |
-5 | import {AaveV2Ethereum} from "@aave-address-book/AaveV2Ethereum.sol";
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-ERROR:root:Error in 0xe4621dfd503a533f42bb5a45162ea3e5233acd5f
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
-    raise InvalidCompilation(solc_exception_str)
-crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "@aave-address-book/AaveMisc.sol" not found: File not found. Searched the following locations: "".
- --> src/proposals/aave-grants-dao-renewal/ProposalPayload.sol:4:1:
-  |
-4 | import {AaveMisc} from "@aave-address-book/AaveMisc.sol";
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "@aave-address-book/AaveV2Ethereum.sol" not found: File not found. Searched the following locations: "".
- --> src/proposals/aave-grants-dao-renewal/ProposalPayload.sol:5:1:
-  |
-5 | import {AaveV2Ethereum} from "@aave-address-book/AaveV2Ethereum.sol";
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-
-```
-
-</details>
-
-<details>
-<summary>Slither report for DefaultReserveInterestRateStrategy at `0xe7a516f340a3f794a3B2fd0f74A7242b326b9f33`</summary>
+<summary>Slither report for FiatTokenProxy at `0xaf88d065e77c8cC2239327C5EDb3A432268e5831` with implementation FiatTokenV2_1 at `0x0f4fb9474303d10905AB86aA8d5A65FE44b6E04A`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1876,7 +1535,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 403: Forbidden
-ERROR:root:Error in 0xe7a516f340a3f794a3b2fd0f74a7242b326b9f33
+ERROR:root:Error in 0xaf88d065e77c8cc2239327c5edb3a432268e5831
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -1909,7 +1568,7 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
-<summary>Slither report for LendingPoolConfigurator at `0xf70A4d422E772926852BA9044026F169e6AD9492`</summary>
+<summary>Slither report for AaveOracle at `0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1939,7 +1598,70 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 403: Forbidden
-ERROR:root:Error in 0xf70a4d422e772926852ba9044026f169e6ad9492
+ERROR:root:Error in 0xb56c2f0b653b2e0b10c9b928c8580ac5df02c7c7
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 306, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+
+```
+
+</details>
+
+<details>
+<summary>Slither report for L2Pool at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 306, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+ERROR:root:Error in 0xbcb167bdcf14a8f791d6f4a6edd964aed2f8813b
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
