@@ -484,6 +484,7 @@ Some notes on the outputs of reports:
 | Polygon                                                                                                                                                                                  | [250_Polygon_pending_0.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/250_Polygon_pending_0.md)   | [app](https://app.aave.com/governance/proposal/?proposalId=250) |
 | Add Native USDC To Arbitrum V3 Pool                                                                                                                                                      | [251.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/251.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=251) |
 | Arbitrum                                                                                                                                                                                 | [251_Arbitrum_pending_0.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/251_Arbitrum_pending_0.md) | [app](https://app.aave.com/governance/proposal/?proposalId=251) |
+| Chaos Labs V2 to V3 Migration Next Steps                                                                                                                                                 | [252.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/252.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=252) |
 
 <!-- ### Reports table end ### -->
 
