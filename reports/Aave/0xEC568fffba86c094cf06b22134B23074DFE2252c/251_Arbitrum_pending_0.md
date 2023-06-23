@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/0e44dd1d-cd9c-4f2d-8c36-661684c95949](https://dashboard.tenderly.co/me/simulator/0e44dd1d-cd9c-4f2d-8c36-661684c95949)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/3cd86e1f-068c-454b-a053-eff05917904e](https://dashboard.tenderly.co/me/simulator/3cd86e1f-068c-454b-a053-eff05917904e)
 
 ### Checks
 
@@ -125,7 +125,7 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0xd921527c1d61ce21c062f662645ead1bcb3d630a5ec3148cad0df71d12c6afc6` @@
+@@ `_queuedActions` key `0x1b88b2f9d0bf32e50f0fc3cee32310db9c6b3f1d8bbb5cb4a7706e6c34961d2a` @@
 - true
 + false
 
@@ -138,11 +138,11 @@ Info:
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x000000000000000000000000000000000000000000000000000000000095a629"
-+ "0x000000000000000000000000000000000000000000000000000000000095b165"
+- "0x0000000000000000000000000000000000000000000000000000000000f9888f"
++ "0x0000000000000000000000000000000000000000000000000000000000f993cb"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x000000000000000000000000000000000000000000000000265f8f8b66f9fe50"
-+ "0x000000000000000000000000000000000000000000000000265fa7ef981a5850"
+- "0x00000000000000000000000000000000000000000000000026a6ae51793bca44"
++ "0x00000000000000000000000000000000000000000000000026a6c733234d9144"
 ```
 
 ```diff
@@ -276,7 +276,7 @@ Info:
 - Touched address:
   - 0xd73a92be73efbfcf3854433a5fcbabf9c1316073: EOA (verification not applicable)
   - 0x7d9103572be58ffe99dc390e8246f02dcae6f611: Contract (verified) (ArbitrumBridgeExecutor)
-  - 0x7b20e2008c714f209131c7ec90294526e8f493cc: Contract (not verified)
+  - 0x7b20e2008c714f209131c7ec90294526e8f493cc: Contract (verified) (AaveV3ArbNativeUSDCListing_20230621)
   - 0x0efdfc1a940de4e7e6acc9bb801481f81b17fd20: Contract (verified) (AaveV3ConfigEngine)
   - 0x50834f3163758fcc1df9973b6e91f0f0f0434ad3: Contract (verified) (EACAggregatorProxy)
   - 0x2946220288dbbf77df0030fcecc2a8348cbbe32c: Contract (verified) (AccessControlledOffchainAggregator)
@@ -366,6 +366,15 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 <details>
 <summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`</summary>
+
+```
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
+<summary>View warnings for AaveV3ArbNativeUSDCListing_20230621 at `0x7B20e2008c714f209131C7EC90294526e8f493cc`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -675,6 +684,41 @@ Traceback (most recent call last):
     if data_loaded[self.get_key()] == "root":
 KeyError: 'name'
 ERROR:root:Error in 0x794a61358d6845594f94dc1db02a252b5b4814ad
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
+```
+
+</details>
+
+<details>
+<summary>Slither report for AaveV3ArbNativeUSDCListing_20230621 at `0x7B20e2008c714f209131C7EC90294526e8f493cc`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0x7b20e2008c714f209131c7ec90294526e8f493cc
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
