@@ -1,6 +1,6 @@
 ## Polygon
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/7f2f7c52-51d9-4d21-a3a2-0a5756c2d5d8](https://dashboard.tenderly.co/me/simulator/7f2f7c52-51d9-4d21-a3a2-0a5756c2d5d8)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/5d9f240e-aa7d-41cd-ab71-70d079732529](https://dashboard.tenderly.co/me/simulator/5d9f240e-aa7d-41cd-ab71-70d079732529)
 
 ### Checks
 
@@ -67,7 +67,7 @@ Info:
 - 0xbb480ae4e2cf28fbe80c9b61ab075f6e7c4db468
 + 0xccdb78f82ef5feccc6864aa00f2d7df3fe00474c
 
-# decoded configuration.data for key `0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7` (symbol: unknown)
+# decoded configuration.data for key `0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7` (symbol: GHST)
 @@ configuration.data.reserveFactor @@
 - 2000
 + 6000
@@ -203,7 +203,7 @@ Info:
 
 ```diff
 # PolygonBridgeExecutor at `0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772`
-@@ `_queuedActions` key `0x9fab0ffd3af393ebc4f57f22df5de2631e5f656dca16988ec9a450dbed38b975` @@
+@@ `_queuedActions` key `0x7a413b711f3d60485b921ca11f2086ebd6eeb6d2454db7cb447d4f2e52dff7f2` @@
 - true
 + false
 
@@ -315,10 +315,7 @@ Info:
 <summary>View warnings for DefaultReserveInterestRateStrategy at `0x1d41b83e5bdbB21c4dD924507cBde66CD865d029`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -327,10 +324,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x26db2B833021583566323E3b8985999981b9F1F3` with implementation LendingPoolConfigurator at `0xf70A4d422E772926852BA9044026F169e6AD9492`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -339,10 +333,75 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for V2RateStrategyFactory at `0x4E99b8dC5c5b24b8904b640Ea9342dcEa233818A`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x4e99b8dc5c5b24b8904b640ea9342dcea233818a-V2RateStrategyFactory' running
+WARNING:CryticCompile:Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:60:5:
+   |
+60 |     uint256 baseVariableBorrowRate,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:92:3:
+   |
+92 |   function baseVariableBorrowRate() external view override returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:61:5:
+   |
+61 |     uint256 variableRateSlope1,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:76:3:
+   |
+76 |   function variableRateSlope1() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:62:5:
+   |
+62 |     uint256 variableRateSlope2,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:80:3:
+   |
+80 |   function variableRateSlope2() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:63:5:
+   |
+63 |     uint256 stableRateSlope1,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:84:3:
+   |
+84 |   function stableRateSlope1() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:64:5:
+   |
+64 |     uint256 stableRateSlope2
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:88:3:
+   |
+88 |   function stableRateSlope2() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Warning: Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:57:3:
+   |
+57 |   constructor(
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
 ```
 
 </details>
@@ -351,10 +410,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for DefaultReserveInterestRateStrategy at `0x54DA5057cdA764909f4c79bA9fbb2d4A214EeAe5`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -363,10 +419,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for LendingPool at `0x6A8730F54b8C69ab096c43ff217CA0a350726ac7`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -375,10 +428,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for DefaultReserveInterestRateStrategy at `0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -387,10 +437,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf` with implementation LendingPool at `0x6A8730F54b8C69ab096c43ff217CA0a350726ac7`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -399,10 +446,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for AaveV2ConfigEngine at `0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x9eced0293e7b73cff4a2b4f9c82aac8346158bd9-AaveV2ConfigEngine' running
 ```
 
 </details>
@@ -411,10 +455,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for AaveV2PolygonRatesUpdates_20230614 at `0xBBD2B7418395d1782f0016095C6A26487d184873`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -423,10 +464,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for LendingPoolAddressesProvider at `0xd05e3E715d945B59290df0ae8eF85c1BdB684744`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -435,10 +473,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for DefaultReserveInterestRateStrategy at `0xD2C92b5A793e196aB11dBefBe3Af6BddeD6c3DD5`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -447,10 +482,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for DefaultReserveInterestRateStrategy at `0xD792a3779D3C80bAEe8CF3304D6aEAc74bC432BE`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -459,10 +491,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for PolygonBridgeExecutor at `0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -471,10 +500,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for DefaultReserveInterestRateStrategy at `0xE4621DfD503A533f42bB5a45162eA3e5233Acd5F`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0xe4621dfd503a533f42bb5a45162ea3e5233acd5f-ProposalPayload' running
 ```
 
 </details>
@@ -483,10 +509,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for DefaultReserveInterestRateStrategy at `0xe7a516f340a3f794a3B2fd0f74A7242b326b9f33`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -495,10 +518,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for LendingPoolConfigurator at `0xf70A4d422E772926852BA9044026F169e6AD9492`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -518,10 +538,33 @@ Info:
 <summary>Slither report for DefaultReserveInterestRateStrategy at `0x1d41b83e5bdbB21c4dD924507cBde66CD865d029`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0x1d41b83e5bdbb21c4dd924507cbde66cd865d029
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
 ```
 
 </details>
@@ -530,10 +573,33 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x26db2B833021583566323E3b8985999981b9F1F3` with implementation LendingPoolConfigurator at `0xf70A4d422E772926852BA9044026F169e6AD9492`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0x26db2b833021583566323e3b8985999981b9f1f3
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
 ```
 
 </details>
@@ -542,10 +608,161 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for V2RateStrategyFactory at `0x4E99b8dC5c5b24b8904b640Ea9342dcEa233818A`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x4e99b8dc5c5b24b8904b640ea9342dcea233818a-V2RateStrategyFactory' running
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:60:5:
+   |
+60 |     uint256 baseVariableBorrowRate,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:92:3:
+   |
+92 |   function baseVariableBorrowRate() external view override returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:61:5:
+   |
+61 |     uint256 variableRateSlope1,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:76:3:
+   |
+76 |   function variableRateSlope1() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:62:5:
+   |
+62 |     uint256 variableRateSlope2,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:80:3:
+   |
+80 |   function variableRateSlope2() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:63:5:
+   |
+63 |     uint256 stableRateSlope1,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:84:3:
+   |
+84 |   function stableRateSlope1() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:64:5:
+   |
+64 |     uint256 stableRateSlope2
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:88:3:
+   |
+88 |   function stableRateSlope2() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Warning: Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:57:3:
+   |
+57 |   constructor(
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+
+INFO:Detectors:
+V2RateStrategyFactory.getStrategyDataOfAsset(address).params (src/v2-config-engine/V2RateStrategyFactory.sol#100) is a local variable never initialized
+DefaultReserveInterestRateStrategy.calculateInterestRates(address,uint256,uint256,uint256,uint256,uint256).vars (src/dependencies/DefaultReserveInterestRateStrategy.sol#182) is a local variable never initialized
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
+INFO:Detectors:
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).baseVariableBorrowRate (src/dependencies/DefaultReserveInterestRateStrategy.sol#60) shadows:
+	- DefaultReserveInterestRateStrategy.baseVariableBorrowRate() (src/dependencies/DefaultReserveInterestRateStrategy.sol#92-94) (function)
+	- IReserveInterestRateStrategy.baseVariableBorrowRate() (src/dependencies/IReserveInterestRateStrategy.sol#11) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#61) shadows:
+	- DefaultReserveInterestRateStrategy.variableRateSlope1() (src/dependencies/DefaultReserveInterestRateStrategy.sol#76-78) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#62) shadows:
+	- DefaultReserveInterestRateStrategy.variableRateSlope2() (src/dependencies/DefaultReserveInterestRateStrategy.sol#80-82) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#63) shadows:
+	- DefaultReserveInterestRateStrategy.stableRateSlope1() (src/dependencies/DefaultReserveInterestRateStrategy.sol#84-86) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#64) shadows:
+	- DefaultReserveInterestRateStrategy.stableRateSlope2() (src/dependencies/DefaultReserveInterestRateStrategy.sol#88-90) (function)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#local-variable-shadowing
+INFO:Detectors:
+V2RateStrategyFactory.getStrategyData(IDefaultInterestRateStrategy) (src/v2-config-engine/V2RateStrategyFactory.sol#114-128) has external calls inside a loop: RateStrategyParams(strategy.OPTIMAL_UTILIZATION_RATE(),strategy.baseVariableBorrowRate(),strategy.variableRateSlope1(),strategy.variableRateSlope2(),strategy.stableRateSlope1(),strategy.stableRateSlope2()) (src/v2-config-engine/V2RateStrategyFactory.sol#119-127)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation/#calls-inside-a-loop
+INFO:Detectors:
+Address._revert(bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#235-247) uses assembly
+	- INLINE ASM (lib/solidity-utils/src/contracts/oz-common/Address.sol#240-243)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage
+INFO:Detectors:
+Address._revert(bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#235-247) is never used and should be removed
+Address.functionCall(address,bytes) (lib/solidity-utils/src/contracts/oz-common/Address.sol#86-88) is never used and should be removed
+Address.functionCall(address,bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#96-102) is never used and should be removed
+Address.functionCallWithValue(address,bytes,uint256) (lib/solidity-utils/src/contracts/oz-common/Address.sol#115-121) is never used and should be removed
+Address.functionCallWithValue(address,bytes,uint256,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#129-138) is never used and should be removed
+Address.functionDelegateCall(address,bytes) (lib/solidity-utils/src/contracts/oz-common/Address.sol#174-176) is never used and should be removed
+Address.functionDelegateCall(address,bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#184-191) is never used and should be removed
+Address.functionStaticCall(address,bytes) (lib/solidity-utils/src/contracts/oz-common/Address.sol#146-151) is never used and should be removed
+Address.functionStaticCall(address,bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#159-166) is never used and should be removed
+Address.sendValue(address,uint256) (lib/solidity-utils/src/contracts/oz-common/Address.sol#61-66) is never used and should be removed
+Address.verifyCallResult(bool,bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#223-233) is never used and should be removed
+Address.verifyCallResultFromTarget(address,bool,bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#199-215) is never used and should be removed
+PercentageMath.percentDiv(uint256,uint256) (src/dependencies/PercentageMath.sol#44-54) is never used and should be removed
+SafeMath.div(uint256,uint256) (src/dependencies/SafeMath.sol#102-104) is never used and should be removed
+SafeMath.div(uint256,uint256,string) (src/dependencies/SafeMath.sol#117-128) is never used and should be removed
+SafeMath.mod(uint256,uint256) (src/dependencies/SafeMath.sol#141-143) is never used and should be removed
+SafeMath.mod(uint256,uint256,string) (src/dependencies/SafeMath.sol#156-163) is never used and should be removed
+SafeMath.mul(uint256,uint256) (src/dependencies/SafeMath.sol#77-89) is never used and should be removed
+WadRayMath.halfRay() (src/dependencies/WadRayMath.sol#40-42) is never used and should be removed
+WadRayMath.halfWad() (src/dependencies/WadRayMath.sol#47-49) is never used and should be removed
+WadRayMath.rayToWad(uint256) (src/dependencies/WadRayMath.sol#118-124) is never used and should be removed
+WadRayMath.wad() (src/dependencies/WadRayMath.sol#33-35) is never used and should be removed
+WadRayMath.wadDiv(uint256,uint256) (src/dependencies/WadRayMath.sol#73-80) is never used and should be removed
+WadRayMath.wadMul(uint256,uint256) (src/dependencies/WadRayMath.sol#57-65) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+INFO:Detectors:
+Low level call in Address.sendValue(address,uint256) (lib/solidity-utils/src/contracts/oz-common/Address.sol#61-66):
+	- (success) = recipient.call{value: amount}() (lib/solidity-utils/src/contracts/oz-common/Address.sol#64)
+Low level call in Address.functionCallWithValue(address,bytes,uint256,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#129-138):
+	- (success,returndata) = target.call{value: value}(data) (lib/solidity-utils/src/contracts/oz-common/Address.sol#136)
+Low level call in Address.functionStaticCall(address,bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#159-166):
+	- (success,returndata) = target.staticcall(data) (lib/solidity-utils/src/contracts/oz-common/Address.sol#164)
+Low level call in Address.functionDelegateCall(address,bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#184-191):
+	- (success,returndata) = target.delegatecall(data) (lib/solidity-utils/src/contracts/oz-common/Address.sol#189)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+INFO:Detectors:
+Function IAaveOracle.WETH() (lib/aave-address-book/src/AaveV2.sol#818) is not in mixedCase
+Function IDefaultInterestRateStrategy.EXCESS_UTILIZATION_RATE() (lib/aave-address-book/src/AaveV2.sol#918) is not in mixedCase
+Function IDefaultInterestRateStrategy.OPTIMAL_UTILIZATION_RATE() (lib/aave-address-book/src/AaveV2.sol#920) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy.OPTIMAL_UTILIZATION_RATE (src/dependencies/DefaultReserveInterestRateStrategy.sol#30) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy.EXCESS_UTILIZATION_RATE (src/dependencies/DefaultReserveInterestRateStrategy.sol#38) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._baseVariableBorrowRate (src/dependencies/DefaultReserveInterestRateStrategy.sol#43) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._variableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#46) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._variableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#49) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._stableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#52) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._stableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#55) is not in mixedCase
+Constant WadRayMath.halfWAD (src/dependencies/WadRayMath.sol#15) is not in UPPER_CASE_WITH_UNDERSCORES
+Constant WadRayMath.halfRAY (src/dependencies/WadRayMath.sol#18) is not in UPPER_CASE_WITH_UNDERSCORES
+Function IV2RateStrategyFactory.ADDRESSES_PROVIDER() (src/v2-config-engine/IV2RateStrategyFactory.sol#72) is not in mixedCase
+Variable V2RateStrategyFactory.ADDRESSES_PROVIDER (src/v2-config-engine/V2RateStrategyFactory.sol#17) is not in mixedCase
+Variable V2RateStrategyFactory._strategyByParamsHash (src/v2-config-engine/V2RateStrategyFactory.sol#19) is not in mixedCase
+Variable V2RateStrategyFactory._strategies (src/v2-config-engine/V2RateStrategyFactory.sol#20) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Detectors:
+Variable DefaultReserveInterestRateStrategy._stableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#52) is too similar to DefaultReserveInterestRateStrategy._stableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#55)
+Variable DefaultReserveInterestRateStrategy._variableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#46) is too similar to DefaultReserveInterestRateStrategy._variableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#49)
+Variable DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#63) is too similar to DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#64)
+Variable DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#61) is too similar to DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#62)
+Variable Errors.LP_INCONSISTENT_FLASHLOAN_PARAMS (src/dependencies/Errors.sol#56) is too similar to Errors.VL_INCONSISTENT_FLASHLOAN_PARAMS (src/dependencies/Errors.sol#101)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#variable-names-too-similar
+INFO:Slither:0x4e99b8dc5c5b24b8904b640ea9342dcea233818a analyzed (21 contracts with 79 detectors), 58 result(s) found
 ```
 
 </details>
@@ -554,10 +771,33 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for DefaultReserveInterestRateStrategy at `0x54DA5057cdA764909f4c79bA9fbb2d4A214EeAe5`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0x54da5057cda764909f4c79ba9fbb2d4a214eeae5
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
 ```
 
 </details>
@@ -566,10 +806,33 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for LendingPool at `0x6A8730F54b8C69ab096c43ff217CA0a350726ac7`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0x6a8730f54b8c69ab096c43ff217ca0a350726ac7
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
 ```
 
 </details>
@@ -578,10 +841,33 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for DefaultReserveInterestRateStrategy at `0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0x893411580e590d62ddbca8a703d61cc4a8c7b2b9
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
 ```
 
 </details>
@@ -590,10 +876,33 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf` with implementation LendingPool at `0x6A8730F54b8C69ab096c43ff217CA0a350726ac7`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0x8dff5e27ea6b7ac08ebfdf9eb090f32ee9a30fcf
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
 ```
 
 </details>
@@ -602,10 +911,25 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for AaveV2ConfigEngine at `0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x9eced0293e7b73cff4a2b4f9c82aac8346158bd9-AaveV2ConfigEngine' running
+INFO:Detectors:
+EngineFlags.fromBool(bool) (src/v3-config-engine/EngineFlags.sol#22-24) is never used and should be removed
+EngineFlags.toBool(uint256) (src/v3-config-engine/EngineFlags.sol#16-19) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+INFO:Detectors:
+Function IAaveOracle.WETH() (lib/aave-address-book/src/AaveV2.sol#818) is not in mixedCase
+Function IDefaultInterestRateStrategy.EXCESS_UTILIZATION_RATE() (lib/aave-address-book/src/AaveV2.sol#918) is not in mixedCase
+Function IDefaultInterestRateStrategy.OPTIMAL_UTILIZATION_RATE() (lib/aave-address-book/src/AaveV2.sol#920) is not in mixedCase
+Variable AaveV2ConfigEngine.POOL_CONFIGURATOR (src/v2-config-engine/AaveV2ConfigEngine.sol#20) is not in mixedCase
+Variable AaveV2ConfigEngine.RATE_STRATEGIES_FACTORY (src/v2-config-engine/AaveV2ConfigEngine.sol#21) is not in mixedCase
+Function IAaveV2ConfigEngine.RATE_STRATEGIES_FACTORY() (src/v2-config-engine/IAaveV2ConfigEngine.sol#49) is not in mixedCase
+Function IAaveV2ConfigEngine.POOL_CONFIGURATOR() (src/v2-config-engine/IAaveV2ConfigEngine.sol#51) is not in mixedCase
+Function IV2RateStrategyFactory.ADDRESSES_PROVIDER() (src/v2-config-engine/IV2RateStrategyFactory.sol#72) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Detectors:
+EngineFlags.KEEP_CURRENT (src/v3-config-engine/EngineFlags.sol#7) is never used in EngineFlags (src/v3-config-engine/EngineFlags.sol#4-25)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-state-variable
+INFO:Slither:0x9eced0293e7b73cff4a2b4f9c82aac8346158bd9 analyzed (14 contracts with 79 detectors), 11 result(s) found
 ```
 
 </details>
@@ -614,10 +938,33 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for AaveV2PolygonRatesUpdates_20230614 at `0xBBD2B7418395d1782f0016095C6A26487d184873`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0xbbd2b7418395d1782f0016095c6a26487d184873
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
 ```
 
 </details>
@@ -626,10 +973,33 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for LendingPoolAddressesProvider at `0xd05e3E715d945B59290df0ae8eF85c1BdB684744`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0xd05e3e715d945b59290df0ae8ef85c1bdb684744
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
 ```
 
 </details>
@@ -638,10 +1008,33 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for DefaultReserveInterestRateStrategy at `0xD2C92b5A793e196aB11dBefBe3Af6BddeD6c3DD5`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0xd2c92b5a793e196ab11dbefbe3af6bdded6c3dd5
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
 ```
 
 </details>
@@ -650,10 +1043,33 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for DefaultReserveInterestRateStrategy at `0xD792a3779D3C80bAEe8CF3304D6aEAc74bC432BE`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0xd792a3779d3c80baee8cf3304d6aeac74bc432be
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
 ```
 
 </details>
@@ -662,10 +1078,33 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for PolygonBridgeExecutor at `0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0xdc9a35b16db4e126cfedc41322b3a36454b1f772
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
 ```
 
 </details>
@@ -674,10 +1113,11 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for DefaultReserveInterestRateStrategy at `0xE4621DfD503A533f42bB5a45162eA3e5233Acd5F`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0xe4621dfd503a533f42bb5a45162ea3e5233acd5f-ProposalPayload' running
+INFO:Detectors:
+Function IAaveOracle.WETH() (lib/aave-address-book/src/AaveV2.sol#863) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Slither:0xe4621dfd503a533f42bb5a45162ea3e5233acd5f analyzed (11 contracts with 79 detectors), 1 result(s) found
 ```
 
 </details>
@@ -686,10 +1126,33 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for DefaultReserveInterestRateStrategy at `0xe7a516f340a3f794a3B2fd0f74A7242b326b9f33`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0xe7a516f340a3f794a3b2fd0f74a7242b326b9f33
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
 ```
 
 </details>
@@ -698,10 +1161,33 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for LendingPoolConfigurator at `0xf70A4d422E772926852BA9044026F169e6AD9492`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+ERROR:root:Error in 0xf70a4d422e772926852ba9044026f169e6ad9492
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 101, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 79, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 114, in __init__
+    parser.parse_top_level_from_loaded_json(ast, path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 205, in parse_top_level_from_loaded_json
+    if data_loaded[self.get_key()] == "root":
+KeyError: 'name'
+
 ```
 
 </details>
