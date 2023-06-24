@@ -1,6 +1,6 @@
 ## Polygon
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/04f5b8c2-f1a2-4629-b628-121d51169c38](https://dashboard.tenderly.co/me/simulator/04f5b8c2-f1a2-4629-b628-121d51169c38)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/6c28d013-bf09-4bd9-8069-70f9825c5952](https://dashboard.tenderly.co/me/simulator/6c28d013-bf09-4bd9-8069-70f9825c5952)
 
 ### Checks
 
@@ -203,7 +203,7 @@ Info:
 
 ```diff
 # PolygonBridgeExecutor at `0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772`
-@@ `_queuedActions` key `0xedc3d9b0fa90c28f501a7815dd59297a9d839fa42efad74b60ebcecc7eaf0a12` @@
+@@ `_queuedActions` key `0x7001ad5d0b523a1b5a8d653284cdbbe8d127b59d0d488a3b03c5f10bc9f7fd7e` @@
 - true
 + false
 
@@ -333,46 +333,72 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for V2RateStrategyFactory at `0x4E99b8dC5c5b24b8904b640Ea9342dcEa233818A`</summary>
 
 ```
-ERROR:CryticCompile:ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/dependencies/DefaultReserveInterestRateStrategy.sol:9:1:
-  |
-9 | import {ILendingPoolAddressesProvider, ILendingRateOracle} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "solidity-utils/contracts/oz-common/interfaces/IERC20.sol" not found: File not found. Searched the following locations: "".
-  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:10:1:
+INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x4e99b8dc5c5b24b8904b640ea9342dcea233818a-V2RateStrategyFactory' running
+WARNING:CryticCompile:Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:60:5:
    |
-10 | import {IERC20} from 'solidity-utils/contracts/oz-common/interfaces/IERC20.sol';
-   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+60 |     uint256 baseVariableBorrowRate,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:92:3:
+   |
+92 |   function baseVariableBorrowRate() external view override returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
 
 
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IV2RateStrategyFactory.sol:4:1:
-  |
-4 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:61:5:
+   |
+61 |     uint256 variableRateSlope1,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:76:3:
+   |
+76 |   function variableRateSlope1() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
 
 
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:4:1:
-  |
-4 | import {ILendingPool} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:62:5:
+   |
+62 |     uint256 variableRateSlope2,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:80:3:
+   |
+80 |   function variableRateSlope2() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
 
 
-ParserError: ParserError: Source "solidity-utils/contracts/transparent-proxy/Initializable.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:5:1:
-  |
-5 | import {Initializable} from 'solidity-utils/contracts/transparent-proxy/Initializable.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:63:5:
+   |
+63 |     uint256 stableRateSlope1,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:84:3:
+   |
+84 |   function stableRateSlope1() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
 
 
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:8:1:
-  |
-8 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:64:5:
+   |
+64 |     uint256 stableRateSlope2
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:88:3:
+   |
+88 |   function stableRateSlope2() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Warning: Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:57:3:
+   |
+57 |   constructor(
+   |   ^ (Relevant source part starts here and spans across multiple lines).
 
 
 
@@ -420,21 +446,7 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for AaveV2ConfigEngine at `0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9`</summary>
 
 ```
-ERROR:CryticCompile:ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IAaveV2ConfigEngine.sol:4:1:
-  |
-4 | import {ILendingPoolConfigurator} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IV2RateStrategyFactory.sol:4:1:
-  |
-4 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
+INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x9eced0293e7b73cff4a2b4f9c82aac8346158bd9-AaveV2ConfigEngine' running
 ```
 
 </details>
@@ -488,21 +500,7 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for DefaultReserveInterestRateStrategy at `0xE4621DfD503A533f42bB5a45162eA3e5233Acd5F`</summary>
 
 ```
-ERROR:CryticCompile:ParserError: ParserError: Source "@aave-address-book/AaveMisc.sol" not found: File not found. Searched the following locations: "".
- --> src/proposals/aave-grants-dao-renewal/ProposalPayload.sol:4:1:
-  |
-4 | import {AaveMisc} from "@aave-address-book/AaveMisc.sol";
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "@aave-address-book/AaveV2Ethereum.sol" not found: File not found. Searched the following locations: "".
- --> src/proposals/aave-grants-dao-renewal/ProposalPayload.sol:5:1:
-  |
-5 | import {AaveV2Ethereum} from "@aave-address-book/AaveV2Ethereum.sol";
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
+INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0xe4621dfd503a533f42bb5a45162ea3e5233acd5f-ProposalPayload' running
 ```
 
 </details>
@@ -610,128 +608,161 @@ KeyError: 'name'
 <summary>Slither report for V2RateStrategyFactory at `0x4E99b8dC5c5b24b8904b640Ea9342dcEa233818A`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
-    raise InvalidCompilation(solc_exception_str)
-crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/dependencies/DefaultReserveInterestRateStrategy.sol:9:1:
-  |
-9 | import {ILendingPoolAddressesProvider, ILendingRateOracle} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "solidity-utils/contracts/oz-common/interfaces/IERC20.sol" not found: File not found. Searched the following locations: "".
-  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:10:1:
+'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x4e99b8dc5c5b24b8904b640ea9342dcea233818a-V2RateStrategyFactory' running
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:60:5:
    |
-10 | import {IERC20} from 'solidity-utils/contracts/oz-common/interfaces/IERC20.sol';
-   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IV2RateStrategyFactory.sol:4:1:
-  |
-4 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:4:1:
-  |
-4 | import {ILendingPool} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "solidity-utils/contracts/transparent-proxy/Initializable.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:5:1:
-  |
-5 | import {Initializable} from 'solidity-utils/contracts/transparent-proxy/Initializable.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:8:1:
-  |
-8 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-ERROR:root:Error in 0x4e99b8dc5c5b24b8904b640ea9342dcea233818a
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
-    raise InvalidCompilation(solc_exception_str)
-crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/dependencies/DefaultReserveInterestRateStrategy.sol:9:1:
-  |
-9 | import {ILendingPoolAddressesProvider, ILendingRateOracle} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "solidity-utils/contracts/oz-common/interfaces/IERC20.sol" not found: File not found. Searched the following locations: "".
-  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:10:1:
+60 |     uint256 baseVariableBorrowRate,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:92:3:
    |
-10 | import {IERC20} from 'solidity-utils/contracts/oz-common/interfaces/IERC20.sol';
-   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+92 |   function baseVariableBorrowRate() external view override returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
 
 
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IV2RateStrategyFactory.sol:4:1:
-  |
-4 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:61:5:
+   |
+61 |     uint256 variableRateSlope1,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:76:3:
+   |
+76 |   function variableRateSlope1() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
 
 
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:4:1:
-  |
-4 | import {ILendingPool} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:62:5:
+   |
+62 |     uint256 variableRateSlope2,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:80:3:
+   |
+80 |   function variableRateSlope2() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
 
 
-ParserError: ParserError: Source "solidity-utils/contracts/transparent-proxy/Initializable.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:5:1:
-  |
-5 | import {Initializable} from 'solidity-utils/contracts/transparent-proxy/Initializable.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:63:5:
+   |
+63 |     uint256 stableRateSlope1,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:84:3:
+   |
+84 |   function stableRateSlope1() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
 
 
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/V2RateStrategyFactory.sol:8:1:
-  |
-8 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Warning: This declaration has the same name as another declaration.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:64:5:
+   |
+64 |     uint256 stableRateSlope2
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The other declaration is here:
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:88:3:
+   |
+88 |   function stableRateSlope2() external view returns (uint256) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Warning: Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> src/dependencies/DefaultReserveInterestRateStrategy.sol:57:3:
+   |
+57 |   constructor(
+   |   ^ (Relevant source part starts here and spans across multiple lines).
 
 
 
-
+INFO:Detectors:
+DefaultReserveInterestRateStrategy.calculateInterestRates(address,uint256,uint256,uint256,uint256,uint256).vars (src/dependencies/DefaultReserveInterestRateStrategy.sol#182) is a local variable never initialized
+V2RateStrategyFactory.getStrategyDataOfAsset(address).params (src/v2-config-engine/V2RateStrategyFactory.sol#100) is a local variable never initialized
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
+INFO:Detectors:
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).baseVariableBorrowRate (src/dependencies/DefaultReserveInterestRateStrategy.sol#60) shadows:
+	- DefaultReserveInterestRateStrategy.baseVariableBorrowRate() (src/dependencies/DefaultReserveInterestRateStrategy.sol#92-94) (function)
+	- IReserveInterestRateStrategy.baseVariableBorrowRate() (src/dependencies/IReserveInterestRateStrategy.sol#11) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#61) shadows:
+	- DefaultReserveInterestRateStrategy.variableRateSlope1() (src/dependencies/DefaultReserveInterestRateStrategy.sol#76-78) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#62) shadows:
+	- DefaultReserveInterestRateStrategy.variableRateSlope2() (src/dependencies/DefaultReserveInterestRateStrategy.sol#80-82) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#63) shadows:
+	- DefaultReserveInterestRateStrategy.stableRateSlope1() (src/dependencies/DefaultReserveInterestRateStrategy.sol#84-86) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#64) shadows:
+	- DefaultReserveInterestRateStrategy.stableRateSlope2() (src/dependencies/DefaultReserveInterestRateStrategy.sol#88-90) (function)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#local-variable-shadowing
+INFO:Detectors:
+V2RateStrategyFactory.getStrategyData(IDefaultInterestRateStrategy) (src/v2-config-engine/V2RateStrategyFactory.sol#114-128) has external calls inside a loop: RateStrategyParams(strategy.OPTIMAL_UTILIZATION_RATE(),strategy.baseVariableBorrowRate(),strategy.variableRateSlope1(),strategy.variableRateSlope2(),strategy.stableRateSlope1(),strategy.stableRateSlope2()) (src/v2-config-engine/V2RateStrategyFactory.sol#119-127)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation/#calls-inside-a-loop
+INFO:Detectors:
+Address._revert(bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#235-247) uses assembly
+	- INLINE ASM (lib/solidity-utils/src/contracts/oz-common/Address.sol#240-243)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage
+INFO:Detectors:
+Address._revert(bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#235-247) is never used and should be removed
+Address.functionCall(address,bytes) (lib/solidity-utils/src/contracts/oz-common/Address.sol#86-88) is never used and should be removed
+Address.functionCall(address,bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#96-102) is never used and should be removed
+Address.functionCallWithValue(address,bytes,uint256) (lib/solidity-utils/src/contracts/oz-common/Address.sol#115-121) is never used and should be removed
+Address.functionCallWithValue(address,bytes,uint256,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#129-138) is never used and should be removed
+Address.functionDelegateCall(address,bytes) (lib/solidity-utils/src/contracts/oz-common/Address.sol#174-176) is never used and should be removed
+Address.functionDelegateCall(address,bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#184-191) is never used and should be removed
+Address.functionStaticCall(address,bytes) (lib/solidity-utils/src/contracts/oz-common/Address.sol#146-151) is never used and should be removed
+Address.functionStaticCall(address,bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#159-166) is never used and should be removed
+Address.sendValue(address,uint256) (lib/solidity-utils/src/contracts/oz-common/Address.sol#61-66) is never used and should be removed
+Address.verifyCallResult(bool,bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#223-233) is never used and should be removed
+Address.verifyCallResultFromTarget(address,bool,bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#199-215) is never used and should be removed
+PercentageMath.percentDiv(uint256,uint256) (src/dependencies/PercentageMath.sol#44-54) is never used and should be removed
+SafeMath.div(uint256,uint256) (src/dependencies/SafeMath.sol#102-104) is never used and should be removed
+SafeMath.div(uint256,uint256,string) (src/dependencies/SafeMath.sol#117-128) is never used and should be removed
+SafeMath.mod(uint256,uint256) (src/dependencies/SafeMath.sol#141-143) is never used and should be removed
+SafeMath.mod(uint256,uint256,string) (src/dependencies/SafeMath.sol#156-163) is never used and should be removed
+SafeMath.mul(uint256,uint256) (src/dependencies/SafeMath.sol#77-89) is never used and should be removed
+WadRayMath.halfRay() (src/dependencies/WadRayMath.sol#40-42) is never used and should be removed
+WadRayMath.halfWad() (src/dependencies/WadRayMath.sol#47-49) is never used and should be removed
+WadRayMath.rayToWad(uint256) (src/dependencies/WadRayMath.sol#118-124) is never used and should be removed
+WadRayMath.wad() (src/dependencies/WadRayMath.sol#33-35) is never used and should be removed
+WadRayMath.wadDiv(uint256,uint256) (src/dependencies/WadRayMath.sol#73-80) is never used and should be removed
+WadRayMath.wadMul(uint256,uint256) (src/dependencies/WadRayMath.sol#57-65) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+INFO:Detectors:
+Low level call in Address.sendValue(address,uint256) (lib/solidity-utils/src/contracts/oz-common/Address.sol#61-66):
+	- (success) = recipient.call{value: amount}() (lib/solidity-utils/src/contracts/oz-common/Address.sol#64)
+Low level call in Address.functionCallWithValue(address,bytes,uint256,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#129-138):
+	- (success,returndata) = target.call{value: value}(data) (lib/solidity-utils/src/contracts/oz-common/Address.sol#136)
+Low level call in Address.functionStaticCall(address,bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#159-166):
+	- (success,returndata) = target.staticcall(data) (lib/solidity-utils/src/contracts/oz-common/Address.sol#164)
+Low level call in Address.functionDelegateCall(address,bytes,string) (lib/solidity-utils/src/contracts/oz-common/Address.sol#184-191):
+	- (success,returndata) = target.delegatecall(data) (lib/solidity-utils/src/contracts/oz-common/Address.sol#189)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+INFO:Detectors:
+Function IAaveOracle.WETH() (lib/aave-address-book/src/AaveV2.sol#818) is not in mixedCase
+Function IDefaultInterestRateStrategy.EXCESS_UTILIZATION_RATE() (lib/aave-address-book/src/AaveV2.sol#918) is not in mixedCase
+Function IDefaultInterestRateStrategy.OPTIMAL_UTILIZATION_RATE() (lib/aave-address-book/src/AaveV2.sol#920) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy.OPTIMAL_UTILIZATION_RATE (src/dependencies/DefaultReserveInterestRateStrategy.sol#30) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy.EXCESS_UTILIZATION_RATE (src/dependencies/DefaultReserveInterestRateStrategy.sol#38) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._baseVariableBorrowRate (src/dependencies/DefaultReserveInterestRateStrategy.sol#43) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._variableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#46) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._variableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#49) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._stableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#52) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._stableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#55) is not in mixedCase
+Constant WadRayMath.halfWAD (src/dependencies/WadRayMath.sol#15) is not in UPPER_CASE_WITH_UNDERSCORES
+Constant WadRayMath.halfRAY (src/dependencies/WadRayMath.sol#18) is not in UPPER_CASE_WITH_UNDERSCORES
+Function IV2RateStrategyFactory.ADDRESSES_PROVIDER() (src/v2-config-engine/IV2RateStrategyFactory.sol#72) is not in mixedCase
+Variable V2RateStrategyFactory.ADDRESSES_PROVIDER (src/v2-config-engine/V2RateStrategyFactory.sol#17) is not in mixedCase
+Variable V2RateStrategyFactory._strategyByParamsHash (src/v2-config-engine/V2RateStrategyFactory.sol#19) is not in mixedCase
+Variable V2RateStrategyFactory._strategies (src/v2-config-engine/V2RateStrategyFactory.sol#20) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Detectors:
+Variable DefaultReserveInterestRateStrategy._stableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#52) is too similar to DefaultReserveInterestRateStrategy._stableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#55)
+Variable DefaultReserveInterestRateStrategy._variableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#46) is too similar to DefaultReserveInterestRateStrategy._variableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#49)
+Variable DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#63) is too similar to DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#64)
+Variable DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope1 (src/dependencies/DefaultReserveInterestRateStrategy.sol#61) is too similar to DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope2 (src/dependencies/DefaultReserveInterestRateStrategy.sol#62)
+Variable Errors.LP_INCONSISTENT_FLASHLOAN_PARAMS (src/dependencies/Errors.sol#56) is too similar to Errors.VL_INCONSISTENT_FLASHLOAN_PARAMS (src/dependencies/Errors.sol#101)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#variable-names-too-similar
+INFO:Slither:0x4e99b8dc5c5b24b8904b640ea9342dcea233818a analyzed (21 contracts with 79 detectors), 58 result(s) found
 ```
 
 </details>
@@ -880,72 +911,25 @@ KeyError: 'name'
 <summary>Slither report for AaveV2ConfigEngine at `0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
-    raise InvalidCompilation(solc_exception_str)
-crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IAaveV2ConfigEngine.sol:4:1:
-  |
-4 | import {ILendingPoolConfigurator} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IV2RateStrategyFactory.sol:4:1:
-  |
-4 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-ERROR:root:Error in 0x9eced0293e7b73cff4a2b4f9c82aac8346158bd9
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
-    raise InvalidCompilation(solc_exception_str)
-crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IAaveV2ConfigEngine.sol:4:1:
-  |
-4 | import {ILendingPoolConfigurator} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "aave-address-book/AaveV2.sol" not found: File not found. Searched the following locations: "".
- --> src/v2-config-engine/IV2RateStrategyFactory.sol:4:1:
-  |
-4 | import {IDefaultInterestRateStrategy, ILendingPoolAddressesProvider} from 'aave-address-book/AaveV2.sol';
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-
+'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x9eced0293e7b73cff4a2b4f9c82aac8346158bd9-AaveV2ConfigEngine' running
+INFO:Detectors:
+EngineFlags.fromBool(bool) (src/v3-config-engine/EngineFlags.sol#22-24) is never used and should be removed
+EngineFlags.toBool(uint256) (src/v3-config-engine/EngineFlags.sol#16-19) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+INFO:Detectors:
+Function IAaveOracle.WETH() (lib/aave-address-book/src/AaveV2.sol#818) is not in mixedCase
+Function IDefaultInterestRateStrategy.EXCESS_UTILIZATION_RATE() (lib/aave-address-book/src/AaveV2.sol#918) is not in mixedCase
+Function IDefaultInterestRateStrategy.OPTIMAL_UTILIZATION_RATE() (lib/aave-address-book/src/AaveV2.sol#920) is not in mixedCase
+Variable AaveV2ConfigEngine.POOL_CONFIGURATOR (src/v2-config-engine/AaveV2ConfigEngine.sol#20) is not in mixedCase
+Variable AaveV2ConfigEngine.RATE_STRATEGIES_FACTORY (src/v2-config-engine/AaveV2ConfigEngine.sol#21) is not in mixedCase
+Function IAaveV2ConfigEngine.RATE_STRATEGIES_FACTORY() (src/v2-config-engine/IAaveV2ConfigEngine.sol#49) is not in mixedCase
+Function IAaveV2ConfigEngine.POOL_CONFIGURATOR() (src/v2-config-engine/IAaveV2ConfigEngine.sol#51) is not in mixedCase
+Function IV2RateStrategyFactory.ADDRESSES_PROVIDER() (src/v2-config-engine/IV2RateStrategyFactory.sol#72) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Detectors:
+EngineFlags.KEEP_CURRENT (src/v3-config-engine/EngineFlags.sol#7) is never used in EngineFlags (src/v3-config-engine/EngineFlags.sol#4-25)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-state-variable
+INFO:Slither:0x9eced0293e7b73cff4a2b4f9c82aac8346158bd9 analyzed (14 contracts with 79 detectors), 11 result(s) found
 ```
 
 </details>
@@ -1129,72 +1113,11 @@ KeyError: 'name'
 <summary>Slither report for DefaultReserveInterestRateStrategy at `0xE4621DfD503A533f42bB5a45162eA3e5233Acd5F`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
-    raise InvalidCompilation(solc_exception_str)
-crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "@aave-address-book/AaveMisc.sol" not found: File not found. Searched the following locations: "".
- --> src/proposals/aave-grants-dao-renewal/ProposalPayload.sol:4:1:
-  |
-4 | import {AaveMisc} from "@aave-address-book/AaveMisc.sol";
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "@aave-address-book/AaveV2Ethereum.sol" not found: File not found. Searched the following locations: "".
- --> src/proposals/aave-grants-dao-renewal/ProposalPayload.sol:5:1:
-  |
-5 | import {AaveV2Ethereum} from "@aave-address-book/AaveV2Ethereum.sol";
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-ERROR:root:Error in 0xe4621dfd503a533f42bb5a45162ea3e5233acd5f
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 837, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 90, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 362, in compile
-    solc_standard_json.standalone_compile(filenames, compilation_unit, working_dir=working_dir)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 66, in standalone_compile
-    targets_json = run_solc_standard_json(
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 181, in run_solc_standard_json
-    raise InvalidCompilation(solc_exception_str)
-crytic_compile.platform.exceptions.InvalidCompilation: ParserError: ParserError: Source "@aave-address-book/AaveMisc.sol" not found: File not found. Searched the following locations: "".
- --> src/proposals/aave-grants-dao-renewal/ProposalPayload.sol:4:1:
-  |
-4 | import {AaveMisc} from "@aave-address-book/AaveMisc.sol";
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-ParserError: ParserError: Source "@aave-address-book/AaveV2Ethereum.sol" not found: File not found. Searched the following locations: "".
- --> src/proposals/aave-grants-dao-renewal/ProposalPayload.sol:5:1:
-  |
-5 | import {AaveV2Ethereum} from "@aave-address-book/AaveV2Ethereum.sol";
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-
+'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0xe4621dfd503a533f42bb5a45162ea3e5233acd5f-ProposalPayload' running
+INFO:Detectors:
+Function IAaveOracle.WETH() (lib/aave-address-book/src/AaveV2.sol#863) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Slither:0xe4621dfd503a533f42bb5a45162ea3e5233acd5f analyzed (11 contracts with 79 detectors), 1 result(s) found
 ```
 
 </details>
