@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/98941965-bdbc-46de-b37b-7d0ef30035ea](https://dashboard.tenderly.co/me/simulator/98941965-bdbc-46de-b37b-7d0ef30035ea)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/79810c50-1d1f-4f71-9118-a6b00b74aeb2](https://dashboard.tenderly.co/me/simulator/79810c50-1d1f-4f71-9118-a6b00b74aeb2)
 
 ### Checks
 
