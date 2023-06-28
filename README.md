@@ -488,6 +488,7 @@ Some notes on the outputs of reports:
 | Add Native USDC To Arbitrum V3 Pool                                                                                                                                                      | [251.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/251.md)                             | [app](https://app.aave.com/governance/proposal/?proposalId=251) |
 | Arbitrum                                                                                                                                                                                 | [251_Arbitrum_28.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/251_Arbitrum_28.md)     | [app](https://app.aave.com/governance/proposal/?proposalId=251) |
 | Chaos Labs V2 to V3 Migration Next Steps                                                                                                                                                 | [252.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/252.md)                             | [app](https://app.aave.com/governance/proposal/?proposalId=252) |
+| Freeze TUSD Reserve on Aave V2 Ethereum                                                                                                                                                  | [253.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/253.md)                             | [app](https://app.aave.com/governance/proposal/?proposalId=253) |
 
 <!-- ### Reports table end ### -->
 
