@@ -491,6 +491,7 @@ Some notes on the outputs of reports:
 | Freeze TUSD Reserve on Aave V2 Ethereum                                                                                                                                                  | [253.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/253.md)                             | [app](https://app.aave.com/governance/proposal/?proposalId=253) |
 | Chaos Labs - Payment Collection Request                                                                                                                                                  | [254.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/254.md)                             | [app](https://app.aave.com/governance/proposal/?proposalId=254) |
 | Chaos Labs Risk Parameter Updates - CRV Aave V2 Ethereum                                                                                                                                 | [255.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/255.md)                             | [app](https://app.aave.com/governance/proposal/?proposalId=255) |
+| Lower TUSD LT and LTV on Aave V2                                                                                                                                                         | [256.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/256.md)                             | [app](https://app.aave.com/governance/proposal/?proposalId=256) |
 
 <!-- ### Reports table end ### -->
 
