@@ -1,6 +1,6 @@
-## Arbitrum
+## Polygon
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/5c7a6681-996b-4335-a839-2e3d03f6156e](https://dashboard.tenderly.co/me/simulator/5c7a6681-996b-4335-a839-2e3d03f6156e)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/2e2af318-78e7-4278-b5d9-169e83334138](https://dashboard.tenderly.co/me/simulator/2e2af318-78e7-4278-b5d9-169e83334138)
 
 ### Checks
 
@@ -11,38 +11,31 @@ Info:
 - State changes:
 
 ```diff
-# InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`
-@@ `_reserves` key `0x5979d7b546e38e414f7e9822514be443a4800529`.configuration.data @@
-- 753997829085803822702081193685429432094637762026328
-+ 753997829086738436136617462658564921433897379306328
+# InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation Pool at `0xb77fc84a549ecc0b410d6fa15159C2df207545a3`
+@@ `_reserves` key `0x172370d5cd63279efa6d502dab29171933a610af`.configuration.data @@
+- 5708990864305121398885077927572557643813409004876
++ 5708990864305121398885077927572557643813376236376
 
-# decoded configuration.data for key `0x5979d7b546e38e414f7e9822514be443a4800529` (symbol: wstETH)
-@@ configuration.data.supplyCap @@
-- 18750
-+ 30000
+# decoded configuration.data for key `0x172370d5cd63279efa6d502dab29171933a610af` (symbol: CRV)
+@@ configuration.data.ltv @@
+- 7500
++ 7000
+@@ configuration.data.liquidationThreshold @@
+- 8000
++ 7500
 
 ```
 
 ```diff
-# ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x30596cde67e25392be3154776a79e3f392a823669b9d5fa8e5b221f9abd5e4da` @@
+# PolygonBridgeExecutor at `0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772`
+@@ `_queuedActions` key `0xe5b1e459505e84a29563082d2ef8accebee4dca8dd1c619c288119bf4b33043d` @@
 - true
 + false
 
-@@ `_actionsSets` key `"30"`.executed @@
+@@ `_actionsSets` key `"49"`.executed @@
 - false
 + true
 
-```
-
-```diff
-# unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
-@@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x0000000000000000000000000000000000000000000000000000000000dd2aad"
-+ "0x0000000000000000000000000000000000000000000000000000000000dd35e9"
-@@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x000000000000000000000000000000000000000000000000268821a661f487bc"
-+ "0x0000000000000000000000000000000000000000000000002688396c8772ddbc"
 ```
 
 #### Check stack trace of the proposal ✅ Passed
@@ -56,10 +49,10 @@ Info:
 Info:
 
 - Events Emitted:
-  - InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E`
-    - `SupplyCapChanged(asset: 0x5979d7b546e38e414f7e9822514be443a4800529, oldSupplyCap: 18750, newSupplyCap: 30000)`
-  - ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-    - `ActionsSetExecuted(id: 30, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
+  - InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E` with implementation PoolConfigurator at `0xADf86b537eF08591c2777E144322E8b0Ca7E82a7`
+    - `CollateralConfigurationChanged(asset: 0x172370d5cd63279efa6d502dab29171933a610af, ltv: 7000, liquidationThreshold: 7500, liquidationBonus: 10500)`
+  - PolygonBridgeExecutor at `0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772`
+    - `ActionsSetExecuted(id: 49, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
 
 #### Check all targets are verified on Etherscan ✅ Passed
 
@@ -74,15 +67,15 @@ Info:
 
 - Touched address:
   - 0xd73a92be73efbfcf3854433a5fcbabf9c1316073: EOA (verification not applicable)
-  - 0x7d9103572be58ffe99dc390e8246f02dcae6f611: Contract (verified) (ArbitrumBridgeExecutor)
-  - 0x134c50556de1a83dd947c9460a58d8d60a289cea: Contract (verified) (AaveV3ArbwstETHCapsUpdates_20230703)
-  - 0x0efdfc1a940de4e7e6acc9bb801481f81b17fd20: Contract (verified) (AaveV3ConfigEngine)
+  - 0xdc9a35b16db4e126cfedc41322b3a36454b1f772: Contract (verified) (PolygonBridgeExecutor)
+  - 0x134c50556de1a83dd947c9460a58d8d60a289cea: Contract (verified) (AaveV3PolCRVRiskParams_20230702)
+  - 0xe202f2fc4b6a37ba53cfd15be42a762a645fca07: Contract (verified) (AaveV3ConfigEngine)
+  - 0x794a61358d6845594f94dc1db02a252b5b4814ad: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
+  - 0xb77fc84a549ecc0b410d6fa15159c2df207545a3: Contract (verified) (Pool)
   - 0x8145edddf43f50276641b55bd3ad95944510021e: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
-  - 0x04a8d477ee202adce1682f5902e1160455205b12: Contract (not verified)
+  - 0xadf86b537ef08591c2777e144322e8b0ca7e82a7: Contract (verified) (PoolConfigurator)
   - 0xa97684ead0e402dc232d5a977953df7ecbab3cdb: Contract (verified) (PoolAddressesProvider)
   - 0xa72636cbcaa8f5ff95b2cc47f3cdee83f3294a0b: Contract (verified) (ACLManager)
-  - 0x794a61358d6845594f94dc1db02a252b5b4814ad: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
-  - 0xbcb167bdcf14a8f791d6f4a6edd964aed2f8813b: Contract (verified) (L2Pool)
 
 #### Runs solc against the verified contracts ✅ Passed
 
@@ -93,16 +86,7 @@ Info:
 <details>
 <summary>View Details</summary>
 <details>
-<summary>View warnings for AaveV3ConfigEngine at `0x0EfdfC1A940DE4E7E6acC9Bb801481f81B17fd20`</summary>
-
-```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-```
-
-</details>
-
-<details>
-<summary>View warnings for AaveV3ArbwstETHCapsUpdates_20230703 at `0x134C50556dE1A83Dd947c9460a58d8d60a289CEa`</summary>
+<summary>View warnings for AaveV3PolCRVRiskParams_20230702 at `0x134C50556dE1A83Dd947c9460a58d8d60a289CEa`</summary>
 
 ```
 INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x134c50556de1a83dd947c9460a58d8d60a289cea-AaveV3Eth1INCHListing_20230517_Payload' running
@@ -111,7 +95,7 @@ INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbel
 </details>
 
 <details>
-<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`</summary>
+<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation Pool at `0xb77fc84a549ecc0b410d6fa15159C2df207545a3`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -120,16 +104,7 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
-
-```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-```
-
-</details>
-
-<details>
-<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E`</summary>
+<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E` with implementation PoolConfigurator at `0xADf86b537eF08591c2777E144322E8b0Ca7E82a7`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -156,10 +131,37 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for L2Pool at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
+<summary>View warnings for PoolConfigurator at `0xADf86b537eF08591c2777E144322E8b0Ca7E82a7`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
+<summary>View warnings for Pool at `0xb77fc84a549ecc0b410d6fa15159C2df207545a3`</summary>
+
+```
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
+<summary>View warnings for PolygonBridgeExecutor at `0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772`</summary>
+
+```
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
+<summary>View warnings for AaveV3ConfigEngine at `0xE202F2fc4b6A37Ba53cfD15bE42a762A645FCA07`</summary>
+
+```
+INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0xe202f2fc4b6a37ba53cfd15be42a762a645fca07-AaveV3ConfigEngine' running
 ```
 
 </details>
@@ -176,43 +178,7 @@ Info:
 <summary>View Details</summary>
 
 <details>
-<summary>Slither report for AaveV3ConfigEngine at `0x0EfdfC1A940DE4E7E6acC9Bb801481f81B17fd20`</summary>
-
-```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0x0efdfc1a940de4e7e6acc9bb801481f81b17fd20
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
-```
-
-</details>
-
-<details>
-<summary>Slither report for AaveV3ArbwstETHCapsUpdates_20230703 at `0x134C50556dE1A83Dd947c9460a58d8d60a289CEa`</summary>
+<summary>Slither report for AaveV3PolCRVRiskParams_20230702 at `0x134C50556dE1A83Dd947c9460a58d8d60a289CEa`</summary>
 
 ```
 'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x134c50556de1a83dd947c9460a58d8d60a289cea-AaveV3Eth1INCHListing_20230517_Payload' running
@@ -242,7 +208,7 @@ ERROR:root:Please report an issue to https://github.com/crytic/slither/issues
 </details>
 
 <details>
-<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`</summary>
+<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation Pool at `0xb77fc84a549ecc0b410d6fa15159C2df207545a3`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -278,43 +244,7 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 </details>
 
 <details>
-<summary>Slither report for ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
-
-```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0x7d9103572be58ffe99dc390e8246f02dcae6f611
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
-```
-
-</details>
-
-<details>
-<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E`</summary>
+<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E` with implementation PoolConfigurator at `0xADf86b537eF08591c2777E144322E8b0Ca7E82a7`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -422,7 +352,7 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 </details>
 
 <details>
-<summary>Slither report for L2Pool at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
+<summary>Slither report for PoolConfigurator at `0xADf86b537eF08591c2777E144322E8b0Ca7E82a7`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -439,7 +369,7 @@ Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
     with open(path, encoding="utf8", newline="") as f:
 FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0xbcb167bdcf14a8f791d6f4a6edd964aed2f8813b
+ERROR:root:Error in 0xadf86b537ef08591c2777e144322e8b0ca7e82a7
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -453,6 +383,108 @@ ERROR:root:Traceback (most recent call last):
     with open(path, encoding="utf8", newline="") as f:
 FileNotFoundError: [Errno 2] No such file or directory: ''
 
+```
+
+</details>
+
+<details>
+<summary>Slither report for Pool at `0xb77fc84a549ecc0b410d6fa15159C2df207545a3`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+ERROR:root:Error in 0xb77fc84a549ecc0b410d6fa15159c2df207545a3
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+```
+
+</details>
+
+<details>
+<summary>Slither report for PolygonBridgeExecutor at `0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+ERROR:root:Error in 0xdc9a35b16db4e126cfedc41322b3a36454b1f772
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+```
+
+</details>
+
+<details>
+<summary>Slither report for AaveV3ConfigEngine at `0xE202F2fc4b6A37Ba53cfD15bE42a762A645FCA07`</summary>
+
+```
+'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0xe202f2fc4b6a37ba53cfd15be42a762a645fca07-AaveV3ConfigEngine' running
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 135, in __init__
+    self._init_parsing_and_analyses(kwargs.get("skip_analyze", False))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 145, in _init_parsing_and_analyses
+    raise e
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 141, in _init_parsing_and_analyses
+    parser.parse_contracts()
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 447, in parse_contracts
+    raise InheritanceResolutionError(
+slither.solc_parsing.slither_compilation_unit_solc.InheritanceResolutionError: Could not resolve contract inheritance. This is likely caused by an import renaming that collides with existing names (see https://github.com/crytic/slither/issues/1758).
+ Try changing `contract IACLManager` (lib/aave-address-book/src/AaveV3.sol#75-87) to a unique name.
+ERROR:root:Error:
+ERROR:root:Could not resolve contract inheritance. This is likely caused by an import renaming that collides with existing names (see https://github.com/crytic/slither/issues/1758).
+ Try changing `contract IACLManager` (lib/aave-address-book/src/AaveV3.sol#75-87) to a unique name.
+ERROR:root:Please report an issue to https://github.com/crytic/slither/issues
 ```
 
 </details>
