@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/f3e0d338-be2b-412a-b79f-3f8338ba8b6a](https://dashboard.tenderly.co/me/simulator/f3e0d338-be2b-412a-b79f-3f8338ba8b6a)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/1a89be70-2ee8-4e53-9c1b-6e7e46aeccf2](https://dashboard.tenderly.co/me/simulator/1a89be70-2ee8-4e53-9c1b-6e7e46aeccf2)
 
 ### Checks
 
@@ -25,7 +25,7 @@ Info:
 
 ```diff
 # OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x2feea9a0a672909a6081fe1ba2ba1a9ab54ed265c4eea83f882ea0d67a3d202e` @@
+@@ `_queuedActions` key `0x0a23450c99ef6a465531c80fe39e3445410e56cb7cd0005bae9ab2b5345dd957` @@
 - true
 + false
 
@@ -87,6 +87,32 @@ Info:
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
+    sys.exit(main())
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
+    compilations = compile_all(**vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -96,6 +122,32 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
+    sys.exit(main())
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
+    compilations = compile_all(**vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -105,6 +157,32 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
+    sys.exit(main())
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
+    compilations = compile_all(**vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -114,6 +192,32 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
+    sys.exit(main())
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
+    compilations = compile_all(**vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -123,6 +227,32 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
+    sys.exit(main())
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
+    compilations = compile_all(**vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -132,6 +262,32 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
+    sys.exit(main())
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
+    compilations = compile_all(**vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -141,6 +297,32 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
+    sys.exit(main())
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
+    compilations = compile_all(**vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -150,6 +332,32 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
+    sys.exit(main())
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
+    compilations = compile_all(**vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -179,32 +387,59 @@ Info:
 
 ```
 Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ERROR:root:Error in 0x29081f7ab5a644716efcdc10d5c926c5fee9f72b
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 
@@ -215,32 +450,59 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ERROR:root:Error in 0x764594f8e9757ede877b75716f8077162b251460
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 
@@ -251,32 +513,59 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ERROR:root:Error in 0x794a61358d6845594f94dc1db02a252b5b4814ad
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 
@@ -287,32 +576,59 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ERROR:root:Error in 0x7a9a9c14b35e58ffa1cc84ab421ace0fdcd289e3
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 
@@ -323,32 +639,59 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ERROR:root:Error in 0x7d9103572be58ffe99dc390e8246f02dcae6f611
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 
@@ -359,32 +702,59 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ERROR:root:Error in 0x8145edddf43f50276641b55bd3ad95944510021e
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 
@@ -395,32 +765,59 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ERROR:root:Error in 0xa72636cbcaa8f5ff95b2cc47f3cdee83f3294a0b
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 
@@ -431,32 +828,59 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 ERROR:root:Error in 0xa97684ead0e402dc232d5a977953df7ecbab3cdb
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 
@@ -537,33 +961,33 @@ Constant AaveV2EthereumAssets.stETH_INTEREST_RATE_STRATEGY (lib/aave-address-boo
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
 INFO:Detectors:
 Variable AaveV2AvalancheAssets.AAVEe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#116) is too similar to AaveV2AvalancheAssets.AAVEe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#120)
-Variable AaveV2AvalancheAssets.AAVEe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#120) is too similar to AaveV2AvalancheAssets.AAVEe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#118)
 Variable AaveV2AvalancheAssets.AAVEe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#116) is too similar to AaveV2AvalancheAssets.AAVEe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#118)
-Variable AaveV2AvalancheAssets.DAIe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#77) is too similar to AaveV2AvalancheAssets.DAIe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#81)
+Variable AaveV2AvalancheAssets.AAVEe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#120) is too similar to AaveV2AvalancheAssets.AAVEe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#118)
 Variable AaveV2AvalancheAssets.DAIe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#77) is too similar to AaveV2AvalancheAssets.DAIe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#79)
+Variable AaveV2AvalancheAssets.DAIe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#77) is too similar to AaveV2AvalancheAssets.DAIe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#81)
 Variable AaveV2AvalancheAssets.DAIe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#81) is too similar to AaveV2AvalancheAssets.DAIe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#79)
-Variable AaveV2AvalancheAssets.USDCe_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Avalanche.sol#111-112) is too similar to AaveV2AvalancheAssets.USDTe_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Avalanche.sol#98-99)
-Variable AaveV2AvalancheAssets.USDCe_ORACLE (lib/aave-address-book/src/AaveV2Avalanche.sol#109) is too similar to AaveV2AvalancheAssets.USDTe_ORACLE (lib/aave-address-book/src/AaveV2Avalanche.sol#96)
 Variable AaveV2AvalancheAssets.USDCe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#103) is too similar to AaveV2AvalancheAssets.USDCe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#107)
-Variable AaveV2AvalancheAssets.USDCe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#107) is too similar to AaveV2AvalancheAssets.USDCe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#105)
-Variable AaveV2AvalancheAssets.USDCe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#107) is too similar to AaveV2AvalancheAssets.USDTe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#94)
-Variable AaveV2AvalancheAssets.USDCe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#103) is too similar to AaveV2AvalancheAssets.USDCe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#105)
-Variable AaveV2AvalancheAssets.USDCe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#105) is too similar to AaveV2AvalancheAssets.USDTe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#92)
 Variable AaveV2AvalancheAssets.USDCe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#103) is too similar to AaveV2AvalancheAssets.USDTe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#90)
-Variable AaveV2AvalancheAssets.USDTe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#90) is too similar to AaveV2AvalancheAssets.USDTe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#94)
+Variable AaveV2AvalancheAssets.USDCe_ORACLE (lib/aave-address-book/src/AaveV2Avalanche.sol#109) is too similar to AaveV2AvalancheAssets.USDTe_ORACLE (lib/aave-address-book/src/AaveV2Avalanche.sol#96)
 Variable AaveV2AvalancheAssets.USDCe_UNDERLYING (lib/aave-address-book/src/AaveV2Avalanche.sol#101) is too similar to AaveV2AvalancheAssets.USDTe_UNDERLYING (lib/aave-address-book/src/AaveV2Avalanche.sol#88)
+Variable AaveV2AvalancheAssets.USDCe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#103) is too similar to AaveV2AvalancheAssets.USDCe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#105)
+Variable AaveV2AvalancheAssets.USDCe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#107) is too similar to AaveV2AvalancheAssets.USDCe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#105)
+Variable AaveV2AvalancheAssets.USDCe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#105) is too similar to AaveV2AvalancheAssets.USDTe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#92)
+Variable AaveV2AvalancheAssets.USDCe_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Avalanche.sol#111-112) is too similar to AaveV2AvalancheAssets.USDTe_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Avalanche.sol#98-99)
+Variable AaveV2AvalancheAssets.USDCe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#107) is too similar to AaveV2AvalancheAssets.USDTe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#94)
+Variable AaveV2AvalancheAssets.USDTe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#90) is too similar to AaveV2AvalancheAssets.USDTe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#94)
 Variable AaveV2AvalancheAssets.USDTe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#90) is too similar to AaveV2AvalancheAssets.USDTe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#92)
 Variable AaveV2AvalancheAssets.USDTe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#94) is too similar to AaveV2AvalancheAssets.USDTe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#92)
 Variable AaveV2AvalancheAssets.WAVAX_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#142) is too similar to AaveV2AvalancheAssets.WAVAX_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#144)
 Variable AaveV2AvalancheAssets.WAVAX_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#142) is too similar to AaveV2AvalancheAssets.WAVAX_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#146)
 Variable AaveV2AvalancheAssets.WAVAX_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#146) is too similar to AaveV2AvalancheAssets.WAVAX_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#144)
 Variable AaveV2AvalancheAssets.WBTCe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#129) is too similar to AaveV2AvalancheAssets.WBTCe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#131)
-Variable AaveV2AvalancheAssets.WBTCe_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Avalanche.sol#137-138) is too similar to AaveV2AvalancheAssets.WETHe_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Avalanche.sol#72-73)
 Variable AaveV2AvalancheAssets.WBTCe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#129) is too similar to AaveV2AvalancheAssets.WBTCe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#133)
 Variable AaveV2AvalancheAssets.WBTCe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#133) is too similar to AaveV2AvalancheAssets.WBTCe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#131)
+Variable AaveV2AvalancheAssets.WBTCe_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Avalanche.sol#137-138) is too similar to AaveV2AvalancheAssets.WETHe_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Avalanche.sol#72-73)
 Variable AaveV2AvalancheAssets.WETHe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#64) is too similar to AaveV2AvalancheAssets.WETHe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#68)
-Variable AaveV2AvalancheAssets.WETHe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#68) is too similar to AaveV2AvalancheAssets.WETHe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#66)
 Variable AaveV2AvalancheAssets.WETHe_A_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#64) is too similar to AaveV2AvalancheAssets.WETHe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#66)
+Variable AaveV2AvalancheAssets.WETHe_S_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#68) is too similar to AaveV2AvalancheAssets.WETHe_V_TOKEN (lib/aave-address-book/src/AaveV2Avalanche.sol#66)
 Variable AaveV2EthereumAssets.AAVE_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#134) is too similar to AaveV2EthereumAssets.AAVE_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#138)
 Variable AaveV2EthereumAssets.AAVE_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#134) is too similar to AaveV2EthereumAssets.AAVE_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#136)
 Variable AaveV2EthereumAssets.AAVE_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#138) is too similar to AaveV2EthereumAssets.AAVE_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#136)
@@ -589,22 +1013,27 @@ Variable AaveV2EthereumAssets.BUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethe
 Variable AaveV2EthereumAssets.BUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#159) is too similar to AaveV2EthereumAssets.TUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#283)
 Variable AaveV2EthereumAssets.BUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#159) is too similar to AaveV2EthereumAssets.USDC_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#296)
 Variable AaveV2EthereumAssets.BUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#159) is too similar to AaveV2EthereumAssets.USDP_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#397)
+Variable AaveV2EthereumAssets.BUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#159) is too similar to AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59)
 Variable AaveV2EthereumAssets.BUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#167-168) is too similar to AaveV2EthereumAssets.TUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#291-292)
 Variable AaveV2EthereumAssets.BUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#167-168) is too similar to AaveV2EthereumAssets.USDC_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#304-305)
 Variable AaveV2EthereumAssets.BUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#167-168) is too similar to AaveV2EthereumAssets.USDP_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#405-406)
 Variable AaveV2EthereumAssets.BUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#165) is too similar to AaveV2EthereumAssets.TUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#289)
 Variable AaveV2EthereumAssets.BUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#165) is too similar to AaveV2EthereumAssets.USDC_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#302)
 Variable AaveV2EthereumAssets.BUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#165) is too similar to AaveV2EthereumAssets.USDP_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#403)
+Variable AaveV2EthereumAssets.BUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#165) is too similar to AaveV2EthereumAssets.USDT_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#65)
 Variable AaveV2EthereumAssets.BUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#163) is too similar to AaveV2EthereumAssets.TUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#287)
 Variable AaveV2EthereumAssets.BUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#163) is too similar to AaveV2EthereumAssets.USDC_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#300)
 Variable AaveV2EthereumAssets.BUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#163) is too similar to AaveV2EthereumAssets.USDP_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#401)
+Variable AaveV2EthereumAssets.BUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#163) is too similar to AaveV2EthereumAssets.USDT_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#63)
 Variable AaveV2EthereumAssets.BUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#157) is too similar to AaveV2EthereumAssets.TUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#281)
 Variable AaveV2EthereumAssets.BUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#157) is too similar to AaveV2EthereumAssets.USDC_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#294)
 Variable AaveV2EthereumAssets.BUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#157) is too similar to AaveV2EthereumAssets.USDP_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#395)
+Variable AaveV2EthereumAssets.BUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#157) is too similar to AaveV2EthereumAssets.USDT_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#57)
 Variable AaveV2EthereumAssets.BUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#163) is too similar to AaveV2EthereumAssets.BUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#161)
 Variable AaveV2EthereumAssets.BUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#161) is too similar to AaveV2EthereumAssets.TUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#285)
 Variable AaveV2EthereumAssets.BUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#161) is too similar to AaveV2EthereumAssets.USDC_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#298)
 Variable AaveV2EthereumAssets.BUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#161) is too similar to AaveV2EthereumAssets.USDP_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#399)
+Variable AaveV2EthereumAssets.BUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#161) is too similar to AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61)
 Variable AaveV2EthereumAssets.CRV_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#317) is too similar to AaveV2EthereumAssets.CVX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#492)
 Variable AaveV2EthereumAssets.CRV_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#317) is too similar to AaveV2EthereumAssets.KNC_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#204)
 Variable AaveV2EthereumAssets.CRV_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#317) is too similar to AaveV2EthereumAssets.MKR_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#242)
@@ -620,6 +1049,7 @@ Variable AaveV2EthereumAssets.CRV_A_TOKEN (lib/aave-address-book/src/AaveV2Ether
 Variable AaveV2EthereumAssets.CVX_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#484) is too similar to AaveV2EthereumAssets.CVX_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#488)
 Variable AaveV2EthereumAssets.CVX_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#484) is too similar to AaveV2EthereumAssets.CVX_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#486)
 Variable AaveV2EthereumAssets.CVX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#492) is too similar to AaveV2EthereumAssets.SNX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#266)
+Variable AaveV2EthereumAssets.CVX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#492) is too similar to AaveV2EthereumAssets.ZRX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#118)
 Variable AaveV2EthereumAssets.CRV_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#307) is too similar to AaveV2EthereumAssets.CVX_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#482)
 Variable AaveV2EthereumAssets.CVX_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#488) is too similar to AaveV2EthereumAssets.CVX_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#486)
 Variable AaveV2EthereumAssets.DAI_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#172) is too similar to AaveV2EthereumAssets.DAI_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#176)
@@ -737,27 +1167,33 @@ Variable AaveV2EthereumAssets.LUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethe
 Variable AaveV2EthereumAssets.LUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#509) is too similar to AaveV2EthereumAssets.TUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#283)
 Variable AaveV2EthereumAssets.LUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#509) is too similar to AaveV2EthereumAssets.USDC_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#296)
 Variable AaveV2EthereumAssets.LUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#509) is too similar to AaveV2EthereumAssets.USDP_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#397)
+Variable AaveV2EthereumAssets.LUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#509) is too similar to AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59)
 Variable AaveV2EthereumAssets.BUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#167-168) is too similar to AaveV2EthereumAssets.LUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#517-518)
 Variable AaveV2EthereumAssets.LUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#517-518) is too similar to AaveV2EthereumAssets.TUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#291-292)
 Variable AaveV2EthereumAssets.LUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#517-518) is too similar to AaveV2EthereumAssets.USDC_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#304-305)
 Variable AaveV2EthereumAssets.LUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#517-518) is too similar to AaveV2EthereumAssets.USDP_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#405-406)
+Variable AaveV2EthereumAssets.LUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#517-518) is too similar to AaveV2EthereumAssets.USDT_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#67-68)
 Variable AaveV2EthereumAssets.BUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#165) is too similar to AaveV2EthereumAssets.LUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#515)
 Variable AaveV2EthereumAssets.LUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#515) is too similar to AaveV2EthereumAssets.TUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#289)
 Variable AaveV2EthereumAssets.LUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#515) is too similar to AaveV2EthereumAssets.USDC_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#302)
 Variable AaveV2EthereumAssets.LUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#515) is too similar to AaveV2EthereumAssets.USDP_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#403)
+Variable AaveV2EthereumAssets.LUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#515) is too similar to AaveV2EthereumAssets.USDT_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#65)
 Variable AaveV2EthereumAssets.BUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#163) is too similar to AaveV2EthereumAssets.LUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#513)
 Variable AaveV2EthereumAssets.LUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#513) is too similar to AaveV2EthereumAssets.TUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#287)
 Variable AaveV2EthereumAssets.LUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#513) is too similar to AaveV2EthereumAssets.USDC_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#300)
 Variable AaveV2EthereumAssets.LUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#513) is too similar to AaveV2EthereumAssets.USDP_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#401)
+Variable AaveV2EthereumAssets.LUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#513) is too similar to AaveV2EthereumAssets.USDT_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#63)
 Variable AaveV2EthereumAssets.BUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#157) is too similar to AaveV2EthereumAssets.LUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#507)
 Variable AaveV2EthereumAssets.LUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#507) is too similar to AaveV2EthereumAssets.TUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#281)
 Variable AaveV2EthereumAssets.LUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#507) is too similar to AaveV2EthereumAssets.USDC_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#294)
 Variable AaveV2EthereumAssets.LUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#507) is too similar to AaveV2EthereumAssets.USDP_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#395)
+Variable AaveV2EthereumAssets.LUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#507) is too similar to AaveV2EthereumAssets.USDT_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#57)
 Variable AaveV2EthereumAssets.BUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#161) is too similar to AaveV2EthereumAssets.LUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#511)
 Variable AaveV2EthereumAssets.LUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#513) is too similar to AaveV2EthereumAssets.LUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#511)
 Variable AaveV2EthereumAssets.LUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#511) is too similar to AaveV2EthereumAssets.TUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#285)
 Variable AaveV2EthereumAssets.LUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#511) is too similar to AaveV2EthereumAssets.USDC_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#298)
 Variable AaveV2EthereumAssets.LUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#511) is too similar to AaveV2EthereumAssets.USDP_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#399)
+Variable AaveV2EthereumAssets.LUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#511) is too similar to AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61)
 Variable AaveV2EthereumAssets.MANA_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#221) is too similar to AaveV2EthereumAssets.MANA_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#225)
 Variable AaveV2EthereumAssets.MANA_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#221) is too similar to AaveV2EthereumAssets.MANA_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#223)
 Variable AaveV2EthereumAssets.AAVE_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#142-143) is too similar to AaveV2EthereumAssets.MANA_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#229-230)
@@ -766,6 +1202,7 @@ Variable AaveV2EthereumAssets.MKR_A_TOKEN (lib/aave-address-book/src/AaveV2Ether
 Variable AaveV2EthereumAssets.MKR_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#234) is too similar to AaveV2EthereumAssets.MKR_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#236)
 Variable AaveV2EthereumAssets.MKR_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#242) is too similar to AaveV2EthereumAssets.RAI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#380)
 Variable AaveV2EthereumAssets.MKR_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#242) is too similar to AaveV2EthereumAssets.REN_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#254)
+Variable AaveV2EthereumAssets.MKR_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#242) is too similar to AaveV2EthereumAssets.ZRX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#118)
 Variable AaveV2EthereumAssets.MKR_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#238) is too similar to AaveV2EthereumAssets.MKR_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#236)
 Variable AaveV2EthereumAssets.ONE_INCH_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#496) is too similar to AaveV2EthereumAssets.ONE_INCH_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#500)
 Variable AaveV2EthereumAssets.ONE_INCH_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#496) is too similar to AaveV2EthereumAssets.ONE_INCH_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#498)
@@ -776,6 +1213,8 @@ Variable AaveV2EthereumAssets.RAI_A_TOKEN (lib/aave-address-book/src/AaveV2Ether
 Variable AaveV2EthereumAssets.BAT_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#155) is too similar to AaveV2EthereumAssets.RAI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#380)
 Variable AaveV2EthereumAssets.DAI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#180) is too similar to AaveV2EthereumAssets.RAI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#380)
 Variable AaveV2EthereumAssets.DPI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#418) is too similar to AaveV2EthereumAssets.RAI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#380)
+Variable AaveV2EthereumAssets.RAI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#380) is too similar to AaveV2EthereumAssets.YFI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#106)
+Variable AaveV2EthereumAssets.RAI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#380) is too similar to AaveV2EthereumAssets.ZRX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#118)
 Variable AaveV2EthereumAssets.DAI_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#176) is too similar to AaveV2EthereumAssets.RAI_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#376)
 Variable AaveV2EthereumAssets.DAI_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#170) is too similar to AaveV2EthereumAssets.RAI_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#370)
 Variable AaveV2EthereumAssets.DAI_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#174) is too similar to AaveV2EthereumAssets.RAI_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#374)
@@ -785,6 +1224,7 @@ Variable AaveV2EthereumAssets.REN_A_TOKEN (lib/aave-address-book/src/AaveV2Ether
 Variable AaveV2EthereumAssets.REN_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#246) is too similar to AaveV2EthereumAssets.REN_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#248)
 Variable AaveV2EthereumAssets.RAI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#380) is too similar to AaveV2EthereumAssets.REN_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#254)
 Variable AaveV2EthereumAssets.REN_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#254) is too similar to AaveV2EthereumAssets.SNX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#266)
+Variable AaveV2EthereumAssets.REN_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#254) is too similar to AaveV2EthereumAssets.ZRX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#118)
 Variable AaveV2EthereumAssets.ENJ_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#188) is too similar to AaveV2EthereumAssets.REN_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#250)
 Variable AaveV2EthereumAssets.ENJ_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#182) is too similar to AaveV2EthereumAssets.REN_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#244)
 Variable AaveV2EthereumAssets.ENJ_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#186) is too similar to AaveV2EthereumAssets.REN_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#248)
@@ -795,104 +1235,82 @@ Variable AaveV2EthereumAssets.SNX_S_TOKEN (lib/aave-address-book/src/AaveV2Ether
 Variable AaveV2EthereumAssets.TUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#283) is too similar to AaveV2EthereumAssets.TUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#287)
 Variable AaveV2EthereumAssets.TUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#283) is too similar to AaveV2EthereumAssets.TUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#285)
 Variable AaveV2EthereumAssets.TUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#283) is too similar to AaveV2EthereumAssets.USDC_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#296)
+Variable AaveV2EthereumAssets.TUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#283) is too similar to AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59)
 Variable AaveV2EthereumAssets.TUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#291-292) is too similar to AaveV2EthereumAssets.USDC_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#304-305)
 Variable AaveV2EthereumAssets.TUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#289) is too similar to AaveV2EthereumAssets.USDC_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#302)
+Variable AaveV2EthereumAssets.TUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#289) is too similar to AaveV2EthereumAssets.USDT_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#65)
 Variable AaveV2EthereumAssets.TUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#287) is too similar to AaveV2EthereumAssets.USDC_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#300)
+Variable AaveV2EthereumAssets.TUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#287) is too similar to AaveV2EthereumAssets.USDT_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#63)
 Variable AaveV2EthereumAssets.TUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#281) is too similar to AaveV2EthereumAssets.USDC_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#294)
+Variable AaveV2EthereumAssets.TUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#281) is too similar to AaveV2EthereumAssets.USDT_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#57)
 Variable AaveV2EthereumAssets.TUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#287) is too similar to AaveV2EthereumAssets.TUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#285)
 Variable AaveV2EthereumAssets.TUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#285) is too similar to AaveV2EthereumAssets.USDC_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#298)
-Variable AaveV2EthereumAssets.UNI_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#122) is too similar to AaveV2EthereumAssets.UNI_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#126)
-Variable AaveV2EthereumAssets.UNI_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#122) is too similar to AaveV2EthereumAssets.UNI_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#124)
+Variable AaveV2EthereumAssets.TUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#285) is too similar to AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61)
 Variable AaveV2EthereumAssets.DAI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#180) is too similar to AaveV2EthereumAssets.UNI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#130)
 Variable AaveV2EthereumAssets.DPI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#418) is too similar to AaveV2EthereumAssets.UNI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#130)
 Variable AaveV2EthereumAssets.RAI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#380) is too similar to AaveV2EthereumAssets.UNI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#130)
 Variable AaveV2EthereumAssets.REN_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#254) is too similar to AaveV2EthereumAssets.UNI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#130)
 Variable AaveV2EthereumAssets.SNX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#266) is too similar to AaveV2EthereumAssets.UNI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#130)
+Variable AaveV2EthereumAssets.UNI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#130) is too similar to AaveV2EthereumAssets.YFI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#106)
+Variable AaveV2EthereumAssets.UNI_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#122) is too similar to AaveV2EthereumAssets.UNI_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#126)
+Variable AaveV2EthereumAssets.UNI_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#122) is too similar to AaveV2EthereumAssets.UNI_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#124)
 Variable AaveV2EthereumAssets.UNI_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#126) is too similar to AaveV2EthereumAssets.UNI_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#124)
 Variable AaveV2EthereumAssets.USDC_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#296) is too similar to AaveV2EthereumAssets.USDC_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#300)
 Variable AaveV2EthereumAssets.USDC_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#296) is too similar to AaveV2EthereumAssets.USDC_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#298)
+Variable AaveV2EthereumAssets.USDC_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#296) is too similar to AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59)
 Variable AaveV2EthereumAssets.USDC_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#300) is too similar to AaveV2EthereumAssets.USDC_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#298)
 Variable AaveV2EthereumAssets.TUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#283) is too similar to AaveV2EthereumAssets.USDP_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#397)
 Variable AaveV2EthereumAssets.USDC_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#296) is too similar to AaveV2EthereumAssets.USDP_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#397)
 Variable AaveV2EthereumAssets.USDP_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#397) is too similar to AaveV2EthereumAssets.USDP_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#401)
 Variable AaveV2EthereumAssets.USDP_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#397) is too similar to AaveV2EthereumAssets.USDP_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#399)
+Variable AaveV2EthereumAssets.USDP_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#397) is too similar to AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59)
 Variable AaveV2EthereumAssets.TUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#291-292) is too similar to AaveV2EthereumAssets.USDP_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#405-406)
 Variable AaveV2EthereumAssets.USDC_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#304-305) is too similar to AaveV2EthereumAssets.USDP_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#405-406)
 Variable AaveV2EthereumAssets.TUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#289) is too similar to AaveV2EthereumAssets.USDP_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#403)
 Variable AaveV2EthereumAssets.USDC_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#302) is too similar to AaveV2EthereumAssets.USDP_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#403)
+Variable AaveV2EthereumAssets.USDP_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#403) is too similar to AaveV2EthereumAssets.USDT_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#65)
 Variable AaveV2EthereumAssets.TUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#287) is too similar to AaveV2EthereumAssets.USDP_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#401)
 Variable AaveV2EthereumAssets.USDC_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#300) is too similar to AaveV2EthereumAssets.USDP_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#401)
+Variable AaveV2EthereumAssets.USDP_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#401) is too similar to AaveV2EthereumAssets.USDT_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#63)
 Variable AaveV2EthereumAssets.TUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#281) is too similar to AaveV2EthereumAssets.USDP_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#395)
 Variable AaveV2EthereumAssets.USDC_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#294) is too similar to AaveV2EthereumAssets.USDP_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#395)
+Variable AaveV2EthereumAssets.USDP_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#395) is too similar to AaveV2EthereumAssets.USDT_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#57)
 Variable AaveV2EthereumAssets.TUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#285) is too similar to AaveV2EthereumAssets.USDP_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#399)
 Variable AaveV2EthereumAssets.USDC_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#298) is too similar to AaveV2EthereumAssets.USDP_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#399)
 Variable AaveV2EthereumAssets.USDP_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#401) is too similar to AaveV2EthereumAssets.USDP_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#399)
-Variable AaveV2EthereumAssets.BUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#159) is too similar to AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59)
-Variable AaveV2EthereumAssets.LUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#509) is too similar to AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59)
-Variable AaveV2EthereumAssets.TUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#283) is too similar to AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59)
-Variable AaveV2EthereumAssets.USDC_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#296) is too similar to AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59)
-Variable AaveV2EthereumAssets.USDP_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#397) is too similar to AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59)
-Variable AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59) is too similar to AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61)
-Variable AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59) is too similar to AaveV2EthereumAssets.sUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#270)
+Variable AaveV2EthereumAssets.USDP_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#399) is too similar to AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61)
 Variable AaveV2EthereumAssets.BUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#167-168) is too similar to AaveV2EthereumAssets.USDT_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#67-68)
-Variable AaveV2EthereumAssets.LUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#517-518) is too similar to AaveV2EthereumAssets.USDT_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#67-68)
 Variable AaveV2EthereumAssets.TUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#291-292) is too similar to AaveV2EthereumAssets.USDT_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#67-68)
 Variable AaveV2EthereumAssets.USDC_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#304-305) is too similar to AaveV2EthereumAssets.USDT_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#67-68)
 Variable AaveV2EthereumAssets.USDP_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#405-406) is too similar to AaveV2EthereumAssets.USDT_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#67-68)
-Variable AaveV2EthereumAssets.USDT_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#67-68) is too similar to AaveV2EthereumAssets.sUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#278-279)
-Variable AaveV2EthereumAssets.BUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#165) is too similar to AaveV2EthereumAssets.USDT_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#65)
-Variable AaveV2EthereumAssets.LUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#515) is too similar to AaveV2EthereumAssets.USDT_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#65)
-Variable AaveV2EthereumAssets.TUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#289) is too similar to AaveV2EthereumAssets.USDT_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#65)
 Variable AaveV2EthereumAssets.USDC_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#302) is too similar to AaveV2EthereumAssets.USDT_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#65)
-Variable AaveV2EthereumAssets.USDP_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#403) is too similar to AaveV2EthereumAssets.USDT_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#65)
-Variable AaveV2EthereumAssets.USDT_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#65) is too similar to AaveV2EthereumAssets.sUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#276)
-Variable AaveV2EthereumAssets.BUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#163) is too similar to AaveV2EthereumAssets.USDT_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#63)
-Variable AaveV2EthereumAssets.LUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#513) is too similar to AaveV2EthereumAssets.USDT_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#63)
-Variable AaveV2EthereumAssets.TUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#287) is too similar to AaveV2EthereumAssets.USDT_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#63)
 Variable AaveV2EthereumAssets.USDC_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#300) is too similar to AaveV2EthereumAssets.USDT_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#63)
-Variable AaveV2EthereumAssets.USDP_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#401) is too similar to AaveV2EthereumAssets.USDT_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#63)
 Variable AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59) is too similar to AaveV2EthereumAssets.USDT_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#63)
-Variable AaveV2EthereumAssets.USDT_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#63) is too similar to AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61)
-Variable AaveV2EthereumAssets.USDT_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#63) is too similar to AaveV2EthereumAssets.sUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#274)
-Variable AaveV2EthereumAssets.BUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#157) is too similar to AaveV2EthereumAssets.USDT_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#57)
-Variable AaveV2EthereumAssets.LUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#507) is too similar to AaveV2EthereumAssets.USDT_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#57)
-Variable AaveV2EthereumAssets.TUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#281) is too similar to AaveV2EthereumAssets.USDT_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#57)
 Variable AaveV2EthereumAssets.USDC_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#294) is too similar to AaveV2EthereumAssets.USDT_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#57)
-Variable AaveV2EthereumAssets.USDP_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#395) is too similar to AaveV2EthereumAssets.USDT_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#57)
-Variable AaveV2EthereumAssets.USDT_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#57) is too similar to AaveV2EthereumAssets.sUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#268)
-Variable AaveV2EthereumAssets.BUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#161) is too similar to AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61)
-Variable AaveV2EthereumAssets.LUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#511) is too similar to AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61)
-Variable AaveV2EthereumAssets.TUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#285) is too similar to AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61)
 Variable AaveV2EthereumAssets.USDC_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#298) is too similar to AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61)
-Variable AaveV2EthereumAssets.USDP_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#399) is too similar to AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61)
-Variable AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61) is too similar to AaveV2EthereumAssets.sUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#272)
+Variable AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59) is too similar to AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61)
+Variable AaveV2EthereumAssets.USDT_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#63) is too similar to AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61)
 Variable AaveV2EthereumAssets.UST_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#472) is too similar to AaveV2EthereumAssets.UST_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#476)
 Variable AaveV2EthereumAssets.UST_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#472) is too similar to AaveV2EthereumAssets.UST_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#474)
 Variable AaveV2EthereumAssets.BAT_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#155) is too similar to AaveV2EthereumAssets.UST_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#480)
 Variable AaveV2EthereumAssets.SNX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#266) is too similar to AaveV2EthereumAssets.UST_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#480)
 Variable AaveV2EthereumAssets.UNI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#130) is too similar to AaveV2EthereumAssets.UST_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#480)
 Variable AaveV2EthereumAssets.UST_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#476) is too similar to AaveV2EthereumAssets.UST_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#474)
+Variable AaveV2EthereumAssets.WBTC_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#80-81) is too similar to AaveV2EthereumAssets.WETH_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#93-94)
 Variable AaveV2EthereumAssets.WBTC_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#72) is too similar to AaveV2EthereumAssets.WBTC_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#76)
 Variable AaveV2EthereumAssets.WBTC_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#72) is too similar to AaveV2EthereumAssets.WBTC_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#74)
-Variable AaveV2EthereumAssets.WBTC_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#80-81) is too similar to AaveV2EthereumAssets.WETH_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#93-94)
 Variable AaveV2EthereumAssets.WBTC_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#76) is too similar to AaveV2EthereumAssets.WBTC_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#74)
 Variable AaveV2EthereumAssets.WETH_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#85) is too similar to AaveV2EthereumAssets.WETH_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#89)
 Variable AaveV2EthereumAssets.WETH_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#85) is too similar to AaveV2EthereumAssets.WETH_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#87)
 Variable AaveV2EthereumAssets.WETH_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#89) is too similar to AaveV2EthereumAssets.WETH_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#87)
-Variable AaveV2EthereumAssets.YFI_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#98) is too similar to AaveV2EthereumAssets.YFI_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#102)
-Variable AaveV2EthereumAssets.YFI_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#98) is too similar to AaveV2EthereumAssets.YFI_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#100)
 Variable AaveV2EthereumAssets.DAI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#180) is too similar to AaveV2EthereumAssets.YFI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#106)
 Variable AaveV2EthereumAssets.DPI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#418) is too similar to AaveV2EthereumAssets.YFI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#106)
-Variable AaveV2EthereumAssets.RAI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#380) is too similar to AaveV2EthereumAssets.YFI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#106)
-Variable AaveV2EthereumAssets.UNI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#130) is too similar to AaveV2EthereumAssets.YFI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#106)
+Variable AaveV2EthereumAssets.YFI_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#98) is too similar to AaveV2EthereumAssets.YFI_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#102)
+Variable AaveV2EthereumAssets.YFI_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#98) is too similar to AaveV2EthereumAssets.YFI_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#100)
 Variable AaveV2EthereumAssets.YFI_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#102) is too similar to AaveV2EthereumAssets.YFI_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#100)
-Variable AaveV2EthereumAssets.ZRX_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#110) is too similar to AaveV2EthereumAssets.ZRX_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#114)
 Variable AaveV2EthereumAssets.ZRX_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#110) is too similar to AaveV2EthereumAssets.ZRX_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#112)
-Variable AaveV2EthereumAssets.CVX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#492) is too similar to AaveV2EthereumAssets.ZRX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#118)
-Variable AaveV2EthereumAssets.MKR_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#242) is too similar to AaveV2EthereumAssets.ZRX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#118)
-Variable AaveV2EthereumAssets.RAI_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#380) is too similar to AaveV2EthereumAssets.ZRX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#118)
-Variable AaveV2EthereumAssets.REN_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#254) is too similar to AaveV2EthereumAssets.ZRX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#118)
 Variable AaveV2EthereumAssets.SNX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#266) is too similar to AaveV2EthereumAssets.ZRX_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#118)
+Variable AaveV2EthereumAssets.ZRX_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#110) is too similar to AaveV2EthereumAssets.ZRX_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#114)
 Variable AaveV2EthereumAssets.ZRX_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#114) is too similar to AaveV2EthereumAssets.ZRX_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#112)
 Variable AaveV2EthereumAssets.renFIL_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#359) is too similar to AaveV2EthereumAssets.renFIL_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#363)
 Variable AaveV2EthereumAssets.renFIL_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#359) is too similar to AaveV2EthereumAssets.renFIL_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#361)
@@ -902,6 +1320,7 @@ Variable AaveV2EthereumAssets.LUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethe
 Variable AaveV2EthereumAssets.TUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#283) is too similar to AaveV2EthereumAssets.sUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#270)
 Variable AaveV2EthereumAssets.USDC_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#296) is too similar to AaveV2EthereumAssets.sUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#270)
 Variable AaveV2EthereumAssets.USDP_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#397) is too similar to AaveV2EthereumAssets.sUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#270)
+Variable AaveV2EthereumAssets.USDT_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#59) is too similar to AaveV2EthereumAssets.sUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#270)
 Variable AaveV2EthereumAssets.sUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#270) is too similar to AaveV2EthereumAssets.sUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#274)
 Variable AaveV2EthereumAssets.sUSD_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#270) is too similar to AaveV2EthereumAssets.sUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#272)
 Variable AaveV2EthereumAssets.BUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#167-168) is too similar to AaveV2EthereumAssets.sUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#278-279)
@@ -909,26 +1328,31 @@ Variable AaveV2EthereumAssets.LUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book
 Variable AaveV2EthereumAssets.TUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#291-292) is too similar to AaveV2EthereumAssets.sUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#278-279)
 Variable AaveV2EthereumAssets.USDC_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#304-305) is too similar to AaveV2EthereumAssets.sUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#278-279)
 Variable AaveV2EthereumAssets.USDP_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#405-406) is too similar to AaveV2EthereumAssets.sUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#278-279)
+Variable AaveV2EthereumAssets.USDT_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#67-68) is too similar to AaveV2EthereumAssets.sUSD_INTEREST_RATE_STRATEGY (lib/aave-address-book/src/AaveV2Ethereum.sol#278-279)
 Variable AaveV2EthereumAssets.BUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#165) is too similar to AaveV2EthereumAssets.sUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#276)
 Variable AaveV2EthereumAssets.LUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#515) is too similar to AaveV2EthereumAssets.sUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#276)
 Variable AaveV2EthereumAssets.TUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#289) is too similar to AaveV2EthereumAssets.sUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#276)
 Variable AaveV2EthereumAssets.USDC_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#302) is too similar to AaveV2EthereumAssets.sUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#276)
 Variable AaveV2EthereumAssets.USDP_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#403) is too similar to AaveV2EthereumAssets.sUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#276)
+Variable AaveV2EthereumAssets.USDT_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#65) is too similar to AaveV2EthereumAssets.sUSD_ORACLE (lib/aave-address-book/src/AaveV2Ethereum.sol#276)
 Variable AaveV2EthereumAssets.BUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#163) is too similar to AaveV2EthereumAssets.sUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#274)
 Variable AaveV2EthereumAssets.LUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#513) is too similar to AaveV2EthereumAssets.sUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#274)
 Variable AaveV2EthereumAssets.TUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#287) is too similar to AaveV2EthereumAssets.sUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#274)
 Variable AaveV2EthereumAssets.USDC_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#300) is too similar to AaveV2EthereumAssets.sUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#274)
 Variable AaveV2EthereumAssets.USDP_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#401) is too similar to AaveV2EthereumAssets.sUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#274)
+Variable AaveV2EthereumAssets.USDT_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#63) is too similar to AaveV2EthereumAssets.sUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#274)
 Variable AaveV2EthereumAssets.BUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#157) is too similar to AaveV2EthereumAssets.sUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#268)
 Variable AaveV2EthereumAssets.LUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#507) is too similar to AaveV2EthereumAssets.sUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#268)
 Variable AaveV2EthereumAssets.TUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#281) is too similar to AaveV2EthereumAssets.sUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#268)
 Variable AaveV2EthereumAssets.USDC_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#294) is too similar to AaveV2EthereumAssets.sUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#268)
 Variable AaveV2EthereumAssets.USDP_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#395) is too similar to AaveV2EthereumAssets.sUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#268)
+Variable AaveV2EthereumAssets.USDT_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#57) is too similar to AaveV2EthereumAssets.sUSD_UNDERLYING (lib/aave-address-book/src/AaveV2Ethereum.sol#268)
 Variable AaveV2EthereumAssets.BUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#161) is too similar to AaveV2EthereumAssets.sUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#272)
 Variable AaveV2EthereumAssets.LUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#511) is too similar to AaveV2EthereumAssets.sUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#272)
 Variable AaveV2EthereumAssets.TUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#285) is too similar to AaveV2EthereumAssets.sUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#272)
 Variable AaveV2EthereumAssets.USDC_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#298) is too similar to AaveV2EthereumAssets.sUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#272)
 Variable AaveV2EthereumAssets.USDP_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#399) is too similar to AaveV2EthereumAssets.sUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#272)
+Variable AaveV2EthereumAssets.USDT_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#61) is too similar to AaveV2EthereumAssets.sUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#272)
 Variable AaveV2EthereumAssets.sUSD_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#274) is too similar to AaveV2EthereumAssets.sUSD_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#272)
 Variable AaveV2EthereumAssets.stETH_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#447) is too similar to AaveV2EthereumAssets.stETH_S_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#451)
 Variable AaveV2EthereumAssets.stETH_A_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#447) is too similar to AaveV2EthereumAssets.stETH_V_TOKEN (lib/aave-address-book/src/AaveV2Ethereum.sol#449)
