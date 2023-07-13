@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/ee37ee35-bfca-48b8-9d24-33ca700805fc](https://dashboard.tenderly.co/me/simulator/ee37ee35-bfca-48b8-9d24-33ca700805fc)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/ebca12b2-c9d5-4b13-8386-675f6660fd37](https://dashboard.tenderly.co/me/simulator/ebca12b2-c9d5-4b13-8386-675f6660fd37)
 
 ### Checks
 
@@ -90,12 +90,12 @@ Info:
 
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`
-@@ _reservesCount @@
-- 14
-+ 15
 @@ _maxStableRateBorrowSizePercent @@
 - 2500
 + 2500
+@@ _reservesCount @@
+- 14
++ 15
 @@ Slot `0x229f20bcd3cc05a7ee68bb1632cc35b79bb8c7425622671f3831d7287f10cb53` @@
 - "0x0000000000000000000000000000000000000000000000000000000000000000"
 + "0x000000000000000000000000912ce59144191c1204e64559fe8253a0e49e6548"
@@ -172,24 +172,24 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x9a7f917b7bfc634e6c9aefce11f6b6b09329c7e6628793c567a8f091ba3f3cb4` @@
-- true
-+ false
-
 @@ `_actionsSets` key `"31"`.executed @@
 - false
 + true
+
+@@ `_queuedActions` key `0x7d485ed17ab6662b608d93fa578d3c8c0e11dccdafb3686c1114065a3ac810be` @@
+- true
++ false
 
 ```
 
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x000000000000000000000000000000000000000000000000000000000121f686"
-+ "0x00000000000000000000000000000000000000000000000000000000012201c2"
+- "0x000000000000000000000000000000000000000000000000000000000315ae76"
++ "0x000000000000000000000000000000000000000000000000000000000315b9b2"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x00000000000000000000000000000000000000000000000024e8707ed8a2d5de"
-+ "0x00000000000000000000000000000000000000000000000024e89403d664c2de"
+- "0x00000000000000000000000000000000000000000000000019fe6a753bc6681a"
++ "0x00000000000000000000000000000000000000000000000019fefdcad7d97f1a"
 ```
 
 ```diff
@@ -265,7 +265,7 @@ Info:
 - Touched address:
   - 0xd73a92be73efbfcf3854433a5fcbabf9c1316073: EOA (verification not applicable)
   - 0x7d9103572be58ffe99dc390e8246f02dcae6f611: Contract (verified) (ArbitrumBridgeExecutor)
-  - 0xbf990c93a395f91ce769f2a4df78c0ddef038bc5: Contract (not verified)
+  - 0xbf990c93a395f91ce769f2a4df78c0ddef038bc5: Contract (verified) (AaveV3_Arb_ARBListing_20231207)
   - 0x0efdfc1a940de4e7e6acc9bb801481f81b17fd20: Contract (verified) (AaveV3ConfigEngine)
   - 0xb2a824043730fe05f3da2efafa1cbbe83fa548d6: Contract (verified) (EACAggregatorProxy)
   - 0x46de66f10343b59bacc37df9b3f67cd0ccc121a3: Contract (verified) (AccessControlledOffchainAggregator)
@@ -884,6 +884,41 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 <details>
 <summary>View warnings for L2Pool at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
+
+```
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
+    sys.exit(main())
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
+    compilations = compile_all(**vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+```
+
+</details>
+
+<details>
+<summary>View warnings for AaveV3_Arb_ARBListing_20231207 at `0xBF990C93A395F91cE769F2a4df78C0DDEF038Bc5`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -2200,6 +2235,69 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 </details>
 
 <details>
+<summary>Slither report for AaveV3_Arb_ARBListing_20231207 at `0xBF990C93A395F91cE769F2a4df78C0DDEF038Bc5`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+ERROR:root:Error in 0xbf990c93a395f91ce769f2a4df78c0ddef038bc5
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 646, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 323, in compile
+    with urllib.request.urlopen(req) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+
+```
+
+</details>
+
+<details>
 <summary>Slither report for L2ArbitrumToken at `0xC4ed0A9Ea70d5bCC69f748547650d32cC219D882`</summary>
 
 ```
@@ -2332,10 +2430,10 @@ ReserveLogic.updateState(DataTypes.ReserveData,DataTypes.ReserveCache) (lib/aave
 	- reserve.lastUpdateTimestamp == uint40(block.timestamp) (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#99)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
 INFO:Detectors:
-ValidationLogic.validateBorrow(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.ValidateBorrowParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#147) is a local variable never initialized
-ReserveLogic._accrueToTreasury(DataTypes.ReserveData,DataTypes.ReserveCache).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#236) is a local variable never initialized
 GenericLogic.calculateUserAccountData(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.CalculateUserAccountDataParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/GenericLogic.sol#74) is a local variable never initialized
+ValidationLogic.validateBorrow(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.ValidateBorrowParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#147) is a local variable never initialized
 ReserveLogic.cache(DataTypes.ReserveData).reserveCache (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#328) is a local variable never initialized
+ReserveLogic._accrueToTreasury(DataTypes.ReserveData,DataTypes.ReserveCache).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#236) is a local variable never initialized
 ReserveLogic.updateInterestRates(DataTypes.ReserveData,DataTypes.ReserveCache,address,uint256,uint256).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#179) is a local variable never initialized
 ValidationLogic.validateLiquidationCall(DataTypes.UserConfigurationMap,DataTypes.ReserveData,DataTypes.ValidateLiquidationCallParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#501) is a local variable never initialized
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
