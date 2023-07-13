@@ -517,6 +517,7 @@ Some notes on the outputs of reports:
 | Chaos Labs Risk Parameter Updates - Aave V2 Ethereum                                                                                                                                     | [272.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/272.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=272) |
 | add ARB to Aave V3 Arbitrum Pool                                                                                                                                                         | [273.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/273.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=273) |
 | Arbitrum                                                                                                                                                                                 | [273_Arbitrum_pending_0.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/273_Arbitrum_pending_0.md) | [app](https://app.aave.com/governance/proposal/?proposalId=273) |
+| Bug Bounty May 2023                                                                                                                                                                      | [274.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/274.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=274) |
 
 <!-- ### Reports table end ### -->
 
