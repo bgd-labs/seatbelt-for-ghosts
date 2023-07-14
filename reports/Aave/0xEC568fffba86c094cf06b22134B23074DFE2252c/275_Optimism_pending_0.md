@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/4ddeb0a6-f539-41b2-8f3c-3f77cfe9e254](https://dashboard.tenderly.co/me/simulator/4ddeb0a6-f539-41b2-8f3c-3f77cfe9e254)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/bfc16731-a938-4927-aa53-945ae31a2be6](https://dashboard.tenderly.co/me/simulator/bfc16731-a938-4927-aa53-945ae31a2be6)
 
 ### Checks
 
@@ -40,12 +40,12 @@ Info:
 
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`
-@@ _reservesCount @@
-- 12
-+ 13
 @@ _maxStableRateBorrowSizePercent @@
 - 2500
 + 2500
+@@ _reservesCount @@
+- 12
++ 13
 @@ `_reserves` key `0x9bcef72be871e61ed4fbbc7630889bee758eb81d`.configuration.data @@
 - 0
 + 753997829084744594142939992135143641673271702198828
@@ -122,13 +122,13 @@ Info:
 
 ```diff
 # OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0xaf2bf982cb643eaba489692c08bc8b2b2f66b519e7938007ad2c3ca8715583fd` @@
-- true
-+ false
-
 @@ `_actionsSets` key `"25"`.executed @@
 - false
 + true
+
+@@ `_queuedActions` key `0xa06cb8688ebddd377ce6f72f8a403454fa1da953ca8ba7a6ea34af516df338bc` @@
+- true
++ false
 
 ```
 
@@ -260,7 +260,7 @@ Info:
 - Touched address:
   - 0xd73a92be73efbfcf3854433a5fcbabf9c1316073: EOA (verification not applicable)
   - 0x7d9103572be58ffe99dc390e8246f02dcae6f611: Contract (verified) (OptimismBridgeExecutor)
-  - 0x853844459106feefd8c7c4cc34066bfbc0531722: Contract (not verified)
+  - 0x853844459106feefd8c7c4cc34066bfbc0531722: Contract (verified) (AaveV3OPListings_20230710_Payload)
   - 0x7a9a9c14b35e58ffa1cc84ab421ace0fdcd289e3: Contract (verified) (AaveV3ConfigEngine)
   - 0x52d5f9f884ca21c27e2100735d793c6771eab793: Contract (not verified)
   - 0x22f3727be377781d1579b7c9222382b21c9d1a8f: Contract (not verified)
@@ -431,6 +431,15 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
+<summary>View warnings for AaveV3OPListings_20230710_Payload at `0x853844459106feefd8C7C4cC34066bFBC0531722`</summary>
+
+```
+INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x853844459106feefd8c7c4cc34066bfbc0531722-DefaultReserveInterestRateStrategy' running
 ```
 
 </details>
@@ -1011,6 +1020,64 @@ ERROR:root:Traceback (most recent call last):
     with open(path, encoding="utf8", newline="") as f:
 FileNotFoundError: [Errno 2] No such file or directory: ''
 
+```
+
+</details>
+
+<details>
+<summary>Slither report for AaveV3OPListings_20230710_Payload at `0x853844459106feefd8C7C4cC34066bFBC0531722`</summary>
+
+```
+'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x853844459106feefd8c7c4cc34066bfbc0531722-DefaultReserveInterestRateStrategy' running
+INFO:Detectors:
+DefaultReserveInterestRateStrategy.calculateInterestRates(address,uint256,uint256,uint256,uint256,uint256).vars (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#182) is a local variable never initialized
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
+INFO:Detectors:
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).baseVariableBorrowRate (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#60) shadows:
+	- DefaultReserveInterestRateStrategy.baseVariableBorrowRate() (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#92-94) (function)
+	- IReserveInterestRateStrategy.baseVariableBorrowRate() (lib/protocol-v2/contracts/interfaces/IReserveInterestRateStrategy.sol#10) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#61) shadows:
+	- DefaultReserveInterestRateStrategy.variableRateSlope1() (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#76-78) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#62) shadows:
+	- DefaultReserveInterestRateStrategy.variableRateSlope2() (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#80-82) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#63) shadows:
+	- DefaultReserveInterestRateStrategy.stableRateSlope1() (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#84-86) (function)
+DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#64) shadows:
+	- DefaultReserveInterestRateStrategy.stableRateSlope2() (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#88-90) (function)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#local-variable-shadowing
+INFO:Detectors:
+PercentageMath.percentDiv(uint256,uint256) (lib/protocol-v2/contracts/protocol/libraries/math/PercentageMath.sol#43-53) is never used and should be removed
+SafeMath.div(uint256,uint256) (lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol#101-103) is never used and should be removed
+SafeMath.div(uint256,uint256,string) (lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol#116-127) is never used and should be removed
+SafeMath.mod(uint256,uint256) (lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol#140-142) is never used and should be removed
+SafeMath.mod(uint256,uint256,string) (lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol#155-162) is never used and should be removed
+SafeMath.mul(uint256,uint256) (lib/protocol-v2/contracts/dependencies/openzeppelin/contracts/SafeMath.sol#76-88) is never used and should be removed
+WadRayMath.halfRay() (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#39-41) is never used and should be removed
+WadRayMath.halfWad() (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#46-48) is never used and should be removed
+WadRayMath.rayToWad(uint256) (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#117-123) is never used and should be removed
+WadRayMath.wad() (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#32-34) is never used and should be removed
+WadRayMath.wadDiv(uint256,uint256) (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#72-79) is never used and should be removed
+WadRayMath.wadMul(uint256,uint256) (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#56-64) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+INFO:Detectors:
+Variable DefaultReserveInterestRateStrategy.OPTIMAL_UTILIZATION_RATE (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#30) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy.EXCESS_UTILIZATION_RATE (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#38) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._baseVariableBorrowRate (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#43) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._variableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#46) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._variableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#49) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._stableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#52) is not in mixedCase
+Variable DefaultReserveInterestRateStrategy._stableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#55) is not in mixedCase
+Constant WadRayMath.halfWAD (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#14) is not in UPPER_CASE_WITH_UNDERSCORES
+Constant WadRayMath.halfRAY (lib/protocol-v2/contracts/protocol/libraries/math/WadRayMath.sol#17) is not in UPPER_CASE_WITH_UNDERSCORES
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Detectors:
+Variable DefaultReserveInterestRateStrategy._stableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#52) is too similar to DefaultReserveInterestRateStrategy._stableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#55)
+Variable DefaultReserveInterestRateStrategy._variableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#46) is too similar to DefaultReserveInterestRateStrategy._variableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#49)
+Variable DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#63) is too similar to DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).stableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#64)
+Variable DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope1 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#61) is too similar to DefaultReserveInterestRateStrategy.constructor(ILendingPoolAddressesProvider,uint256,uint256,uint256,uint256,uint256,uint256).variableRateSlope2 (lib/protocol-v2/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol#62)
+Variable Errors.LP_INCONSISTENT_FLASHLOAN_PARAMS (lib/protocol-v2/contracts/protocol/libraries/helpers/Errors.sol#55) is too similar to Errors.VL_INCONSISTENT_FLASHLOAN_PARAMS (lib/protocol-v2/contracts/protocol/libraries/helpers/Errors.sol#100)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#variable-names-too-similar
+INFO:Slither:0x853844459106feefd8c7c4cc34066bfbc0531722 analyzed (9 contracts with 82 detectors), 32 result(s) found
 ```
 
 </details>
