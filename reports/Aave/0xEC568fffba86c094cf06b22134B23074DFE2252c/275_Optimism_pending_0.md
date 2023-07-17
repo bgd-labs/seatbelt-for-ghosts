@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/cbbec9fd-5300-43f7-8c5e-2d6cfca21646](https://dashboard.tenderly.co/me/simulator/cbbec9fd-5300-43f7-8c5e-2d6cfca21646)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/e6d899cb-c33b-4693-8695-68c22955e2f2](https://dashboard.tenderly.co/me/simulator/e6d899cb-c33b-4693-8695-68c22955e2f2)
 
 ### Checks
 
@@ -40,12 +40,12 @@ Info:
 
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`
-@@ _reservesCount @@
-- 12
-+ 13
 @@ _maxStableRateBorrowSizePercent @@
 - 2500
 + 2500
+@@ _reservesCount @@
+- 12
++ 13
 @@ `_reserves` key `0x9bcef72be871e61ed4fbbc7630889bee758eb81d`.configuration.data @@
 - 0
 + 753997829084744594142939992135143641673271702198828
@@ -126,7 +126,7 @@ Info:
 - false
 + true
 
-@@ `_queuedActions` key `0x2db66a72d397a042e985c6162c1fe21cf962500aa86b3cf615ee5bd3bbe858b7` @@
+@@ `_queuedActions` key `0x9e849f0e2e7a99da8537b08dd034ed65724f00a40a82e39a816f8fd79386f6e2` @@
 - true
 + false
 
