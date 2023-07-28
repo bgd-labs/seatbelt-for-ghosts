@@ -532,6 +532,7 @@ Some notes on the outputs of reports:
 | Polygon                                                                                                                                                                                  | [279_Polygon_pending_1.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/279_Polygon_pending_1.md)   | [app](https://app.aave.com/governance/proposal/?proposalId=279) |
 | Chaos Labs Risk Parameter Updates - CRV Aave V2 Ethereum                                                                                                                                 | [280.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/280.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=280) |
 | Set Metis Foundation Wallet as Emission Manager for METIS Token on Aave V3 Metis Pool                                                                                                    | [281.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/281.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=281) |
+| Acquire More aUSDC on Aave Ethereum Collector                                                                                                                                            | [282.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/282.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=282) |
 
 <!-- ### Reports table end ### -->
 
