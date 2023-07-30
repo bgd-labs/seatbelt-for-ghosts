@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/02cbdf54-3049-4bd0-9889-134ece618c97](https://dashboard.tenderly.co/me/simulator/02cbdf54-3049-4bd0-9889-134ece618c97)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/27e57246-500f-4ef3-90a7-da396c5cb348](https://dashboard.tenderly.co/me/simulator/27e57246-500f-4ef3-90a7-da396c5cb348)
 
 ### Checks
 
@@ -31,11 +31,11 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0xb1d748e5dd2e2e8fb0b81f729188f1884e84c7130c2b05c6464a4a5cc21b31f3` @@
+@@ `_queuedActions` key `0xfd8a3e50f6b6a1cdff1842d0114ff0d509c00cfa2c15e33085f8a0f877439282` @@
 - true
 + false
 
-@@ `_actionsSets` key `"32"`.executed @@
+@@ `_actionsSets` key `"33"`.executed @@
 - false
 + true
 
@@ -44,11 +44,11 @@ Info:
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x000000000000000000000000000000000000000000000000000000000109e254"
-+ "0x000000000000000000000000000000000000000000000000000000000109ed90"
+- "0x0000000000000000000000000000000000000000000000000000000000f9fa86"
++ "0x0000000000000000000000000000000000000000000000000000000000fa05c2"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x0000000000000000000000000000000000000000000000002a129a2f204bab4e"
-+ "0x0000000000000000000000000000000000000000000000002a12b50fb6cc2a4e"
+- "0x0000000000000000000000000000000000000000000000002717da0009742b96"
++ "0x0000000000000000000000000000000000000000000000002717f93bd052a396"
 ```
 
 #### Check stack trace of the proposal ✅ Passed
@@ -68,7 +68,7 @@ Info:
     - `SupplyCapChanged(asset: 0x3f56e0c36d275367b8c502090edf38289b3dea0d, oldSupplyCap: 4800000, newSupplyCap: 325000)`
     - `BorrowCapChanged(asset: 0x3f56e0c36d275367b8c502090edf38289b3dea0d, oldBorrowCap: 2400000, newBorrowCap: 250000)`
   - ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-    - `ActionsSetExecuted(id: 32, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
+    - `ActionsSetExecuted(id: 33, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
 
 #### Check all targets are verified on Etherscan ✅ Passed
 
