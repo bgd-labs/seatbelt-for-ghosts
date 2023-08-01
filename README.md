@@ -537,6 +537,7 @@ Some notes on the outputs of reports:
 | Reserve Factor Updates - Polygon Aave v2                                                                                                                                                 | [284.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/284.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=284) |
 | Polygon                                                                                                                                                                                  | [284_Polygon_pending_0.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/284_Polygon_pending_0.md)   | [app](https://app.aave.com/governance/proposal/?proposalId=284) |
 | TUSD offboarding plan                                                                                                                                                                    | [285.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/285.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=285) |
+| Gauntlet Recommendation for CRV LTV -> 0 on Aave v2 Ethereum                                                                                                                             | [286.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/286.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=286) |
 
 <!-- ### Reports table end ### -->
 
