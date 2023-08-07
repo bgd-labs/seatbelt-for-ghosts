@@ -541,6 +541,7 @@ Some notes on the outputs of reports:
 | Cancel Llama Streams                                                                                                                                                                     | [287.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/287.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=287) |
 | Gauntlet Recommendation to reduce CRV LT, LTV, debt ceiling on V3 Ethereum and CRV LT, LTV on V3 Polygon                                                                                 | [288.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/288.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=288) |
 | Polygon                                                                                                                                                                                  | [288_Polygon_pending_0.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/288_Polygon_pending_0.md)   | [app](https://app.aave.com/governance/proposal/?proposalId=288) |
+| aCRV OTC Deal                                                                                                                                                                            | [289.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/289.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=289) |
 
 <!-- ### Reports table end ### -->
 
