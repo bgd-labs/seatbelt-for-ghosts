@@ -1,4 +1,4 @@
-require('dotenv').config()
+import 'dotenv/config'
 import { aaveGovernanceContract, isProposalStateImmutable } from '../utils/contracts/aave-governance-v2'
 import { readFileSync, existsSync } from 'node:fs'
 
@@ -12,7 +12,7 @@ import { readFileSync, existsSync } from 'node:fs'
  * The reasoning behind that is that we can reuse a deterministic cache-key per chunk.
  */
 async function generateMatrix() {
-  const proposalsCount = await aaveGovernanceContract.getProposalsCount()
+  const proposalsCount = await aaveGovernanceContract.read.getProposalsCount()
   const proposals = [...Array(Number(proposalsCount)).keys()]
   const proposalKeys: number[] = []
   const path = './proposal-states.json'

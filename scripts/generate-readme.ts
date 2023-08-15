@@ -1,4 +1,4 @@
-require('dotenv').config()
+import 'dotenv/config'
 import fs, { createReadStream } from 'node:fs'
 import { createInterface } from 'node:readline'
 
