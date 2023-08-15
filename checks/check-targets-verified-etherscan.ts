@@ -63,7 +63,7 @@ async function checkVerificationStatus(
   if (stateDiff) return 'unverified'
   // Otherwise, check if there's code at the address. Addresses with code not in the contracts array are not verified
   const code = await provider.getBytecode({ address: addr })
-  return code === '0x' ? 'eoa' : 'unverified'
+  return code === undefined ? 'eoa' : 'unverified'
 }
 
 function getContract(sim: TenderlySimulationResponse, addr: string) {

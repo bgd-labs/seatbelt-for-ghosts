@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/2df9c4ec-9734-4b8d-8ae8-ac9a366a8a6d](https://dashboard.tenderly.co/me/simulator/2df9c4ec-9734-4b8d-8ae8-ac9a366a8a6d)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/af9546f1-5a40-4de9-8f92-4933895d5a17](https://dashboard.tenderly.co/me/simulator/af9546f1-5a40-4de9-8f92-4933895d5a17)
 
 ### Checks
 
@@ -25,13 +25,13 @@ Info:
 
 ```diff
 # OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
+@@ `_queuedActions` key `0x0eb00f1a4b933612acb2e2e94bccd3d77fec335c57737899016b27ed5b017f50` @@
+- true
++ false
+
 @@ `_actionsSets` key `"28"`.executed @@
 - false
 + true
-
-@@ `_queuedActions` key `0xe3a9332cdd8d53b486ac390f958953da2dd34a4b7d099f346640f445e5a47895` @@
-- true
-+ false
 
 ```
 
@@ -63,7 +63,7 @@ Info:
 Info:
 
 - Touched address:
-  - 0xd73a92be73efbfcf3854433a5fcbabf9c1316073: Contract (not verified)
+  - 0xd73a92be73efbfcf3854433a5fcbabf9c1316073: EOA (verification not applicable)
   - 0x7d9103572be58ffe99dc390e8246f02dcae6f611: Contract (verified) (OptimismBridgeExecutor)
   - 0xf285e2d9c5cdaab11c167ffa70fa4055fbeaed96: Contract (verified) (AaveV3_Opt_wstETH_CapsIncrease_20230908)
   - 0x7a9a9c14b35e58ffa1cc84ab421ace0fdcd289e3: Contract (verified) (AaveV3ConfigEngine)
