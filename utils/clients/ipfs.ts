@@ -1,5 +1,5 @@
 import matter from 'gray-matter'
-import { base58 } from 'ethers/lib/utils'
+import base58 from 'bs58'
 import fetchUrl from 'micro-ftch'
 
 export type ProposalMetadata = {

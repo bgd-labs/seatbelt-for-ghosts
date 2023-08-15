@@ -1,6 +1,6 @@
-import { JsonRpcProvider } from '@ethersproject/providers'
 import { ProposalCheck } from '../types'
 import { TenderlySimulationResponse } from '@bgd-labs/aave-cli'
+import { Hex, PublicClient } from 'viem'
 
 /**
  * Check all targets with code are verified on Etherscan
@@ -31,7 +31,7 @@ export const checkTouchedContractsVerifiedEtherscan: ProposalCheck = {
 async function checkVerificationStatuses(
   sim: TenderlySimulationResponse,
   addresses: string[],
-  provider: JsonRpcProvider
+  provider: PublicClient
 ): Promise<string> {
   let info = '' // prepare output
   for (const addr of addresses) {
@@ -53,8 +53,8 @@ async function checkVerificationStatuses(
  */
 async function checkVerificationStatus(
   sim: TenderlySimulationResponse,
-  addr: string,
-  provider: JsonRpcProvider
+  addr: Hex,
+  provider: PublicClient
 ): Promise<'verified' | 'eoa' | 'unverified'> {
   // If an address exists in the contracts array, it's verified on Etherscan
   const contract = getContract(sim, addr)
@@ -62,7 +62,7 @@ async function checkVerificationStatus(
   const stateDiff = getStateDiff(sim, addr)
   if (stateDiff) return 'unverified'
   // Otherwise, check if there's code at the address. Addresses with code not in the contracts array are not verified
-  const code = await provider.getCode(addr)
+  const code = await provider.getBytecode({ address: addr })
   return code === '0x' ? 'eoa' : 'unverified'
 }
 

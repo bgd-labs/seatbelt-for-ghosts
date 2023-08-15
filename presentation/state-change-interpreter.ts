@@ -1,8 +1,7 @@
-import { BigNumber, providers } from 'ethers'
-import { hexDataLength, hexDataSlice, hexZeroPad } from 'ethers/lib/utils'
 import { ProposalData } from '../types'
 import { erc20Contract } from '../utils/contracts/erc-20'
 import * as pools from '@bgd-labs/aave-address-book'
+import { Hex, fromHex, pad, size, slice, toHex } from 'viem'
 
 export function deepDiff(
   before: Record<string, any> | string,
@@ -30,7 +29,7 @@ export async function interpretStateChange(
   name: string = '',
   original: Record<string, any>,
   dirty: Record<string, any>,
-  key: string,
+  key: Hex,
   deps: ProposalData
 ) {
   if (name === '_reserves' && (original.configuration.data || dirty.configuration.data))
@@ -52,43 +51,43 @@ export async function interpretStateChange(
 //   uint256 data;
 // }
 /**
- * There's probably a nicer way to do this in ethers.
- * @param config number
- * @param fromBits inclusive
- * @param toBits exclusive
  * @returns value between bit range
  */
-export function getBits(config: string, fromBits: number, toBits: number) {
-  if (config === '0') return 0
-  const configU256 = hexZeroPad(BigNumber.from(config).toHexString(), 32)
-  let shl = BigNumber.from(configU256)
-    .shl(256 - toBits)
-    .toHexString()
-  if (hexDataLength(shl) < 32) shl = hexZeroPad(shl, 32)
-  const slice = hexDataSlice(shl, hexDataLength(shl) - 32, hexDataLength(shl))
-  const value = BigNumber.from(slice).shr(256 - toBits + fromBits)
-  return value.toString()
+export function getBits(_bigIntValue: bigint | number | string, startBit: bigint, endBit: bigint) {
+  const bigIntValue = BigInt(_bigIntValue)
+  if (startBit > endBit) {
+    throw new Error('Invalid bit range: startBit must be less than or equal to endBit')
+  }
+
+  const bitLength = BigInt(bigIntValue.toString(2)).toString().length
+  if (endBit >= bitLength) {
+    endBit = BigInt(bitLength - 1)
+  }
+
+  const mask = (1n << (endBit - startBit + 1n)) - 1n
+  const maskedValue = (bigIntValue >> startBit) & mask
+  return maskedValue.toString()
 }
 
 async function reserveConfigurationChanged(
   contractAddress: string,
   original: Record<string, any>,
   dirty: Record<string, any>,
-  key: string,
+  key: Hex,
   deps: ProposalData
 ) {
   const configurationBefore = getDecodedReserveData(contractAddress, original.configuration.data)
   const configurationAfter = getDecodedReserveData(contractAddress, dirty.configuration.data)
   let symbol = 'unknown'
   try {
-    symbol = await erc20Contract(key, deps.provider).symbol()
+    symbol = await erc20Contract(key, deps.provider).read.symbol()
   } catch (e) {}
   // const symbol =
   return `# decoded configuration.data for key \`${key}\` (symbol: ${symbol})
 ${deepDiff(configurationBefore, configurationAfter, 'configuration.data')}`
 }
 
-function getDecodedReserveData(contractAddress: string, data?: any) {
+function getDecodedReserveData(contractAddress: string, data?: bigint) {
   if (!data) return {}
   if (
     [pools.AaveV2EthereumAMM.POOL, pools.AaveV2Ethereum.POOL, pools.AaveV2Polygon.POOL, pools.AaveV2Avalanche.POOL]
@@ -99,15 +98,15 @@ function getDecodedReserveData(contractAddress: string, data?: any) {
   return decodeReserveDataV3(data)
 }
 
-export function decodeReserveDataV2(data: string) {
-  const ltv = getBits(data, 0, 16)
-  const liquidationThreshold = getBits(data, 16, 32)
-  const liquidationBonus = getBits(data, 32, 48)
-  const decimals = getBits(data, 48, 56)
-  const active = BigNumber.from(getBits(data, 56, 57)).toNumber()
-  const frozen = BigNumber.from(getBits(data, 57, 58)).toNumber()
-  const borrowingEnabled = BigNumber.from(getBits(data, 58, 59)).toNumber()
-  const reserveFactor = getBits(data, 64, 80)
+export function decodeReserveDataV2(data: bigint) {
+  const ltv = getBits(data, 0n, 15n)
+  const liquidationThreshold = getBits(data, 16n, 31n)
+  const liquidationBonus = getBits(data, 32n, 47n)
+  const decimals = getBits(data, 48n, 55n)
+  const active = Number(getBits(data, 56n, 56n))
+  const frozen = Number(getBits(data, 57n, 57n))
+  const borrowingEnabled = Number(getBits(data, 58n, 58n))
+  const reserveFactor = getBits(data, 64n, 79n)
   return {
     ltv,
     liquidationThreshold,
@@ -120,26 +119,26 @@ export function decodeReserveDataV2(data: string) {
   }
 }
 
-export function decodeReserveDataV3(data: string) {
-  const ltv = getBits(data, 0, 16)
-  const liquidationThreshold = getBits(data, 16, 32)
-  const liquidationBonus = getBits(data, 32, 48)
-  const decimals = getBits(data, 48, 56)
-  const active = BigNumber.from(getBits(data, 56, 57)).toNumber()
-  const frozen = BigNumber.from(getBits(data, 57, 58)).toNumber()
-  const borrowingEnabled = BigNumber.from(getBits(data, 58, 59)).toNumber()
-  const stableRateBorrowingEnabled = BigNumber.from(getBits(data, 59, 60)).toNumber()
-  const paused = BigNumber.from(getBits(data, 60, 61)).toNumber()
-  const borrowingInIsolation = BigNumber.from(getBits(data, 61, 62)).toNumber()
-  const siloedBorrowingEnabled = BigNumber.from(getBits(data, 62, 63)).toNumber()
-  const flashloaningEnabled = BigNumber.from(getBits(data, 63, 64)).toNumber()
-  const reserveFactor = getBits(data, 64, 80)
-  const borrowCap = getBits(data, 80, 116)
-  const supplyCap = getBits(data, 116, 152)
-  const liquidationProtocolFee = getBits(data, 152, 168)
-  const eModeCategory = getBits(data, 168, 176)
-  const unbackedMintCap = getBits(data, 176, 212)
-  const debtCeiling = getBits(data, 212, 252)
+export function decodeReserveDataV3(data: bigint) {
+  const ltv = getBits(data, 0n, 15n)
+  const liquidationThreshold = getBits(data, 16n, 31n)
+  const liquidationBonus = getBits(data, 32n, 47n)
+  const decimals = getBits(data, 48n, 55n)
+  const active = Number(getBits(data, 56n, 56n))
+  const frozen = Number(getBits(data, 57n, 57n))
+  const borrowingEnabled = Number(getBits(data, 58n, 58n))
+  const stableRateBorrowingEnabled = Number(getBits(data, 59n, 59n))
+  const paused = Number(getBits(data, 60n, 60n))
+  const borrowingInIsolation = Number(getBits(data, 61n, 61n))
+  const siloedBorrowingEnabled = Number(getBits(data, 62n, 62n))
+  const flashloaningEnabled = Number(getBits(data, 63n, 63n))
+  const reserveFactor = getBits(data, 64n, 79n)
+  const borrowCap = getBits(data, 80n, 115n)
+  const supplyCap = getBits(data, 116n, 151n)
+  const liquidationProtocolFee = getBits(data, 152n, 167n)
+  const eModeCategory = getBits(data, 168n, 175n)
+  const unbackedMintCap = getBits(data, 176n, 211n)
+  const debtCeiling = getBits(data, 212n, 251n)
 
   return {
     ltv,

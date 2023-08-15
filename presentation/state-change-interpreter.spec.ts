@@ -1,9 +1,8 @@
-import { BigNumber } from 'ethers'
-import { decodeReserveData, getBits } from './state-change-interpreter'
+import { decodeReserveDataV2, decodeReserveDataV3, getBits } from './state-change-interpreter'
 
 describe('stateChangeInterpreter', () => {
   it('should properly decode the data field on aave-v2 stETH', () => {
-    const params = decodeReserveData('18446821244024599616244')
+    const params = decodeReserveDataV2(18446821244024599616244n)
     expect(params.ltv).toBe('6900')
     expect(params.liquidationThreshold).toBe('8100')
     expect(params.liquidationBonus).toBe('10750')
@@ -15,14 +14,14 @@ describe('stateChangeInterpreter', () => {
   })
   it('should properly decode the data field on aave-v2 AAVE', () => {
     const data = '77171388684964744'
-    const ltv = getBits(data, 0, 16)
-    const liquidationThreshold = getBits(data, 16, 32)
-    const liquidationBonus = getBits(data, 32, 48)
-    const decimals = getBits(data, 48, 56)
-    const active = BigNumber.from(getBits(data, 56, 57)).toNumber()
-    const frozen = BigNumber.from(getBits(data, 57, 58)).toNumber()
-    const borrowingEnabled = BigNumber.from(getBits(data, 58, 59)).toNumber()
-    const reserveFactor = getBits(data, 64, 80)
+    const ltv = getBits(data, 0n, 15n)
+    const liquidationThreshold = getBits(data, 16n, 31n)
+    const liquidationBonus = getBits(data, 32n, 47n)
+    const decimals = getBits(data, 48n, 55n)
+    const active = Number(getBits(data, 56n, 56n))
+    const frozen = Number(getBits(data, 57n, 57n))
+    const borrowingEnabled = Number(getBits(data, 58n, 58n))
+    const reserveFactor = getBits(data, 64n, 79n)
     expect(ltv).toBe('5000')
     expect(liquidationThreshold).toBe('6500')
     expect(liquidationBonus).toBe('11000')

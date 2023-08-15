@@ -51,6 +51,7 @@ jobs:
           RPC_POLYGON: ${{ secrets.RPC_POLYGON }}
           RPC_OPTIMISM: ${{ secrets.RPC_OPTIMISM }}
           RPC_ARBITRUM: ${{ secrets.RPC_ARBITRUM }}
+          RPC_BASE: ${{ secrets.RPC_BASE }}
           DAO_NAME: 'Aave'
           GITHUB_SHA: ${{ github.sha }}
 
@@ -64,6 +65,7 @@ jobs:
           RPC_POLYGON: ${{ secrets.RPC_POLYGON }}
           RPC_OPTIMISM: ${{ secrets.RPC_OPTIMISM }}
           RPC_ARBITRUM: ${{ secrets.RPC_ARBITRUM }}
+          RPC_BASE: ${{ secrets.RPC_BASE }}
           TENDERLY_ACCESS_TOKEN: ${{ secrets.TENDERLY_ACCESS_TOKEN }}
           TENDERLY_PROJECT_SLUG: ${{ secrets.TENDERLY_PROJECT_SLUG }}
           TENDERLY_ACCOUNT: ${{ secrets.TENDERLY_ACCOUNT }}

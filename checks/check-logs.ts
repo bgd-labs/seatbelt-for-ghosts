@@ -1,4 +1,4 @@
-import { getAddress } from '@ethersproject/address'
+import { getAddress } from 'viem'
 import { getContractName } from '../utils/clients/tenderly'
 import { ProposalCheck, Log } from '../types'
 
