@@ -6,10 +6,9 @@
   },
   "description": "Make governance safer",
   "scripts": {
-    "compile": "hardhat compile",
-    "start": "ts-node index.ts",
-    "ci:matrix": "ts-node scripts/generate-matrix.ts",
-    "ci:readme": "ts-node scripts/generate-readme.ts && prettier --write README.md",
+    "start": "tsx index.ts",
+    "ci:matrix": "tsx scripts/generate-matrix.ts",
+    "ci:readme": "tsx scripts/generate-readme.ts && prettier --write README.md",
     "lint:fix": "prettier --write .",
     "test": "jest .",
     "prepare": "husky install",
@@ -31,16 +30,17 @@
   "homepage": "https://github.com/bgd-labs/seatbelt-for-ghosts#readme",
   "dependencies": {
     "@actions/cache": "^3.0.0",
-    "@bgd-labs/aave-address-book": "^1.24.0",
-    "@bgd-labs/aave-cli": "^0.0.13",
+    "@bgd-labs/aave-address-book": "^1.32.0",
+    "@bgd-labs/aave-cli": "0.0.20",
     "@supercharge/promise-pool": "^2.3.0",
-    "dotenv": "^16.0.1",
-    "ethers": "^5.6.9",
+    "bs58": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "ethers": "5",
     "gray-matter": "^4.0.3",
     "jest": "^28.1.2",
     "micro-ftch": "^0.3.1",
-    "ts-node": "^10.8.2",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "viem": "^1.6.0"
   },
   "devDependencies": {
     "@types/jest": "^28.1.4",
@@ -48,7 +48,8 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "ts-jest": "^28.0.5"
+    "ts-jest": "^28.0.5",
+    "tsx": "^3.12.7"
   },
   "lint-staged": {
     "*.ts": "prettier --write",

@@ -1,4 +1,4 @@
-import { getAddress } from '@ethersproject/address'
+import { getAddress } from 'viem'
 import { getContractName } from '../utils/clients/tenderly'
 import { ProposalCheck, StateDiff } from '../types'
 import { deepDiff, interpretStateChange } from '../presentation/state-change-interpreter'

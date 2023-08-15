@@ -1,6 +1,7 @@
-import { BigNumberish, Block, Contract, providers } from 'ethers'
+import { BigNumberish, Block } from 'ethers'
 import { PROPOSAL_STATES } from './utils/contracts/aave-governance-v2'
 import { TenderlySimulationResponse } from '@bgd-labs/aave-cli'
+import { GetContractReturnType, PublicClient } from 'viem'
 
 // --- Simulation configurations ---
 interface SimulationConfigBase {
@@ -24,14 +25,14 @@ export interface SubSimulation {
   name: string
   type: 'arc' | 'fxPortal' | 'optimism'
   id: string
-  provider: providers.StaticJsonRpcProvider
+  provider: PublicClient
 }
 export interface SimulationResult {
   sim: TenderlySimulation
   proposal: ProposalStruct & { state: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 }
   latestBlock: Block
   subSimulations: SubSimulation[]
-  provider: providers.StaticJsonRpcProvider
+  provider: PublicClient
 }
 
 export interface ProposalStruct {
@@ -78,9 +79,9 @@ export type CheckResult = {
 }
 
 export type ProposalData = {
-  governance: Contract
+  governance: GetContractReturnType<any, any, any>
   executor: string
-  provider: providers.StaticJsonRpcProvider
+  provider: PublicClient
 }
 
 export interface ProposalCheck {
@@ -667,6 +668,7 @@ declare global {
       RPC_POLYGON: string
       RPC_OPTIMISM: string
       RPC_ARBITRUM: string
+      RPC_BASE: string
 
       OMIT_CACHE: string
       TENDERLY_ACCESS_TOKEN: string

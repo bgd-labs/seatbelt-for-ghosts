@@ -1,6 +1,6 @@
 import util from 'util'
 import { exec as execCallback } from 'child_process'
-import { getAddress } from '@ethersproject/address'
+import { getAddress } from 'viem'
 import { getContractName } from '../utils/clients/tenderly'
 import { ETHERSCAN_API_KEY } from '../utils/constants'
 import { ProposalCheck } from '../types'

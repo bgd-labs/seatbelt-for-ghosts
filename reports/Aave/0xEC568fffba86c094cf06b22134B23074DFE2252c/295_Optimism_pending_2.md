@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/4c7513b1-28b3-444c-8717-49c55b1ac029](https://dashboard.tenderly.co/me/simulator/4c7513b1-28b3-444c-8717-49c55b1ac029)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/af9546f1-5a40-4de9-8f92-4933895d5a17](https://dashboard.tenderly.co/me/simulator/af9546f1-5a40-4de9-8f92-4933895d5a17)
 
 ### Checks
 
@@ -25,7 +25,7 @@ Info:
 
 ```diff
 # OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x431ce30036f49769288673b2d7ca59ba4ca849c3e7be50ac9325f89df0a3fcef` @@
+@@ `_queuedActions` key `0x0eb00f1a4b933612acb2e2e94bccd3d77fec335c57737899016b27ed5b017f50` @@
 - true
 + false
 
@@ -86,7 +86,10 @@ Info:
 <summary>View warnings for PoolConfigurator at `0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -95,7 +98,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -104,7 +110,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -113,7 +122,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for AaveV3ConfigEngine at `0x7A9A9c14B35E58ffa1cC84aB421acE0FdcD289E3`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -122,7 +134,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -131,7 +146,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E` with implementation PoolConfigurator at `0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -140,7 +158,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for ACLManager at `0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -149,7 +170,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for PoolAddressesProvider at `0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -158,7 +182,10 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for AaveV3_Opt_wstETH_CapsIncrease_20230908 at `0xf285E2D9c5CdAab11c167ffa70fa4055fbeAed96`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+Traceback (most recent call last):
+  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
+    from crytic_compile.__main__ import main
+ModuleNotFoundError: No module named 'crytic_compile'
 ```
 
 </details>
@@ -178,34 +205,10 @@ Info:
 <summary>Slither report for PoolConfigurator at `0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0x29081f7ab5a644716efcdc10d5c926c5fee9f72b
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -214,34 +217,10 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 <summary>Slither report for L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0x764594f8e9757ede877b75716f8077162b251460
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -250,34 +229,10 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 <summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0x794a61358d6845594f94dc1db02a252b5b4814ad
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -286,34 +241,10 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 <summary>Slither report for AaveV3ConfigEngine at `0x7A9A9c14B35E58ffa1cC84aB421acE0FdcD289E3`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0x7a9a9c14b35e58ffa1cc84ab421ace0fdcd289e3
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -322,34 +253,10 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 <summary>Slither report for OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0x7d9103572be58ffe99dc390e8246f02dcae6f611
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -358,34 +265,10 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 <summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E` with implementation PoolConfigurator at `0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0x8145edddf43f50276641b55bd3ad95944510021e
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -394,34 +277,10 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 <summary>Slither report for ACLManager at `0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0xa72636cbcaa8f5ff95b2cc47f3cdee83f3294a0b
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -430,34 +289,10 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 <summary>Slither report for PoolAddressesProvider at `0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0xa97684ead0e402dc232d5a977953df7ecbab3cdb
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>
@@ -466,34 +301,10 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 <summary>Slither report for AaveV3_Opt_wstETH_CapsIncrease_20230908 at `0xf285E2D9c5CdAab11c167ffa70fa4055fbeAed96`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0xf285e2d9c5cdaab11c167ffa70fa4055fbeaed96
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
+  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
+    from slither.__main__ import main
+ModuleNotFoundError: No module named 'slither'
 ```
 
 </details>

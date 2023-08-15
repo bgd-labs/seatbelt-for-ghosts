@@ -1,6 +1,6 @@
-import { Contract, providers } from 'ethers'
+import { Hex, PublicClient, getContract } from 'viem'
 
-const abi = [
+const ERC_20_ABI = [
   {
     constant: true,
     inputs: [],
@@ -15,7 +15,7 @@ const abi = [
     stateMutability: 'view',
     type: 'function',
   },
-]
+] as const
 
-export const erc20Contract = (address: string, provider: providers.StaticJsonRpcProvider) =>
-  new Contract(address, abi, provider)
+export const erc20Contract = (address: Hex, client: PublicClient) =>
+  getContract({ address, abi: ERC_20_ABI, publicClient: client })

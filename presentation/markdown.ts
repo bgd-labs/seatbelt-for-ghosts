@@ -1,6 +1,4 @@
-import { AllCheckResults, ProposalCreatedEvent, TenderlySimulation } from '../types'
-import { Block } from '@ethersproject/abstract-provider'
-import { BigNumber } from 'ethers'
+import { AllCheckResults, ProposalCreatedEvent } from '../types'
 import { getProposalMetadata } from '../utils/clients/ipfs'
 import { IPFS_GATEWAY } from '../utils/constants'
 
@@ -46,16 +44,6 @@ function formatTime(blockTimestamp: number): string {
   return `${new Date(blockTimestamp * 1000).toLocaleString('en-US', {
     timeZone: 'America/New_York',
   })} ET`
-}
-
-/**
- * Estimate the timestamp of a future block number
- * @param current the current block
- * @param block the future block number
- */
-function estimateTime(current: Block, block: BigNumber): number {
-  if (block.lt(current.number)) throw new Error('end block is less than current')
-  return block.sub(current.number).mul(13).add(current.timestamp).toNumber()
 }
 
 function humanReadableExecutor(executor: string) {

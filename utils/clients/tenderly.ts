@@ -1,4 +1,4 @@
-import { getAddress } from '@ethersproject/address'
+import { getAddress } from 'viem'
 import { TenderlySimulationResponse } from '@bgd-labs/aave-cli'
 
 // --- Helper methods ---

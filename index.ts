@@ -2,11 +2,11 @@
  * @notice Entry point for executing a single proposal against a forked mainnet
  */
 
-require('dotenv').config()
+import 'dotenv/config'
 import fs from 'fs'
 import path from 'path'
 import { DAO_NAME, PROPOSAL_FILTER, OMIT_CACHE, AAVE_GOV_V2_ADDRESS } from './utils/constants'
-import { provider, polygonProvider, optimismProvider, arbitrumProvider } from './utils/clients/ethers'
+import { mainnetClient, polygonClient, optimismClient, arbitrumClient, baseClient } from './utils/clients/rpc'
 import { AllCheckResults, ProposalData } from './types'
 import ALL_CHECKS from './checks'
 import { toSubReport, toProposalReport } from './presentation/markdown'
@@ -36,7 +36,7 @@ function getProposalFileName(proposalId: number, simulationFileSuffix?: string) 
 async function runSimulation() {
   // --- Run simulations ---
   // Fetch all proposal IDs
-  const proposalsCount = await aaveGovernanceContract.getProposalsCount()
+  const proposalsCount = await aaveGovernanceContract.read.getProposalsCount()
   const _allProposalIds = [...Array(Number(proposalsCount)).keys()]
 
   const allProposalIds = PROPOSAL_FILTER
@@ -61,9 +61,9 @@ async function runSimulation() {
       try {
         console.log(`  Simulating ${DAO_NAME} proposal ${proposalId}...`)
         // skip proposals when they were simulated before in an immutable state
-        const proposalState = (await aaveGovernanceContract.getProposalState(
-          proposalId
-        )) as keyof typeof PROPOSAL_STATES
+        const proposalState = (await aaveGovernanceContract.read.getProposalState([
+          proposalId,
+        ])) as keyof typeof PROPOSAL_STATES
         const skip = isProposalStateImmutable(proposalState) && cache[proposalId] === proposalState
         if (fs.existsSync(getProposalFileName(proposalId)) && skip && !OMIT_CACHE) {
           console.log(`Skipped simulation for ${proposalId}`)
@@ -105,7 +105,7 @@ async function generateReports(simOutputs: Awaited<ReturnType<typeof runSimulati
       // Run checks
       const proposalData: ProposalData = {
         governance: aaveGovernanceContract,
-        provider,
+        provider: mainnetClient,
         executor: proposal.executor,
       }
       console.log(`  Running for proposal ${proposal.id} ...`)
@@ -136,12 +136,14 @@ async function generateReports(simOutputs: Awaited<ReturnType<typeof runSimulati
                     ...proposalData,
                     provider:
                       name === 'Arbitrum'
-                        ? arbitrumProvider
+                        ? arbitrumClient
                         : name === 'Polygon'
-                        ? polygonProvider
+                        ? polygonClient
                         : name === 'Optimism'
-                        ? optimismProvider
-                        : provider,
+                        ? optimismClient
+                        : name === 'Base'
+                        ? baseClient
+                        : mainnetClient,
                   }),
                 },
               ])
