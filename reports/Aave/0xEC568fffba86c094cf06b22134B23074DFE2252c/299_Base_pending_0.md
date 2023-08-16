@@ -1,6 +1,6 @@
 ## Base
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/f3d879d0-cc65-4f45-8820-76c6417c4989](https://dashboard.tenderly.co/me/simulator/f3d879d0-cc65-4f45-8820-76c6417c4989)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/2c82f9dd-6f40-4674-ac58-d9f951216ff8](https://dashboard.tenderly.co/me/simulator/2c82f9dd-6f40-4674-ac58-d9f951216ff8)
 
 ### Checks
 
@@ -279,7 +279,7 @@ Info:
 @@ Slot `0x54cdd369e4e8a8515e52ca72ec816c2101831ad1f18bf44102ed171459c9b4fe` @@
 - "0x0000000000000000000000000000000000000000000000000000000000000000"
 + "0x0000000000000000000000000000000000000000000000000000000000000001"
-@@ Slot `0xcce06ee4e22db7e06ad212f3c30a8bb6da4129571e305c9f7f1cfe508d83ae39` @@
+@@ Slot `0x642947d025ced703d7adf4ec2e0e9e0acbd0c0b7433f6905088cc74e8e07cf73` @@
 - "0x0000000000000000000000000000000000000000000000000000000000000001"
 + "0x0000000000000000000000000000000000000000000000000000000000000000"
 ```
@@ -560,10 +560,7 @@ Info:
 <summary>View warnings for UpgradeableOptimismMintableERC20 at `0x1833C6171E0A3389B156eAedB301CFfbf328B463`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -572,10 +569,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for WETH9 at `0x4200000000000000000000000000000000000006`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -584,10 +578,7 @@ ModuleNotFoundError: No module named 'crytic_compile'
 <summary>View warnings for Proxy at `0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA` with implementation UpgradeableOptimismMintableERC20 at `0x1833C6171E0A3389B156eAedB301CFfbf328B463`</summary>
 
 ```
-Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/crytic-compile", line 5, in <module>
-    from crytic_compile.__main__ import main
-ModuleNotFoundError: No module named 'crytic_compile'
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 ```
 
 </details>
@@ -607,10 +598,34 @@ Info:
 <summary>Slither report for UpgradeableOptimismMintableERC20 at `0x1833C6171E0A3389B156eAedB301CFfbf328B463`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+ERROR:root:Error in 0x1833c6171e0a3389b156eaedb301cffbf328b463
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
 ```
 
 </details>
@@ -619,10 +634,34 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for WETH9 at `0x4200000000000000000000000000000000000006`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+ERROR:root:Error in 0x4200000000000000000000000000000000000006
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
 ```
 
 </details>
@@ -631,10 +670,34 @@ ModuleNotFoundError: No module named 'slither'
 <summary>Slither report for Proxy at `0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA` with implementation UpgradeableOptimismMintableERC20 at `0x1833C6171E0A3389B156eAedB301CFfbf328B463`</summary>
 
 ```
+Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
-  File "/home/sakulstra/.local/bin/slither", line 5, in <module>
-    from slither.__main__ import main
-ModuleNotFoundError: No module named 'slither'
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+ERROR:root:Error in 0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
 ```
 
 </details>
