@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/9b89fd2b-b238-48e6-a849-77aede3614f2](https://dashboard.tenderly.co/me/simulator/9b89fd2b-b238-48e6-a849-77aede3614f2)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/a6b1875c-3c19-41c0-a3d8-0a4e61f020ff](https://dashboard.tenderly.co/me/simulator/a6b1875c-3c19-41c0-a3d8-0a4e61f020ff)
 
 ### Checks
 
@@ -61,7 +61,7 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0xae5c31ff2a882a77eaa41dce415ff7c6afb74d71264ed6dc972180e4f8ddaecf` @@
+@@ `_queuedActions` key `0xabf24076a7f9483c6682cee37ccdd75a6c02063b01e76b8228289cee88ce5c69` @@
 - true
 + false
 
@@ -95,11 +95,11 @@ Info:
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x0000000000000000000000000000000000000000000000000000000001f2b647"
-+ "0x0000000000000000000000000000000000000000000000000000000001f2c183"
+- "0x0000000000000000000000000000000000000000000000000000000001269b0c"
++ "0x000000000000000000000000000000000000000000000000000000000126a648"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x00000000000000000000000000000000000000000000000024168b97c6d2649c"
-+ "0x0000000000000000000000000000000000000000000000002416c0c101d5a49c"
+- "0x000000000000000000000000000000000000000000000000258817329a7a5f98"
++ "0x0000000000000000000000000000000000000000000000002588506ac5562d98"
 ```
 
 ```diff
@@ -186,7 +186,7 @@ Info:
 - Touched address:
   - 0xd73a92be73efbfcf3854433a5fcbabf9c1316073: EOA (verification not applicable)
   - 0x7d9103572be58ffe99dc390e8246f02dcae6f611: Contract (verified) (ArbitrumBridgeExecutor)
-  - 0xcfc26009618ec2ca8787180116a37caa354a465c: Contract (not verified)
+  - 0xcfc26009618ec2ca8787180116a37caa354a465c: Contract (verified) (AaveV3_Arbitrum_StataTokenOperationalUpdate_20230815)
   - 0xd9419920a9768d6edabbe5b93cb4b5b9f3019823: Contract (not verified)
   - 0x79b5e91037ae441de0d9e6fd3fd85b96b83d4e93: Contract (verified) (StaticATokenFactory)
   - 0xd3cf979e676265e4f6379749dece4708b9a22476: Contract (verified) (ProxyAdmin)
@@ -227,6 +227,15 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
+<summary>View warnings for AaveV3_Arbitrum_StataTokenOperationalUpdate_20230815 at `0xcfC26009618ec2Ca8787180116a37Caa354a465C`</summary>
+
+```
+INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0xcfc26009618ec2ca8787180116a37caa354a465c-AaveV2ConfigEngine' running
 ```
 
 </details>
@@ -319,6 +328,33 @@ ERROR:root:Traceback (most recent call last):
     with open(path, encoding="utf8", newline="") as f:
 FileNotFoundError: [Errno 2] No such file or directory: ''
 
+```
+
+</details>
+
+<details>
+<summary>Slither report for AaveV3_Arbitrum_StataTokenOperationalUpdate_20230815 at `0xcfC26009618ec2Ca8787180116a37Caa354a465C`</summary>
+
+```
+'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0xcfc26009618ec2ca8787180116a37caa354a465c-AaveV2ConfigEngine' running
+INFO:Detectors:
+EngineFlags.fromBool(bool) (src/v3-config-engine/EngineFlags.sol#22-24) is never used and should be removed
+EngineFlags.toBool(uint256) (src/v3-config-engine/EngineFlags.sol#16-19) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+INFO:Detectors:
+Function IAaveOracle.WETH() (lib/aave-address-book/src/AaveV2.sol#818) is not in mixedCase
+Function IDefaultInterestRateStrategy.EXCESS_UTILIZATION_RATE() (lib/aave-address-book/src/AaveV2.sol#918) is not in mixedCase
+Function IDefaultInterestRateStrategy.OPTIMAL_UTILIZATION_RATE() (lib/aave-address-book/src/AaveV2.sol#920) is not in mixedCase
+Variable AaveV2ConfigEngine.POOL_CONFIGURATOR (src/v2-config-engine/AaveV2ConfigEngine.sol#20) is not in mixedCase
+Variable AaveV2ConfigEngine.RATE_STRATEGIES_FACTORY (src/v2-config-engine/AaveV2ConfigEngine.sol#21) is not in mixedCase
+Function IAaveV2ConfigEngine.RATE_STRATEGIES_FACTORY() (src/v2-config-engine/IAaveV2ConfigEngine.sol#49) is not in mixedCase
+Function IAaveV2ConfigEngine.POOL_CONFIGURATOR() (src/v2-config-engine/IAaveV2ConfigEngine.sol#51) is not in mixedCase
+Function IV2RateStrategyFactory.ADDRESSES_PROVIDER() (src/v2-config-engine/IV2RateStrategyFactory.sol#72) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Detectors:
+EngineFlags.KEEP_CURRENT (src/v3-config-engine/EngineFlags.sol#7) is never used in EngineFlags (src/v3-config-engine/EngineFlags.sol#4-25)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-state-variable
+INFO:Slither:0xcfc26009618ec2ca8787180116a37caa354a465c analyzed (14 contracts with 82 detectors), 11 result(s) found
 ```
 
 </details>
