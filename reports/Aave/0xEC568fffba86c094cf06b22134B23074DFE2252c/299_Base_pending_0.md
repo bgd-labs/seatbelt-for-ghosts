@@ -1,6 +1,6 @@
 ## Base
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/ea18a10e-1ac5-4bb2-8a99-ccbbbc5565c9](https://dashboard.tenderly.co/me/simulator/ea18a10e-1ac5-4bb2-8a99-ccbbbc5565c9)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/a6d111be-150f-44b5-a5a3-15fc5964b799](https://dashboard.tenderly.co/me/simulator/a6d111be-150f-44b5-a5a3-15fc5964b799)
 
 ### Checks
 
@@ -164,12 +164,12 @@ Info:
 
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0xA238Dd80C259a72e81d7e4664a9801593F98d1c5` with implementation L2Pool at `0xdC9BafE7b1Df4F7Af863FCaDA6827E488D06BB20`
-@@ _reservesCount @@
-- 0
-+ 3
 @@ _maxStableRateBorrowSizePercent @@
 - 2500
 + 2500
+@@ _reservesCount @@
+- 0
++ 3
 @@ Slot `0x49d58ea9a5daf69ab79ed6bff1f0de709220367fa3b259710db785f85d2077eb` @@
 - "0x0000000000000000000000000000000000000000000000000000000000000000"
 + "0x000000000000000000000000d9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca"
@@ -404,7 +404,7 @@ Info:
 - false
 + true
 
-@@ `_queuedActions` key `0xc6a389c4f356408d746aa247563221b8829ba2d35a15fb034825cebead27229d` @@
+@@ `_queuedActions` key `0x5fd606d88333d8b6b85166abf5e2e4a5a8a8e4455fbc83717e84c4fa7149b043` @@
 - true
 + false
 
@@ -1176,8 +1176,8 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 ```
 'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x80f2c02224a2e548fc67c0bf705ebfa825dd5439-Collector' running
 INFO:Detectors:
-Collector.createStream(address,uint256,address,uint256,uint256).vars (src/contracts/Collector.sol#259) is a local variable never initialized
 Collector.balanceOf(uint256,address).vars (src/contracts/Collector.sol#168) is a local variable never initialized
+Collector.createStream(address,uint256,address,uint256,uint256).vars (src/contracts/Collector.sol#259) is a local variable never initialized
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
 INFO:Detectors:
 Collector.deltaOf(uint256) (src/contracts/Collector.sol#149-154) uses timestamp for comparisons
