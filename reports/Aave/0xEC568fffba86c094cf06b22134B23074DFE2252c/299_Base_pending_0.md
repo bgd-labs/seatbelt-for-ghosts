@@ -1,6 +1,6 @@
 ## Base
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/75aa7d34-18ab-4a80-8cee-4a4e3b19f369](https://dashboard.tenderly.co/me/simulator/75aa7d34-18ab-4a80-8cee-4a4e3b19f369)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/4197cd23-9ddd-4d40-93d6-b870c994ed86](https://dashboard.tenderly.co/me/simulator/4197cd23-9ddd-4d40-93d6-b870c994ed86)
 
 ### Checks
 
@@ -164,12 +164,12 @@ Info:
 
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0xA238Dd80C259a72e81d7e4664a9801593F98d1c5` with implementation L2Pool at `0xdC9BafE7b1Df4F7Af863FCaDA6827E488D06BB20`
-@@ _reservesCount @@
-- 0
-+ 3
 @@ _maxStableRateBorrowSizePercent @@
 - 2500
 + 2500
+@@ _reservesCount @@
+- 0
++ 3
 @@ Slot `0x49d58ea9a5daf69ab79ed6bff1f0de709220367fa3b259710db785f85d2077eb` @@
 - "0x0000000000000000000000000000000000000000000000000000000000000000"
 + "0x000000000000000000000000d9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca"
@@ -400,13 +400,13 @@ Info:
 
 ```diff
 # OptimismBridgeExecutor at `0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45`
+@@ `_queuedActions` key `0x5b5e4df35ac1faa1937422248d74d809f29b4b8eca3e5bc7da31bd667c6329c1` @@
+- true
++ false
+
 @@ `_actionsSets` key `"0"`.executed @@
 - false
 + true
-
-@@ `_queuedActions` key `0x91e8368835f7cd9c02f9feccebe65e7b2ca994bdf5c7d418f404e28a04b2eb9d` @@
-- true
-+ false
 
 ```
 
@@ -1176,8 +1176,8 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 ```
 'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x80f2c02224a2e548fc67c0bf705ebfa825dd5439-Collector' running
 INFO:Detectors:
-Collector.balanceOf(uint256,address).vars (src/contracts/Collector.sol#168) is a local variable never initialized
 Collector.createStream(address,uint256,address,uint256,uint256).vars (src/contracts/Collector.sol#259) is a local variable never initialized
+Collector.balanceOf(uint256,address).vars (src/contracts/Collector.sol#168) is a local variable never initialized
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
 INFO:Detectors:
 Collector.deltaOf(uint256) (src/contracts/Collector.sol#149-154) uses timestamp for comparisons
