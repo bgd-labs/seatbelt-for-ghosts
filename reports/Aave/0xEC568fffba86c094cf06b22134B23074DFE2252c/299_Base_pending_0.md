@@ -1,6 +1,6 @@
 ## Base
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/83a4ced6-5371-43f8-9bcd-a4973b05a7fb](https://dashboard.tenderly.co/me/simulator/83a4ced6-5371-43f8-9bcd-a4973b05a7fb)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/8a5061dd-9dad-48e0-af53-53d0fcc34b82](https://dashboard.tenderly.co/me/simulator/8a5061dd-9dad-48e0-af53-53d0fcc34b82)
 
 ### Checks
 
@@ -164,12 +164,12 @@ Info:
 
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0xA238Dd80C259a72e81d7e4664a9801593F98d1c5` with implementation L2Pool at `0xdC9BafE7b1Df4F7Af863FCaDA6827E488D06BB20`
-@@ _maxStableRateBorrowSizePercent @@
-- 2500
-+ 2500
 @@ _reservesCount @@
 - 0
 + 3
+@@ _maxStableRateBorrowSizePercent @@
+- 2500
++ 2500
 @@ Slot `0x49d58ea9a5daf69ab79ed6bff1f0de709220367fa3b259710db785f85d2077eb` @@
 - "0x0000000000000000000000000000000000000000000000000000000000000000"
 + "0x000000000000000000000000d9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca"
@@ -404,7 +404,7 @@ Info:
 - false
 + true
 
-@@ `_queuedActions` key `0x2cf4239f5f1c1b8547fd5afc867a6a89894b39049f5d40d976626098c67ccb01` @@
+@@ `_queuedActions` key `0x03c0ab15eb7a4ef2a5cba3e02f7e598ae376943a29b49a6dc5e487f5c4ed2ebd` @@
 - true
 + false
 
@@ -687,32 +687,6 @@ Info:
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -722,32 +696,6 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -757,32 +705,6 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -792,32 +714,6 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -827,32 +723,6 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -862,32 +732,6 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -897,32 +741,6 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -932,32 +750,6 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -967,32 +759,6 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -1011,32 +777,6 @@ INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbel
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -1055,32 +795,6 @@ INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbel
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -1090,32 +804,6 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -1125,32 +813,6 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -1160,32 +822,6 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -1195,32 +831,6 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-Traceback (most recent call last):
-  File "/home/runner/.local/bin/crytic-compile", line 8, in <module>
-    sys.exit(main())
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/__main__.py", line 221, in main
-    compilations = compile_all(**vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 
 </details>
@@ -1241,59 +851,32 @@ Info:
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0x0d1fe8eadb0a3e44c4cc9d73de8da50c1e475832
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
@@ -1304,59 +887,32 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0x1833c6171e0a3389b156eaedb301cffbf328b463
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
@@ -1367,59 +923,32 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0x274a46efd4364ccba654dc74ddb793f9010b179c
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
@@ -1430,59 +959,32 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
@@ -1493,59 +995,32 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0x4200000000000000000000000000000000000006
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
@@ -1556,59 +1031,32 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0x43955b0899ab7232e3a454cf84aedd22ad46fd33
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
@@ -1619,59 +1067,32 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0x5456c510acb8bd0b9a65b4b632db2925690d3237
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
@@ -1682,59 +1103,32 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0x5731a04b1e775f0fdd454bf70f3335886e9a96be
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
@@ -1745,59 +1139,32 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0x57d2d46fc7ff2a7142d479f2f59e1e3f95447077
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
@@ -1809,8 +1176,8 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 ```
 'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x80f2c02224a2e548fc67c0bf705ebfa825dd5439-Collector' running
 INFO:Detectors:
-Collector.createStream(address,uint256,address,uint256,uint256).vars (src/contracts/Collector.sol#259) is a local variable never initialized
 Collector.balanceOf(uint256,address).vars (src/contracts/Collector.sol#168) is a local variable never initialized
+Collector.createStream(address,uint256,address,uint256,uint256).vars (src/contracts/Collector.sol#259) is a local variable never initialized
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
 INFO:Detectors:
 Collector.deltaOf(uint256) (src/contracts/Collector.sol#149-154) uses timestamp for comparisons
@@ -1870,59 +1237,32 @@ INFO:Slither:0x80f2c02224a2e548fc67c0bf705ebfa825dd5439 analyzed (8 contracts wi
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0xa238dd80c259a72e81d7e4664a9801593f98d1c5
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
@@ -1950,59 +1290,32 @@ INFO:Slither:0xa9f30e6ed4098e9439b2ac8aea2d3fc26bcebb45 analyzed (5 contracts wi
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0xbdd1458a6d399c88d4509275e4463485c6c86ef3
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
@@ -2013,59 +1326,32 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0xc7751400f809cdb0c167f87985083c558a0610f7
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
@@ -2076,59 +1362,32 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
@@ -2139,59 +1398,32 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0xdc9bafe7b1df4f7af863fcada6827e488d06bb20
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
@@ -2202,59 +1434,32 @@ urllib.error.HTTPError: HTTP Error 403: Forbidden
 
 ```
 Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
 Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0xe20fcbdbffc4dd138ce8b2e6fbb6cb49777ad64d
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 91, in process_all
-    compilations = compile_all(target, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 647, in compile_all
-    compilations.append(CryticCompile(target, **kwargs))
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 132, in __init__
-    self._compile(**kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 554, in _compile
-    self._platform.compile(self, **kwargs)
-  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 327, in compile
-    with urllib.request.urlopen(req) as response:
-  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
-    response = meth(req, response)
-  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 403: Forbidden
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
 
 ```
 
