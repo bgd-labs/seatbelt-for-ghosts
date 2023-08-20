@@ -1,6 +1,6 @@
 ## Base
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/152105d4-0f24-4afd-8e8c-60a6eb7b0441](https://dashboard.tenderly.co/me/simulator/152105d4-0f24-4afd-8e8c-60a6eb7b0441)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/b0a6b21d-77dc-47b5-aa43-a9f8b915ccfc](https://dashboard.tenderly.co/me/simulator/b0a6b21d-77dc-47b5-aa43-a9f8b915ccfc)
 
 ### Checks
 
@@ -400,7 +400,7 @@ Info:
 
 ```diff
 # OptimismBridgeExecutor at `0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45`
-@@ `_queuedActions` key `0x7e9afb5031c347f4ebeccaf8699db518e29a70bf3d73bb382410f6a1fc6b3db9` @@
+@@ `_queuedActions` key `0x081e46f2b8ddb1bfffa441384db750d28ed1e08e35d385bdfc9483c3e3447678` @@
 - true
 + false
 
@@ -1176,8 +1176,8 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 ```
 'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x80f2c02224a2e548fc67c0bf705ebfa825dd5439-Collector' running
 INFO:Detectors:
-Collector.balanceOf(uint256,address).vars (src/contracts/Collector.sol#168) is a local variable never initialized
 Collector.createStream(address,uint256,address,uint256,uint256).vars (src/contracts/Collector.sol#259) is a local variable never initialized
+Collector.balanceOf(uint256,address).vars (src/contracts/Collector.sol#168) is a local variable never initialized
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
 INFO:Detectors:
 Collector.deltaOf(uint256) (src/contracts/Collector.sol#149-154) uses timestamp for comparisons
