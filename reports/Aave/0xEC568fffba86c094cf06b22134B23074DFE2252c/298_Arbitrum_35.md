@@ -1,6 +1,6 @@
-## Optimism
+## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/04a97c59-82d7-4452-a5c1-871f7e2a189c](https://dashboard.tenderly.co/me/simulator/04a97c59-82d7-4452-a5c1-871f7e2a189c)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/99e50c71-e504-4f63-9b04-e8488a98b853](https://dashboard.tenderly.co/me/simulator/99e50c71-e504-4f63-9b04-e8488a98b853)
 
 ### Checks
 
@@ -11,99 +11,123 @@ Info:
 - State changes:
 
 ```diff
-# unknown contract name at `0x15674aE44Af19DD95C4aCfDf0b5e8246179734ae`
+# unknown contract name at `0x0188c850F6b303e221822Dea4aC5A062B970129D`
 @@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
 - "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
-+ "0x000000000000000000000000043f9687842771b3df8852c1e9801dcaeed3f6bc"
++ "0x000000000000000000000000af23dc5983230e9eeaf93280e312e57539d098d0"
 ```
 
 ```diff
-# unknown contract name at `0x1aF3854efe7CDece0fb95Bb3a597d0438f9ABB70`
+# unknown contract name at `0x18468b6eBA332285c6d9BB03Fe7fb52e108c4596`
 @@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
 - "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
-+ "0x000000000000000000000000043f9687842771b3df8852c1e9801dcaeed3f6bc"
++ "0x000000000000000000000000af23dc5983230e9eeaf93280e312e57539d098d0"
 ```
 
 ```diff
-# unknown contract name at `0x1F636CcbC15c94f063B1Ee25B437c520caE10D00`
+# unknown contract name at `0x1FC9680786F12Cb3c0027FD577053B411A6FC70A`
 @@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
 - "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
-+ "0x000000000000000000000000043f9687842771b3df8852c1e9801dcaeed3f6bc"
++ "0x000000000000000000000000af23dc5983230e9eeaf93280e312e57539d098d0"
 ```
 
 ```diff
-# unknown contract name at `0x41B75372F734ee9b7792ca5576a40E008C91A098`
+# unknown contract name at `0x22739C6915ef610412673A086e683F1EaA1A1C05`
 @@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
 - "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
-+ "0x000000000000000000000000043f9687842771b3df8852c1e9801dcaeed3f6bc"
++ "0x000000000000000000000000af23dc5983230e9eeaf93280e312e57539d098d0"
 ```
 
 ```diff
-# unknown contract name at `0x6b1440b08f467A2A68E562aC38bB5e2256d5C60E`
+# unknown contract name at `0x3A301e7917689b8E8A19498b8A28fc912583490C`
 @@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
 - "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
-+ "0x000000000000000000000000043f9687842771b3df8852c1e9801dcaeed3f6bc"
++ "0x000000000000000000000000af23dc5983230e9eeaf93280e312e57539d098d0"
 ```
 
 ```diff
-# unknown contract name at `0x776F7111936fdE4305bF449f8b53FB54A1dfE7E2`
+# unknown contract name at `0x426e8778bf7F54b0e4fc703DccA6f26a4E5B71dE`
 @@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
 - "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
-+ "0x000000000000000000000000043f9687842771b3df8852c1e9801dcaeed3f6bc"
++ "0x000000000000000000000000af23dc5983230e9eeaf93280e312e57539d098d0"
 ```
 
 ```diff
-# unknown contract name at `0x77F53cf28c4116CB80e4F387549c98A252890473`
+# unknown contract name at `0x5F756955Fc1a43D658F4291Cf69Af16077b5326C`
 @@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
 - "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
-+ "0x000000000000000000000000043f9687842771b3df8852c1e9801dcaeed3f6bc"
++ "0x000000000000000000000000af23dc5983230e9eeaf93280e312e57539d098d0"
 ```
 
 ```diff
-# OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x05b3c344cdb6aa438cad70ba4221fd22e07197fe0a76d3a04d3f51274cf7f377` @@
+# ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
+@@ `_queuedActions` key `0xca90038cf3f69a4e563ddda97be7157e2418916dba896111d1c1d67490860558` @@
 - true
 + false
 
-@@ `_actionsSets` key `"29"`.executed @@
+@@ `_actionsSets` key `"35"`.executed @@
 - false
 + true
 
 ```
 
 ```diff
-# unknown contract name at `0x8e2154479FAc840Ce4e86ab1B83De589c7a0355C`
+# unknown contract name at `0x86c773F93D1efD209023444237d9Cf59E0bC5613`
 @@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
 - "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
-+ "0x000000000000000000000000043f9687842771b3df8852c1e9801dcaeed3f6bc"
++ "0x000000000000000000000000af23dc5983230e9eeaf93280e312e57539d098d0"
 ```
 
 ```diff
-# unknown contract name at `0x947B28080700a1452C1DAC33755e64749398eDEB`
+# unknown contract name at `0x8B5541B773DD781852940490b0c3dC1a8CDb6A87`
 @@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
 - "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
-+ "0x000000000000000000000000043f9687842771b3df8852c1e9801dcaeed3f6bc"
++ "0x000000000000000000000000af23dc5983230e9eeaf93280e312e57539d098d0"
 ```
 
 ```diff
-# unknown contract name at `0xB7BA668e5378BA3dbfa252d03E54b62702f79F7e`
+# unknown contract name at `0x8Ef77cdeEf0e0816fa75FA3E30BD20B9bE704fa2`
 @@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
 - "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
-+ "0x000000000000000000000000043f9687842771b3df8852c1e9801dcaeed3f6bc"
++ "0x000000000000000000000000af23dc5983230e9eeaf93280e312e57539d098d0"
 ```
 
 ```diff
-# unknown contract name at `0xCBb2B87a9B13C2787A93eaE9dF0e72344b36120A`
-@@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
-- "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
-+ "0x000000000000000000000000043f9687842771b3df8852c1e9801dcaeed3f6bc"
+# unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
+@@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
+- "0x0000000000000000000000000000000000000000000000000000000000cd467e"
++ "0x0000000000000000000000000000000000000000000000000000000000cd51ba"
+@@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
+- "0x000000000000000000000000000000000000000000000000266a4c3ddea0bd8c"
++ "0x000000000000000000000000000000000000000000000000266a65ac35d2de8c"
 ```
 
 ```diff
-# unknown contract name at `0xef30602e3161924672d47D076f093938A33B9600`
+# unknown contract name at `0xb289a29Cfe3efc23E46ddca642d4513511dB4f4e`
 @@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
 - "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
-+ "0x000000000000000000000000043f9687842771b3df8852c1e9801dcaeed3f6bc"
++ "0x000000000000000000000000af23dc5983230e9eeaf93280e312e57539d098d0"
+```
+
+```diff
+# unknown contract name at `0xbdE67e089886EC0E615D6f054BC6f746189A3d56`
+@@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
+- "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
++ "0x000000000000000000000000af23dc5983230e9eeaf93280e312e57539d098d0"
+```
+
+```diff
+# unknown contract name at `0xd9728C510F0CDD72ec4C73336340bEB291c2d9a8`
+@@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
+- "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
++ "0x000000000000000000000000af23dc5983230e9eeaf93280e312e57539d098d0"
+```
+
+```diff
+# unknown contract name at `0xE3274C0cd03D9a539C552162cacB31F5d3dd1A62`
+@@ Slot `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103` @@
+- "0x000000000000000000000000d3cf979e676265e4f6379749dece4708b9a22476"
++ "0x000000000000000000000000af23dc5983230e9eeaf93280e312e57539d098d0"
 ```
 
 #### Check stack trace of the proposal ✅ Passed
@@ -117,39 +141,43 @@ Info:
 Info:
 
 - Events Emitted:
-  - unknown contract name at `0xCBb2B87a9B13C2787A93eaE9dF0e72344b36120A`
-    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0x043f9687842771b3df8852c1e9801dcaeed3f6bc)`
-  - unknown contract name at `0x8e2154479FAc840Ce4e86ab1B83De589c7a0355C`
-    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0x043f9687842771b3df8852c1e9801dcaeed3f6bc)`
-  - unknown contract name at `0x41B75372F734ee9b7792ca5576a40E008C91A098`
-    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0x043f9687842771b3df8852c1e9801dcaeed3f6bc)`
-  - unknown contract name at `0xB7BA668e5378BA3dbfa252d03E54b62702f79F7e`
-    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0x043f9687842771b3df8852c1e9801dcaeed3f6bc)`
-  - unknown contract name at `0x6b1440b08f467A2A68E562aC38bB5e2256d5C60E`
-    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0x043f9687842771b3df8852c1e9801dcaeed3f6bc)`
-  - unknown contract name at `0xef30602e3161924672d47D076f093938A33B9600`
-    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0x043f9687842771b3df8852c1e9801dcaeed3f6bc)`
-  - unknown contract name at `0x776F7111936fdE4305bF449f8b53FB54A1dfE7E2`
-    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0x043f9687842771b3df8852c1e9801dcaeed3f6bc)`
-  - unknown contract name at `0x947B28080700a1452C1DAC33755e64749398eDEB`
-    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0x043f9687842771b3df8852c1e9801dcaeed3f6bc)`
-  - unknown contract name at `0x1F636CcbC15c94f063B1Ee25B437c520caE10D00`
-    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0x043f9687842771b3df8852c1e9801dcaeed3f6bc)`
-  - unknown contract name at `0x15674aE44Af19DD95C4aCfDf0b5e8246179734ae`
-    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0x043f9687842771b3df8852c1e9801dcaeed3f6bc)`
-  - unknown contract name at `0x77F53cf28c4116CB80e4F387549c98A252890473`
-    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0x043f9687842771b3df8852c1e9801dcaeed3f6bc)`
-  - unknown contract name at `0x1aF3854efe7CDece0fb95Bb3a597d0438f9ABB70`
-    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0x043f9687842771b3df8852c1e9801dcaeed3f6bc)`
-  - OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-    - `ActionsSetExecuted(id: 29, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
+  - unknown contract name at `0x426e8778bf7F54b0e4fc703DccA6f26a4E5B71dE`
+    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0xaf23dc5983230e9eeaf93280e312e57539d098d0)`
+  - unknown contract name at `0xd9728C510F0CDD72ec4C73336340bEB291c2d9a8`
+    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0xaf23dc5983230e9eeaf93280e312e57539d098d0)`
+  - unknown contract name at `0x3A301e7917689b8E8A19498b8A28fc912583490C`
+    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0xaf23dc5983230e9eeaf93280e312e57539d098d0)`
+  - unknown contract name at `0xb289a29Cfe3efc23E46ddca642d4513511dB4f4e`
+    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0xaf23dc5983230e9eeaf93280e312e57539d098d0)`
+  - unknown contract name at `0x18468b6eBA332285c6d9BB03Fe7fb52e108c4596`
+    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0xaf23dc5983230e9eeaf93280e312e57539d098d0)`
+  - unknown contract name at `0x8B5541B773DD781852940490b0c3dC1a8CDb6A87`
+    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0xaf23dc5983230e9eeaf93280e312e57539d098d0)`
+  - unknown contract name at `0xE3274C0cd03D9a539C552162cacB31F5d3dd1A62`
+    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0xaf23dc5983230e9eeaf93280e312e57539d098d0)`
+  - unknown contract name at `0x0188c850F6b303e221822Dea4aC5A062B970129D`
+    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0xaf23dc5983230e9eeaf93280e312e57539d098d0)`
+  - unknown contract name at `0x86c773F93D1efD209023444237d9Cf59E0bC5613`
+    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0xaf23dc5983230e9eeaf93280e312e57539d098d0)`
+  - unknown contract name at `0x5F756955Fc1a43D658F4291Cf69Af16077b5326C`
+    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0xaf23dc5983230e9eeaf93280e312e57539d098d0)`
+  - unknown contract name at `0x1FC9680786F12Cb3c0027FD577053B411A6FC70A`
+    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0xaf23dc5983230e9eeaf93280e312e57539d098d0)`
+  - unknown contract name at `0x8Ef77cdeEf0e0816fa75FA3E30BD20B9bE704fa2`
+    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0xaf23dc5983230e9eeaf93280e312e57539d098d0)`
+  - unknown contract name at `0xbdE67e089886EC0E615D6f054BC6f746189A3d56`
+    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0xaf23dc5983230e9eeaf93280e312e57539d098d0)`
+  - unknown contract name at `0x22739C6915ef610412673A086e683F1EaA1A1C05`
+    - `AdminChanged(previousAdmin: 0xd3cf979e676265e4f6379749dece4708b9a22476, newAdmin: 0xaf23dc5983230e9eeaf93280e312e57539d098d0)`
+  - ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
+    - `ActionsSetExecuted(id: 35, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
 
 #### Check all targets are verified on Etherscan ✅ Passed
 
 Info:
 
 - Targets:
-  - 0x4E99b8dC5c5b24b8904b640Ea9342dcEa233818A: Contract (not verified)
+  - 0xcfC26009618ec2Ca8787180116a37Caa354a465C: Contract (not verified)
 
 #### Check all touched contracts are verified on Etherscan ✅ Passed
 
@@ -157,23 +185,25 @@ Info:
 
 - Touched address:
   - 0xd73a92be73efbfcf3854433a5fcbabf9c1316073: EOA (verification not applicable)
-  - 0x7d9103572be58ffe99dc390e8246f02dcae6f611: Contract (verified) (OptimismBridgeExecutor)
-  - 0x4e99b8dc5c5b24b8904b640ea9342dcea233818a: Contract (not verified)
+  - 0x7d9103572be58ffe99dc390e8246f02dcae6f611: Contract (verified) (ArbitrumBridgeExecutor)
+  - 0xcfc26009618ec2ca8787180116a37caa354a465c: Contract (verified) (AaveV3_Arbitrum_StataTokenOperationalUpdate_20230815)
   - 0xd9419920a9768d6edabbe5b93cb4b5b9f3019823: Contract (not verified)
-  - 0xadf86b537ef08591c2777e144322e8b0ca7e82a7: Contract (verified) (StaticATokenFactory)
+  - 0x79b5e91037ae441de0d9e6fd3fd85b96b83d4e93: Contract (verified) (StaticATokenFactory)
   - 0xd3cf979e676265e4f6379749dece4708b9a22476: Contract (verified) (ProxyAdmin)
-  - 0xcbb2b87a9b13c2787a93eae9df0e72344b36120a: Contract (not verified)
-  - 0x8e2154479fac840ce4e86ab1b83de589c7a0355c: Contract (not verified)
-  - 0x41b75372f734ee9b7792ca5576a40e008c91a098: Contract (not verified)
-  - 0xb7ba668e5378ba3dbfa252d03e54b62702f79f7e: Contract (not verified)
-  - 0x6b1440b08f467a2a68e562ac38bb5e2256d5c60e: Contract (not verified)
-  - 0xef30602e3161924672d47d076f093938a33b9600: Contract (not verified)
-  - 0x776f7111936fde4305bf449f8b53fb54a1dfe7e2: Contract (not verified)
-  - 0x947b28080700a1452c1dac33755e64749398edeb: Contract (not verified)
-  - 0x1f636ccbc15c94f063b1ee25b437c520cae10d00: Contract (not verified)
-  - 0x15674ae44af19dd95c4acfdf0b5e8246179734ae: Contract (not verified)
-  - 0x77f53cf28c4116cb80e4f387549c98a252890473: Contract (not verified)
-  - 0x1af3854efe7cdece0fb95bb3a597d0438f9abb70: Contract (not verified)
+  - 0x426e8778bf7f54b0e4fc703dcca6f26a4e5b71de: Contract (not verified)
+  - 0xd9728c510f0cdd72ec4c73336340beb291c2d9a8: Contract (not verified)
+  - 0x3a301e7917689b8e8a19498b8a28fc912583490c: Contract (not verified)
+  - 0xb289a29cfe3efc23e46ddca642d4513511db4f4e: Contract (not verified)
+  - 0x18468b6eba332285c6d9bb03fe7fb52e108c4596: Contract (not verified)
+  - 0x8b5541b773dd781852940490b0c3dc1a8cdb6a87: Contract (not verified)
+  - 0xe3274c0cd03d9a539c552162cacb31f5d3dd1a62: Contract (not verified)
+  - 0x0188c850f6b303e221822dea4ac5a062b970129d: Contract (not verified)
+  - 0x86c773f93d1efd209023444237d9cf59e0bc5613: Contract (not verified)
+  - 0x5f756955fc1a43d658f4291cf69af16077b5326c: Contract (not verified)
+  - 0x1fc9680786f12cb3c0027fd577053b411a6fc70a: Contract (not verified)
+  - 0x8ef77cdeef0e0816fa75fa3e30bd20b9be704fa2: Contract (not verified)
+  - 0xbde67e089886ec0e615d6f054bc6f746189a3d56: Contract (not verified)
+  - 0x22739c6915ef610412673a086e683f1eaa1a1c05: Contract (not verified)
 
 #### Runs solc against the verified contracts ✅ Passed
 
@@ -184,7 +214,7 @@ Info:
 <details>
 <summary>View Details</summary>
 <details>
-<summary>View warnings for OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
+<summary>View warnings for StaticATokenFactory at `0x79b5e91037AE441dE0d9e6fd3Fd85b96B83d4E93`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -193,10 +223,19 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for StaticATokenFactory at `0xADf86b537eF08591c2777E144322E8b0Ca7E82a7`</summary>
+<summary>View warnings for ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
+<summary>View warnings for AaveV3_Arbitrum_StataTokenOperationalUpdate_20230815 at `0xcfC26009618ec2Ca8787180116a37Caa354a465C`</summary>
+
+```
+INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0xcfc26009618ec2ca8787180116a37caa354a465c-AaveV2ConfigEngine' running
 ```
 
 </details>
@@ -222,7 +261,43 @@ Info:
 <summary>View Details</summary>
 
 <details>
-<summary>Slither report for OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
+<summary>Slither report for StaticATokenFactory at `0x79b5e91037AE441dE0d9e6fd3Fd85b96B83d4E93`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+ERROR:root:Error in 0x79b5e91037ae441de0d9e6fd3fd85b96b83d4e93
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+```
+
+</details>
+
+<details>
+<summary>Slither report for ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -258,37 +333,28 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 </details>
 
 <details>
-<summary>Slither report for StaticATokenFactory at `0xADf86b537eF08591c2777E144322E8b0Ca7E82a7`</summary>
+<summary>Slither report for AaveV3_Arbitrum_StataTokenOperationalUpdate_20230815 at `0xcfC26009618ec2Ca8787180116a37Caa354a465C`</summary>
 
 ```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0xadf86b537ef08591c2777e144322e8b0ca7e82a7
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
+'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0xcfc26009618ec2ca8787180116a37caa354a465c-AaveV2ConfigEngine' running
+INFO:Detectors:
+EngineFlags.fromBool(bool) (src/v3-config-engine/EngineFlags.sol#22-24) is never used and should be removed
+EngineFlags.toBool(uint256) (src/v3-config-engine/EngineFlags.sol#16-19) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+INFO:Detectors:
+Function IAaveOracle.WETH() (lib/aave-address-book/src/AaveV2.sol#818) is not in mixedCase
+Function IDefaultInterestRateStrategy.EXCESS_UTILIZATION_RATE() (lib/aave-address-book/src/AaveV2.sol#918) is not in mixedCase
+Function IDefaultInterestRateStrategy.OPTIMAL_UTILIZATION_RATE() (lib/aave-address-book/src/AaveV2.sol#920) is not in mixedCase
+Variable AaveV2ConfigEngine.POOL_CONFIGURATOR (src/v2-config-engine/AaveV2ConfigEngine.sol#20) is not in mixedCase
+Variable AaveV2ConfigEngine.RATE_STRATEGIES_FACTORY (src/v2-config-engine/AaveV2ConfigEngine.sol#21) is not in mixedCase
+Function IAaveV2ConfigEngine.RATE_STRATEGIES_FACTORY() (src/v2-config-engine/IAaveV2ConfigEngine.sol#49) is not in mixedCase
+Function IAaveV2ConfigEngine.POOL_CONFIGURATOR() (src/v2-config-engine/IAaveV2ConfigEngine.sol#51) is not in mixedCase
+Function IV2RateStrategyFactory.ADDRESSES_PROVIDER() (src/v2-config-engine/IV2RateStrategyFactory.sol#72) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Detectors:
+EngineFlags.KEEP_CURRENT (src/v3-config-engine/EngineFlags.sol#7) is never used in EngineFlags (src/v3-config-engine/EngineFlags.sol#4-25)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-state-variable
+INFO:Slither:0xcfc26009618ec2ca8787180116a37caa354a465c analyzed (14 contracts with 82 detectors), 11 result(s) found
 ```
 
 </details>
