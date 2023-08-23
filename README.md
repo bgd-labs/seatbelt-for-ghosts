@@ -569,6 +569,7 @@ Some notes on the outputs of reports:
 | Treasury Management - Polygon v2 to v3 Migration                                                                                                                                         | [303.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/303.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=303) |
 | Polygon                                                                                                                                                                                  | [303_Polygon_pending_0.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/303_Polygon_pending_0.md)   | [app](https://app.aave.com/governance/proposal/?proposalId=303) |
 | Chaos Labs Scope and Compensation Amendment                                                                                                                                              | [304.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/304.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=304) |
+| CRV Aave V2 Ethereum - LT Reduction                                                                                                                                                      | [305.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/305.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=305) |
 
 <!-- ### Reports table end ### -->
 
