@@ -571,6 +571,7 @@ Some notes on the outputs of reports:
 | Chaos Labs Scope and Compensation Amendment                                                                                                                                              | [304.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/304.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=304) |
 | CRV Aave V2 Ethereum - LT Reduction                                                                                                                                                      | [305.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/305.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=305) |
 | sDAI onboarding                                                                                                                                                                          | [306.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/306.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=306) |
+| Gho unpause and freezing                                                                                                                                                                 | [307.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/307.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=307) |
 
 <!-- ### Reports table end ### -->
 
