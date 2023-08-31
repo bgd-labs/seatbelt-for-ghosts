@@ -1,6 +1,6 @@
 ## Polygon
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/369776ce-395a-48ad-bb5e-a48c95bd6670](https://dashboard.tenderly.co/me/simulator/369776ce-395a-48ad-bb5e-a48c95bd6670)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/5543ff95-8339-46d8-bcbe-8efe3e7ff143](https://dashboard.tenderly.co/me/simulator/5543ff95-8339-46d8-bcbe-8efe3e7ff143)
 
 ### Checks
 
@@ -13,8 +13,8 @@ Info:
 ```diff
 # KeeperRegistry at `0x02777053d6764996e594c3E88AF1D58D5363a2e6`
 @@ s_expectedLinkBalance @@
-- 11721157238908497307550
-+ 11746157238908497307550
+- 11721182710990805587551
++ 11746182710990805587551
 @@ `s_upkeep` key `"5270433258472149004463739312507691937285233476849983113005055156517680660709"`.balance @@
 - 3558540917441704007
 + 28558540917441704007
@@ -24,71 +24,71 @@ Info:
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy (Aave LINK) at `0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530` with implementation AToken at `0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE`
 @@ Slot `0x0000000000000000000000000000000000000000000000000000000000000036` @@
-- "0x000000000000000000000000000000000000000000004f764961f965bcd4ef0a"
-+ "0x000000000000000000000000000000000000000000004f74f153ec8901cda73e"
+- "0x000000000000000000000000000000000000000000004f70e929c66497346b6a"
++ "0x000000000000000000000000000000000000000000004f6f911bbbae5bd97a1c"
 @@ Slot `0x3f050af1308620d61c829677deeedc243021f589998699459ebed084b4d4e0ad` @@
 - "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x00000000034220da35ef17e30878cd9300000000000000000000000000000000"
++ "0x00000000034220df6c90dc505c4270cf00000000000000000000000000000000"
 @@ Slot `0xaf561f020a8f8c4f072d325aff6aad11decebb5083af314fbbf9748a44965847` @@
 - "0x0000000003422068b362ceb41166aebe00000000000000222249a0912c3cdcab"
-+ "0x00000000034220da35ef17e30878cd930000000000000020ca3b93b4713594df"
++ "0x00000000034220df6c90dc505c4270cf0000000000000020ca3b95daf0e1eb5d"
 ```
 
 ```diff
 # ChildERC20 (Chainlink) at `0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39`
 @@ `_balances` key `0x191c10aa4af7c30e871e70c95db0e4eb77237530` @@
-- 363240950610502656228841
-+ 363215950610502656228841
+- 363213913775164858477755
++ 363188913775164858477755
 
 @@ `_balances` key `0xaa1dc356dc4b18f30c347798fd5379f3d77abc5b` @@
-- 72895125657522571222271
-+ 72920125657522571222271
+- 72895227545851804342277
++ 72920227545851804342277
 
 ```
 
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation Pool at `0xb77fc84a549ecc0b410d6fa15159C2df207545a3`
 @@ Slot `0x7106c69342d46bbeee5f28f376a6e3d96f0a8e1d092c714a8fe8243ea96d0a1b` @@
-- "0x0000000000002a4bfd3cfcd011878f1b00000000034220da0b08a60ebfd9c36d"
-+ "0x0000000000002a4d6c0ea505e9aa39c800000000034220da35ef17e30878cd93"
+- "0x00000000000029e9be187c981be0cc3900000000034220df1e0b2a0d3b547482"
++ "0x00000000000029eb2a1b03753e19b80e00000000034220df6c90dc505c4270cf"
 @@ Slot `0x7106c69342d46bbeee5f28f376a6e3d96f0a8e1d092c714a8fe8243ea96d0a1c` @@
-- "0x00000000000527b094cadc8432c7500600000000035c72cde713af1f73222011"
-+ "0x00000000000527c6ef1a61aeaa537d1800000000035c72d34bd3b286095e4d6e"
+- "0x00000000000521b0686272e987e7684800000000035c736dbd252d03ffb16086"
++ "0x00000000000521c6b0cfc9153660950400000000035c7377a7f310b4c6132609"
 @@ Slot `0x7106c69342d46bbeee5f28f376a6e3d96f0a8e1d092c714a8fe8243ea96d0a1d` @@
-- "0x00000000000000000000010064f010cb00000000004a723dc6b40b8a9a000000"
-+ "0x00000000000000000000010064f012af00000000004a723dc6b40b8a9a000000"
+- "0x00000000000000000000010064f047c600000000004a723dc6b40b8a9a000000"
++ "0x00000000000000000000010064f04b4400000000004a723dc6b40b8a9a000000"
 @@ Slot `0x7106c69342d46bbeee5f28f376a6e3d96f0a8e1d092c714a8fe8243ea96d0a22` @@
-- "0x00000000000000000000000000000000000000000000000001dc93f29e76f195"
-+ "0x00000000000000000000000000000000000000000000000001dd99812e26062e"
+- "0x00000000000000000000000000000000000000000000000001fb81eeb4b52736"
++ "0x00000000000000000000000000000000000000000000000001fd608bc974ca03"
 ```
 
 ```diff
 # PegSwap at `0xAA1DC356dc4B18f30C347798FD5379F3D77ABC5b`
 @@ `s_swappableAmount` key `0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39`.0xb0897686c545045afc77cf20ec7a532e3120e0f1 @@
-- 43552445435416123802116
-+ 43527445435416123802116
+- 43552343547086890682110
++ 43527343547086890682110
 
 @@ `s_swappableAmount` key `0xb0897686c545045afc77cf20ec7a532e3120e0f1`.0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39 @@
-- 72894030557660771819858
-+ 72919030557660771819858
+- 72894132445990004939864
++ 72919132445990004939864
 
 ```
 
 ```diff
 # LinkToken at `0xb0897686c545045aFc77CF20eC7A532E3120E0F1`
 @@ `balances` key `0x02777053d6764996e594c3e88af1d58d5363a2e6` @@
-- 11721157238908497307550
-+ 11746157238908497307550
+- 11721182710990805587551
++ 11746182710990805587551
 
 @@ `balances` key `0xaa1dc356dc4b18f30c347798fd5379f3d77abc5b` @@
-- 43596445435416123802116
-+ 43571445435416123802116
+- 43596343547086890682110
++ 43571343547086890682110
 
 ```
 
 ```diff
 # PolygonBridgeExecutor at `0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772`
-@@ `_queuedActions` key `0xf253e940ea17bf57bf501bcbf02c033c13e8f802922990d698890fee99d71b0d` @@
+@@ `_queuedActions` key `0xd794b7615785fee76952f2205558af71e98af4ad7d524b4f6fe6cfe7db98866a` @@
 - true
 + false
 
@@ -110,15 +110,15 @@ Info:
 
 - Events Emitted:
   - InitializableImmutableAdminUpgradeabilityProxy (Aave LINK) at `0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530` with implementation AToken at `0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE`
-    - `Transfer(from: 0x0000000000000000000000000000000000000000, to: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 1318438142120086)`
-    - `Mint(caller: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, onBehalfOf: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 1318438142120086, balanceIncrease: 1318438142120086, index: 1008399274562611896345218451)`
+    - `Transfer(from: 0x0000000000000000000000000000000000000000, to: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 1378992771613393)`
+    - `Mint(caller: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, onBehalfOf: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 1378992771613393, balanceIncrease: 1378992771613393, index: 1008399370732975788027703503)`
     - `Transfer(from: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, to: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 25000000000000000000)`
-    - `BalanceTransfer(from: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, to: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 24791767140891314124, index: 1008399274562611896345218451)`
+    - `BalanceTransfer(from: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, to: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 24791764776517300558, index: 1008399370732975788027703503)`
     - `Transfer(from: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, to: 0x0000000000000000000000000000000000000000, value: 25000000000000000000)`
-    - `Burn(from: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, target: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 25000000000000000000, balanceIncrease: 0, index: 1008399274562611896345218451)`
+    - `Burn(from: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, target: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 25000000000000000000, balanceIncrease: 0, index: 1008399370732975788027703503)`
   - InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation Pool at `0xb77fc84a549ecc0b410d6fa15159C2df207545a3`
     - `ReserveUsedAsCollateralEnabled(reserve: 0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39, user: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772)`
-    - `ReserveDataUpdated(reserve: 0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39, liquidityRate: 199767577916451318282696, stableBorrowRate: 90000000000000000000000000, variableBorrowRate: 6232471075422383797140760, liquidityIndex: 1008399274562611896345218451, variableBorrowIndex: 1040218452374534844200144238)`
+    - `ReserveDataUpdated(reserve: 0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39, liquidityRate: 197955044677553250482190, stableBorrowRate: 90000000000000000000000000, variableBorrowRate: 6204132387957402455020804, liquidityIndex: 1008399370732975788027703503, variableBorrowIndex: 1040221484278690863161484809)`
     - `ReserveUsedAsCollateralDisabled(reserve: 0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39, user: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772)`
     - `Withdraw(reserve: 0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39, user: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, to: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, amount: 25000000000000000000)`
   - ChildERC20 (Chainlink) at `0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39`
@@ -127,8 +127,8 @@ Info:
     - `Transfer(from: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, to: 0xaa1dc356dc4b18f30c347798fd5379f3d77abc5b, value: 25000000000000000000)`
     - `Approval(owner: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, spender: 0xaa1dc356dc4b18f30c347798fd5379f3d77abc5b, value: 0)`
   - PegSwap at `0xAA1DC356dc4B18f30C347798FD5379F3D77ABC5b`
-    - `LiquidityUpdated(amount: 43527445435416123802116, source: 0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39, target: 0xb0897686c545045afc77cf20ec7a532e3120e0f1)`
-    - `LiquidityUpdated(amount: 72919030557660771819858, source: 0xb0897686c545045afc77cf20ec7a532e3120e0f1, target: 0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39)`
+    - `LiquidityUpdated(amount: 43527343547086890682110, source: 0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39, target: 0xb0897686c545045afc77cf20ec7a532e3120e0f1)`
+    - `LiquidityUpdated(amount: 72919132445990004939864, source: 0xb0897686c545045afc77cf20ec7a532e3120e0f1, target: 0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39)`
     - `TokensSwapped(amount: 25000000000000000000, source: 0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39, target: 0xb0897686c545045afc77cf20ec7a532e3120e0f1, caller: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772)`
   - LinkToken at `0xb0897686c545045aFc77CF20eC7A532E3120E0F1`
     - `Transfer(from: 0xaa1dc356dc4b18f30c347798fd5379f3d77abc5b, to: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 25000000000000000000)`
@@ -719,12 +719,12 @@ ReserveLogic.updateState(DataTypes.ReserveData,DataTypes.ReserveCache) (lib/aave
 	- reserve.lastUpdateTimestamp == uint40(block.timestamp) (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#99)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
 INFO:Detectors:
+ReserveLogic.cache(DataTypes.ReserveData).reserveCache (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#328) is a local variable never initialized
 ReserveLogic._accrueToTreasury(DataTypes.ReserveData,DataTypes.ReserveCache).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#236) is a local variable never initialized
+ReserveLogic.updateInterestRates(DataTypes.ReserveData,DataTypes.ReserveCache,address,uint256,uint256).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#179) is a local variable never initialized
 GenericLogic.calculateUserAccountData(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.CalculateUserAccountDataParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/GenericLogic.sol#74) is a local variable never initialized
 ValidationLogic.validateBorrow(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.ValidateBorrowParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#147) is a local variable never initialized
 ValidationLogic.validateLiquidationCall(DataTypes.UserConfigurationMap,DataTypes.ReserveData,DataTypes.ValidateLiquidationCallParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#501) is a local variable never initialized
-ReserveLogic.updateInterestRates(DataTypes.ReserveData,DataTypes.ReserveCache,address,uint256,uint256).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#179) is a local variable never initialized
-ReserveLogic.cache(DataTypes.ReserveData).reserveCache (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#328) is a local variable never initialized
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
 INFO:Detectors:
 EModeLogic.executeSetUserEMode(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),mapping(address => uint8),DataTypes.UserConfigurationMap,DataTypes.ExecuteSetUserEModeParams) (lib/aave-v3-core/contracts/protocol/libraries/logic/EModeLogic.sol#42-75) ignores return value by ValidationLogic.validateHealthFactor(reservesData,reservesList,eModeCategories,userConfig,msg.sender,params.categoryId,params.reservesCount,params.oracle) (lib/aave-v3-core/contracts/protocol/libraries/logic/EModeLogic.sol#63-72)
