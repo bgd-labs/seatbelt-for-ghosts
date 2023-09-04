@@ -1,6 +1,6 @@
-## Arbitrum
+## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/0ba90272-33a5-45b0-8f29-0c293dd2551a](https://dashboard.tenderly.co/me/simulator/0ba90272-33a5-45b0-8f29-0c293dd2551a)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/d361cebf-9628-4547-aab2-c4e146687fc8](https://dashboard.tenderly.co/me/simulator/d361cebf-9628-4547-aab2-c4e146687fc8)
 
 ### Checks
 
@@ -11,74 +11,66 @@ Info:
 - State changes:
 
 ```diff
-# InitializableImmutableAdminUpgradeabilityProxy (Aave LINK) at `0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530`
+# InitializableImmutableAdminUpgradeabilityProxy (Aave LINK) at `0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530` with implementation AToken at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`
 @@ Slot `0x0000000000000000000000000000000000000000000000000000000000000036` @@
-- "0x000000000000000000000000000000000000000000009e2c47e7a0127f3b318b"
-+ "0x000000000000000000000000000000000000000000009e2aede5f6b0bee44113"
-@@ Slot `0x246d7438c5a99950099e92f45a9221b48a1cfd540bed5c21d95ec94fe3175064` @@
-- "0x00000000033d57d68e441fafd4d0ac92000000000000002e9dd8a5d3cc32fa48"
-+ "0x00000000033d6c6c8da6320f457c86a0000000000000002d43d6fc720bdc09d0"
+- "0x0000000000000000000000000000000000000000000015cfaee9aae30f813d2b"
++ "0x0000000000000000000000000000000000000000000015ce54d028935b41a70c"
 @@ Slot `0x59fd213b3ef132513db1538f7476087cf9b73235c85a7f017a34537afd9783ff` @@
 - "0x0000000000000000000000000000000000000000000000000000000000000000"
-+ "0x00000000033d6c6c8da6320f457c86a000000000000000000000000000000000"
++ "0x00000000033d33462a3f639d98ba791100000000000000000000000000000000"
+@@ Slot `0x8de5b4c9e1ccce84b1f76b67482ce11256c258ced0ff3ce9c36f20fdbd88b36e` @@
+- "0x00000000033d2fdffe2672e943457e8b000000000000000d5e714669a79b3439"
++ "0x00000000033d33462a3f639d98ba7911000000000000000c0457c419f35b9e1a"
+```
+
+```diff
+# LinkTokenOptimism (Chainlink) at `0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6`
+@@ `_balances` key `0x191c10aa4af7c30e871e70c95db0e4eb77237530` @@
+- 97908241359200056013475
++ 97883241359200056013475
+
+@@ `_balances` key `0x75c0530885f385721fdda23c539af3701d6183d4` @@
+- 1113706303451925494016
++ 1138706303451925494016
+
 ```
 
 ```diff
 # KeeperRegistry1_3 at `0x75c0530885F385721fddA23C539AF3701d6183D4`
 @@ Slot `0x0000000000000000000000000000000000000000000000000000000000000012` @@
-- "0x00000000000000000000000000000000000000000000011fb76d4c80dfcc94bf"
-+ "0x000000000000000000000000000000000000000000000121125f240c389094bf"
-@@ Slot `0xf375c4cc6508675b3ed20b403223790e343eef70a0ef7da990b9ac4c2082ecac` @@
-- "0x663392b728ce212c50c92e5f4abb09395d4ec377000000008b8a34617017e54a"
-+ "0x663392b728ce212c50c92e5f4abb09395d4ec37700000001e67c0becc8dbe54a"
+- "0x00000000000000000000000000000000000000000000003c5fc79e52156ab900"
++ "0x00000000000000000000000000000000000000000000003dbab975dd6e2eb900"
+@@ Slot `0x4b788d845ee23d3dc133236ffd16b60ce75438f8a4d57cc9371d6f4449215de9` @@
+- "0xfd982b14023a4b3565d33a51a03446da43c97b3400000000e399fe60e49d9b75"
++ "0xfd982b14023a4b3565d33a51a03446da43c97b34000000023e8bd5ec3d619b75"
 ```
 
 ```diff
-# InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`
-@@ Slot `0x2859d83f3ac0b6030c43a15461b481b294a95afa24590070b4c0e64400b1f9bc` @@
-- "0x000000000002442e98b3d4e3627db20000000000033d6c332312a45c0ca94a78"
-+ "0x000000000002443ac34faf16c387b6bb00000000033d6c6c8da6320f457c86a0"
-@@ Slot `0x2859d83f3ac0b6030c43a15461b481b294a95afa24590070b4c0e64400b1f9bd` @@
-- "0x00000000001317a647fb9f9b8eef8de400000000034d78696f9e3af2daf0cce1"
-+ "0x00000000001317d986f9236b7f7668f300000000034d7a567dbe927fb07317a6"
-@@ Slot `0x2859d83f3ac0b6030c43a15461b481b294a95afa24590070b4c0e64400b1f9be` @@
-- "0x00000000000000000000010064f5293a00000000004a723dc6b40b8a9a000000"
-+ "0x00000000000000000000010064f558b800000000004a723dc6b40b8a9a000000"
-@@ Slot `0x2859d83f3ac0b6030c43a15461b481b294a95afa24590070b4c0e64400b1f9c3` @@
-- "0x0000000000000000000000000000000000000000000000029503c9e36591c5a6"
-+ "0x00000000000000000000000000000000000000000000000297c09978c4227a70"
+# InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`
+@@ Slot `0x856845219b63e8d45b358ae184fc72e7f8cbde44b8dfca0ddb2b5897366c80b5` @@
+- "0x0000000000004698dc62bf6d4688bb1c00000000033d32e73e2dbb59c71da123"
++ "0x00000000000046a30ffc9fb7f4b0517c00000000033d33462a3f639d98ba7911"
+@@ Slot `0x856845219b63e8d45b358ae184fc72e7f8cbde44b8dfca0ddb2b5897366c80b6` @@
+- "0x000000000006a8f2f285fd5f853484f800000000034d8e13005e009118e26b94"
++ "0x000000000006a96e1db063c84e956bdf00000000034d9734ad6d3f1539bde9cc"
+@@ Slot `0x856845219b63e8d45b358ae184fc72e7f8cbde44b8dfca0ddb2b5897366c80b7` @@
+- "0x00000000000000000000010064f5894100000000004a723dc6b40b8a9a000000"
++ "0x00000000000000000000010064f80eaf00000000004a723dc6b40b8a9a000000"
+@@ Slot `0x856845219b63e8d45b358ae184fc72e7f8cbde44b8dfca0ddb2b5897366c80bc` @@
+- "0x000000000000000000000000000000000000000000000000057676240c8aff48"
++ "0x00000000000000000000000000000000000000000000000006164337859dc2b8"
 ```
 
 ```diff
-# ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_actionsSets` key `"36"`.executed @@
-- false
-+ true
-
-@@ `_queuedActions` key `0xcb57b3849095cf67a72c3ddf80148eb510a0ee0c1e37c114a86537bfc9860eda` @@
+# OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
+@@ `_queuedActions` key `0xdfa9bd88b6184f508e515d6d427d23fe2260a688ff817029718ea96abe2b3764` @@
 - true
 + false
 
-```
+@@ `_actionsSets` key `"31"`.executed @@
+- false
++ true
 
-```diff
-# unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
-@@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x0000000000000000000000000000000000000000000000000000000000d0546a"
-+ "0x0000000000000000000000000000000000000000000000000000000000d05fa6"
-@@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x0000000000000000000000000000000000000000000000002805a6155721ecf4"
-+ "0x0000000000000000000000000000000000000000000000002805bb1477f638f4"
-```
-
-```diff
-# ClonableBeaconProxy (Chainlink) at `0xf97f4df75117a78c1A5a0DBb814Af92458539FB4`
-@@ Slot `0x42d0a1298a5abb2ccb2078ebd39d39663c80f3fcd14c47de37b4f4b65adde5f9` @@
-- "0x000000000000000000000000000000000000000000008713b991727934bfbb8d"
-+ "0x0000000000000000000000000000000000000000000087125e9f9aeddbfbbb8d"
-@@ Slot `0x616193905e9760e6e9eec593578680e482641fc0599e6d3cb2c462dbf9fac2fe` @@
-- "0x00000000000000000000000000000000000000000000011fb76d4c80dfcc94bf"
-+ "0x000000000000000000000000000000000000000000000121125f240c389094bf"
 ```
 
 #### Check stack trace of the proposal ✅ Passed
@@ -92,39 +84,39 @@ Info:
 Info:
 
 - Events Emitted:
-  - InitializableImmutableAdminUpgradeabilityProxy (Aave LINK) at `0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530`
-    - `Transfer(from: 0x0000000000000000000000000000000000000000, to: 0x053d55f9b5af8694c503eb288a1b7e552f590710, value: 83596931334688454)`
-    - `Mint(caller: 0x053d55f9b5af8694c503eb288a1b7e552f590710, onBehalfOf: 0x053d55f9b5af8694c503eb288a1b7e552f590710, value: 83596931334688454, balanceIncrease: 83596931334688454, index: 1002711522495938114799568544)`
-    - `Transfer(from: 0x053d55f9b5af8694c503eb288a1b7e552f590710, to: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, value: 25000000000000000000)`
-    - `BalanceTransfer(from: 0x053d55f9b5af8694c503eb288a1b7e552f590710, to: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, value: 24932395249403621496, index: 1002711522495938114799568544)`
+  - InitializableImmutableAdminUpgradeabilityProxy (Aave LINK) at `0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530` with implementation AToken at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`
+    - `Transfer(from: 0x0000000000000000000000000000000000000000, to: 0xb2289e329d2f85f1ed31adbb30ea345278f21bcf, value: 3958593158636684)`
+    - `Mint(caller: 0xb2289e329d2f85f1ed31adbb30ea345278f21bcf, onBehalfOf: 0xb2289e329d2f85f1ed31adbb30ea345278f21bcf, value: 3958593158636684, balanceIncrease: 3958593158636684, index: 1002441639467500499055048977)`
+    - `Transfer(from: 0xb2289e329d2f85f1ed31adbb30ea345278f21bcf, to: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, value: 25000000000000000000)`
+    - `BalanceTransfer(from: 0xb2289e329d2f85f1ed31adbb30ea345278f21bcf, to: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, value: 24939107690378925599, index: 1002441639467500499055048977)`
     - `Transfer(from: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, to: 0x0000000000000000000000000000000000000000, value: 25000000000000000000)`
-    - `Burn(from: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, target: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, value: 25000000000000000000, balanceIncrease: 0, index: 1002711522495938114799568544)`
-  - InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`
-    - `ReserveUsedAsCollateralEnabled(reserve: 0xf97f4df75117a78c1a5a0dbb814af92458539fb4, user: 0x7d9103572be58ffe99dc390e8246f02dcae6f611)`
-    - `ReserveDataUpdated(reserve: 0xf97f4df75117a78c1a5a0dbb814af92458539fb4, liquidityRate: 2740056544880542238619323, stableBorrowRate: 90000000000000000000000000, variableBorrowRate: 23082217671091766022269171, liquidityIndex: 1002711522495938114799568544, variableBorrowIndex: 1022120041766102665799079846)`
-    - `ReserveUsedAsCollateralDisabled(reserve: 0xf97f4df75117a78c1a5a0dbb814af92458539fb4, user: 0x7d9103572be58ffe99dc390e8246f02dcae6f611)`
-    - `Withdraw(reserve: 0xf97f4df75117a78c1a5a0dbb814af92458539fb4, user: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, to: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, amount: 25000000000000000000)`
-  - ClonableBeaconProxy (Chainlink) at `0xf97f4df75117a78c1A5a0DBb814Af92458539FB4`
+    - `Burn(from: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, target: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, value: 25000000000000000000, balanceIncrease: 0, index: 1002441639467500499055048977)`
+  - InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`
+    - `ReserveUsedAsCollateralEnabled(reserve: 0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6, user: 0x7d9103572be58ffe99dc390e8246f02dcae6f611)`
+    - `ReserveDataUpdated(reserve: 0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6, liquidityRate: 333573625056106954903932, stableBorrowRate: 90000000000000000000000000, variableBorrowRate: 8053666134460388104039391, liquidityIndex: 1002441639467500499055048977, variableBorrowIndex: 1022256366640680703369275852)`
+    - `ReserveUsedAsCollateralDisabled(reserve: 0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6, user: 0x7d9103572be58ffe99dc390e8246f02dcae6f611)`
+    - `Withdraw(reserve: 0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6, user: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, to: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, amount: 25000000000000000000)`
+  - LinkTokenOptimism (Chainlink) at `0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6`
     - `Transfer(from: 0x191c10aa4af7c30e871e70c95db0e4eb77237530, to: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, value: 25000000000000000000)`
-    - `Approval(owner: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, spender: 0xb0a73671c97bac9ba899cd1a23604fd2278cd02a, value: 25000000000000000000)`
-    - `Transfer(from: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, to: 0xb0a73671c97bac9ba899cd1a23604fd2278cd02a, value: 25000000000000000000)`
-    - `Approval(owner: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, spender: 0xb0a73671c97bac9ba899cd1a23604fd2278cd02a, value: 0)`
-    - `Approval(owner: 0xb0a73671c97bac9ba899cd1a23604fd2278cd02a, spender: 0x75c0530885f385721fdda23c539af3701d6183d4, value: 25000000000000000000)`
-    - `Transfer(from: 0xb0a73671c97bac9ba899cd1a23604fd2278cd02a, to: 0x75c0530885f385721fdda23c539af3701d6183d4, value: 25000000000000000000)`
-    - `Approval(owner: 0xb0a73671c97bac9ba899cd1a23604fd2278cd02a, spender: 0x75c0530885f385721fdda23c539af3701d6183d4, value: 0)`
+    - `Approval(owner: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, spender: 0x4f830bc2ddac99307a3709c85f7533842bda7c63, value: 25000000000000000000)`
+    - `Transfer(from: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, to: 0x4f830bc2ddac99307a3709c85f7533842bda7c63, value: 25000000000000000000)`
+    - `Approval(owner: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, spender: 0x4f830bc2ddac99307a3709c85f7533842bda7c63, value: 0)`
+    - `Approval(owner: 0x4f830bc2ddac99307a3709c85f7533842bda7c63, spender: 0x75c0530885f385721fdda23c539af3701d6183d4, value: 25000000000000000000)`
+    - `Transfer(from: 0x4f830bc2ddac99307a3709c85f7533842bda7c63, to: 0x75c0530885f385721fdda23c539af3701d6183d4, value: 25000000000000000000)`
+    - `Approval(owner: 0x4f830bc2ddac99307a3709c85f7533842bda7c63, spender: 0x75c0530885f385721fdda23c539af3701d6183d4, value: 0)`
   - KeeperRegistry1_3 at `0x75c0530885F385721fddA23C539AF3701d6183D4`
-    - `FundsAdded(id: 99910557623747840434738249049159754336730253966084942174349501874329868147502, from: 0xb0a73671c97bac9ba899cd1a23604fd2278cd02a, amount: 25000000000000000000)`
-  - AaveCLRobotOperator at `0xb0A73671C97BAC9Ba899CD1a23604Fd2278cD02A`
-    - `KeeperRefilled(id: 99910557623747840434738249049159754336730253966084942174349501874329868147502, from: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, amount: 25000000000000000000)`
-  - ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-    - `ActionsSetExecuted(id: 36, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
+    - `FundsAdded(id: 14511291151503490097406614071718050938575520605993697066624566563051111599185, from: 0x4f830bc2ddac99307a3709c85f7533842bda7c63, amount: 25000000000000000000)`
+  - AaveCLRobotOperator at `0x4f830bc2DdaC99307a3709c85F7533842BdA7c63`
+    - `KeeperRefilled(id: 14511291151503490097406614071718050938575520605993697066624566563051111599185, from: 0x7d9103572be58ffe99dc390e8246f02dcae6f611, amount: 25000000000000000000)`
+  - OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
+    - `ActionsSetExecuted(id: 31, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
 
 #### Check all targets are verified on Etherscan ✅ Passed
 
 Info:
 
 - Targets:
-  - 0xdDE20B20E21a6F3b7080e740b684CDf5b764B80D: Contract (not verified)
+  - 0x67F0B21FB75B88a7553039631A2Bc796Fb89e0A4: Contract (not verified)
 
 #### Check all touched contracts are verified on Etherscan ✅ Passed
 
@@ -132,27 +124,25 @@ Info:
 
 - Touched address:
   - 0xd73a92be73efbfcf3854433a5fcbabf9c1316073: EOA (verification not applicable)
-  - 0x7d9103572be58ffe99dc390e8246f02dcae6f611: Contract (verified) (ArbitrumBridgeExecutor)
-  - 0xdde20b20e21a6f3b7080e740b684cdf5b764b80d: Contract (verified) (ProposalPayloadArbitrumRobot)
-  - 0x053d55f9b5af8694c503eb288a1b7e552f590710: Contract (verified) (InitializableAdminUpgradeabilityProxy)
-  - 0x981ab570ac289938f296b975c524b66fbf1b8774: Contract (verified) (Collector)
+  - 0x7d9103572be58ffe99dc390e8246f02dcae6f611: Contract (verified) (OptimismBridgeExecutor)
+  - 0x67f0b21fb75b88a7553039631a2bc796fb89e0a4: Contract (verified) (ProposalPayloadOptimismRobot)
+  - 0xb2289e329d2f85f1ed31adbb30ea345278f21bcf: Contract (verified) (InitializableAdminUpgradeabilityProxy)
+  - 0x230e0321cf38f09e247e50afc7801ea2351fe56f: Contract (verified) (Collector)
   - 0x191c10aa4af7c30e871e70c95db0e4eb77237530: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
-  - 0x1be1798b70aee431c2986f7ff48d9d1fa350786a: Contract (verified) (AToken)
+  - 0xbcb167bdcf14a8f791d6f4a6edd964aed2f8813b: Contract (verified) (AToken)
   - 0x794a61358d6845594f94dc1db02a252b5b4814ad: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
-  - 0xbcb167bdcf14a8f791d6f4a6edd964aed2f8813b: Contract (verified) (L2Pool)
+  - 0x764594f8e9757ede877b75716f8077162b251460: Contract (verified) (L2Pool)
   - 0x929ec64c34a17401f460460d4b9390518e5b473e: Contract (verified) (InitializableAdminUpgradeabilityProxy)
   - 0x5f4d15d761528c57a5c30c43c1dab26fc5452731: Contract (verified) (RewardsController)
   - 0xa97684ead0e402dc232d5a977953df7ecbab3cdb: Contract (verified) (PoolAddressesProvider)
   - 0x39df4b1329d41a9ae20e17beff39aabd2f049128: Contract (verified) (SupplyLogic)
   - 0x953a573793604af8d41f306feb8274190db4ae0e: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
-  - 0x5e76e98e0963ecdc6a065d1435f84065b7523f39: Contract (verified) (VariableDebtToken)
+  - 0x04a8d477ee202adce1682f5902e1160455205b12: Contract (not verified)
   - 0x89d976629b7055ff1ca02b927ba3e020f22a44e4: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
-  - 0x0c2c95b24529664fe55d4437d7a31175cfe6c4f7: Contract (verified) (StableDebtToken)
-  - 0x9b34e3e183c9b0d1a08ff57a8fb59c821616295f: Contract (verified) (DefaultReserveInterestRateStrategy)
-  - 0xf97f4df75117a78c1a5a0dbb814af92458539fb4: Contract (verified) (ClonableBeaconProxy)
-  - 0xe72ba9418b5f2ce0a6a40501fe77c6839aa37333: Contract (verified) (UpgradeableBeacon)
-  - 0x3f770ac673856f105b586bb393d122721265ad46: Contract (verified) (StandardArbERC20)
-  - 0xb0a73671c97bac9ba899cd1a23604fd2278cd02a: Contract (verified) (AaveCLRobotOperator)
+  - 0x6b4e260b765b3ca1514e618c0215a6b7839ff93e: Contract (verified) (StableDebtToken)
+  - 0xee1bac9355eaafcd1b68d272d640d870bc9b4b5c: Contract (verified) (DefaultReserveInterestRateStrategy)
+  - 0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6: Contract (verified) (LinkTokenOptimism)
+  - 0x4f830bc2ddac99307a3709c85f7533842bda7c63: Contract (verified) (AaveCLRobotOperator)
   - 0x75c0530885f385721fdda23c539af3701d6183d4: Contract (verified) (KeeperRegistry1_3)
   - 0x153b383c6f4dfcd27f20bafc15c2be5e5fe327d5: Contract (verified) (KeeperRegistryLogic1_3)
 
@@ -165,24 +155,6 @@ Info:
 <details>
 <summary>View Details</summary>
 <details>
-<summary>View warnings for InitializableAdminUpgradeabilityProxy at `0x053D55f9B5AF8694c503EB288a1B7E552f590710`</summary>
-
-```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-```
-
-</details>
-
-<details>
-<summary>View warnings for StableDebtToken at `0x0c2C95b24529664fE55D4437D7A31175CFE6c4f7`</summary>
-
-```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-```
-
-</details>
-
-<details>
 <summary>View warnings for KeeperRegistryLogic1_3 at `0x153b383C6f4DfCd27F20BAfc15C2Be5E5FE327D5`</summary>
 
 ```
@@ -192,7 +164,7 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy (Aave LINK) at `0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530`</summary>
+<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy (Aave LINK) at `0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530` with implementation AToken at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -201,7 +173,16 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for AToken at `0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a`</summary>
+<summary>View warnings for Collector at `0x230E0321Cf38F09e247e50Afc7801EA2351fe56F`</summary>
+
+```
+INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x230e0321cf38f09e247e50afc7801ea2351fe56f-CLSynchronicityPriceAdapterPegToBase' running
+```
+
+</details>
+
+<details>
+<summary>View warnings for LinkTokenOptimism (Chainlink) at `0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -256,16 +237,7 @@ Note: The other declaration is here:
 </details>
 
 <details>
-<summary>View warnings for StandardArbERC20 at `0x3f770Ac673856F105b586bb393d122721265aD46`</summary>
-
-```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-```
-
-</details>
-
-<details>
-<summary>View warnings for VariableDebtToken at `0x5E76E98E0963EcDC6A065d1435F84065b7523f39`</summary>
+<summary>View warnings for AaveCLRobotOperator at `0x4f830bc2DdaC99307a3709c85F7533842BdA7c63`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -283,6 +255,24 @@ INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbel
 </details>
 
 <details>
+<summary>View warnings for ProposalPayloadOptimismRobot at `0x67F0B21FB75B88a7553039631A2Bc796Fb89e0A4`</summary>
+
+```
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
+<summary>View warnings for StableDebtToken at `0x6b4E260b765B3cA1514e618C0215A6B7839fF93e`</summary>
+
+```
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
 <summary>View warnings for KeeperRegistry1_3 at `0x75c0530885F385721fddA23C539AF3701d6183D4`</summary>
 
 ```
@@ -292,7 +282,7 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`</summary>
+<summary>View warnings for L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -301,7 +291,7 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
+<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -310,7 +300,7 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x89D976629b7055ff1ca02b927BA3e020F22A44e4`</summary>
+<summary>View warnings for OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -319,7 +309,7 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for InitializableAdminUpgradeabilityProxy at `0x929EC64c34a17401F460460D4B9390518E5B473e`</summary>
+<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x89D976629b7055ff1ca02b927BA3e020F22A44e4` with implementation StableDebtToken at `0x6b4E260b765B3cA1514e618C0215A6B7839fF93e`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -328,7 +318,7 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x953A573793604aF8d41F306FEb8274190dB4aE0e`</summary>
+<summary>View warnings for InitializableAdminUpgradeabilityProxy at `0x929EC64c34a17401F460460D4B9390518E5B473e` with implementation RewardsController at `0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -337,16 +327,7 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for Collector at `0x981AB570aC289938F296b975C524B66FBF1B8774`</summary>
-
-```
-INFO:CryticCompile:'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x981ab570ac289938f296b975c524b66fbf1b8774-CLwstETHSynchronicityPriceAdapter' running
-```
-
-</details>
-
-<details>
-<summary>View warnings for DefaultReserveInterestRateStrategy at `0x9b34E3e183c9b0d1a08fF57a8fb59c821616295f`</summary>
+<summary>View warnings for InitializableImmutableAdminUpgradeabilityProxy at `0x953A573793604aF8d41F306FEb8274190dB4aE0e` with implementation unknown contract name at `0x04a8D477eE202aDCE1682F5902e1160455205b12`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -364,7 +345,7 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for AaveCLRobotOperator at `0xb0A73671C97BAC9Ba899CD1a23604Fd2278cD02A`</summary>
+<summary>View warnings for InitializableAdminUpgradeabilityProxy at `0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf` with implementation Collector at `0x230E0321Cf38F09e247e50Afc7801EA2351fe56F`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -373,7 +354,7 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for L2Pool at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
+<summary>View warnings for AToken at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -382,25 +363,7 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 </details>
 
 <details>
-<summary>View warnings for ProposalPayloadArbitrumRobot at `0xdDE20B20E21a6F3b7080e740b684CDf5b764B80D`</summary>
-
-```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-```
-
-</details>
-
-<details>
-<summary>View warnings for UpgradeableBeacon at `0xE72ba9418b5f2Ce0A6a40501Fe77c6839Aa37333`</summary>
-
-```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
-```
-
-</details>
-
-<details>
-<summary>View warnings for ClonableBeaconProxy (Chainlink) at `0xf97f4df75117a78c1A5a0DBb814Af92458539FB4`</summary>
+<summary>View warnings for DefaultReserveInterestRateStrategy at `0xeE1BAc9355EaAfCD1B68d272d640d870bC9b4b5C`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -418,78 +381,6 @@ Info:
 
 <details>
 <summary>View Details</summary>
-
-<details>
-<summary>Slither report for InitializableAdminUpgradeabilityProxy at `0x053D55f9B5AF8694c503EB288a1B7E552f590710`</summary>
-
-```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0x053d55f9b5af8694c503eb288a1b7e552f590710
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
-```
-
-</details>
-
-<details>
-<summary>Slither report for StableDebtToken at `0x0c2C95b24529664fE55D4437D7A31175CFE6c4f7`</summary>
-
-```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0x0c2c95b24529664fe55d4437d7a31175cfe6c4f7
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
-```
-
-</details>
 
 <details>
 <summary>Slither report for KeeperRegistryLogic1_3 at `0x153b383C6f4DfCd27F20BAfc15C2Be5E5FE327D5`</summary>
@@ -528,7 +419,7 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 </details>
 
 <details>
-<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy (Aave LINK) at `0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530`</summary>
+<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy (Aave LINK) at `0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530` with implementation AToken at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -564,7 +455,23 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 </details>
 
 <details>
-<summary>Slither report for AToken at `0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a`</summary>
+<summary>Slither report for Collector at `0x230E0321Cf38F09e247e50Afc7801EA2351fe56F`</summary>
+
+```
+'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x230e0321cf38f09e247e50afc7801ea2351fe56f-CLSynchronicityPriceAdapterPegToBase' running
+INFO:Detectors:
+Variable CLSynchronicityPriceAdapterPegToBase.PEG_TO_BASE (src/contracts/CLSynchronicityPriceAdapterPegToBase.sol#19) is not in mixedCase
+Variable CLSynchronicityPriceAdapterPegToBase.ASSET_TO_PEG (src/contracts/CLSynchronicityPriceAdapterPegToBase.sol#24) is not in mixedCase
+Variable CLSynchronicityPriceAdapterPegToBase.DECIMALS (src/contracts/CLSynchronicityPriceAdapterPegToBase.sol#29) is not in mixedCase
+Variable CLSynchronicityPriceAdapterPegToBase.DENOMINATOR (src/contracts/CLSynchronicityPriceAdapterPegToBase.sol#35) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Slither:0x230e0321cf38f09e247e50afc7801ea2351fe56f analyzed (3 contracts with 82 detectors), 4 result(s) found
+```
+
+</details>
+
+<details>
+<summary>Slither report for LinkTokenOptimism (Chainlink) at `0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -581,7 +488,7 @@ Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
     with open(path, encoding="utf8", newline="") as f:
 FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0x1be1798b70aee431c2986f7ff48d9d1fa350786a
+ERROR:root:Error in 0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -671,9 +578,9 @@ Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangero
 INFO:Detectors:
 ReserveLogic.cache(DataTypes.ReserveData).reserveCache (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#328) is a local variable never initialized
 GenericLogic.calculateUserAccountData(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.CalculateUserAccountDataParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/GenericLogic.sol#74) is a local variable never initialized
-ValidationLogic.validateBorrow(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.ValidateBorrowParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#147) is a local variable never initialized
 ReserveLogic._accrueToTreasury(DataTypes.ReserveData,DataTypes.ReserveCache).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#236) is a local variable never initialized
 ValidationLogic.validateLiquidationCall(DataTypes.UserConfigurationMap,DataTypes.ReserveData,DataTypes.ValidateLiquidationCallParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#501) is a local variable never initialized
+ValidationLogic.validateBorrow(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.ValidateBorrowParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#147) is a local variable never initialized
 ReserveLogic.updateInterestRates(DataTypes.ReserveData,DataTypes.ReserveCache,address,uint256,uint256).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#179) is a local variable never initialized
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
 INFO:Detectors:
@@ -877,7 +784,7 @@ INFO:Slither:0x39df4b1329d41a9ae20e17beff39aabd2f049128 analyzed (33 contracts w
 </details>
 
 <details>
-<summary>Slither report for StandardArbERC20 at `0x3f770Ac673856F105b586bb393d122721265aD46`</summary>
+<summary>Slither report for AaveCLRobotOperator at `0x4f830bc2DdaC99307a3709c85F7533842BdA7c63`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -894,43 +801,7 @@ Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
     with open(path, encoding="utf8", newline="") as f:
 FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0x3f770ac673856f105b586bb393d122721265ad46
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
-```
-
-</details>
-
-<details>
-<summary>Slither report for VariableDebtToken at `0x5E76E98E0963EcDC6A065d1435F84065b7523f39`</summary>
-
-```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0x5e76e98e0963ecdc6a065d1435f84065b7523f39
+ERROR:root:Error in 0x4f830bc2ddac99307a3709c85f7533842bda7c63
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -960,6 +831,78 @@ Variable CLSynchronicityPriceAdapterPegToBase.DECIMALS (src/contracts/CLSynchron
 Variable CLSynchronicityPriceAdapterPegToBase.DENOMINATOR (src/contracts/CLSynchronicityPriceAdapterPegToBase.sol#35) is not in mixedCase
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
 INFO:Slither:0x5f4d15d761528c57a5c30c43c1dab26fc5452731 analyzed (3 contracts with 82 detectors), 4 result(s) found
+```
+
+</details>
+
+<details>
+<summary>Slither report for ProposalPayloadOptimismRobot at `0x67F0B21FB75B88a7553039631A2Bc796Fb89e0A4`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+ERROR:root:Error in 0x67f0b21fb75b88a7553039631a2bc796fb89e0a4
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+```
+
+</details>
+
+<details>
+<summary>Slither report for StableDebtToken at `0x6b4E260b765B3cA1514e618C0215A6B7839fF93e`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+ERROR:root:Error in 0x6b4e260b765b3ca1514e618c0215a6b7839ff93e
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
 ```
 
 </details>
@@ -1001,7 +944,43 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 </details>
 
 <details>
-<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD`</summary>
+<summary>Slither report for L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+ERROR:root:Error in 0x764594f8e9757ede877b75716f8077162b251460
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+```
+
+</details>
+
+<details>
+<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1037,7 +1016,7 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 </details>
 
 <details>
-<summary>Slither report for ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
+<summary>Slither report for OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1073,7 +1052,7 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 </details>
 
 <details>
-<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x89D976629b7055ff1ca02b927BA3e020F22A44e4`</summary>
+<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x89D976629b7055ff1ca02b927BA3e020F22A44e4` with implementation StableDebtToken at `0x6b4E260b765B3cA1514e618C0215A6B7839fF93e`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1109,7 +1088,7 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 </details>
 
 <details>
-<summary>Slither report for InitializableAdminUpgradeabilityProxy at `0x929EC64c34a17401F460460D4B9390518E5B473e`</summary>
+<summary>Slither report for InitializableAdminUpgradeabilityProxy at `0x929EC64c34a17401F460460D4B9390518E5B473e` with implementation RewardsController at `0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1145,7 +1124,7 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 </details>
 
 <details>
-<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x953A573793604aF8d41F306FEb8274190dB4aE0e`</summary>
+<summary>Slither report for InitializableImmutableAdminUpgradeabilityProxy at `0x953A573793604aF8d41F306FEb8274190dB4aE0e` with implementation unknown contract name at `0x04a8D477eE202aDCE1682F5902e1160455205b12`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1163,59 +1142,6 @@ Traceback (most recent call last):
     with open(path, encoding="utf8", newline="") as f:
 FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0x953a573793604af8d41f306feb8274190db4ae0e
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
-```
-
-</details>
-
-<details>
-<summary>Slither report for Collector at `0x981AB570aC289938F296b975C524B66FBF1B8774`</summary>
-
-```
-'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x981ab570ac289938f296b975c524b66fbf1b8774-CLwstETHSynchronicityPriceAdapter' running
-INFO:Detectors:
-Variable CLSynchronicityPriceAdapterPegToBase.PEG_TO_BASE (src/contracts/CLSynchronicityPriceAdapterPegToBase.sol#19) is not in mixedCase
-Variable CLSynchronicityPriceAdapterPegToBase.ASSET_TO_PEG (src/contracts/CLSynchronicityPriceAdapterPegToBase.sol#24) is not in mixedCase
-Variable CLSynchronicityPriceAdapterPegToBase.DECIMALS (src/contracts/CLSynchronicityPriceAdapterPegToBase.sol#29) is not in mixedCase
-Variable CLSynchronicityPriceAdapterPegToBase.DENOMINATOR (src/contracts/CLSynchronicityPriceAdapterPegToBase.sol#35) is not in mixedCase
-Variable CLwstETHSynchronicityPriceAdapter.STETH (src/contracts/CLwstETHSynchronicityPriceAdapter.sol#21) is not in mixedCase
-Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
-INFO:Slither:0x981ab570ac289938f296b975c524b66fbf1b8774 analyzed (5 contracts with 82 detectors), 5 result(s) found
-```
-
-</details>
-
-<details>
-<summary>Slither report for DefaultReserveInterestRateStrategy at `0x9b34E3e183c9b0d1a08fF57a8fb59c821616295f`</summary>
-
-```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0x9b34e3e183c9b0d1a08ff57a8fb59c821616295f
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -1270,7 +1196,7 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 </details>
 
 <details>
-<summary>Slither report for AaveCLRobotOperator at `0xb0A73671C97BAC9Ba899CD1a23604Fd2278cD02A`</summary>
+<summary>Slither report for InitializableAdminUpgradeabilityProxy at `0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf` with implementation Collector at `0x230E0321Cf38F09e247e50Afc7801EA2351fe56F`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1287,7 +1213,7 @@ Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
     with open(path, encoding="utf8", newline="") as f:
 FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0xb0a73671c97bac9ba899cd1a23604fd2278cd02a
+ERROR:root:Error in 0xb2289e329d2f85f1ed31adbb30ea345278f21bcf
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
@@ -1306,7 +1232,7 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 </details>
 
 <details>
-<summary>Slither report for L2Pool at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
+<summary>Slither report for AToken at `0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1342,7 +1268,7 @@ FileNotFoundError: [Errno 2] No such file or directory: ''
 </details>
 
 <details>
-<summary>Slither report for ProposalPayloadArbitrumRobot at `0xdDE20B20E21a6F3b7080e740b684CDf5b764B80D`</summary>
+<summary>Slither report for DefaultReserveInterestRateStrategy at `0xeE1BAc9355EaAfCD1B68d272d640d870bC9b4b5C`</summary>
 
 ```
 Source code not available, try to fetch the bytecode only
@@ -1359,79 +1285,7 @@ Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
     with open(path, encoding="utf8", newline="") as f:
 FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0xdde20b20e21a6f3b7080e740b684cdf5b764b80d
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
-```
-
-</details>
-
-<details>
-<summary>Slither report for UpgradeableBeacon at `0xE72ba9418b5f2Ce0A6a40501Fe77c6839Aa37333`</summary>
-
-```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0xe72ba9418b5f2ce0a6a40501fe77c6839aa37333
-ERROR:root:Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-
-```
-
-</details>
-
-<details>
-<summary>Slither report for ClonableBeaconProxy (Chainlink) at `0xf97f4df75117a78c1A5a0DBb814Af92458539FB4`</summary>
-
-```
-Source code not available, try to fetch the bytecode only
-ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
-Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
-    ) = process_all(filename, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
-    ) = process_single(compilation, args, detector_classes, printer_classes)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
-    slither = Slither(target, ast_format=ast, **vars(args))
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
-    self.add_source_code(path)
-  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
-    with open(path, encoding="utf8", newline="") as f:
-FileNotFoundError: [Errno 2] No such file or directory: ''
-ERROR:root:Error in 0xf97f4df75117a78c1a5a0dbb814af92458539fb4
+ERROR:root:Error in 0xee1bac9355eaafcd1b68d272d640d870bc9b4b5c
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
