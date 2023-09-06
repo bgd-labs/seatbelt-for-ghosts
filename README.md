@@ -585,6 +585,7 @@ Some notes on the outputs of reports:
 | Sigma Prime Audit Budget Extension                                                                                                                                                       | [313.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/313.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=313) |
 | SupplyCapLSTs                                                                                                                                                                            | [314.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/314.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=314) |
 | Polygon                                                                                                                                                                                  | [314_Polygon_pending_0.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/314_Polygon_pending_0.md)   | [app](https://app.aave.com/governance/proposal/?proposalId=314) |
+| Chaos Labs Risk Parameter Updates                                                                                                                                                        | [315.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/315.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=315) |
 
 <!-- ### Reports table end ### -->
 
