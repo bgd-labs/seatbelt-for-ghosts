@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/991f636a-730a-4dad-bb46-7e8aedc5b672](https://dashboard.tenderly.co/me/simulator/991f636a-730a-4dad-bb46-7e8aedc5b672)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/f7ec3b5d-5a03-44e9-b75f-df95e2f5c20a](https://dashboard.tenderly.co/me/simulator/f7ec3b5d-5a03-44e9-b75f-df95e2f5c20a)
 
 ### Checks
 
@@ -28,24 +28,24 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x7bab42970c8b323da6cbcc43be784c3f721a6686d6bf02868bb384104d4aea0d` @@
-- true
-+ false
-
 @@ `_actionsSets` key `"37"`.executed @@
 - false
 + true
+
+@@ `_queuedActions` key `0x72f18cb3e6eb73b164b9e339b16feabfe39f9e842c0d98d685457050d23a5ee1` @@
+- true
++ false
 
 ```
 
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x0000000000000000000000000000000000000000000000000000000000bfaa80"
-+ "0x0000000000000000000000000000000000000000000000000000000000bfb5bc"
+- "0x0000000000000000000000000000000000000000000000000000000000c23df3"
++ "0x0000000000000000000000000000000000000000000000000000000000c2492f"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x00000000000000000000000000000000000000000000000025e18c95d3923ec8"
-+ "0x00000000000000000000000000000000000000000000000025e1a73119c53cc8"
+- "0x000000000000000000000000000000000000000000000000282cdac473a825fe"
++ "0x000000000000000000000000000000000000000000000000282ced16f6fd15fe"
 ```
 
 #### Check stack trace of the proposal ✅ Passed
