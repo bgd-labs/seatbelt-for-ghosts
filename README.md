@@ -597,6 +597,7 @@ Some notes on the outputs of reports:
 | Base                                                                                                                                                                                     | [319_Base_pending_3.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/319_Base_pending_3.md)         | [app](https://app.aave.com/governance/proposal/?proposalId=319) |
 | Optimism                                                                                                                                                                                 | [319_Optimism_pending_2.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/319_Optimism_pending_2.md) | [app](https://app.aave.com/governance/proposal/?proposalId=319) |
 | Polygon                                                                                                                                                                                  | [319_Polygon_pending_1.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/319_Polygon_pending_1.md)   | [app](https://app.aave.com/governance/proposal/?proposalId=319) |
+| Chaos Labs Risk Parameter Updates \_ Aave V3 Ethereum                                                                                                                                    | [320.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/320.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=320) |
 
 <!-- ### Reports table end ### -->
 
