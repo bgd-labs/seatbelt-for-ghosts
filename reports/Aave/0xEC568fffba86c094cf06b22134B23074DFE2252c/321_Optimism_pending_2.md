@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/0f5ea6ce-6742-4e6e-8d9d-b11fdae4f10d](https://dashboard.tenderly.co/me/simulator/0f5ea6ce-6742-4e6e-8d9d-b11fdae4f10d)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/8357343e-0f65-448f-a3a0-57262f2d674d](https://dashboard.tenderly.co/me/simulator/8357343e-0f65-448f-a3a0-57262f2d674d)
 
 ### Checks
 
@@ -13,8 +13,8 @@ Info:
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`
 @@ `_reserves` key `0xdfa46478f9e5ea86d57387849598dbfb2e964b02`.configuration.data @@
-- 85566236980702714192064106483807049985955895050252868793732883384638796
-+ 5708990824823726853630037306715899605214136638796
+- 85566236980702714192064106483807049985955895050252868937848071460487168
++ 5708990824823726853630037306716043720402212487168
 
 # decoded configuration.data for key `0xdfa46478f9e5ea86d57387849598dbfb2e964b02` (symbol: MAI)
 @@ configuration.data.debtCeiling @@
@@ -28,7 +28,7 @@ Info:
 
 ```diff
 # OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0xca1610e733f6019f9a489b71903aee6b3b07b1aa0f52a904291a06db3aad0c92` @@
+@@ `_queuedActions` key `0x924202b695d73b6ae1ebf456c91e1e1844363b98bd75ddf7d05072e9f11e1448` @@
 - true
 + false
 
@@ -50,7 +50,7 @@ Info:
 
 - Events Emitted:
   - InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E` with implementation PoolConfigurator at `0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B`
-    - `CollateralConfigurationChanged(asset: 0xdfa46478f9e5ea86d57387849598dbfb2e964b02, ltv: 7500, liquidationThreshold: 8000, liquidationBonus: 10500)`
+    - `CollateralConfigurationChanged(asset: 0xdfa46478f9e5ea86d57387849598dbfb2e964b02, ltv: 0, liquidationThreshold: 8000, liquidationBonus: 10500)`
     - `DebtCeilingChanged(asset: 0xdfa46478f9e5ea86d57387849598dbfb2e964b02, oldDebtCeiling: 13000000, newDebtCeiling: 0)`
   - InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation L2Pool at `0x764594F8e9757edE877B75716f8077162B251460`
     - `IsolationModeTotalDebtUpdated(asset: 0xdfa46478f9e5ea86d57387849598dbfb2e964b02, totalDebt: 0)`

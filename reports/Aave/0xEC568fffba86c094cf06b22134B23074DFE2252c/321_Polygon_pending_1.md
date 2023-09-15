@@ -1,6 +1,6 @@
 ## Polygon
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/9aebc2cc-95f4-427a-8701-9889976f598c](https://dashboard.tenderly.co/me/simulator/9aebc2cc-95f4-427a-8701-9889976f598c)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/ebc9880d-8d22-4cdd-87ac-35ec476918dc](https://dashboard.tenderly.co/me/simulator/ebc9880d-8d22-4cdd-87ac-35ec476918dc)
 
 ### Checks
 
@@ -13,8 +13,8 @@ Info:
 ```diff
 # InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation Pool at `0xb77fc84a549ecc0b410d6fa15159C2df207545a3`
 @@ `_reserves` key `0xa3fa99a148fa48d14ed51d610c367c61876997f1`.configuration.data @@
-- 118476328127126835035537634554131540420105106552632389059159436560440652
-+ 379853410002304061348124227014638898059586832440652
+- 118476328127126835035537634554131540420105106552632389203274624636289024
++ 379853410002304061348124227014639042174774908289024
 
 # decoded configuration.data for key `0xa3fa99a148fa48d14ed51d610c367c61876997f1` (symbol: miMATIC)
 @@ configuration.data.debtCeiling @@
@@ -28,13 +28,13 @@ Info:
 
 ```diff
 # PolygonBridgeExecutor at `0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772`
-@@ `_queuedActions` key `0x802b2f7643e07fef95fc96ba7cb01fc4fb5f9121db504a50a0a746e8f559cbe1` @@
-- true
-+ false
-
 @@ `_actionsSets` key `"63"`.executed @@
 - false
 + true
+
+@@ `_queuedActions` key `0x0ea8d2c6f608647ed0b7d9e4b43d6dbaa4d3d27fde5888206468d79ee500fc47` @@
+- true
++ false
 
 ```
 
@@ -50,7 +50,7 @@ Info:
 
 - Events Emitted:
   - InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E` with implementation PoolConfigurator at `0xADf86b537eF08591c2777E144322E8b0Ca7E82a7`
-    - `CollateralConfigurationChanged(asset: 0xa3fa99a148fa48d14ed51d610c367c61876997f1, ltv: 7500, liquidationThreshold: 8000, liquidationBonus: 10500)`
+    - `CollateralConfigurationChanged(asset: 0xa3fa99a148fa48d14ed51d610c367c61876997f1, ltv: 0, liquidationThreshold: 8000, liquidationBonus: 10500)`
     - `DebtCeilingChanged(asset: 0xa3fa99a148fa48d14ed51d610c367c61876997f1, oldDebtCeiling: 18000000, newDebtCeiling: 0)`
   - InitializableImmutableAdminUpgradeabilityProxy at `0x794a61358D6845594F94dc1DB02A252b5b4814aD` with implementation Pool at `0xb77fc84a549ecc0b410d6fa15159C2df207545a3`
     - `IsolationModeTotalDebtUpdated(asset: 0xa3fa99a148fa48d14ed51d610c367c61876997f1, totalDebt: 0)`
@@ -504,12 +504,12 @@ ReserveLogic.updateState(DataTypes.ReserveData,DataTypes.ReserveCache) (lib/aave
 	- reserve.lastUpdateTimestamp == uint40(block.timestamp) (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#99)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
 INFO:Detectors:
-ReserveLogic.updateInterestRates(DataTypes.ReserveData,DataTypes.ReserveCache,address,uint256,uint256).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#179) is a local variable never initialized
+ReserveLogic.cache(DataTypes.ReserveData).reserveCache (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#328) is a local variable never initialized
 ValidationLogic.validateLiquidationCall(DataTypes.UserConfigurationMap,DataTypes.ReserveData,DataTypes.ValidateLiquidationCallParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#501) is a local variable never initialized
 ReserveLogic._accrueToTreasury(DataTypes.ReserveData,DataTypes.ReserveCache).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#236) is a local variable never initialized
 ValidationLogic.validateBorrow(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.ValidateBorrowParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#147) is a local variable never initialized
+ReserveLogic.updateInterestRates(DataTypes.ReserveData,DataTypes.ReserveCache,address,uint256,uint256).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#179) is a local variable never initialized
 GenericLogic.calculateUserAccountData(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.CalculateUserAccountDataParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/GenericLogic.sol#74) is a local variable never initialized
-ReserveLogic.cache(DataTypes.ReserveData).reserveCache (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#328) is a local variable never initialized
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
 INFO:Detectors:
 EModeLogic.executeSetUserEMode(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),mapping(address => uint8),DataTypes.UserConfigurationMap,DataTypes.ExecuteSetUserEModeParams) (lib/aave-v3-core/contracts/protocol/libraries/logic/EModeLogic.sol#42-75) ignores return value by ValidationLogic.validateHealthFactor(reservesData,reservesList,eModeCategories,userConfig,msg.sender,params.categoryId,params.reservesCount,params.oracle) (lib/aave-v3-core/contracts/protocol/libraries/logic/EModeLogic.sol#63-72)
