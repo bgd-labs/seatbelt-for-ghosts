@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/595ee6ae-a2c1-4138-b840-b111aa91d5d6](https://dashboard.tenderly.co/me/simulator/595ee6ae-a2c1-4138-b840-b111aa91d5d6)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/48516a98-2124-4d63-a04e-f384ffed42d6](https://dashboard.tenderly.co/me/simulator/48516a98-2124-4d63-a04e-f384ffed42d6)
 
 ### Checks
 
@@ -12,7 +12,7 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x16143be5c6cc24024429c24dd47b075ed0f8370c0a96745f93f3d449a91944be` @@
+@@ `_queuedActions` key `0x3e254e9c11264297d5c94b27771d59ce8e5ed2910c0ee13bebc4e7b1fd4ad4fc` @@
 - true
 + false
 
@@ -25,11 +25,11 @@ Info:
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x0000000000000000000000000000000000000000000000000000000000aa2729"
-+ "0x0000000000000000000000000000000000000000000000000000000000aa3265"
+- "0x00000000000000000000000000000000000000000000000000000000009eadb5"
++ "0x00000000000000000000000000000000000000000000000000000000009eb8f1"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x000000000000000000000000000000000000000000000000276b35241e9bdeec"
-+ "0x000000000000000000000000000000000000000000000000276b4435d21635ec"
+- "0x000000000000000000000000000000000000000000000000279a40722b1f99f8"
++ "0x000000000000000000000000000000000000000000000000279a513772f884f8"
 ```
 
 ```diff
@@ -103,7 +103,8 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 <summary>View warnings for ACLManager at `0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B`</summary>
 
 ```
-INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+ERROR:CryticCompile:Etherscan API rate limit exceeded
+ERROR:CryticCompile:Etherscan API rate limit exceeded
 ```
 
 </details>
