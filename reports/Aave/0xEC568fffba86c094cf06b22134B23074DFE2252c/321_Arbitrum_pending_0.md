@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/51e35957-5799-40c4-bccc-9ae6de309221](https://dashboard.tenderly.co/me/simulator/51e35957-5799-40c4-bccc-9ae6de309221)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/1a66d6e1-0a6d-44d9-81f8-fca189c93539](https://dashboard.tenderly.co/me/simulator/1a66d6e1-0a6d-44d9-81f8-fca189c93539)
 
 ### Checks
 
@@ -28,24 +28,24 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x637e7946e8851ad30c0603c8146dfd02b8f1508ea030e4c1ae813f38316744c0` @@
-- true
-+ false
-
 @@ `_actionsSets` key `"38"`.executed @@
 - false
 + true
+
+@@ `_queuedActions` key `0x30e8cb77ad65ba69cfbb2c638cce292fe376834c534262a53476319db2c602bd` @@
+- true
++ false
 
 ```
 
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x0000000000000000000000000000000000000000000000000000000000df9586"
-+ "0x0000000000000000000000000000000000000000000000000000000000dfa0c2"
+- "0x0000000000000000000000000000000000000000000000000000000000d8af86"
++ "0x0000000000000000000000000000000000000000000000000000000000d8bac2"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x0000000000000000000000000000000000000000000000002914c16de2bf4614"
-+ "0x0000000000000000000000000000000000000000000000002914cbde9e588f14"
+- "0x00000000000000000000000000000000000000000000000028ce699fc51215d0"
++ "0x00000000000000000000000000000000000000000000000028ce73cbe32e3bd0"
 ```
 
 #### Check stack trace of the proposal ✅ Passed
@@ -653,12 +653,12 @@ ReserveLogic.updateState(DataTypes.ReserveData,DataTypes.ReserveCache) (lib/aave
 	- reserve.lastUpdateTimestamp == uint40(block.timestamp) (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#99)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
 INFO:Detectors:
-ReserveLogic.updateInterestRates(DataTypes.ReserveData,DataTypes.ReserveCache,address,uint256,uint256).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#179) is a local variable never initialized
-ReserveLogic._accrueToTreasury(DataTypes.ReserveData,DataTypes.ReserveCache).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#236) is a local variable never initialized
 GenericLogic.calculateUserAccountData(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.CalculateUserAccountDataParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/GenericLogic.sol#74) is a local variable never initialized
-ReserveLogic.cache(DataTypes.ReserveData).reserveCache (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#328) is a local variable never initialized
-ValidationLogic.validateLiquidationCall(DataTypes.UserConfigurationMap,DataTypes.ReserveData,DataTypes.ValidateLiquidationCallParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#501) is a local variable never initialized
+ReserveLogic.updateInterestRates(DataTypes.ReserveData,DataTypes.ReserveCache,address,uint256,uint256).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#179) is a local variable never initialized
 ValidationLogic.validateBorrow(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.ValidateBorrowParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#147) is a local variable never initialized
+ReserveLogic._accrueToTreasury(DataTypes.ReserveData,DataTypes.ReserveCache).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#236) is a local variable never initialized
+ValidationLogic.validateLiquidationCall(DataTypes.UserConfigurationMap,DataTypes.ReserveData,DataTypes.ValidateLiquidationCallParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#501) is a local variable never initialized
+ReserveLogic.cache(DataTypes.ReserveData).reserveCache (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#328) is a local variable never initialized
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
 INFO:Detectors:
 EModeLogic.executeSetUserEMode(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),mapping(address => uint8),DataTypes.UserConfigurationMap,DataTypes.ExecuteSetUserEModeParams) (lib/aave-v3-core/contracts/protocol/libraries/logic/EModeLogic.sol#42-75) ignores return value by ValidationLogic.validateHealthFactor(reservesData,reservesList,eModeCategories,userConfig,msg.sender,params.categoryId,params.reservesCount,params.oracle) (lib/aave-v3-core/contracts/protocol/libraries/logic/EModeLogic.sol#63-72)
