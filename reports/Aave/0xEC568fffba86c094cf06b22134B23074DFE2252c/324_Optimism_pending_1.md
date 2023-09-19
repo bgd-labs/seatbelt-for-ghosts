@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/e3470d38-8043-4984-b005-c566fb0a8846](https://dashboard.tenderly.co/me/simulator/e3470d38-8043-4984-b005-c566fb0a8846)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/9df1c22b-47af-4d84-b476-2002943ac129](https://dashboard.tenderly.co/me/simulator/9df1c22b-47af-4d84-b476-2002943ac129)
 
 ### Checks
 
@@ -30,7 +30,7 @@ Info:
 - false
 + true
 
-@@ `_queuedActions` key `0xf094901502c7efa789ad8c81dd68fa8544dd9046027055e46656ab3d2093f780` @@
+@@ `_queuedActions` key `0xcea78a10367ddea9b7ba3941e2b686c9689cabaf20a2a1582f964eb8cba06875` @@
 - true
 + false
 
