@@ -1,6 +1,6 @@
 ## Polygon
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/a96dfb06-7a6e-4b77-95a2-8d301f124d37](https://dashboard.tenderly.co/me/simulator/a96dfb06-7a6e-4b77-95a2-8d301f124d37)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/58022ba1-d186-45c9-86d4-509c805c25da](https://dashboard.tenderly.co/me/simulator/58022ba1-d186-45c9-86d4-509c805c25da)
 
 ### Checks
 
@@ -784,7 +784,7 @@ Info:
     - `Burn(from: 0x3db487975ab1728db5787b798866c2021b24ec52, target: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 3780259419596, index: 1050995232386489796921273370)`
   - InitializableImmutableAdminUpgradeabilityProxy (Aave Polygon USDT) at `0x60D55F02A771d515e077c9C2403a1ef324885CeC` with implementation AToken at `0x80f2c02224a2E548FC67c0bF705eBFA825dd5439`
     - `BalanceTransfer(from: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, to: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 1381813681810, index: 1099401682239672057461987995)`
-    - `Transfer(from: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, to: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 1381813681810)`
+    - `Transfer(src: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, dst: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, wad: 1381813681810)`
     - `Approval(owner: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, spender: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 1381813681810)`
     - `BalanceTransfer(from: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, to: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 1381813681810, index: 1099401682239672057461987995)`
     - `Approval(owner: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, spender: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 0)`
@@ -807,7 +807,7 @@ Info:
   - InitializableImmutableAdminUpgradeabilityProxy (Aave Polygon WETH) at `0x28424507fefb6f7f8E9D3860F56504E4e5f5f390` with implementation AToken at `0x80f2c02224a2E548FC67c0bF705eBFA825dd5439`
     - `BalanceTransfer(from: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, to: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 231310129065823618397, index: 1008495547744549806396792575)`
     - `Transfer(from: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, to: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 231310129065823618397)`
-    - `Approval(src: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, guy: 0x3db487975ab1728db5787b798866c2021b24ec52, wad: 231310129065823618397)`
+    - `Approval(owner: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, spender: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 231310129065823618397)`
     - `BalanceTransfer(from: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, to: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 231310129065823618397, index: 1008495547744549806396792575)`
     - `Approval(owner: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, spender: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 0)`
     - `Transfer(from: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, to: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 231310129065823618397)`
@@ -914,7 +914,7 @@ Info:
   - InitializableImmutableAdminUpgradeabilityProxy (Aave DAI) at `0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE` with implementation AToken at `0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE`
     - `Transfer(from: 0x0000000000000000000000000000000000000000, to: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 3383186852173982464976672)`
     - `Mint(caller: 0x3db487975ab1728db5787b798866c2021b24ec52, onBehalfOf: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 3383186852173982464976672, balanceIncrease: 0, index: 1023899740570129839788230000)`
-    - `Transfer(from: 0x0000000000000000000000000000000000000000, to: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 7984651043825253429)`
+    - `Transfer(src: 0x0000000000000000000000000000000000000000, dst: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, wad: 7984651043825253429)`
     - `Mint(caller: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, onBehalfOf: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 7984651043825253429, balanceIncrease: 7984651043825253429, index: 1023899740570129839788230000)`
     - `Transfer(from: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, to: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 3383186852173982464976672)`
     - `BalanceTransfer(from: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, to: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 3304216924881873491801269, index: 1023899740570129839788230000)`
@@ -956,7 +956,7 @@ Info:
     - `Transfer(from: 0x3db487975ab1728db5787b798866c2021b24ec52, to: 0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8, value: 231310129065823618397)`
     - `Approval(owner: 0x3db487975ab1728db5787b798866c2021b24ec52, spender: 0x794a61358d6845594f94dc1db02a252b5b4814ad, value: 115792089237316195423570985008687907853269984665640564031754244240177382067936)`
   - InitializableImmutableAdminUpgradeabilityProxy (Aave WETH) at `0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8` with implementation AToken at `0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE`
-    - `Transfer(from: 0x0000000000000000000000000000000000000000, to: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 231310129065823618397)`
+    - `Transfer(src: 0x0000000000000000000000000000000000000000, dst: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, wad: 231310129065823618397)`
     - `Mint(caller: 0x3db487975ab1728db5787b798866c2021b24ec52, onBehalfOf: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 231310129065823618397, balanceIncrease: 0, index: 1005872542841114313906968916)`
     - `Transfer(from: 0x0000000000000000000000000000000000000000, to: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 2475660612862870)`
     - `Mint(caller: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, onBehalfOf: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 2475660612862870, balanceIncrease: 2475660612862870, index: 1005872542841114313906968916)`
@@ -997,7 +997,7 @@ Info:
   - UChildERC20Proxy (Aavegotchi) at `0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7`
     - `Transfer(from: 0x080b5bf8f360f624628e0fb961f4e67c9e3c7cf1, to: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 1918722410125905784205)`
     - `Transfer(from: 0x3db487975ab1728db5787b798866c2021b24ec52, to: 0x8eb270e296023e9d92081fdf967ddd7878724424, value: 1918722410125905784205)`
-    - `Approval(owner: 0x3db487975ab1728db5787b798866c2021b24ec52, spender: 0x794a61358d6845594f94dc1db02a252b5b4814ad, value: 115792089237316195423570985008687907853269984665640564032553126238147433571710)`
+    - `Approval(src: 0x3db487975ab1728db5787b798866c2021b24ec52, guy: 0x794a61358d6845594f94dc1db02a252b5b4814ad, wad: 115792089237316195423570985008687907853269984665640564032553126238147433571710)`
   - InitializableImmutableAdminUpgradeabilityProxy at `0x8Eb270e296023E9D92081fdF967dDd7878724424` with implementation AToken at `0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE`
     - `Transfer(from: 0x0000000000000000000000000000000000000000, to: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 1918722410125905784205)`
     - `Mint(caller: 0x3db487975ab1728db5787b798866c2021b24ec52, onBehalfOf: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 1918722410125905784205, balanceIncrease: 0, index: 1010725884343874993963049908)`
@@ -3213,12 +3213,12 @@ ReserveLogic.updateState(DataTypes.ReserveData,DataTypes.ReserveCache) (lib/aave
 	- reserve.lastUpdateTimestamp == uint40(block.timestamp) (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#99)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
 INFO:Detectors:
-ReserveLogic.updateInterestRates(DataTypes.ReserveData,DataTypes.ReserveCache,address,uint256,uint256).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#179) is a local variable never initialized
-ValidationLogic.validateLiquidationCall(DataTypes.UserConfigurationMap,DataTypes.ReserveData,DataTypes.ValidateLiquidationCallParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#501) is a local variable never initialized
-ValidationLogic.validateBorrow(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.ValidateBorrowParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#147) is a local variable never initialized
-GenericLogic.calculateUserAccountData(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.CalculateUserAccountDataParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/GenericLogic.sol#74) is a local variable never initialized
-ReserveLogic._accrueToTreasury(DataTypes.ReserveData,DataTypes.ReserveCache).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#236) is a local variable never initialized
 ReserveLogic.cache(DataTypes.ReserveData).reserveCache (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#328) is a local variable never initialized
+ReserveLogic._accrueToTreasury(DataTypes.ReserveData,DataTypes.ReserveCache).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#236) is a local variable never initialized
+ReserveLogic.updateInterestRates(DataTypes.ReserveData,DataTypes.ReserveCache,address,uint256,uint256).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#179) is a local variable never initialized
+ValidationLogic.validateBorrow(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.ValidateBorrowParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#147) is a local variable never initialized
+ValidationLogic.validateLiquidationCall(DataTypes.UserConfigurationMap,DataTypes.ReserveData,DataTypes.ValidateLiquidationCallParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#501) is a local variable never initialized
+GenericLogic.calculateUserAccountData(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.CalculateUserAccountDataParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/GenericLogic.sol#74) is a local variable never initialized
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
 INFO:Detectors:
 EModeLogic.executeSetUserEMode(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),mapping(address => uint8),DataTypes.UserConfigurationMap,DataTypes.ExecuteSetUserEModeParams) (lib/aave-v3-core/contracts/protocol/libraries/logic/EModeLogic.sol#42-75) ignores return value by ValidationLogic.validateHealthFactor(reservesData,reservesList,eModeCategories,userConfig,msg.sender,params.categoryId,params.reservesCount,params.oracle) (lib/aave-v3-core/contracts/protocol/libraries/logic/EModeLogic.sol#63-72)
@@ -5416,8 +5416,8 @@ Variable AaveV2CollectorContractConsolidation.ETH_USD_ORACLE_DECIMALS (src/AaveV
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
 INFO:Detectors:
 Variable TokenAddresses.BUSD_ORACLE (src/TokenAddresses.sol#50) is too similar to TokenAddresses.SUSD_ORACLE (src/TokenAddresses.sol#46)
-Variable TokenAddresses.BUSD_ORACLE (src/TokenAddresses.sol#50) is too similar to TokenAddresses.TUSD_ORACLE (src/TokenAddresses.sol#48)
 Variable TokenAddresses.SUSD_ORACLE (src/TokenAddresses.sol#46) is too similar to TokenAddresses.TUSD_ORACLE (src/TokenAddresses.sol#48)
+Variable TokenAddresses.BUSD_ORACLE (src/TokenAddresses.sol#50) is too similar to TokenAddresses.TUSD_ORACLE (src/TokenAddresses.sol#48)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#variable-names-too-similar
 INFO:Slither:0xbefcd01681224555b74eac87207eaf9bc3361f59 analyzed (23 contracts with 82 detectors), 44 result(s) found
 ```
