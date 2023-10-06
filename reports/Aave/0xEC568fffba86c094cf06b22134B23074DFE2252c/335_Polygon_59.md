@@ -1,6 +1,6 @@
 ## Polygon
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/cf3928cc-cf6e-4863-b087-3218423b4a2a](https://dashboard.tenderly.co/me/simulator/cf3928cc-cf6e-4863-b087-3218423b4a2a)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/334952d5-9228-4240-b2f3-5b8cd0953eee](https://dashboard.tenderly.co/me/simulator/334952d5-9228-4240-b2f3-5b8cd0953eee)
 
 ### Checks
 
@@ -832,7 +832,7 @@ Info:
     - `Approval(owner: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, spender: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 1346300304986669760538)`
     - `BalanceTransfer(from: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, to: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 1346300304986669760538, index: 1135660022407115610412434722)`
     - `Approval(owner: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, spender: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 0)`
-    - `Transfer(from: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, to: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 1346300304986669760538)`
+    - `Transfer(src: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, dst: 0x3db487975ab1728db5787b798866c2021b24ec52, wad: 1346300304986669760538)`
     - `Transfer(from: 0x0000000000000000000000000000000000000000, to: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 4572861644916779607)`
     - `Mint(from: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 4572861644916779607, index: 1135660022407115610412434722)`
     - `Transfer(from: 0x3db487975ab1728db5787b798866c2021b24ec52, to: 0x0000000000000000000000000000000000000000, value: 1346300304986669760538)`
@@ -941,7 +941,7 @@ Info:
     - `Transfer(from: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, to: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 1381813681810)`
     - `BalanceTransfer(from: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, to: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 1321887782854, index: 1045333575008188813080030778)`
   - UChildERC20Proxy (Wrapped Bitcoin) at `0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6`
-    - `Transfer(from: 0x5c2ed810328349100a66b82b78a1791b101c9d61, to: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 9141541)`
+    - `Transfer(src: 0x5c2ed810328349100a66b82b78a1791b101c9d61, dst: 0x3db487975ab1728db5787b798866c2021b24ec52, wad: 9141541)`
     - `Transfer(from: 0x3db487975ab1728db5787b798866c2021b24ec52, to: 0x078f358208685046a11c85e8ad32895ded33a249, value: 9141541)`
     - `Approval(owner: 0x3db487975ab1728db5787b798866c2021b24ec52, spender: 0x794a61358d6845594f94dc1db02a252b5b4814ad, value: 115792089237316195423570985008687907853269984665640564039457584007878898931854)`
   - InitializableImmutableAdminUpgradeabilityProxy (Aave WBTC) at `0x078f358208685046a11C85e8ad32895DED33A249` with implementation AToken at `0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE`
@@ -985,7 +985,7 @@ Info:
     - `BalanceTransfer(from: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, to: 0xe8599f3cc5d38a9ad6f3684cd5cea72f10dbc383, value: 1228455269457424476159, index: 1095929447704916642768599112)`
   - UChildERC20Proxy (Curve DAO) at `0x172370d5Cd63279eFa6d502DAB29171933a610AF`
     - `Transfer(from: 0x3df8f92b7e798820ddcca2ebea7babda2c90c4ad, to: 0x3db487975ab1728db5787b798866c2021b24ec52, value: 9412519040426266785194)`
-    - `Transfer(from: 0x3db487975ab1728db5787b798866c2021b24ec52, to: 0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff, value: 9412519040426266785194)`
+    - `Transfer(src: 0x3db487975ab1728db5787b798866c2021b24ec52, dst: 0x513c7e3a9c69ca3e22550ef58ac1c0088e918fff, wad: 9412519040426266785194)`
     - `Approval(owner: 0x3db487975ab1728db5787b798866c2021b24ec52, spender: 0x794a61358d6845594f94dc1db02a252b5b4814ad, value: 115792089237316195423570985008687907853269984665640564022277573065838954774553)`
   - InitializableImmutableAdminUpgradeabilityProxy (Aave CRV) at `0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf` with implementation AToken at `0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE`
     - `Transfer(from: 0x0000000000000000000000000000000000000000, to: 0xdc9a35b16db4e126cfedc41322b3a36454b1f772, value: 9412519040426266785194)`
@@ -3213,12 +3213,12 @@ ReserveLogic.updateState(DataTypes.ReserveData,DataTypes.ReserveCache) (lib/aave
 	- reserve.lastUpdateTimestamp == uint40(block.timestamp) (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#99)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
 INFO:Detectors:
+ReserveLogic.updateInterestRates(DataTypes.ReserveData,DataTypes.ReserveCache,address,uint256,uint256).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#179) is a local variable never initialized
 GenericLogic.calculateUserAccountData(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.CalculateUserAccountDataParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/GenericLogic.sol#74) is a local variable never initialized
 ReserveLogic.cache(DataTypes.ReserveData).reserveCache (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#328) is a local variable never initialized
-ReserveLogic._accrueToTreasury(DataTypes.ReserveData,DataTypes.ReserveCache).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#236) is a local variable never initialized
-ReserveLogic.updateInterestRates(DataTypes.ReserveData,DataTypes.ReserveCache,address,uint256,uint256).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#179) is a local variable never initialized
 ValidationLogic.validateLiquidationCall(DataTypes.UserConfigurationMap,DataTypes.ReserveData,DataTypes.ValidateLiquidationCallParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#501) is a local variable never initialized
 ValidationLogic.validateBorrow(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),DataTypes.ValidateBorrowParams).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ValidationLogic.sol#147) is a local variable never initialized
+ReserveLogic._accrueToTreasury(DataTypes.ReserveData,DataTypes.ReserveCache).vars (lib/aave-v3-core/contracts/protocol/libraries/logic/ReserveLogic.sol#236) is a local variable never initialized
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
 INFO:Detectors:
 EModeLogic.executeSetUserEMode(mapping(address => DataTypes.ReserveData),mapping(uint256 => address),mapping(uint8 => DataTypes.EModeCategory),mapping(address => uint8),DataTypes.UserConfigurationMap,DataTypes.ExecuteSetUserEModeParams) (lib/aave-v3-core/contracts/protocol/libraries/logic/EModeLogic.sol#42-75) ignores return value by ValidationLogic.validateHealthFactor(reservesData,reservesList,eModeCategories,userConfig,msg.sender,params.categoryId,params.reservesCount,params.oracle) (lib/aave-v3-core/contracts/protocol/libraries/logic/EModeLogic.sol#63-72)
@@ -5416,8 +5416,8 @@ Variable AaveV2CollectorContractConsolidation.ETH_USD_ORACLE_DECIMALS (src/AaveV
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
 INFO:Detectors:
 Variable TokenAddresses.BUSD_ORACLE (src/TokenAddresses.sol#50) is too similar to TokenAddresses.SUSD_ORACLE (src/TokenAddresses.sol#46)
-Variable TokenAddresses.SUSD_ORACLE (src/TokenAddresses.sol#46) is too similar to TokenAddresses.TUSD_ORACLE (src/TokenAddresses.sol#48)
 Variable TokenAddresses.BUSD_ORACLE (src/TokenAddresses.sol#50) is too similar to TokenAddresses.TUSD_ORACLE (src/TokenAddresses.sol#48)
+Variable TokenAddresses.SUSD_ORACLE (src/TokenAddresses.sol#46) is too similar to TokenAddresses.TUSD_ORACLE (src/TokenAddresses.sol#48)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#variable-names-too-similar
 INFO:Slither:0xbefcd01681224555b74eac87207eaf9bc3361f59 analyzed (23 contracts with 82 detectors), 44 result(s) found
 ```
