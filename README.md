@@ -639,6 +639,7 @@ Some notes on the outputs of reports:
 | Optimism                                                                                                                                                                                 | [340_Optimism_pending_1.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/340_Optimism_pending_1.md) | [app](https://app.aave.com/governance/proposal/?proposalId=340) |
 | v2 Deprecation Plan, 2023.10.03                                                                                                                                                          | [341.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/341.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=341) |
 | STG onboarding on AaveV3 Ethereum Market                                                                                                                                                 | [342.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/342.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=342) |
+| Fund GHO Liquidity Committee                                                                                                                                                             | [343.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/343.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=343) |
 
 <!-- ### Reports table end ### -->
 
