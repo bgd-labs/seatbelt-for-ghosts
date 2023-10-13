@@ -641,6 +641,7 @@ Some notes on the outputs of reports:
 | STG onboarding on AaveV3 Ethereum Market                                                                                                                                                 | [342.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/342.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=342) |
 | Fund GHO Liquidity Committee                                                                                                                                                             | [343.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/343.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=343) |
 | KNC onboarding on AaveV3 Ethereum market                                                                                                                                                 | [344.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/344.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=344) |
+| Governance V3 Activation                                                                                                                                                                 | [345.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/345.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=345) |
 
 <!-- ### Reports table end ### -->
 
