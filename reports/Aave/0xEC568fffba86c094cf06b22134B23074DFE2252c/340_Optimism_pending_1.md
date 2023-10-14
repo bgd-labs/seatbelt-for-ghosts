@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/ddd7ce51-b2bf-4957-a373-89254a5ddef6](https://dashboard.tenderly.co/me/simulator/ddd7ce51-b2bf-4957-a373-89254a5ddef6)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/c44ba769-93fe-4b2a-8e3d-b9026011482d](https://dashboard.tenderly.co/me/simulator/c44ba769-93fe-4b2a-8e3d-b9026011482d)
 
 ### Checks
 
@@ -20,7 +20,7 @@ Info:
 
 ```diff
 # OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x5ca86ff770fd7f8f84f49270cfad148cdd4e120f158e95cef60f463c145afd23` @@
+@@ `_queuedActions` key `0x5abef998f1e3bf59e6b59ddfad04276c748a66e29c6e4e6a78eec1584b2432c3` @@
 - true
 + false
 
@@ -75,7 +75,7 @@ Info:
 - Touched address:
   - 0xd73a92be73efbfcf3854433a5fcbabf9c1316073: EOA (verification not applicable)
   - 0x7d9103572be58ffe99dc390e8246f02dcae6f611: Contract (verified) (OptimismBridgeExecutor)
-  - 0xc12ad8b3d242b1eddc1c8319d1d58608e67043ed: Contract (not verified)
+  - 0xc12ad8b3d242b1eddc1c8319d1d58608e67043ed: Contract (verified) (AaveV3OptimismUpdate20231002wethPayload)
   - 0x7a9a9c14b35e58ffa1cc84ab421ace0fdcd289e3: Contract (verified) (AaveV3ConfigEngine)
   - 0xdd81e6f85358292075b78fc8d5830be8434af8ba: Contract (not verified)
   - 0x85fb6dff5f59695d77cc61898e60d040165b1923: Contract (verified) (V3RateStrategyFactory)
@@ -170,6 +170,15 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 <details>
 <summary>View warnings for PoolAddressesProvider at `0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb`</summary>
+
+```
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
+<summary>View warnings for AaveV3OptimismUpdate20231002wethPayload at `0xc12aD8B3D242B1EDdc1C8319D1d58608E67043eD`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -475,6 +484,42 @@ Traceback (most recent call last):
     with open(path, encoding="utf8", newline="") as f:
 FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0xa97684ead0e402dc232d5a977953df7ecbab3cdb
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+```
+
+</details>
+
+<details>
+<summary>Slither report for AaveV3OptimismUpdate20231002wethPayload at `0xc12aD8B3D242B1EDdc1C8319D1d58608E67043eD`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+ERROR:root:Error in 0xc12ad8b3d242b1eddc1c8319d1d58608e67043ed
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
