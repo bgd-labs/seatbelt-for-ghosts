@@ -1,6 +1,6 @@
 ## Arbitrum
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/bc3cc737-f86a-45cd-91d9-fc9f406f7d25](https://dashboard.tenderly.co/me/simulator/bc3cc737-f86a-45cd-91d9-fc9f406f7d25)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/3b969fdb-d8c3-4f99-8b38-d9530c96c00e](https://dashboard.tenderly.co/me/simulator/3b969fdb-d8c3-4f99-8b38-d9530c96c00e)
 
 ### Checks
 
@@ -20,24 +20,24 @@ Info:
 
 ```diff
 # ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x971499f2ab831b82ede90cc7cff27a8ce682605c4a7bbc32ef4f605188f848bb` @@
-- true
-+ false
-
-@@ `_actionsSets` key `"40"`.executed @@
+@@ `_actionsSets` key `"41"`.executed @@
 - false
 + true
+
+@@ `_queuedActions` key `0xc2766b6cca7325eaa42019e3d497ee117dd3f8148e7c5f02752ca497144ef35c` @@
+- true
++ false
 
 ```
 
 ```diff
 # unknown contract name at `0xA4b05FffffFffFFFFfFFfffFfffFFfffFfFfFFFf`
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e9706` @@
-- "0x0000000000000000000000000000000000000000000000000000000000c15d76"
-+ "0x0000000000000000000000000000000000000000000000000000000000c168b2"
+- "0x0000000000000000000000000000000000000000000000000000000000d00d66"
++ "0x0000000000000000000000000000000000000000000000000000000000d018a2"
 @@ Slot `0xa9f6f085d78d1d37c5819e5c16c9e03198bd14e08cd1f6f8191bc6207b9e970b` @@
-- "0x00000000000000000000000000000000000000000000000029d3b73c65e861de"
-+ "0x00000000000000000000000000000000000000000000000029d3c47a3fcffade"
+- "0x0000000000000000000000000000000000000000000000002980976cd24b7758"
++ "0x0000000000000000000000000000000000000000000000002980a51e281a7058"
 ```
 
 ```diff
@@ -69,7 +69,7 @@ Info:
   - InitializableImmutableAdminUpgradeabilityProxy at `0x8145eddDf43f50276641b55bd3AD95944510021E`
     - `ReserveInterestRateStrategyChanged(asset: 0x82af49447d8a07e3bd95bd0d56f35241523fbab1, oldStrategy: 0xdef8f50155a6cf21181e29e400e8cffae2d50968, newStrategy: 0x9a158802cd924747ef336ca3f9de3bdb60cf43d3)`
   - ArbitrumBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-    - `ActionsSetExecuted(id: 40, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
+    - `ActionsSetExecuted(id: 41, initiatorExecution: 0xd73a92be73efbfcf3854433a5fcbabf9c1316073, returnedData: 0x)`
 
 #### Check all targets are verified on Etherscan ✅ Passed
 
