@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/f8d00858-8706-41c9-a77f-bee4b9edf780](https://dashboard.tenderly.co/me/simulator/f8d00858-8706-41c9-a77f-bee4b9edf780)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/36035829-48fa-46f0-a73c-047ab8a2911a](https://dashboard.tenderly.co/me/simulator/36035829-48fa-46f0-a73c-047ab8a2911a)
 
 ### Checks
 
@@ -20,7 +20,7 @@ Info:
 
 ```diff
 # OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0x9fbc2797af9e4f1b7a61a195f0c431962ea7bdc19edc989f0a2c11f41aad8991` @@
+@@ `_queuedActions` key `0x59ee6aea9e04686179c6b12453a5d5b43dcd4801ba42f5a21f0dfdcca9a3d116` @@
 - true
 + false
 
@@ -82,7 +82,7 @@ Info:
   - 0xa97684ead0e402dc232d5a977953df7ecbab3cdb: Contract (verified) (PoolAddressesProvider)
   - 0x794a61358d6845594f94dc1db02a252b5b4814ad: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
   - 0x764594f8e9757ede877b75716f8077162b251460: Contract (verified) (L2Pool)
-  - 0xf9336bb69654fdd665aac6618309a8cba078d8fe: Contract (not verified)
+  - 0xf9336bb69654fdd665aac6618309a8cba078d8fe: Contract (verified) (DefaultReserveInterestRateStrategy)
   - 0x5f58c25d17c09c9e1892f45de6da45ed973a5326: EOA (verification not applicable)
   - 0x8145edddf43f50276641b55bd3ad95944510021e: Contract (verified) (InitializableImmutableAdminUpgradeabilityProxy)
   - 0x29081f7ab5a644716efcdc10d5c926c5fee9f72b: Contract (verified) (PoolConfigurator)
@@ -179,6 +179,15 @@ INFO:CryticCompile:Source code not available, try to fetch the bytecode only
 
 <details>
 <summary>View warnings for AaveV3OptimismUpdate20231002wethPayload at `0xc12aD8B3D242B1EDdc1C8319D1d58608E67043eD`</summary>
+
+```
+INFO:CryticCompile:Source code not available, try to fetch the bytecode only
+```
+
+</details>
+
+<details>
+<summary>View warnings for DefaultReserveInterestRateStrategy at `0xF9336Bb69654fdd665AaC6618309a8cba078D8fE`</summary>
 
 ```
 INFO:CryticCompile:Source code not available, try to fetch the bytecode only
@@ -520,6 +529,42 @@ Traceback (most recent call last):
     with open(path, encoding="utf8", newline="") as f:
 FileNotFoundError: [Errno 2] No such file or directory: ''
 ERROR:root:Error in 0xc12ad8b3d242b1eddc1c8319d1d58608e67043ed
+ERROR:root:Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+```
+
+</details>
+
+<details>
+<summary>Slither report for DefaultReserveInterestRateStrategy at `0xF9336Bb69654fdd665AaC6618309a8cba078D8fE`</summary>
+
+```
+Source code not available, try to fetch the bytecode only
+ERROR:SlitherSolcParsing:crytic-compile returned an empty AST. If you are trying to analyze a contract from etherscan or similar make sure it has source code available.
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 102, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/slither.py", line 115, in __init__
+    self.add_source_code(path)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/core/slither_core.py", line 172, in add_source_code
+    with open(path, encoding="utf8", newline="") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+ERROR:root:Error in 0xf9336bb69654fdd665aac6618309a8cba078d8fe
 ERROR:root:Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 814, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
