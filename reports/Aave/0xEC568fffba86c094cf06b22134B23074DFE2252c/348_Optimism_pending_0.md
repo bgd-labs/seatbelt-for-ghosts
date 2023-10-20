@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/b3128a2b-0b59-499f-bddc-aa9935251051](https://dashboard.tenderly.co/me/simulator/b3128a2b-0b59-499f-bddc-aa9935251051)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/92054a8a-22f0-4009-808b-4f753f47fe53](https://dashboard.tenderly.co/me/simulator/92054a8a-22f0-4009-808b-4f753f47fe53)
 
 ### Checks
 
@@ -25,13 +25,13 @@ Info:
 
 ```diff
 # OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0xccba6852442a6525744a2e1877dd93a7f7a074a2a55500b5ba2b5bdae7539dfc` @@
-- true
-+ false
-
 @@ `_actionsSets` key `"39"`.executed @@
 - false
 + true
+
+@@ `_queuedActions` key `0xd821587c85f093ce09f5214913b0ccb96f0aef3c3234966a25e500da1079d6ad` @@
+- true
++ false
 
 ```
 
