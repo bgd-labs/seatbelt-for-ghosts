@@ -1,6 +1,6 @@
 ## Optimism
 
-- Simulation: [https://dashboard.tenderly.co/me/simulator/4a68e4a3-e04b-4647-b5e7-27a1cb61968c](https://dashboard.tenderly.co/me/simulator/4a68e4a3-e04b-4647-b5e7-27a1cb61968c)
+- Simulation: [https://dashboard.tenderly.co/me/simulator/560132ff-121d-4400-a972-63a64fa08ad2](https://dashboard.tenderly.co/me/simulator/560132ff-121d-4400-a972-63a64fa08ad2)
 
 ### Checks
 
@@ -25,7 +25,7 @@ Info:
 
 ```diff
 # OptimismBridgeExecutor at `0x7d9103572bE58FfE99dc390E8246f02dcAe6f611`
-@@ `_queuedActions` key `0xd832f4b733bd7c8766ca682e8d104fc3961ef2779b356ef70221340f99f131f9` @@
+@@ `_queuedActions` key `0x01f03064283d2b71f1d5b104863758a0f6287122517e662ff9396972e295dcdc` @@
 - true
 + false
 
@@ -170,13 +170,53 @@ Info:
 
 ```
 'solc --standard-json --allow-paths /home/runner/work/seatbelt-for-ghosts/seatbelt-for-ghosts/crytic-export/etherscan-contracts/0x29081f7ab5a644716efcdc10d5c926c5fee9f72b-sDAISynchronicityPriceAdapter' running
-INFO:Detectors:
-Contract sDAISynchronicityPriceAdapter (src/contracts/sDAISynchronicityPriceAdapter.sol#14-76) is not in CapWords
-Variable sDAISynchronicityPriceAdapter.DAI_TO_USD (src/contracts/sDAISynchronicityPriceAdapter.sol#18) is not in mixedCase
-Variable sDAISynchronicityPriceAdapter.RATE_PROVIDER (src/contracts/sDAISynchronicityPriceAdapter.sol#23) is not in mixedCase
-Variable sDAISynchronicityPriceAdapter.DECIMALS (src/contracts/sDAISynchronicityPriceAdapter.sol#33) is not in mixedCase
-Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
-INFO:Slither:0x29081f7ab5a644716efcdc10d5c926c5fee9f72b analyzed (4 contracts with 87 detectors), 4 result(s) found
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 180, in run_solc_standard_json
+    solc_json_output = json.loads(stdout)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/slither", line 8, in <module>
+    sys.exit(main())
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 727, in main
+    main_impl(all_detector_classes=detectors, all_printer_classes=printers)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 833, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/runner/.local/lib/python3.10/site-packages/slither/__main__.py", line 96, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 718, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 207, in __init__
+    self._compile(**kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 629, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/etherscan.py", line 410, in compile
+    solc_standard_json.standalone_compile(
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 79, in standalone_compile
+    targets_json = run_solc_standard_json(
+  File "/home/runner/.local/lib/python3.10/site-packages/crytic_compile/platform/solc_standard_json.py", line 210, in run_solc_standard_json
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation Traceback (most recent call last):
+  File "/home/runner/.local/bin/solc", line 8, in <module>
+    sys.exit(solc())
+  File "/home/runner/.local/lib/python3.10/site-packages/solc_select/__main__.py", line 94, in solc
+    subprocess.run(
+  File "/usr/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: '/home/runner/.solc-select/artifacts/solc-0.8.21/solc-0.8.21'
+
 ```
 
 </details>
