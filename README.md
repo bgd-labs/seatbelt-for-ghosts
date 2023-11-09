@@ -664,6 +664,7 @@ Some notes on the outputs of reports:
 | Chaos Labs Risk Management Renewal                                                                                                                                                       | [360.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/360.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=360) |
 | Aave V2 Ethereum LT Reduction                                                                                                                                                            | [362.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/362.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=362) |
 | Fixed REP price feed on AAVE v1                                                                                                                                                          | [364.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/364.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=364) |
+| GHO - Increase Borrow Rate                                                                                                                                                               | [365.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/365.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=365) |
 
 <!-- ### Reports table end ### -->
 
