@@ -666,6 +666,7 @@ Some notes on the outputs of reports:
 | Fixed REP price feed on AAVE v1                                                                                                                                                          | [364.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/364.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=364) |
 | GHO - Increase Borrow Rate                                                                                                                                                               | [365.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/365.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=365) |
 | AmendSafetyModuleAAVEEmissions                                                                                                                                                           | [366.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/366.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=366) |
+| Upgrade Aave V3 ETH Poool wETH parameters                                                                                                                                                | [368.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/368.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=368) |
 
 <!-- ### Reports table end ### -->
 
