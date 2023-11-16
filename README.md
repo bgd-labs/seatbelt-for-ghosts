@@ -668,6 +668,7 @@ Some notes on the outputs of reports:
 | AmendSafetyModuleAAVEEmissions                                                                                                                                                           | [366.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/366.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=366) |
 | Upgrade Aave V3 ETH Poool wETH parameters                                                                                                                                                | [368.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/368.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=368) |
 | Upgrade Aave V3 ETH Poool wETH parameters                                                                                                                                                | [371.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/371.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=371) |
+| Add FXS to Ethereum V3                                                                                                                                                                   | [372.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/372.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=372) |
 
 <!-- ### Reports table end ### -->
 
