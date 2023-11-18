@@ -669,6 +669,7 @@ Some notes on the outputs of reports:
 | Upgrade Aave V3 ETH Poool wETH parameters                                                                                                                                                | [368.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/368.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=368) |
 | Upgrade Aave V3 ETH Poool wETH parameters                                                                                                                                                | [371.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/371.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=371) |
 | Add FXS to Ethereum V3                                                                                                                                                                   | [372.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/372.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=372) |
+| TokenLogic Funding                                                                                                                                                                       | [373.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/373.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=373) |
 
 <!-- ### Reports table end ### -->
 
