@@ -680,6 +680,7 @@ Some notes on the outputs of reports:
 | Treasury Management - Add to rETH Holding                                                                                                                                                | [374.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/374.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=374) |
 | Increase Stablecoin Optimal Borrow Rates                                                                                                                                                 | [375.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/375.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=375) |
 | MAI/MIMATIC deprecation, 2023.10.31                                                                                                                                                      | [376.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/376.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=376) |
+| Gauntlet recommendation to lower stMATIC, MaticX non-emode LT, pt 2                                                                                                                      | [377.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/377.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=377) |
 
 <!-- ### Reports table end ### -->
 
