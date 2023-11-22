@@ -683,6 +683,7 @@ Some notes on the outputs of reports:
 | Gauntlet recommendation to lower stMATIC, MaticX non-emode LT, pt 2                                                                                                                      | [377.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/377.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=377) |
 | CRVUSD onboarding on Aave V3 Ethereum                                                                                                                                                    | [378.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/378.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=378) |
 | Chaos Labs Risk Parameter Updates - Increase MKR Debt Ceiling on V3 Ethereum                                                                                                             | [379.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/379.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=379) |
+| Gauntlet Cap Recommendations for Polygon v3                                                                                                                                              | [380.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/380.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=380) |
 
 <!-- ### Reports table end ### -->
 
