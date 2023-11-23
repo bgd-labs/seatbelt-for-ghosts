@@ -687,6 +687,7 @@ Some notes on the outputs of reports:
 | Increase GHO Borrow Rate                                                                                                                                                                 | [381.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/381.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=381) |
 | Onboard Native USDC to Aave V3 Optimism                                                                                                                                                  | [382.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/382.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=382) |
 | V2 Deprecation Plan, 2023.11.20                                                                                                                                                          | [383.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/383.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=383) |
+| Increase GHO Borrow Rate                                                                                                                                                                 | [384.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/384.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=384) |
 
 <!-- ### Reports table end ### -->
 
