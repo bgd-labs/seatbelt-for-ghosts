@@ -686,6 +686,7 @@ Some notes on the outputs of reports:
 | Gauntlet Cap Recommendations for Polygon v3                                                                                                                                              | [380.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/380.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=380) |
 | Increase GHO Borrow Rate                                                                                                                                                                 | [381.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/381.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=381) |
 | Onboard Native USDC to Aave V3 Optimism                                                                                                                                                  | [382.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/382.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=382) |
+| V2 Deprecation Plan, 2023.11.20                                                                                                                                                          | [383.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/383.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=383) |
 
 <!-- ### Reports table end ### -->
 
