@@ -692,6 +692,7 @@ Some notes on the outputs of reports:
 | Allow Emergency Admin to freeze on Aave V2                                                                                                                                               | [386.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/386.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=386) |
 | Aave Funding Updates                                                                                                                                                                     | [387.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/387.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=387) |
 | GHO_Incident_Report                                                                                                                                                                      | [388.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/388.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=388) |
+| Reserve Factor Updates - Polygon Aave v2                                                                                                                                                 | [389.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/389.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=389) |
 
 <!-- ### Reports table end ### -->
 
