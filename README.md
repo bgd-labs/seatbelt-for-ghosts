@@ -698,6 +698,7 @@ Some notes on the outputs of reports:
 | Aave Funding Updates                                                                                                                                                                     | [392.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/392.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=392) |
 | Reserve Factor Updates - Polygon Aave v2                                                                                                                                                 | [393.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/393.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=393) |
 | Onboarding wstETH to Aave V3 on Base Network                                                                                                                                             | [394.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/394.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=394) |
+| Aave Governance V3 Activation                                                                                                                                                            | [395.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/395.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=395) |
 
 <!-- ### Reports table end ### -->
 
