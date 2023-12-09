@@ -703,6 +703,7 @@ Some notes on the outputs of reports:
 | Chaos Labs RF and IR Updates - Aave V2 Ethereum                                                                                                                                          | [397.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/397.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=397) |
 | Transfer AURA to GLC Safe                                                                                                                                                                | [398.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/398.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=398) |
 | GHO update on Aave V3 Ethereum Pool for 13/11/2023 Report                                                                                                                                | [399.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/399.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=399) |
+| Gauntlet recommendation to reactivate CRV borrowing on v3                                                                                                                                | [400.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/400.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=400) |
 
 <!-- ### Reports table end ### -->
 
