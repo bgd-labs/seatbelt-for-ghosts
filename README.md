@@ -706,6 +706,7 @@ Some notes on the outputs of reports:
 | Gauntlet recommendation to reactivate CRV borrowing on v3                                                                                                                                | [400.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/400.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=400) |
 | Sync emergency admin on v2 AMM                                                                                                                                                           | [401.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/401.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=401) |
 | Activate Proof of Reserve                                                                                                                                                                | [402.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/402.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=402) |
+| Treasury Management - Add to rETH Holding (resubmission)                                                                                                                                 | [403.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/403.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=403) |
 
 <!-- ### Reports table end ### -->
 
