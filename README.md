@@ -712,6 +712,7 @@ Some notes on the outputs of reports:
 | Increase GHO Borrow Rate 100 bps to ~6.41% on Aave V3                                                                                                                                    | [406.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/406.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=406) |
 | TokenLogic & karpatkey Service Provider Partnership                                                                                                                                      | [407.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/407.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=407) |
 | Polygon V2 Reserve Factor Updates                                                                                                                                                        | [408.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/408.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=408) |
+| Onboard Native USDC to Aave V3 Markets                                                                                                                                                   | [409.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/409.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=409) |
 
 <!-- ### Reports table end ### -->
 
