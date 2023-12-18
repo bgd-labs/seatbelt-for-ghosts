@@ -715,6 +715,7 @@ Some notes on the outputs of reports:
 | Onboard Native USDC to Aave V3 Markets                                                                                                                                                   | [409.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/409.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=409) |
 | Continuous Security Proposal Aave <> Certora                                                                                                                                             | [410.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/410.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=410) |
 | Update GNO Risk Parameters on Aave V3 Gnosis Pool                                                                                                                                        | [411.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/411.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=411) |
+| Transfer all CRV positions from Ethereum Mainnet Collector to GLC Safe                                                                                                                   | [412.md](./reports/Aave/0xEC568fffba86c094cf06b22134B23074DFE2252c/412.md)                                       | [app](https://app.aave.com/governance/proposal/?proposalId=412) |
 
 <!-- ### Reports table end ### -->
 
