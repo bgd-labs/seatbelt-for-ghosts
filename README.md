@@ -1,3 +1,5 @@
+Deprecated: Aave Governance v2 is no longer active, therefore all new reports can be found [here](https://github.com/bgd-labs/seatbelt-gov-v3)
+
 <p align="center"><img width="200" src="./seatbelt_logo.png" alt="Aave logo"></a></p>
 
 # Aave seatbelt
